@@ -1,0 +1,54 @@
+{
+  "phase": "Phase 1 — Semantic Entropy + SEPs",
+  "timestamp": "2026-04-29T19:21:00+09:00",
+  "smoke_kind": "synthetic_pipeline_validation",
+  "reason_no_llm_smoke": "HF Hub unauthenticated rate-limit; Qwen2.5-1.5B (~3GB) download stalled at <100MB on 5070 host. NLI model (368MB) downloaded successfully and used for SE clustering.",
+  "synthetic": {
+    "n": 30,
+    "design": "15 easy QA (consistent samples) + 15 hard QA (varied samples); hidden states injected with deep-layer linear signal correlated with hardness",
+    "nli_model": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+    "greedy_acc": 0.5,
+    "sc_acc": 0.5,
+    "se_discrete": {
+      "auroc": 1.0,
+      "ece": 0.27250975835974256,
+      "brier": 0.07525885920224538,
+      "aurc": 0.16162093115430107
+    },
+    "wilcoxon_sc_vs_greedy": {
+      "stat": null,
+      "p": 1.0,
+      "n": 30,
+      "note": "all-zero diff (synthetic samples too consistent for SC to flip greedy)"
+    },
+    "stratified_acc_by_se_quartile": {
+      "Q1_low_SE": {"n": 9, "greedy_acc": 1.0, "sc_acc": 1.0, "delta": 0.0},
+      "Q2": {"n": 6, "greedy_acc": 1.0, "sc_acc": 1.0, "delta": 0.0},
+      "Q3": {"n": 9, "greedy_acc": 0.0, "sc_acc": 0.0, "delta": 0.0},
+      "Q4_high_SE": {"n": 6, "greedy_acc": 0.0, "sc_acc": 0.0, "delta": 0.0}
+    },
+    "seps_probe_best_auroc": {
+      "logreg_se_class": 0.778,
+      "logreg_hallucination": 0.778,
+      "mlp_se_class": 0.778,
+      "mlp_hallucination": 0.778,
+      "n_layers_swept": 13
+    },
+    "adaptive_se": {
+      "fixed_auroc": 1.0,
+      "adaptive_auroc": 1.0,
+      "auroc_delta": 0.0,
+      "fixed_avg_n": 10,
+      "adaptive_avg_n": 6.5,
+      "cost_save_frac": 0.35
+    }
+  },
+  "pipeline_components_validated": [
+    "data_loader.py (TriviaQA 50q cached @ ~/experiments/dl_team_v2/_data/cache/triviaqa_n50_s42.json)",
+    "se_compute.py (NLI clustering + discrete SE + logprob-weighted SE + SC majority vote)",
+    "seps_probe.py (per-layer LogReg + MLP probe, train/val split, AUROC reporting)",
+    "adaptive_se.py (3->5->10 sample ramp, cost_save + auroc_delta)",
+    "metrics.py (AUROC + ECE + Brier + AURC + Wilcoxon + stratified-quartile)"
+  ],
+  "next_step": "Set HF_TOKEN and run launch_full_sweep.sh once Qwen/Llama weights can download reliably (~14h sampling + ~4h NLI = ~19h total on 5070 alone)."
+}

@@ -1,0 +1,12 @@
+Term Project 주제 : LLM 모델이 모르는 건 모른다고 대답하며 Output이 나오기 전에 Hallucination이 발생함을 알 수 있나?
+
+1. Detecting Hallucinations in Large Language Models Using Semantic Entropy
+ - 여러 생성 결과의 “의미적 일관성”을 기반으로 LLM의 hallucination 가능성과 uncertainty를 추정하는 논문.
+2. Do LLMs Know When to NOT Answer? Investigating Abstention Abilities of Large Language Models
+ - LLM이 확신이 없을 때 실제로 답변을 거부(“모르겠습니다”)할 수 있는지를 평가하고 분석한 논문.
+3. Know When You're Wrong: Aligning Confidence with Correctness for LLM Error Detection
+ - 모델의 confidence와 실제 correctness 간 불일치를 분석하고 calibration을 통해 오류 탐지를 개선하려는 논문.
+4. Large Language Models Cannot Self-Correct Reasoning Yet
+ - LLM이 자신의 추론 오류를 스스로 검증 및 수정하는 능력이 아직 제한적임을 실험적으로 보인 논문.
+5. SelectLLM: Calibrating LLMs for Selective Prediction
+ - uncertainty 기반 calibration을 통해 위험한 질문에서는 답변 대신 abstain하도록 만드는 selective generation 논문.

@@ -1,0 +1,10 @@
+Term Project 주제: Transformer 뿐만 아니라 비슷한 유형의 모델을 같은 성능으로 경량화를 진행
+
+1. Performer: Rethinking Attention with FAVOR+
+ -  Kernel approximation 기반 FAVOR+ attention을 사용해 기존 Transformer의 quadratic attention complexity를 linear complexity로 줄인 efficient Transformer 논문.
+2. Linformer: Self-Attention with Linear Complexity
+ -  Self-attention의 key/value를 low-rank projection으로 압축해 메모리 사용량과 연산량을 크게 줄인 경량 Transformer 구조.
+3. Longformer: The Long-Document Transformer
+ -  Sliding-window 기반 sparse/local attention을 적용해 긴 sequence를 효율적으로 처리할 수 있도록 설계된 Transformer 구조.
+4. Mamba: Linear-Time Sequence Modeling with Selective State Spaces
+ -  Self-attention 대신 Selective State Space Model(SSM)을 활용해 linear-time sequence modeling과 높은 inference efficiency를 구현한 Transformer 대체 아키텍처.
