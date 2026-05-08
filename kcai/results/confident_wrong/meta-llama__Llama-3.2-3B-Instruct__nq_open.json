@@ -1,0 +1,1477 @@
+{
+  "n_records": 1000,
+  "greedy_acc": 0.417,
+  "by_metric": {
+    "C_SE_disc": {
+      "ece": 0.23130117070992923,
+      "four_cell": {
+        "high_correct": 274,
+        "high_wrong": 278,
+        "low_correct": 143,
+        "low_wrong": 305,
+        "median_threshold": -2.0253262207700673,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 268,
+        "wrong_in_top_q": 113,
+        "rate": 0.4216417910447761
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.65,
+          "threshold": -0.8018185525433372
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.62,
+          "threshold": -1.3592367006650063
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.5733333333333334,
+          "threshold": -1.6094379124341003
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.5225,
+          "threshold": -1.8343719702816235
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.51,
+          "threshold": -2.0253262207700673
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.48833333333333334,
+          "threshold": -2.1639556568820564
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.4828571428571429,
+          "threshold": -2.1639556568820564
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.4575,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.44333333333333336,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.417,
+          "threshold": -2.3025850929940455
+        }
+      ]
+    },
+    "C_SE_logp": {
+      "ece": 0.21537326221298428,
+      "four_cell": {
+        "high_correct": 259,
+        "high_wrong": 241,
+        "low_correct": 158,
+        "low_wrong": 342,
+        "median_threshold": -1.9724758431362144,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 103,
+        "rate": 0.412
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.66,
+          "threshold": -0.7555863772688846
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.615,
+          "threshold": -1.2579802915380163
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.57,
+          "threshold": -1.5456611347862508
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.5425,
+          "threshold": -1.8013136042030324
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.518,
+          "threshold": -1.9724185155580292
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.49666666666666665,
+          "threshold": -2.103465677839778
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.48142857142857143,
+          "threshold": -2.1556818661241532
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.455,
+          "threshold": -2.276221611219134
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.4255555555555556,
+          "threshold": -2.2889921417958656
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.417,
+          "threshold": -2.300884357302418
+        }
+      ]
+    },
+    "C_logp": {
+      "ece": 0.23070873017213903,
+      "four_cell": {
+        "high_correct": 277,
+        "high_wrong": 223,
+        "low_correct": 140,
+        "low_wrong": 360,
+        "median_threshold": -0.44723579450644,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 94,
+        "rate": 0.376
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.7,
+          "threshold": -0.1729163200214331
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.645,
+          "threshold": -0.2594781725992239
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.6233333333333333,
+          "threshold": -0.33416688400016065
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.6,
+          "threshold": -0.39085109928863077
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.554,
+          "threshold": -0.44697776333382516
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.5133333333333333,
+          "threshold": -0.5021514245548481
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.49714285714285716,
+          "threshold": -0.5615365592894647
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.47125,
+          "threshold": -0.6357624584458248
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.4444444444444444,
+          "threshold": -0.736902537152173
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.417,
+          "threshold": -1.2898027274879191
+        }
+      ]
+    }
+  },
+  "disagreement_counts": {
+    "C_SE_disc_high__C_SE_logp_low": 56,
+    "C_SE_disc_low__C_SE_logp_high": 4,
+    "C_SE_disc_high__C_logp_low": 157,
+    "C_SE_disc_low__C_logp_high": 105,
+    "C_SE_logp_high__C_logp_low": 132,
+    "C_SE_logp_low__C_logp_high": 132
+  },
+  "danger_examples": [
+    {
+      "id": "nq_844",
+      "question": "what does g stand for in ncis los angeles",
+      "gold": [
+        "Grisha"
+      ],
+      "greedy": "In NCIS: Los Angeles, \"NCIS\" stands for Naval Criminal Investigative Service.",
+      "samples": [
+        "NCIS: Los Angeles doesn't explicitly state what \"g\" stands for, but it is often speculated to be \"Glendale\" or \"Great\" by fans, given the show is set in Los Angeles.",
+        "In the show NCIS: Los Angeles, \"NCIS\" stands for Naval Criminal Investigative Service.",
+        "In NCIS: Los Angeles, \"NCIS\" stands for Naval Criminal Investigative Service.",
+        "In NCIS: Los Angeles, \"NCIS\" stands for Naval Criminal Investigative Service.",
+        "In NCIS: Los Angeles, \"NCIS\" stands for Naval Criminal Investigative Service.",
+        "In NCIS Los Angeles, 'NCIS' stands for Naval Criminal Investigative Service.",
+        "In NCIS: Los Angeles, \"NCIS\" typically stands for \"Naval Criminal Investigative Service.\"",
+        "In NCIS: Los Angeles, \"NCIS\" stands for Naval Criminal Investigative Service.",
+        "In NCIS: Los Angeles, \"NCIS\" stands for \"Naval Criminal Investigative Service.\"",
+        "In NCIS: Los Angeles, \"NCIS\" stands for Naval Criminal Investigative Service."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.19679862656731018,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_448",
+      "question": "all the motor neurons that control the skeletal muscles are",
+      "gold": [
+        "efferent nerves",
+        "Somatic",
+        "Somatic motor neurons"
+      ],
+      "greedy": "All motor neurons that control skeletal muscles are efferent neurons.",
+      "samples": [
+        "The primary motor neurons that control skeletal muscles are efferent neurons, specifically proprioceptive sensory neurons, that synapse with the motor endplates to activate muscle contraction.",
+        "The motor neurons responsible for controlling skeletal muscles are known as efferent neurons.",
+        "The motor neurons that control skeletal muscles are efferent neurons.",
+        "All motor neurons that control skeletal muscles are efferent neurons.",
+        "They are directly innervated by motor neurons.",
+        "All motor neurons that control skeletal muscles are efferent neurons, specifically motor neurons of the somatic nervous system.",
+        "They are all efferent neurons.",
+        "They are efferent neurons.",
+        "Answer: Somatic motor neurons (somatic efferents).",
+        "All motor neurons that control skeletal muscles are efferent neurons, as they carry signals from the central nervous system to skeletal muscles to produce muscle contraction."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.2331386624182277,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_2000",
+      "question": "the region that stretches between the black and caspian seas",
+      "gold": [
+        "The Caucasus Mountains",
+        "Caucasus Mountains"
+      ],
+      "greedy": "The region that stretches between the Black and Caspian seas is known as the Caucasus.",
+      "samples": [
+        "The region that stretches between the Black Sea and the Caspian Sea is known as the Caucasus.",
+        "The region that stretches between the Black and Caspian seas is the Caucasus.",
+        "The region that stretches between the Black and Caspian seas is known as the Caucasus.",
+        "The region that stretches between the Black Sea and the Caspian Sea is known as the Caucasus.",
+        "The region that stretches between the Black Sea and the Caspian Sea is called the Caucasus.",
+        "The region that stretches between the Black Sea and the Caspian Sea is called the Caucasus region.",
+        "The region that stretches between the Black and Caspian seas is the Caucasus region, which includes countries such as Armenia, Azerbaijan, Georgia, and parts of Russia.",
+        "The region that stretches between the Black and Caspian seas is known as the Caucasus.",
+        "The region that stretches between the Black Sea and the Caspian Sea is the Caucasus.",
+        "The region that stretches between the Black and Caspian Seas is known as the Caucasus."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.28457106141929644,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_1987",
+      "question": "when was the design period known as art deco",
+      "gold": [
+        "1910–1939"
+      ],
+      "greedy": "The Art Deco design period is generally considered to have been from the 1920s to the 1940s, roughly spanning from 1920 to 1940.",
+      "samples": [
+        "The Art Deco design period is generally considered to have been from the 1920s to the 1940s, specifically from around 1920 to 1940.",
+        "The Art Deco design period lasted from approximately 1920 to 1940.",
+        "The Art Deco design period spanned from approximately 1920 to 1940, with some variations. It emerged in the early 1920s and peaked in the late 1920s to early 1930s, before gradually declining in popularity by the late 1930s and eventually falling out of",
+        "The Art Deco design period typically spanned from the 1920s to the 1940s, roughly from 1920 to 1941.",
+        "The Art Deco design period was from approximately 1920 to 1940.",
+        "The Art Deco design period is generally considered to have been from the 1920s to the 1940s.",
+        "Art Deco design period is generally considered to be between 1920 and 1940.",
+        "Art Deco as a design period is typically dated from the late 1920s to the late 1940s, with the peak period being around 1930-1939.",
+        "The Art Deco design period is generally considered to be between 1920 and 1940.",
+        "The Art Deco design period occurred from approximately 1920 to 1940."
+      ],
+      "se_discrete": 0.9404479886553263,
+      "se_logprob": 0.8765047162133167,
+      "C_SE_disc": -0.9404479886553263,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_2051",
+      "question": "when were the first general elections held in independent india",
+      "gold": [
+        "1951–52"
+      ],
+      "greedy": "The first general elections in independent India were held between October 25, 1951, and February 21, 1952.",
+      "samples": [
+        "The first general elections in independent India were held between October 25, 1951, and February 21, 1952.",
+        "The first general elections in independent India were held between October 25, 1951, and February 21, 1952.",
+        "The first general elections in independent India were held in 1951-52.",
+        "The first general elections in independent India were held in 1952.",
+        "The first general elections in independent India were held from October 25, 1951, to February 21, 1952.",
+        "The first general elections in independent India were held in 1952.",
+        "The first general elections in independent India were held in 1952.",
+        "The first general elections in independent India were held between October 25, 1951, and February 21, 1952.",
+        "The first general elections in independent India were held between October 25, 1951 and February 21, 1952.",
+        "The first general elections in independent India were held in 1952."
+      ],
+      "se_discrete": 0.6931471805599453,
+      "se_logprob": 0.6922425956876209,
+      "C_SE_disc": -0.6931471805599453,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_342",
+      "question": "when did the golden state warriors win the finals",
+      "gold": [
+        "1956",
+        "1947",
+        "1975",
+        "2017",
+        "2015"
+      ],
+      "greedy": "The Golden State Warriors have won the NBA Finals 7 times:\n\n1. 1947: Their first NBA championship, as the Philadelphia Warriors.\n2. 1956: Their second NBA championship, also as the Philadelphia Warriors.\n3. 1975: Their third NBA championship, as the Golden State Warriors.\n4",
+      "samples": [
+        "The Golden State Warriors won the NBA Finals in 2015, 2017, 2018, and 2022.",
+        "The Golden State Warriors have won the NBA finals multiple times. \n\nHere are some of their notable wins:\n\n- 1947 NBA Finals (BAA)\n- 1956 NBA Finals\n- 1975 NBA Finals\n- 2015 NBA Finals\n- 2017 NBA Finals\n- 2018 NBA",
+        "The Golden State Warriors have won the NBA Finals 7 times. Here are the years they won:\n\n1. 1947 NBA World Championship (as Philadelphia Warriors)\n2. 1956 NBA World Championship (as Philadelphia Warriors)\n3. 1975 NBA ABA World Championship (as Golden State Warriors)\n4.",
+        "The Golden State Warriors have won the NBA Finals 7 times:\n\n1. 1947\n2. 1956\n3. 1975\n4. 2015\n5. 2017\n6. 2018\n7. 2022",
+        "The Golden State Warriors have won the NBA finals 7 times:\n\n1. 1947, \n2. 1956, \n3. 1975, \n4. 2015, \n5. 2017, \n6. 2018, \n7. 2022",
+        "The Golden State Warriors have won the NBA Finals multiple times. \n\nThey won:\n\n- 1947 NBA Championship: Their first NBA title, which was before the NBA-ABA rivalry.\n- 1956 NBA Finals\n- 1975 NBA Finals\n- 2015 NBA Finals\n- 2017 NBA Finals",
+        "The Golden State Warriors have won the NBA Finals 7 times: \n\n1. 1947 NBA Championship\n2. 1956 NBA Championship\n3. 1975 NBA Championship\n4. 2015 NBA Championship\n5. 2017 NBA Championship\n6. 2018 NBA Championship\n7.",
+        "The Golden State Warriors won the NBA championship 7 times: \n\n- 1947 (as Philadelphia Warriors)\n- 1956\n- 1975\n- 2015\n- 2017\n- 2018",
+        "The Golden State Warriors have won the NBA Finals 7 times:\n\n1. 1947: Their first championship, which was their first championship in the BAA/NBA.\n2. 1956\n3. 1975\n4. 2015\n5. 2017\n6. 2018",
+        "The Golden State Warriors last won the NBA championship in 2022, sweeping the Boston Celtics in the NBA Finals."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.3108101461672432,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_789",
+      "question": "what is the 180 degree line of longitude called",
+      "gold": [
+        "180th meridian or antimeridian",
+        "180th meridian",
+        "antimeridian"
+      ],
+      "greedy": "The 180 degree line of longitude is called the International Date Line.",
+      "samples": [
+        "The 180-degree line of longitude is called the International Date Line (IDL) or the Prime Meridian.",
+        "The 180° line of longitude that passes through the middle of the Earth is called the International Date Line, specifically the 180° meridian.",
+        "The 180 degree line of longitude is called the International Date Line (IDL).",
+        "The 180 degree line of longitude is called the International Date Line (IDL).",
+        "The 180-degree line of longitude is called the International Date Line (IDL).",
+        "The 180° line of longitude is called the International Date Line.",
+        "The 180 degree line of longitude is called the \"International Date Line\".",
+        "The 180 degree line of longitude is called the **International Date Line**.",
+        "The 180° line of longitude is called the \"Antimeridian\" or the \"International Date Line\".",
+        "The 180° line of longitude is called the International Date Line (IDL)."
+      ],
+      "se_discrete": 0.9404479886553263,
+      "se_logprob": 0.8412639471759572,
+      "C_SE_disc": -0.9404479886553263,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_2721",
+      "question": "which site of an enzyme is called allosteric site",
+      "gold": [
+        "regulatory site"
+      ],
+      "greedy": "The allosteric site is a separate binding site on an enzyme where an effector molecule binds to regulate the enzyme's activity, distinct from the active site where the substrate binds.",
+      "samples": [
+        "The site of an enzyme that is called an allosteric site is the site other than the active site where an allosteric effector binds, affecting enzyme activity.",
+        "The site on an enzyme other than the active site where a regulator molecule can bind to alter the enzyme's activity is called the allosteric site.",
+        "The allosteric site is a separate binding site on an enzyme that is not the active site, where a substrate or other molecules bind to regulate enzyme activity.",
+        "The site on an enzyme that is called an allosteric site is not the active site, but rather a separate site that binds to a molecule, such as an allosteric ligand or inhibitor, which can cause a conformational change in the enzyme, thereby affecting its activity.",
+        "The site on an enzyme that binds to an allosteric effector is called the allosteric site.",
+        "The site of an enzyme that is called the allosteric site is outside the active site, where regulatory molecules can bind to control the enzyme's activity.",
+        "The allosteric site is a separate binding site on an enzyme where an effector molecule can bind and alter the enzyme's activity.",
+        "The allosteric site is the binding site on an enzyme other than the active site where an effector molecule binds to regulate enzyme activity.",
+        "The allosteric site is a regulatory site located on an enzyme that is separate from the active site, where ligands (e.g., molecules) bind to modulate enzyme activity.",
+        "The allosteric site is the binding site on an enzyme where an effector molecule can bind to alter the enzyme's activity, shape, or conformation, causing a change in its activity or substrate binding properties."
+      ],
+      "se_discrete": 0.9404479886553263,
+      "se_logprob": 0.9310316242211419,
+      "C_SE_disc": -0.9404479886553263,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_1500",
+      "question": "where do kidneys for kidney transplant come from",
+      "gold": [
+        "living-donor"
+      ],
+      "greedy": "Kidneys for kidney transplant can come from two main sources:\n\n1. **Living Donors**: Living individuals, usually family members or friends, who donate one of their healthy kidneys to the recipient.\n2. **Deceased Donors**: Organs from individuals who have registered to be organ donors or whose families have given consent",
+      "samples": [
+        "Kidneys for transplantation typically come from:\n\n1. Living donors, usually a family member or friend.\n2. Deceased donors, who gave consent for their organs to be donated after their passing.\n3. Organ procurement organizations, which collect and distribute donated kidneys to recipients.\n4. Cadaveric donation, where deceased individuals",
+        "Kidneys for kidney transplants can come from two sources:\n\n1. Living donors: Family members or altruistic donors can donate one kidney to an individual in need.\n2. Deceased donors: Kidneys can also be retrieved from deceased individuals who have registered as organ donors or whose families have given permission for organ donation after",
+        "Kidneys for transplantation can come from:\n\n1. Deceased donors: Donated after death, with consent from the donor's family.\n2. Living donors: Family members or close friends who are genetically matched to the recipient.\n3. Brain-dead donors: Donors who are declared brain dead but still have functioning organs",
+        "Kidneys for kidney transplants can come from:\n\n1. Living donors: A living person who voluntarily donates one of their kidneys to another person in need.\n2. Deceased donors: People who have registered to be organ donors before their death, and who have registered their kidneys to be donated after death.\n3.",
+        "Kidneys for kidney transplant can come from two main sources:\n\n1. Living donors: A living individual donates one of their healthy kidneys to a recipient.\n2. Deceased donors: Kidneys are obtained from donors who have registered to be organ donors or whose families have given consent for organ donation after their death, typically",
+        "Kidneys for kidney transplant come from two main sources:\n\n1. **Living donors**: Family members or friends who are compatible with the recipient and choose to donate a kidney. There are typically 2 living donors who can donate 1 kidney.\n2. **Deceased donors**: People who have registered to be organ donors and",
+        "Kidney transplants can come from two main sources: \n\n1. Living donors, typically a family member or friend.\n2. Deceased donors, whose organs are donated by registered donors or their families after their death.",
+        "Kidney transplants can come from two main sources:\n\n1. **Living Donor**: A living person, usually a family member or friend, donates one of their healthy kidneys to the recipient.\n2. **Deceased Donor**: A kidney can also be obtained from a deceased person who has registered to be an",
+        "Kidney donors can be: \n\n1. Living individuals, who are usually family members or friends (e.g., family members, friends of friends).\n2. Deceased individuals who have registered to be organ donors, or their families may agree to donate on their behalf.\n3. Donation from living individuals with certain medical conditions",
+        "Kidneys for kidney transplant typically come from:\n\n1. Living donors: Family members, friends, or acquaintances who voluntarily donate one of their healthy kidneys.\n2. Deceased donors: People who have registered to be organ donors, often designated by their families after their death.\n3. Deceased kidney donors: Some deceased"
+      ],
+      "se_discrete": 1.2206072645530173,
+      "se_logprob": 1.1644412183795962,
+      "C_SE_disc": -1.2206072645530173,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_361",
+      "question": "kings and queens of england in the 1900s",
+      "gold": [
+        "Elizabeth II",
+        "George VI",
+        "George V",
+        "Edward VII",
+        "Edward VIII"
+      ],
+      "greedy": "Here's a list of the monarchs of England in the 1900s:\n\n1. Queen Victoria (1837-1901)\n2. King Edward VII (1901-1910)\n3. King George V (1910-1936)",
+      "samples": [
+        "Here are the monarchs of England in the 1900s:\n\n- 1901-1910: Queen Victoria\n- 1910-1936: King Edward VII (son of Queen Victoria)\n- 1910-1936: King George V (son of King Edward VII)\n- 1936",
+        "Here is the list of monarchs of England in the 1900s:\n\n1. Queen Victoria (1837-1901) \n2. King Edward VII (1901-1910)\n3. King George V (1910-1936)",
+        "Here's a list of kings and queens of England in the 1900s:\n\n1. Queen Victoria (reigned: 1837-1901)\n2. King Edward VII (reigned: 1901-1910)\n3. King George V (reigned: 1910-1936)",
+        "Here's a list of the monarchs of the United Kingdom for the 1900s:\n\n1. Queen Victoria (1837-1901)\n2. King Edward VII (1901-1910)\n3. King George V (1910-1936)\n4. King Edward VIII (1936)\n5",
+        "Here's a list of the British monarchs of England for the 1900s:\n\n1. Queen Victoria (1837-1901) \n2. King Edward VII (1901-1910)\n3. King George V (1910-1936)\n4. King Edward VIII (1936)",
+        "Here's a list of the monarchs of England (which includes England, Scotland, and Wales, as part of the United Kingdom) for the 1900s:\n\n1. Queen Victoria (1837-1901)\n2. King Edward VII (1901-1910)\n3. King George V (191",
+        "Here's a list of the kings and queens of England in the 1900s:\n\n1. Queen Victoria (1837-1901)\n2. King Edward VII (1901-1910)\n3. King George V (1910-1936)",
+        "Here's a list of the monarchs of England in the 1900s:\n\n1. Queen Victoria (1837-1901)\n2. King Edward VII (1901-1910)\n3. King George V (1910-1936)",
+        "Here are the monarchs of England in the 1900s:\n\n1. Queen Victoria (1837-1901)\n2. King Edward VII (1901-1910)\n3. King George V (1910-1936)\n4. King Edward VIII (1936) \n5. King George VI",
+        "Here are the monarchs of England in the 1900s:\n\n1. Queen Victoria (reigned 1837-1901)\n2. King Edward VII (reigned 1901-1910)\n3. King George V (reigned 1910-1936)"
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.6025176701862607,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_573",
+      "question": "where in the constitution is the executive branch referenced",
+      "gold": [
+        "Article Two"
+      ],
+      "greedy": "The executive branch is referenced in Article II of the United States Constitution.",
+      "samples": [
+        "The executive branch is referenced in Article II of the United States Constitution.",
+        "The Executive Branch is referenced in Article II of the United States Constitution.",
+        "The Executive Branch is referenced in Article II of the United States Constitution, specifically Article II, Section 1, Clause 1, which states: \"The executive Power shall be vested in a President of the United States of America.\"",
+        "The executive branch is referenced in Article II of the United States Constitution, specifically in Section 2, which states: \n\n\"The President shall be Commander in Chief of the Army and Navy of the United States, and of the Militia of the several States, when called into the actual Service of the United States.\"",
+        "The executive branch is referenced in Article II of the United States Constitution.",
+        "Article II of the United States Constitution references the executive branch, specifically Article II, Section 1 (also known as the \"Office of the President\") and Article II, Section 3 (which outlines the role of the Vice President).",
+        "The executive branch is referenced in Article II of the United States Constitution, specifically in Section 2 and 3.",
+        "The executive branch is referenced in Article II of the United States Constitution.",
+        "The executive branch is referenced in Article II of the United States Constitution.",
+        "The executive branch is referenced in Article II of the US Constitution."
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.1393260957646245,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_2147",
+      "question": "actress who plays penelope garcia on criminal minds",
+      "gold": [
+        "Kirsten Simone Vangsness"
+      ],
+      "greedy": "The actress who plays Penelope Garcia on the TV show \"Criminal Minds\" is Kirsten Vangsness.",
+      "samples": [
+        "Paget Brewster played Penelope Garcia on the TV show \"Criminal Minds\".",
+        "The actress who plays Penelope Garcia on the TV series \"Criminal Minds\" is Kirsten Vangsness.",
+        "The actress who played Penelope Garcia on the TV series \"Criminal Minds\" is Paget Brewster.",
+        "The actress who plays Dr. Spencer Reid on Criminal Minds (not Penelope Garcia) is Kirsten Vangsness.",
+        "The actress who plays Penelope Garcia on the TV show \"Criminal Minds\" is Kirsten Vangsness.",
+        "The actress who plays Penelope Garcia on Criminal Minds is Kirsten Vangsness.",
+        "The actress who plays Penelope Garcia on the TV show \"Criminal Minds\" is Kirsten Vangsness.",
+        "Maria Bello plays Dr. Penelope Garcia on the TV show \"Criminal Minds\".",
+        "The actress who plays Penelope Garcia on the TV series \"Criminal Minds\" is Kirsten Vangsness.",
+        "Paget Brewster plays Dr. Emily Prentiss (previously Penelope Garcia) on the TV series \"Criminal Minds.\""
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.215314876194831,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_357",
+      "question": "name the four major layers of the earth in order",
+      "gold": [
+        "an outer silicate solid crust",
+        "a highly viscous mantle",
+        "a liquid outer core",
+        "a solid inner core"
+      ],
+      "greedy": "The four major layers of the Earth, in order, are:\n\n1. Crust\n2. Mantle\n3. Outer core\n4. Inner core",
+      "samples": [
+        "The four major layers of the Earth, in order, are:\n\n1. Crust (outermost)\n2. Mantle\n3. Outer Core\n4. Inner Core",
+        "The four major layers of the Earth are: \n\n1. Crust\n2. Mantle\n3. Outer Core\n4. Inner Core",
+        "The four major layers of the Earth, in order, are:\n\n1. Crust\n2. Mantle\n3. Outer core\n4. Inner core",
+        "The four major layers of the Earth, in order, are:\n\n1. Crust (outermost, ranging from 5-70 km thick)\n2. Mantle (thick, ranging from 2,900 km to 3,300 km thick)\n3. Outer core (liquid, ranging from 2",
+        "The four major layers of the Earth, in order, are:\n\n1. Crust (outermost layer)\n2. Mantle\n3. Outer core\n4. Inner core",
+        "The four major layers of the Earth, in order, are:\n\n1. Crust (outermost layer)\n2. Mantle\n3. Outer Core\n4. Inner Core",
+        "The four major layers of the Earth are:\n\n1. Crust (Outermost layer, typically 5-70 km thick)\n2. Mantle (Thick, viscous layer beneath the crust, approximately 2,900 km thick)\n3. Outer core (Liquid layer of iron and nickel, approximately 2",
+        "The four major layers of the Earth, in order, are:\n\n1. Crust\n2. Mantle\n3. Outer Core\n4. Inner Core",
+        "The four major layers of the Earth, in order, are:\n\n1. Crust\n2. Mantle\n3. Outer core\n4. Inner core",
+        "The four major layers of the Earth are:\n\n1. Crust\n2. Mantle\n3. Outer Core\n4. Inner Core"
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_551",
+      "question": "how many episodes in adventure time season 1",
+      "gold": [
+        "26"
+      ],
+      "greedy": "Adventure Time Season 1 has 13 episodes.",
+      "samples": [
+        "Adventure Time Season 1 consists of 13 episodes, which originally aired from April 5, 2010 to September 27, 2010.",
+        "Adventure Time Season 1 has 13 episodes.",
+        "There are 13 episodes in Adventure Time Season 1.",
+        "There are 13 episodes in Adventure Time Season 1.",
+        "There are 13 episodes in Adventure Time Season 1.",
+        "Adventure Time Season 1 has 13 episodes.",
+        "Adventure Time Season 1 has 13 episodes.",
+        "Adventure Time Season 1 has 13 episodes.",
+        "Adventure Time, Season 1, consists of 13 episodes.",
+        "Adventure Time Season 1 has 13 episodes."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2817763418037307,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_3522",
+      "question": "who is the leader of the ontario pc party",
+      "gold": [
+        "Patrick Walter Brown",
+        "Patrick Brown",
+        "Patrick Walter Brown MPP"
+      ],
+      "greedy": "As of my knowledge cutoff in 2023, the leader of the Ontario Progressive Conservative Party is Doug Ford.",
+      "samples": [
+        "Diane Finley is the current interim leader of the Ontario Progressive Conservative Party.",
+        "As of my cut-off knowledge in December 2023, the leader of the Ontario Progressive Conservative Party (PC) is Doug Ford.",
+        "As of my knowledge cutoff in 2023, the leader of the Ontario Progressive Conservative Party (PC) is Doug Ford.",
+        "As of my knowledge cutoff in 2023, Doug Ford is the current leader of the Ontario Progressive Conservative Party (PC Party).",
+        "As of my knowledge cutoff in 2023, the leader of the Ontario Progressive Conservative Party (PC) is Doug Ford.",
+        "As of my cut-off knowledge in 2023, the leader of the Ontario Progressive Conservative Party is Doug Ford.",
+        "As of my knowledge cutoff in 2023, the leader of the Ontario Progressive Conservative Party is Doug Ford.",
+        "The current leader of the Ontario Progressive Conservative Party of Canada is Doug Ford.",
+        "As of my cut-off date (December 2023), Doug Ford is the current Premier and leader of the Ontario Progressive Conservative Party (PC).",
+        "Pete Elliott is the current leader of the Ontario Progressive Conservative Party."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.3826481174564855,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "nq_2345",
+      "question": "when did the eagles win the super bowl",
+      "gold": [
+        "2017"
+      ],
+      "greedy": "The Philadelphia Eagles won Super Bowl LII (52) in 2018 by defeating the New England Patriots 41-33 on February 4, 2018.",
+      "samples": [
+        "The Philadelphia Eagles won Super Bowl LII (52) on February 4, 2018, defeating the New England Patriots 41-33.",
+        "The Philadelphia Eagles won Super Bowl LII (52) on February 4, 2018, by defeating the New England Patriots 41-33.",
+        "The Philadelphia Eagles won Super Bowl LII (52) in 2018 by defeating the New England Patriots 41-33 on February 4, 2018.",
+        "The Philadelphia Eagles won Super Bowl LII (52) in 2018, defeating the New England Patriots with a score of 41-33 on February 4, 2018.",
+        "The Philadelphia Eagles won Super Bowl LII (52) on February 4, 2018, by defeating the New England Patriots 41-33.",
+        "The Philadelphia Eagles won Super Bowl LII (52) on February 4, 2018, by defeating the New England Patriots 41-33.",
+        "The Philadelphia Eagles won Super Bowl LII (52) on February 4, 2018, by defeating the New England Patriots 41-33.",
+        "The Philadelphia Eagles won Super Bowl LII (52) on February 4, 2018, by defeating the New England Patriots 41-33.",
+        "The Philadelphia Eagles won Super Bowl LII (52) on February 4, 2018, by defeating the New England Patriots 41-33.",
+        "The Philadelphia Eagles won Super Bowl LII (52) on February 4, 2018, by defeating the New England Patriots 41-33."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_615",
+      "question": "which organelle is the site of atp production and storage",
+      "gold": [
+        "mitochondrion"
+      ],
+      "greedy": "The mitochondria is the organelle responsible for producing and storing ATP (adenosine triphosphate), the primary energy currency of the cell.",
+      "samples": [
+        "The mitochondria is the organelle that is the site of ATP production and storage.",
+        "The mitochondria is the organelle responsible for producing and storing ATP (adenosine triphosphate), the primary energy currency of the cell.",
+        "The mitochondria is the organelle where ATP is produced and stored.",
+        "The mitochondria is the organelle that is the site of ATP production and storage.",
+        "The mitochondria is the organelle where ATP (adenosine triphosphate) production and storage occurs.",
+        "The mitochondria is the site of ATP production and storage.",
+        "The mitochondria is the organelle responsible for the site of ATP (Adenosine Triphosphate) production and storage in cells.",
+        "The mitochondria is the site of ATP production and storage.",
+        "Mitochondria is the organelle responsible for producing and storing ATP (adenosine triphosphate), the energy currency of the cell.",
+        "The mitochondria are the organelles where ATP production and storage occur through the process of cellular respiration."
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.217731372149788,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_2177",
+      "question": "when will miraculous season 2 episode 11 be released",
+      "gold": [
+        "30 March 2018",
+        "27 October 2017"
+      ],
+      "greedy": "I don't have information on the release date of Miraculous Season 2 Episode 11.",
+      "samples": [
+        "I don't have the most up-to-date information on specific release dates for Miraculous Season 2, Episode 11. However, I can suggest checking the official Miraculous: Tales of Ladybug & Cat Noir or a reliable streaming platform like Netflix, Hulu, or Amazon Prime Video for the latest updates on",
+        "I couldn't find the most up-to-date information on Miraculous Season 2, Episode 11 release date. However, I can suggest checking the official Netflix website or the show's social media pages for the most recent updates.",
+        "I don't have real-time information. However, I can suggest some possible ways to find the release date for Miraculous Season 2, Episode 11.\n\nYou can check:\n\n1. The official Miraculous: Tales of Ladybug & Cat Noir website or social media pages.\n2. Netflix (if it",
+        "I don't have real-time information, but I can tell you that Miraculous: Tales of Ladybug & Cat Noir is a show with multiple seasons and episodes. Without specific information about which season Miraculous Season 2 Episode 11 refers to, I can tell you that the show has many seasons, however",
+        "I don't have information on a show called 'Miraculous Season 2 Episode 11'. However, 'Miraculous: Tales of Ladybug & Cat Noir' has had multiple seasons.",
+        "I don't have real-time information on the exact release date of Miraculous Season 2 Episode 11.",
+        "I don't have real-time information on \"Miraculous: Tales of Ladybug & Cat Noir\" releases. However, I can suggest checking the official Netflix page, the show's social media, or a reliable online entertainment news source for the most up-to-date information about upcoming episodes.",
+        "I'm unable to verify when Miraculous: Tales of Ladybug & Cat Noir Season 2, Episode 11 will be released.",
+        "I don't have information on the exact release date of Miraculous: Tales of Ladybug & Cat Noir Season 2 episode 11.",
+        "I don't have information on the release date of Miraculous Season 2 Episode 11."
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.209154949943082,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_2452",
+      "question": "who is the actress that plays penny on the big bang theory",
+      "gold": [
+        "Kaley Christine Cuoco"
+      ],
+      "greedy": "The actress who played Penny on the popular TV show \"The Big Bang Theory\" is Kaley Cuoco.",
+      "samples": [
+        "The actress who plays Penny on the popular TV show \"The Big Bang Theory\" is Kaley Cuoco.",
+        "The actress Kaley Cuoco plays Penny on the TV show \"The Big Bang Theory\".",
+        "The actress who played Penny in The Big Bang Theory is Kaley Cuoco.",
+        "Kaley Cuoco is the actress who plays Penny on the TV show \"The Big Bang Theory\".",
+        "The actress who played Penny on the TV show \"The Big Bang Theory\" is Kaley Cuoco.",
+        "The actress who played Penny on the popular TV show \"The Big Bang Theory\" is Kaley Cuoco.",
+        "Kaley Cuoco plays Penny on the Big Bang Theory.",
+        "The actress who plays Penny on the popular TV show \"The Big Bang Theory\" is Kaley Cuoco.",
+        "The actress who played Penny on the TV show \"The Big Bang Theory\" is Kaley Cuoco.",
+        "The actress who played Penny on \"The Big Bang Theory\" is Kaley Cuoco."
+      ],
+      "se_discrete": 0.6108643020548935,
+      "se_logprob": 0.638087688850861,
+      "C_SE_disc": -0.6108643020548935,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_1496",
+      "question": "what culture region is germany a part of",
+      "gold": [
+        "Central Germany"
+      ],
+      "greedy": "Germany is part of the Western European culture region.",
+      "samples": [
+        "Germany is part of the Western European culture region.",
+        "Germany is part of the Western European culture region.",
+        "Germany is part of the European culture region of Central Europe, but it is also often culturally associated with the larger region of Western Europe.",
+        "Germany is part of the European culture region of Central Europe and Western Europe.",
+        "Germany is part of the European continent and the Western European or Central European culture region.",
+        "Germany is part of the Western European and Central European culture region, but more specifically, it is considered part of the Germanic and Central European cultural sphere.",
+        "Germany is part of the Germanic culture region, specifically within the larger Western and Central European cultural sphere.",
+        "Germany is part of the Western European culture region.",
+        "Germany is part of the Germanic culture region of Central Europe.",
+        "Germany is part of the Western European culture region."
+      ],
+      "se_discrete": 1.4708084763221114,
+      "se_logprob": 1.3593947517879872,
+      "C_SE_disc": -1.4708084763221114,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_520",
+      "question": "the most common form of megalithic architecture in europe is",
+      "gold": [
+        "the portal tomb",
+        "portal tomb"
+      ],
+      "greedy": "The most common form of megalithic architecture in Europe is the dolmen.",
+      "samples": [
+        "The most common form of megalithic architecture in Europe is the dolmen.",
+        "The most common form of megalithic architecture in Europe is the dolmen.",
+        "The most common form of megalithic architecture in Europe is the Dolmen, particularly the Brodgar Henge in Orkney Islands, Scotland, but it is more characteristic for the Alps.",
+        "The most common form of megalithic architecture in Europe is the Dolmen, specifically the Portaldolmen (a chambered tomb) and the Cairn (a mound of stones).",
+        "The most common form of megalithic architecture in Europe is the dolmen.",
+        "The most common form of megalithic architecture in Europe is the Passage Tomb.",
+        "The most common form of megalithic architecture in Europe is the dolmen.",
+        "The most common form of megalithic architecture in Europe is the dolmen.",
+        "The most common form of megalithic architecture in Europe is the dolmen, which typically consists of a main stone slab (orthostat) supporting a horizontal stone slab ( lintel) on top.",
+        "The most common form of megalithic architecture in Europe is the dolmen, but more specifically, the dolmen is often associated with another type of megalithic structure, known as the stone circle or stone circle with a dolmen is not the most common, however, the 'circular cairn"
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.1876163935537192,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "nq_2377",
+      "question": "how many countries are a part of opec",
+      "gold": [
+        "14"
+      ],
+      "greedy": "There are 13 countries that are part of OPEC (Organization of the Petroleum Exporting Countries).",
+      "samples": [
+        "There are 13 countries that are part of OPEC (Organization of the Petroleum Exporting Countries).",
+        "There are 13 countries that are part of OPEC (Organization of the Petroleum Exporting Countries).",
+        "There are 13 countries that are part of OPEC (Organization of the Petroleum Exporting Countries): \n\n1. Algeria\n2. Angola\n3. Ecuador \n4. Iran\n5. Iraq\n6. Kuwait\n7. Libya\n8. Nigeria\n9. Qatar\n10. Saudi Arabia\n11.",
+        "There are 13 countries that are part of OPEC (Organization of the Petroleum Exporting Countries): \n\n1. Algeria\n2. Angola\n3. Ecuador \n4. Gabon\n5. Iran\n6. Iraq\n7. Kuwait\n8. Libya\n9. Nigeria\n10. Qatar\n11.",
+        "There are 13 countries that are part of OPEC (Organization of the Petroleum Exporting Countries).",
+        "There are 13 countries that are part of OPEC (Organization of the Petroleum Exporting Countries).",
+        "There are 13 countries that are part of OPEC (Organization of the Petroleum Exporting Countries).",
+        "As of my cut-off knowledge date (December 2023), there are 13 countries that are part of OPEC (Organization of the Petroleum Exporting Countries).",
+        "There are 13 member countries of OPEC: \n\n1. Algeria\n2. Angola\n3. Ecuador\n4. Iran\n5. Iraq\n6. Kuwait\n7. Libya\n8. Nigeria\n9. Qatar\n10. Saudi Arabia\n11. United Arab Emirates\n12. Venezuela\n13.",
+        "There are 13 countries that are part of OPEC (Organization of the Petroleum Exporting Countries): \n\n1. Algeria\n2. Angola\n3. Congo\n4. Ecuador \n5. Iran\n6. Iraq\n7. Libya \n8. Niger\n9. Qatar\n10. Saudi Arabia\n11."
+      ],
+      "se_discrete": 1.1682824501765625,
+      "se_logprob": 1.1535706432263695,
+      "C_SE_disc": -1.1682824501765625,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_2950",
+      "question": "what is the name of india 29 state",
+      "gold": [
+        "Rajasthan"
+      ],
+      "greedy": "The 29th state of India is Telangana.",
+      "samples": [
+        "That would be Sikkim.",
+        "The 29th state of India is Meghalaya",
+        "The 29th state of India is Telangana.",
+        "The name of the 29th state in India is Telangana",
+        "The 29th state of India is Telangana.",
+        "I need a bit more context. There are 28 states in India (not 29), and I'd like to know which one you are referring to.\n\nHowever, here's the list of 28 states in India:\n\n1. Andhra Pradesh\n2. Arunachal Pradesh\n3. Assam",
+        "Andhra Pradesh is the 29th state in India.",
+        "The answer is Telangana.",
+        "The 29th state in India is Telangana.",
+        "The 29th state of India is Telangana."
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.0629981111617322,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_3365",
+      "question": "when was the last time arsenal win premier league",
+      "gold": [
+        "2003–04"
+      ],
+      "greedy": "Arsenal last won the Premier League in the 2003-04 season.",
+      "samples": [
+        "Arsenal last won the Premier League in the 2003-04 season under manager Arsène Wenger.",
+        "Arsenal last won the Premier League in the 2003-2004 season.",
+        "Arsenal's last Premier League title was in the 2003-04 season.",
+        "The last time Arsenal won the Premier League was in the 2003-04 season.",
+        "Arsenal last won the Premier League in the 2003-04 season.",
+        "Arsenal's most recent Premier League win was in the 2003-2004 season.",
+        "Arsenal last won the Premier League in the 2003-04 season.",
+        "Arsenal's last Premier League title win was in the 2003-04 season.",
+        "Arsenal last won the Premier League in the 2003-2004 season.",
+        "Arsenal last won the Premier League in the 2003-04 season under the management of Arsene Wenger."
+      ],
+      "se_discrete": 0.5004024235381879,
+      "se_logprob": 0.4899803508370275,
+      "C_SE_disc": -0.5004024235381879,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_993",
+      "question": "what is the female lion called in lion king",
+      "gold": [
+        "Nala"
+      ],
+      "greedy": "In the Lion King, the female lion is called a lioness.",
+      "samples": [
+        "In the Lion King, the queen is called a lioness, but the female lion in the movie is specifically referred to as \"Scar's mother\" being referred to as a lioness, but the main lioness and Simba's mother Sarabi is called a lioness, but the title given is more specifically to",
+        "In \"The Lion King\", a female lion is referred to as a \"lioness\" rather than having a specific, unique name, but in general, a female lion is called a lioness.",
+        "The female lion is called a lioness.",
+        "In \"The Lion King,\" the female lion is called a lioness.",
+        "In the Lion King, the female lion is referred to as a lioness.",
+        "In the Lion King, the female lions are commonly referred to as \"lionesses.\"",
+        "In the Lion King, the female lion is referred to as a lioness.",
+        "In the Lion King, the female lion is referred to as a \"lioness.\"",
+        "In the Lion King, the female lion's name is Sarabi.",
+        "The female lion is called a lioness."
+      ],
+      "se_discrete": 1.0888999753452235,
+      "se_logprob": 0.9323520148187345,
+      "C_SE_disc": -1.0888999753452235,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_3589",
+      "question": "the radiographic term used to describe the dense bone of the socket and septal crest is",
+      "gold": [
+        "the lamina dura",
+        "lamina dura",
+        "alveolar process"
+      ],
+      "greedy": "The radiographic term used to describe the dense bone of the socket and septal crest is \"alveolar crest\".",
+      "samples": [
+        "The radiographic term used to describe the dense bone of the socket and septal crest is the \"alveolar crest.\"",
+        "The radiographic term used to describe the dense bone of the socket and septal crest is the \"alveolar crest\".",
+        "The radiographic term used to describe the dense bone of the socket and septal crest is Alveolar ridge or \"ramus alveolar\".",
+        "The radiographic term used to describe the dense bone of the socket and septal crest is \"alveolar crest\".",
+        "The radiographic term used to describe the dense bone of the socket and septal crest is \"alveolar crest.\"",
+        "The radiographic term used to describe the dense bone of the socket and septal crest is Alveolar crest.",
+        "The radiographic term for dense bone of the socket and septal crest is the \"alveolar crest\" or more specifically the \"alveolar plate\"",
+        "The radiographic term used to describe the dense bone of the socket and septal crest is \"alveolar crest.\"",
+        "The radiographic term used to describe the dense bone of the socket and septal crest is alveolar crest.",
+        "The radiographic term used to describe the dense bone of the socket and septal crest is Alveolar crest."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.49126389184040553,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_2475",
+      "question": "who designed the traffic circle in long beach ca",
+      "gold": [
+        "Werner Ruchti",
+        "German engineer Werner Ruchti"
+      ],
+      "greedy": "I couldn't find any specific information on who designed the traffic circle in Long Beach, CA.",
+      "samples": [
+        "The traffic circle in Long Beach, California is the Grand Canal Shores traffic circle. It was designed by Italian-born landscape architect and urban planner, Charles F. Liedtke and built in 1938 but was done under the direction of engineer, Richard N. Piersol",
+        "I couldn't find a specific information on the designer of the traffic circle in Long Beach, CA.",
+        "I couldn't find any information on a specific traffic circle in Long Beach, CA, and its designer.",
+        "I don't have information on a specific traffic circle in Long Beach, CA.",
+        "I couldn't find any specific information about a notable traffic circle in Long Beach, CA being designed by a specific person.",
+        "I am unable to verify who designed the traffic circle in Long Beach, CA.",
+        "I do not have information on a traffic circle in Long Beach, CA.",
+        "I do not have any information about a traffic circle in Long Beach, CA.",
+        "I couldn't find any information on a traffic circle in Long Beach, CA.",
+        "I couldn't find any specific information on a famous traffic circle in Long Beach, CA. However, Long Beach is home to the Queen Mary's Carillon, and the nearby Pike Outlets."
+      ],
+      "se_discrete": 1.1682824501765625,
+      "se_logprob": 0.9911934484127344,
+      "C_SE_disc": -1.1682824501765625,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_3084",
+      "question": "how many seasons of prison break are on netflix",
+      "gold": [
+        "five"
+      ],
+      "greedy": "There are 5 seasons of Prison Break available on Netflix.",
+      "samples": [
+        "There are 5 seasons of Prison Break available on Netflix.",
+        "There are 5 seasons of Prison Break available on Netflix.",
+        "There are 5 seasons of Prison Break available on Netflix.",
+        "There are 5 seasons of Prison Break (2005-2009) available on Netflix.",
+        "There are 5 seasons of Prison Break on Netflix.",
+        "There are 5 seasons of Prison Break available on Netflix.",
+        "There are 5 seasons of Prison Break (2005-2009, 2017) available on Netflix.",
+        "There is 1 season of the TV series Prison Break available on Netflix.",
+        "There are 5 seasons of Prison Break (2005-2009) available on Netflix.",
+        "As of my knowledge cutoff in 2023, there are 5 seasons of Prison Break available on Netflix."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.2669944885580862,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_1371",
+      "question": "who has won the 2018 formula one australia grand prix tournament",
+      "gold": [
+        "Sebastian Vettel",
+        "Ferrari driver Sebastian Vettel"
+      ],
+      "greedy": "The 2018 Australian Grand Prix was won by Lewis Hamilton, driving for Mercedes.",
+      "samples": [
+        "The 2018 Australian Grand Prix was won by Sebastian Vettel, driving for Ferrari.",
+        "The 2018 Australian Grand Prix was won by Sebastian Vettel, driving for Ferrari.",
+        "The winner of the 2018 Australian Grand Prix was Lewis Hamilton of Mercedes.",
+        "The 2018 Australian Grand Prix was won by Lewis Hamilton, who drove for Mercedes.",
+        "Sebastian Vettel won the 2018 Australian Grand Prix, which was the first round of the 2018 Formula One World Championship.",
+        "The 2018 Australian Grand Prix was won by Sebastian Vettel of Ferrari.",
+        "Lewis Hamilton won the 2018 Australian Grand Prix, driving for Mercedes.",
+        "The 2018 Formula One Australian Grand Prix was won by Lewis Hamilton.",
+        "The winner of the 2018 Australian Grand Prix was Sebastian Vettel of Ferrari.",
+        "The 2018 Australian Grand Prix was won by Lewis Hamilton, driving for Mercedes, on March 25, 2018."
+      ],
+      "se_discrete": 1.4184836619456564,
+      "se_logprob": 1.4017411545495602,
+      "C_SE_disc": -1.4184836619456564,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_1617",
+      "question": "trick taking card game name derived from spanish for man",
+      "gold": [
+        "Skat"
+      ],
+      "greedy": "The trick-taking card game derived from Spanish for \"man\" is \"Truco\".",
+      "samples": [
+        "The trick-taking card game derived from the Spanish word for \"man\" is \"Gin\".",
+        "The trick-taking card game name derived from Spanish for \"man\" is \"Truco\".",
+        "The trick-taking card game name derived from the Spanish word for man is 'Truco'.",
+        "The card game \"Truco\" is derived from the Spanish word \"truco,\" meaning \"trick\" or \"pride.\"",
+        "The trick-taking card game name \"Truco\" is derived from the Spanish word \"truco,\" which means \"trick\" or \"deceiver.\"",
+        "The trick-taking card game name \"Truco\" is indeed derived from the Spanish word for \"man\".",
+        "The trick-taking card game derived from the Spanish word for \"man\" is \"Truco.\"",
+        "The trick-taking card game derived from the Spanish word \"hombre\" (meaning \"man\") is \"Whist\".",
+        "The trick-taking card game you are referring to is \"Truco\".",
+        "The trick-taking card game name derived from the Spanish word for \"man\" is \"War\"."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.442200861987803,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "nq_2428",
+      "question": "the temperature of gas is proportional to the",
+      "gold": [
+        "volume"
+      ],
+      "greedy": "The temperature of a gas is proportional to the average kinetic energy of its molecules.",
+      "samples": [
+        "The temperature of a gas is proportional to its average kinetic energy.",
+        "The temperature of a gas is proportional to the average kinetic energy of the particles that make up the gas.",
+        "The temperature of a gas is directly proportional to the average kinetic energy of its molecules.",
+        "The temperature of a gas is proportional to the average kinetic energy of its molecules.",
+        "The temperature of a gas is proportional to the average kinetic energy of its molecules.",
+        "The temperature of a gas is proportional to its average kinetic energy.",
+        "The temperature of a gas is proportional to the average kinetic energy of its molecules.",
+        "The temperature of a gas is proportional to its average kinetic energy.",
+        "The temperature of a gas is proportional to the average kinetic energy of the gas molecules.",
+        "The temperature of a gas is proportional to the average kinetic energy of its molecules."
+      ],
+      "se_discrete": 0.8979457248567797,
+      "se_logprob": 0.8861067882250325,
+      "C_SE_disc": -0.8979457248567797,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_3495",
+      "question": "who was the declaration of independence written for",
+      "gold": [
+        "the Second Continental Congress"
+      ],
+      "greedy": "The Declaration of Independence was written for the 13 American colonies to formally declare their independence from Great Britain and establish the United States of America as a sovereign nation.",
+      "samples": [
+        "The Declaration of Independence was written primarily for the 13 American colonies to formally announce their separation from Great Britain and establish their independence.",
+        "The Declaration of Independence was written by a committee of five individuals representing the 13 American colonies: \n\n1. Thomas Jefferson (primary author)\n2. John Adams\n3. Benjamin Franklin\n4. Robert Livingston\n5. Roger Sherman",
+        "The Declaration of Independence was written for the 13 American colonies that sought independence from Great Britain.",
+        "The Declaration of Independence was written for the 13 American colonies to formally declare their independence from Great Britain and establish the United States of America as a sovereign nation.",
+        "The Declaration of Independence was written primarily for the 13 American colonies to formally announce their separation from Great Britain and establish the United States of America as a sovereign nation.",
+        "The Declaration of Independence was written for the 13 American colonies to formally declare their independence from Great Britain and establish the United States of America as a sovereign nation.",
+        "The Declaration of Independence was written for the 13 American colonies to declare their freedom from Great Britain.",
+        "The Declaration of Independence was written for the 13 American colonies that declared their independence from Great Britain.",
+        "The Declaration of Independence was written primarily for the American colonies in the United States. It was adopted by the Continental Congress on July 4, 1776, to formally declare the 13 American colonies' independence from Great Britain and establish the United States of America as a sovereign nation.",
+        "The Declaration of Independence was written for the 13 American colonies to formally declare their independence from Great Britain and establish the United States of America as a sovereign nation."
+      ],
+      "se_discrete": 1.4184836619456562,
+      "se_logprob": 1.3686921875591938,
+      "C_SE_disc": -1.4184836619456562,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_321",
+      "question": "star wars episode ii attack of the clones characters",
+      "gold": [
+        "C-3PO",
+        "Count Dooku / Darth Tyranus",
+        "Mace Windu",
+        "Yoda",
+        "R2-D2",
+        "Chancellor Palpatine / Darth Sidious",
+        "Padmé Amidala",
+        "Anakin Skywalker",
+        "Obi-Wan Kenobi"
+      ],
+      "greedy": "Here are some key characters from Star Wars: Episode II - Attack of the Clones:\n\n1. Anakin Skywalker (Hayden Christensen)\n2. Obi-Wan Kenobi (Ewan McGregor)\n3. Padmé Amidala (Natalie Portman)\n4. Jango Fett (Temu",
+      "samples": [
+        "Here are some main characters from Star Wars: Episode II - Attack of the Clone:\n\n1. Anakin Skywalker (Hayden Christensen)\n2. Obi-Wan Kenobi (Ewan McGregor)\n3. Mace Windu (Samuel L. Jackson)\n4. Padmé Amidala (Natalie",
+        "Here are key characters from Star Wars: Episode II - Attack of the Clones:\n\n1. Anakin Skywalker (Hayden Christensen) - protagonist\n2. Obi-Wan Kenobi (Ewan McGregor) - Anakin's mentor\n3. Padmé Amidala (Natalie Portman) -",
+        "Key characters in Star Wars: Episode II - Attack of the Clone include:\n\n1. Anakin Skywalker / Darth Vader\n2. Obi-Wan Kenobi\n3. Padmé Amidala\n4. Jango Fett\n5. Chancellor Palpatine / Darth Sidious\n6. Mace Windu",
+        "In Star Wars: Episode II - Attack of the Clones, the main characters include:\n\n- Anakin Skywalker (Hayden Christensen)\n- Obi-Wan Kenobi (Ewan McGregor)\n- Padmé Amidala (Natalie Portman)\n- Jango Fett\n- Mace Windu",
+        "Here are the main characters from Star Wars: Episode II - Attack of the Clone:\n\n1. Anakin Skywalker (Hayden Christensen)\n2. Obi-Wan Kenobi (Ewan McGregor)\n3. Padmé Amidala (Natalie Portman)\n4. Jar Jar Binks (Ahmed Best",
+        "Here's a list of key characters from Star Wars: Episode II - Attack of the Clone:\n\n1. Anakin Skywalker (Hayden Christensen) - main protagonist\n2. Obi-Wan Kenobi (Ewan McGregor) - Anakin's mentor\n3. Padmé Amidala (Natalie Port",
+        "Here's a list of main characters in Star Wars: Episode II - Attack of the Clone:\n\n1. Anakin Skywalker (Hayden Christensen)\n2. Obi-Wan Kenobi (Ewan McGregor)\n3. Padmé Amidala (Natalie Portman)\n4. Mace Windu (Sam",
+        "Here are some key characters from Star Wars: Episode II - Attack of the Clones:\n\n1. Anakin Skywalker (played by Hayden Christensen)\n2. Obi-Wan Kenobi (played by Ewan McGregor)\n3. Padmé Amidala (played by Natalie Portman)\n4. Jango Fett",
+        "Here's a brief list of main characters from Star Wars: Episode II - Attack of the Clones:\n\n1. Anakin Skywalker ( Hayden Christensen)\n2. Obi-Wan Kenobi (Ewan McGregor)\n3. Padmé Amidala (Natalie Portman)\n4. Mace Windu (",
+        "Here's a list of main characters in Star Wars: Episode II - Attack of the Clones:\n\n1. Anakin Skywalker (Hayden Christensen) - The young Jedi Knight\n2. Obi-Wan Kenobi (Ewan McGregor) - Anakin's mentor\n3. Padmé Amidala (N"
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_2638",
+      "question": "who plays the doc in back to the future",
+      "gold": [
+        "Christopher Allen Lloyd"
+      ],
+      "greedy": "Christopher Lloyd plays the iconic role of Dr. Emmett \"Doc\" Brown in the Back to the Future trilogy.",
+      "samples": [
+        "Christopher Lloyd plays the role of Dr. Emmett \"Doc\" Brown in the Back to the Future trilogy.",
+        "Christopher Lloyd plays the iconic role of Dr. Emmett \"Doc\" Brown in the Back to the Future trilogy.",
+        "Christopher Lloyd plays Doc Brown in the \"Back to the Future\" trilogy.",
+        "Christopher Lloyd plays Dr. Emmett \"Doc\" Brown in the \"Back to the Future\" trilogy.",
+        "Christopher Lloyd plays Doc Brown in the \"Back to the Future\" trilogy.",
+        "Christopher Lloyd plays the iconic role of Dr. Emmett \"Doc\" Brown in the Back to the Future film trilogy.",
+        "Christopher Lloyd plays the iconic character of Dr. Emmett \"Doc\" Brown in the Back to the Future trilogy.",
+        "Christopher Lloyd plays the iconic character Doc Brown in the Back to the Future trilogy.",
+        "Christopher Lloyd plays the role of Dr. Emmett \"Doc\" Brown in the Back to the Future film trilogy.",
+        "Christopher Lloyd plays Doc Brown in the \"Back to the Future\" trilogy."
+      ],
+      "se_discrete": 0.8979457248567797,
+      "se_logprob": 0.9024728104893902,
+      "C_SE_disc": -0.8979457248567797,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_2027",
+      "question": "when was nepal declared a secular state in bs",
+      "gold": [
+        "January 15, 2007"
+      ],
+      "greedy": "Nepal was declared a secular state in 2006.",
+      "samples": [
+        "Nepal was declared a secular state in 2006.",
+        "Nepal was declared a secular state on 18th May 2006.",
+        "Nepal was declared a secular state on 18 December 2006.",
+        "Nepal was declared a secular state on 18 May 2006.",
+        "Nepal was declared a secular state in 2006.",
+        "Nepal declared a secular state on May 18, 2006.",
+        "Nepal was declared a secular state on 18 May 2006.",
+        "Nepal declared a secular state in 2006.",
+        "Nepal was declared a secular state on 18 May 2006.",
+        "Nepal was declared a secular state in 2006."
+      ],
+      "se_discrete": 0.9433483923290391,
+      "se_logprob": 0.9370058783429784,
+      "C_SE_disc": -0.9433483923290391,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_3375",
+      "question": "what time can you legally buy alcohol in michigan",
+      "gold": [
+        "7 a.m."
+      ],
+      "greedy": "In Michigan, you can legally buy alcohol at the following times:\n\n- Liquor stores: 9:00 AM to 2:00 AM\n- Grocery stores and supermarkets: 7:00 AM to 2:00 AM\n- Bars and restaurants: 7:00 AM to 2:00 AM",
+      "samples": [
+        "In Michigan, the minimum age to purchase and consume alcohol is 21 years old. However, you can purchase and consume beer and wine at some locations where minors are allowed (under parental or guardian accompaniment) if you are between 18 and 20 years old.",
+        "In Michigan, the minimum age to purchase or consume alcohol is 21 years old. \n\nAdditionally, there are some exceptions for individuals under 21 with parental consent, but they must be 18 years old to purchase and 21 to consume.",
+        "In Michigan, you can legally buy and purchase alcoholic beverages:\n\n* Liquor: On weekdays (Monday - Thursday), 8:00 AM to 1:00 AM\n* Liquor: On Fridays, Saturdays, and Sundays, 8:00 AM to 2:30 AM\n* Beer: On weekdays",
+        "In Michigan, you can purchase alcohol from an establishment licensed to sell liquor on Sundays. The hours vary by type of license:\n\n- Liquor stores: 9 AM - midnight\n- Bars, restaurants with a liquor license: 8 AM - 2:00 AM (next day)",
+        "In Michigan, you can legally buy or possess alcohol on Wednesdays and Saturdays from 12:00 p.m. to 7:00 a.m. the following day, due to the state's 4:20 a.m. cut-off for sales of intoxicating liquor, however, liquor stores must not sell",
+        "In Michigan, the age to purchase and consume alcohol is 21 years old.",
+        "In Michigan, you must be 21 years old to purchase and consume alcohol.",
+        "In Michigan, you can legally buy alcohol at the following times:\n\n- Liquor stores: Monday to Saturday, 9:00 AM - 11:00 PM\n- Bars and restaurants: Typically follow their own hours of operation, but usually open 7:00 AM - 2:00 AM, Monday to",
+        "In Michigan, the minimum age to purchase or consume alcohol is 21 years old. \n\n* 7 a.m. - 2 a.m. on Sundays (some exceptions apply)",
+        "In Michigan, you must be 21 years old to purchase or consume alcohol."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.216736033314284,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_3477",
+      "question": "who are the nbc olympic ice skating commentators",
+      "gold": [
+        "Terry Gannon",
+        "Johnny Weir",
+        "Charlie White",
+        "Andrea Joyce",
+        "Chris Vosters",
+        "Tara Lipinski",
+        "Luke Van Valin",
+        "Jonny Moseley",
+        "Tanith White"
+      ],
+      "greedy": "The current NBC Olympic ice skating commentators include:\n\n- Johnny Weir\n- Tara Lipinski\n- Terry Gannon\n- Terry Gannon's partner, and \n- Tara Lipinski's partner, and \n- Puckett",
+      "samples": [
+        "Current NBC Olympic ice skating commentators (as of 2023) include:\n\n* Johnny Weir\n* Terry Gannon \n* Tara Lipinski \n* Jimmy Johnson \n* Ross Rebagliati",
+        "For the NBC Olympic ice skating commentators, some current and past commentators include:\n\n- Johnny Weir\n- Tara Lipinski\n- Johnny Gresh\n- Darla Ward\n- Terry Gannon \n- Tara Lipinski and Johnny Weir",
+        "Current NBC Olympic ice skating commentators include:\n\n1. Johnny Weir \n2. Tara Lipinski \n3. Terry Gannon \n4. Ron Cagle",
+        "The current NBC Olympic ice skating commentators include:\n\n1. Johnny Weir\n2. Tara Lipinski\n3. Terry Gannon \n4. Johnny Weir and Terry Monk.",
+        "For NBC Olympic ice skating coverage, some of the main commentators include:\n\n- Johnny Weir\n- Tara Lipinski",
+        "Some NBC Olympic ice skating commentators include:\n\n- Terry Gannon\n- Johnny Weir\n- Terry Gannon",
+        "The current NBC Olympic ice skating commentators include:\n\n1. Johnny Weir\n2. Tara Lipinski",
+        "The primary NBC Olympic ice skating commentators include:\n\n1. Johnny Weir \n2. Tara Lipinski \n3. Pete Sampras \n4. Terry Gannon",
+        "The main NBC Olympic ice skating commentators include:\n\n1. Jonny Moseley \n2. Terry Gannon",
+        "The current main commentators for NBC Olympic ice skating coverage are:\n\n- Johnny Weir\n- Terry Gannon"
+      ],
+      "se_discrete": 1.4184836619456564,
+      "se_logprob": 1.3478568783954872,
+      "C_SE_disc": -1.4184836619456564,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_204",
+      "question": "what grade was arnold from hey arnold in",
+      "gold": [
+        "fourth"
+      ],
+      "greedy": "Arnold Shortman, the main character from the Nickelodeon animated series \"Hey Arnold!\", is a 4th-grader.",
+      "samples": [
+        "Arnold Shortman, the main character in the Nickelodeon animated series \"Hey Arnold!\", is a fourth-grader.",
+        "Arnold Shortman, the main character from the Nickelodeon show \"Hey Arnold!\", is a 4th grader.",
+        "Arnold Shortman, the main character from the Nickelodeon show \"Hey Arnold!\", is in the 4th grade.",
+        "Arnold Shortman, the main character from the Nickelodeon show \"Hey Arnold!\", is a fourth-grader.",
+        "Arnold Shortman from the Nickelodeon show \"Hey Arnold!\" was a 4th-grader.",
+        "Arnold Shortman from the Nickelodeon show \"Hey Arnold!\" was in the 4th grade.",
+        "Arnold Shortman, the main character from the Nickelodeon show \"Hey Arnold!\", is in the 4th grade.",
+        "Arnold Shortman, the main character from the Nickelodeon show \"Hey Arnold!\", is in the 4th grade.",
+        "In the animated TV series \"Hey Arnold!\", Arnold Shortman was in the 4th grade, but also attended P.S. 118.",
+        "Arnold Shortman from the TV show \"Hey Arnold!\" was a 4th grader."
+      ],
+      "se_discrete": 1.0888999753452235,
+      "se_logprob": 1.0259106820059058,
+      "C_SE_disc": -1.0888999753452235,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_2949",
+      "question": "who does the democratic republic of congo trade with",
+      "gold": [
+        "World Bank",
+        "Group of 77",
+        "SADC",
+        "China",
+        "Zambia",
+        "African Development Bank",
+        "WTO",
+        "Belgium",
+        "Kenya",
+        "AU",
+        "France",
+        "South Africa",
+        "IMF",
+        "Zimbabwe"
+      ],
+      "greedy": "The Democratic Republic of Congo (DRC) trades with several countries, including:\n\n* China: The DRC is one of China's largest trading partners in Africa, with China being a major supplier of goods such as machinery, electronics, and construction materials.\n* Belgium: As the former colonial power, Belgium remains a significant",
+      "samples": [
+        "The Democratic Republic of Congo is one of the largest exporters of:\n\n* Copper\n* Cobalt\n* Coltan\n* Diamonds\n* Timber\n* Agricultural products (coffee, rubber, and cocoa)\n\nThe Democratic Republic of Congo also imports goods from countries such as:\n\n* China (main trading partner and source of machinery",
+        "The Democratic Republic of Congo trades with several countries, with the top trading partners including China, Belgium, United Arab Emirates, India, and South Africa.",
+        "The Democratic Republic of Congo trades with various countries, including:\n\n1. Belgium (historical influence, but not a significant trading partner)\n2. China: largest trading partner for infrastructure and natural resource projects\n3. South Korea: major trading partner for infrastructure and technology\n4. India: significant trade in agricultural products and",
+        "The Democratic Republic of Congo trades with many countries, but its main trading partners include:\n\n- China\n- Belgium\n- South Africa\n- Netherlands\n- Germany\n- United States\n\nThese countries are major importers of DRC's primary exports, such as:\n- Minerals (copper, cobalt, diamonds,",
+        "The Democratic Republic of Congo (DRC) trades with several countries. Some of its major trading partners include:\n\n- China (mainly for minerals, such as cobalt, copper, and diamonds)\n- Belgium (mainly for food, oil, and manufactured goods)\n- South Africa (for oil, manufactured goods,",
+        "The Democratic Republic of Congo trades with countries such as:\n\n1. China (main trading partner)\n2. Belgium (former colonial power, still a significant trading partner)\n3. India\n4. Germany\n5. Netherlands\n6. United Kingdom\n7. South Africa\n8. United States",
+        "The Democratic Republic of Congo is the world's 10th largest producer of copper and 11th largest producer of cobalt. \n\nThe DRC trades with many countries, including:\n\n1. China: a major market and trading partner.\n2. United States: the US is a significant market for DRC copper and",
+        "The Democratic Republic of Congo trades with several countries, including:\n\n* Top trading partners: China, United Arab Emirates, Belgium, Netherlands, United States\n* Major exports: Copper, cobalt, tin, coltan, cotton, agricultural products\n* Major imports: Machinery, electronics, fuel, pharmaceuticals, food,",
+        "The Democratic Republic of Congo (DRC) trades with many countries, including:\n\n1. Top exports:\n\t* Basic goods: timber, copper, cobalt, coffee, and cotton.\n2. Top trading partners:\n\t* China (23% of total trade, due to the large demand for minerals such as cob",
+        "The Democratic Republic of Congo (DRC) trades with several countries, including:\n\n1. China: Top trading partner, mainly for infrastructure, mining, and energy projects.\n2. Belgium: Historical colonial power and current economic partner for trade in goods like diamonds, copper, and cobalt.\n3. India: Largest market"
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.3677399545356104,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_1155",
+      "question": "how many games does a team have to win for the world series",
+      "gold": [
+        "best-of-seven"
+      ],
+      "greedy": "In the World Series, a team must win 4 games out of a maximum of 7 games to be declared the champion.",
+      "samples": [
+        "In the World Series, the team that wins 4 games first wins the championship.",
+        "In the World Series, a best-of-seven series, a team must win 4 games to win the championship.",
+        "In the World Series, the team that wins four games first wins the championship.",
+        "In the World Series, a team must win 4 games to win the championship.",
+        "In the World Series, the team that wins four games first wins the championship.",
+        "In the World Series, a team must win at least 4 games out of a maximum of 7 to be declared the champion.",
+        "In Major League Baseball (MLB), a team must win the best-of-seven series 4 games to win the World Series.",
+        "In the World Series, a best-of-seven game series where the team that wins four games first wins the championship.",
+        "To win the World Series, a team must win 4 games out of a maximum 7-game series.",
+        "In the World Series, a team must win 4 games to win the championship."
+      ],
+      "se_discrete": 1.2798542258336674,
+      "se_logprob": 1.2733548462324578,
+      "C_SE_disc": -1.2798542258336674,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_3263",
+      "question": "when was the taj mahal built and completed",
+      "gold": [
+        "1632–53"
+      ],
+      "greedy": "The Taj Mahal was built between 1632 and 1653.",
+      "samples": [
+        "The Taj Mahal was built between 1632 and 1653 under the rule of Mughal Emperor Shah Jahan.",
+        "The Taj Mahal was built between 1632 and 1653, completed in 1653.",
+        "The Taj Mahal was built between 1632 and 1653, with the main structure completed in 1643. It was formally inaugurated in 1653.",
+        "The Taj Mahal was built between 1632 and 1653.",
+        "The Taj Mahal was built between 1632 and 1653 by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal.",
+        "The Taj Mahal was built between 1631 and 1653. It was completed in 1653.",
+        "The Taj Mahal was built between 1632 and 1653 by Mughal Emperor Shah Jahan as a mausoleum for his wife, Mumtaz Mahal.",
+        "The Taj Mahal was built between 1632 and 1653 and completed in 1653.",
+        "The Taj Mahal was built between 1632 and 1653 and completed in 1653.",
+        "The Taj Mahal was built between 1631-1653, and is considered completed in 1653 by Mughal Emperor Shah Jahan."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.464294649754968,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "nq_2190",
+      "question": "how many world series wins does the dodgers have",
+      "gold": [
+        "6",
+        "six"
+      ],
+      "greedy": "The Los Angeles Dodgers have won 7 World Series titles: \n\n1. 1955\n2. 1959\n3. 1963\n4. 1965\n5. 1981\n6. 1988\n7. 2020",
+      "samples": [
+        "The Los Angeles Dodgers have won 7 World Series titles: \n\n1. 1955\n2. 1959\n3. 1963\n4. 1965\n5. 1981\n6. 1988\n7. 2020",
+        "The Los Angeles Dodgers have won 7 World Series titles: \n\n1. 1955\n2. 1959\n3. 1963\n4. 1965\n5. 1981\n6. 1988\n7. 2020",
+        "The Los Angeles Dodgers have 7 World Series wins.",
+        "The Los Angeles Dodgers have won 7 World Series titles: \n\n1. 1955\n2. 1959\n3. 1963\n4. 1965\n5. 1981\n6. 1988\n7. 2020",
+        "The Los Angeles Dodgers have won 7 World Series championships: \n\n1. 1955\n2. 1959\n3. 1963\n4. 1965\n5. 1981\n6. 1988\n7. 2020",
+        "The Los Angeles Dodgers have 7 World Series wins: \n\n1. 1955\n2. 1959\n3. 1963\n4. 1965\n5. 1981\n6. 1988\n7. 2020",
+        "The Los Angeles Dodgers have won 7 World Series championships: \n\n1. 1955\n2. 1959\n3. 1963\n4. 1965\n5. 1981\n6. 1988\n7. 2020",
+        "The Los Angeles Dodgers have won 7 World Series championships:\n\n1. 1955\n2. 1959\n3. 1963\n4. 1965\n5. 1981\n6. 1988\n7. 2020",
+        "The Los Angeles Dodgers have 7 World Series wins.",
+        "The Los Angeles Dodgers have 7 World Series wins: \n\n1. 1955\n2. 1959\n3. 1963\n4. 1965\n5. 1981\n6. 1988\n7. 2020"
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_910",
+      "question": "when did the song things that make you go hmmm come out",
+      "gold": [
+        "June 1991",
+        "June 23, 1991"
+      ],
+      "greedy": "\"Things That Make You Go Hmmm\" is a song by C+C Music Factory, released in 1991.",
+      "samples": [
+        "\"Things That Make You Go Hmmm (Things That Make You Go 'Hmmm')\" by C+C Music Factory was released in 1991.",
+        "The song \"Things That Make You Go Hmmm\" by C+C Music Factory was released in 1991.",
+        "The song \"Things That Make You Go Hmmm\" by C+C Music Factory was released in 1991.",
+        "\"Things That Make You Go Hmmm...\" is a song by C+C Music Factory, released in 1991.",
+        "\"Things That Make You Go Hmmm\" by C+C Music Factory was released in 1991.",
+        "The song \"Things That Make You Go Hmmm (Make You Go Hmmm)\" by C+C Music Factory was released in 1991.",
+        "\"Things That Make You Go Hmmm\" by C+C Music Factory was released in 1991.",
+        "The song \"Things That Make You Go Hmmm\" by CJ Rammer (a collaboration with P Square), actually the song \"Things That Make You Go Hmmm... C'est la vie\" (not just \"things that make you go Hmmm\"), came out in 2000",
+        "\"Things That Make You Go Hmmm\" is by C+C Music Factory and was released in 1991.",
+        "The song \"Things That Make You Go Hmmm...\" by C+C Music Factory was released in 1991."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.15889838318400445,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_1282",
+      "question": "who got the most passing yards in the nfl",
+      "gold": [
+        "Peyton Manning"
+      ],
+      "greedy": "Drew Brees holds the record for most passing yards in the NFL with 80,358 yards.",
+      "samples": [
+        "The NFL's all-time leader in passing yards is Drew Brees, with 80,358 yards.",
+        "Drew Brees holds the record for most passing yards in the NFL with 80,358 yards.",
+        "The player with the most passing yards in NFL history is Drew Brees, with 80,358 yards in his career, set during his time with the San Diego Chargers (2001-2005) and New Orleans Saints (2006-2020).",
+        "As of my knowledge cutoff in 2023, Drew Brees holds the record for most passing yards in the NFL with 80,358 yards.",
+        "The player with the most passing yards in NFL history is Drew Brees, with 80,358 yards.",
+        "The player who holds the record for most passing yards in the NFL is Drew Brees, with 80,358 yards.",
+        "As of my cut-off date (December 2023), the player with the most passing yards in the NFL is Drew Brees, with 80,358 yards.",
+        "As of my knowledge cutoff in 2023, Drew Brees holds the record for most career passing yards in the NFL with 80,358 yards, set during his time with the New Orleans Saints.",
+        "Drew Brees holds the record for most career passing yards in the NFL with 80,358 yards.",
+        "Drew Brees holds the record for most passing yards in the NFL with 80,358 yards."
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.212097328095826,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_3298",
+      "question": "in which year was led zepplin refused entry into singapore because the band members had long hair",
+      "gold": [
+        "1972"
+      ],
+      "greedy": "I couldn't find any information about Led Zeppelin being refused entry into Singapore due to having long hair.",
+      "samples": [
+        "I couldn't find any information about Led Zeppelin being refused entry into Singapore because the band members had long hair.",
+        "I couldn't find information on a specific incident involving Led Zeppelin being refused entry into Singapore due to having long hair.",
+        "I couldn't find any information that Led Zeppelin was refused entry into Singapore due to long hair.",
+        "I couldn't find any information about Led Zeppelin being refused entry into Singapore due to having long hair.",
+        "I couldn't find information that Led Zeppelin was refused entry into Singapore due to the band members having long hair.",
+        "I couldn't find any information on when Led Zeppelin was refused entry into Singapore because the band members had long hair.",
+        "I couldn't find any information about Led Zeppelin refusing entry into Singapore.",
+        "I cannot verify any record of Led Zeppelin being refused entry into Singapore due to having long hair.",
+        "I couldn't find any information on Led Zeppelin refusing entry into Singapore because of having long hair.",
+        "I couldn't find any information confirming Led Zeppelin was refused entry into Singapore due to having long hair. However, the band did have an incident with Jimmy Page's chain saws in Malaysia in 1972 and had to cut their tour in India, but also had a 1977 concert where a Hindu priest allegedly"
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.1484842246357483,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_2913",
+      "question": "who is eliminated in big boss kannada 5",
+      "gold": [
+        "Shruti",
+        "Niveditha",
+        "Diwakar"
+      ],
+      "greedy": "I'm not aware of the current season or contestants of Bigg Boss Kannada 5. However, I can suggest checking the official Bigg Boss Kannada website or other reliable sources for the most up-to-date information on the show.",
+      "samples": [
+        "I'm sorry but I could not find the exact results of Bigg Boss Kannada 5.",
+        "I'm unable to verify the correct elimination order of Bigg Boss Kannada season 5.",
+        "I don't have the information about Bigg Boss Kannada 5.",
+        "I couldn't find any information on \"Bigg Boss Kannada 5\".",
+        "I do not have information about Bigg Boss Kannada 5 contestants. However, I can tell you that the show ended in 2013, and contestants eliminated were: \n\n- Jayasrinivasan\n- Roopesh Shetty",
+        "I'm sorry, I do not have information on Bigg Boss Kannada 5.",
+        "I couldn't find any information on Bigg Boss Kannada 5 or its eliminated contestants. If you provide more context or details, I can try to help you better.",
+        "I'm unable to verify who the eliminated contestants were in Bigg Boss Kannada 5.",
+        "I do not have any information on 'Bigg Boss Kannada 5'.",
+        "I'm not aware of the latest information on Bigg Boss Kannada 5, as my knowledge cutoff is December 2023. However, I can suggest some possible sources where you can find the answer."
+      ],
+      "se_discrete": 1.4184836619456564,
+      "se_logprob": 1.3881240806267727,
+      "C_SE_disc": -1.4184836619456564,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_861",
+      "question": "when did the first battle of ypres end",
+      "gold": [
+        "22 November 1914"
+      ],
+      "greedy": "The First Battle of Ypres ended on November 22, 1914.",
+      "samples": [
+        "The First Battle of Ypres took place from October 19 to November 22, 1914, and ended on November 22, 1914.",
+        "The First Battle of Ypres took place from October 22 to November 22, 1914.",
+        "The First Battle of Ypres ended on November 22, 1914.",
+        "The first battle of Ypres took place from October 22 to November 22, 1914, during World War I.",
+        "The first Battle of Ypres ended on November 22, 1914.",
+        "The First Battle of Ypres took place from October 22 to November 22, 1914.",
+        "The First Battle of Ypres ended on November 22, 1914.",
+        "The First Battle of Ypres ended on November 22, 1914.",
+        "The first Battle of Ypres began on October 22, 1914, and it ended on November 22, 1914.",
+        "The First Battle of Ypres ended on November 22, 1914."
+      ],
+      "se_discrete": 1.1682824501765625,
+      "se_logprob": 1.1297946252219906,
+      "C_SE_disc": -1.1682824501765625,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_2936",
+      "question": "how many terms can a mayor serve in texas",
+      "gold": [
+        "two four-year terms"
+      ],
+      "greedy": "In Texas, a mayor can serve a maximum of 2 four-year terms.",
+      "samples": [
+        "In Texas, a mayor can serve an unlimited number of terms, as there are no state-mandated term limits.",
+        "In Texas, a Mayor can serve a maximum of 5 two-year terms.",
+        "In Texas, a mayor may serve up to 2 four-year terms.",
+        "In Texas, a mayor is limited to serving a maximum of 2 four-year terms.",
+        "In Texas, a Mayor is not limited to serve a specific term, but the term length varies depending on the municipality's charter or home rule. Some cities have a 2-year term, while others may have 4-year terms.",
+        "In Texas, a mayor is limited to serving 2 four-year terms.",
+        "In Texas, a mayor can serve a maximum of 2 consecutive 4-year terms.",
+        "In Texas, a mayor is not elected to a fixed term. Instead, the term is two years and is limited to two consecutive terms.",
+        "In Texas, a mayor can serve two 4-year terms.",
+        "In Texas, a mayor can serve 2 four-year terms."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.389646495703329,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "nq_638",
+      "question": "who is the founder of the ubuntu project",
+      "gold": [
+        "Mark Richard Shuttleworth"
+      ],
+      "greedy": "The Ubuntu project was founded by Mark Shuttleworth.",
+      "samples": [
+        "Mark G. Sherman is the creator of the Ubuntu operating system.",
+        "Mark Shuttleworth is the founder of the Ubuntu project.",
+        "The founder of the Ubuntu Linux distribution is Mark Shuttleworth.",
+        "The Ubuntu project was founded by Mark Shuttleworth in 2004.",
+        "The founder of the Ubuntu Linux distribution is Mark Shuttleworth.",
+        "Mark Shuttleworth founded the Ubuntu Project in 2004.",
+        "Mark Shuttleworth is the founder of the Ubuntu Project.",
+        "Mark Shuttleworth is the founder of the Ubuntu project.",
+        "Mark Shuttleworth is the founder of the Ubuntu Project.",
+        "Mark Shuttleworth is the founder of the Ubuntu project."
+      ],
+      "se_discrete": 1.2206072645530175,
+      "se_logprob": 1.1070780858452594,
+      "C_SE_disc": -1.2206072645530175,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_1477",
+      "question": "the heart muscle is stimulated to contract by electrical impulses which are generated where",
+      "gold": [
+        "the sinoatrial node"
+      ],
+      "greedy": "The heart muscle is stimulated to contract by electrical impulses generated in the sinoatrial (SA) node, also known as the natural pacemaker of the heart.",
+      "samples": [
+        "The sinoatrial (SA) node in the right atrium.",
+        "The sinoatrial (SA) node, also known as the natural pacemaker, generates the electrical impulses that stimulate the heart muscle to contract.",
+        "The heart muscle is stimulated to contract by electrical impulses generated by the sinoatrial (SA) node, also known as the heart's natural pacemaker.",
+        "The sinoatrial (SA) node, a group of specialized cells located in the right atrium, generates electrical impulses that stimulate the heart muscle to contract.",
+        "The heart muscle is stimulated to contract by electrical impulses generated in the sinoatrial (SA) node, often referred to as the heart's natural pacemaker.",
+        "The heart muscle is stimulated to contract by electrical impulses that are generated in the sinoatrial (SA) node, also known as the heart's natural pacemaker.",
+        "The sinoatrial (SA) node.",
+        "The sinoatrial (SA) node.",
+        "The heart muscle is stimulated to contract by electrical impulses generated in the sinoatrial (SA) node, also known as the natural pacemaker of the heart.",
+        "The sinoatrial (SA) node, a small group of specialized cells located in the upper right atrium of the heart, generates the electrical impulses that stimulate the heart muscle to contract."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.3062205588476536,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    }
+  ]
+}

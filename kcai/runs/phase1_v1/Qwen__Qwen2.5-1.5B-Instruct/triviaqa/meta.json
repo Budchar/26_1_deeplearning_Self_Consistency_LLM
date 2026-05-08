@@ -1,0 +1,54 @@
+{
+  "git_commit": "not_a_git_repo",
+  "library_versions": {
+    "python": "3.12.3",
+    "torch": "2.12.0.dev20260407+cu128",
+    "transformers": "5.7.0",
+    "numpy": "2.4.4",
+    "tokenizers": "0.22.2",
+    "bitsandbytes": "0.49.2",
+    "accelerate": "1.13.0",
+    "peft": "not_installed"
+  },
+  "host": {
+    "hostname": "kcai-B650M-D3HP",
+    "os": "Linux 6.17.0-22-generic",
+    "cpu_count": "8",
+    "gpu": "NVIDIA GeForce RTX 5070",
+    "cuda_version": "",
+    "driver": "590.48.01"
+  },
+  "started_at_backfilled": "2026-05-01T05:58:25.261480+00:00",
+  "launch_script_path": "/home/kcai/experiments/dl_team_v2/01_se_seps/code/launch_full_sweep.sh",
+  "launch_script_sha256": "8f21aa26a3c9a23c952c90d7c59cc2d86fd67a98f058a167dc37b4bb9fc129ea",
+  "seed": null,
+  "seed_note": "Phase 1/2 의도적으로 seed 미고정. N=10 sampling 평균값을 보는 통계량이라 점추정만 흔들리고 결론 방향은 안정. v2부터는 seed 고정.",
+  "backfilled": true,
+  "phase": "phase1_se_seps",
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision_hf_sha": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dataset": "triviaqa",
+  "launch_args": {
+    "n": 1000,
+    "n_samples": 10,
+    "max_new_tokens": 64,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "dtype": "fp16",
+    "four_bit": false,
+    "save_hidden": true,
+    "prompt_style": "chat_template_with_system_user",
+    "system_prompt": "You are a helpful assistant that answers questions concisely.",
+    "user_template": "Question: {q}\nGive a short factual answer.",
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "dataset": "triviaqa"
+  },
+  "prompt_template_sample": "<|im_start|>system\nYou are a helpful assistant that answers questions concisely.<|im_end|>\n<|im_start|>user\nQuestion: When was the Eiffel Tower built?\nGive a short factual answer.<|im_end|>\n<|im_start|>assistant",
+  "outputs_present": [
+    "adaptive.json",
+    "generations.jsonl",
+    "metrics.json",
+    "probes.json",
+    "se.jsonl"
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "n_used": 1000,
+  "n_layers": 13,
+  "y_se_pos_rate": 0.0,
+  "y_halluc_pos_rate": 0.986,
+  "best_logreg_se_auroc": NaN,
+  "best_logreg_halluc_auroc": 0.8849407783417936,
+  "best_mlp_se_auroc": NaN,
+  "best_mlp_halluc_auroc": 0.739424703891709,
+  "layer_results": [
+    {
+      "layer": 0,
+      "logreg_se_high_auroc": NaN,
+      "logreg_se_high_train_auroc": NaN,
+      "logreg_hallucination_auroc": 0.5,
+      "logreg_hallucination_train_auroc": 0.5,
+      "mlp_se_high_auroc": NaN,
+      "mlp_se_high_train_auroc": NaN,
+      "mlp_hallucination_auroc": 0.5,
+      "mlp_hallucination_train_auroc": 0.5
+    },
+    {
+      "layer": 1,
+      "logreg_se_high_auroc": NaN,
+      "logreg_se_high_train_auroc": NaN,
+      "logreg_hallucination_auroc": 0.8849407783417936,
+      "logreg_hallucination_train_auroc": 1.0,
+      "mlp_se_high_auroc": NaN,
+      "mlp_se_high_train_auroc": NaN,
+      "mlp_hallucination_auroc": 0.5532994923857868,
+      "mlp_hallucination_train_auroc": 0.7851134923378269
+    },
+    {
+      "layer": 2,
+      "logreg_se_high_auroc": NaN,
+      "logreg_se_high_train_auroc": NaN,
+      "logreg_hallucination_auroc": 0.6971235194585448,
+      "logreg_hallucination_train_auroc": 1.0,
+      "mlp_se_high_auroc": NaN,
+      "mlp_se_high_train_auroc": NaN,
+      "mlp_hallucination_auroc": 0.31472081218274117,
+      "mlp_hallucination_train_auroc": 0.7428275146906325
+    },
+    {
+      "layer": 3,
+      "logreg_se_high_auroc": NaN,
+      "logreg_se_high_train_auroc": NaN,
+      "logreg_hallucination_auroc": 0.6328257191201354,
+      "logreg_hallucination_train_auroc": 1.0,
+      "mlp_se_high_auroc": NaN,
+      "mlp_se_high_train_auroc": NaN,
+      "mlp_hallucination_auroc": 0.5414551607445008,
+      "mlp_hallucination_train_auroc": 0.6678188731420671
+    },
+    {
+      "layer": 4,
+      "logreg_se_high_auroc": NaN,
+      "logreg_se_high_train_auroc": NaN,
+      "logreg_hallucination_auroc": 0.8274111675126903,
+      "logreg_hallucination_train_auroc": 1.0,
+      "mlp_se_high_auroc": NaN,
+      "mlp_se_high_train_auroc": NaN,
+      "mlp_hallucination_auroc": 0.5516074450084603,
+      "mlp_hallucination_train_auroc": 0.8551676460421708
+    },
+    {
+      "layer": 5,
+      "logreg_se_high_auroc": NaN,
+      "logreg_se_high_train_auroc": NaN,
+      "logreg_hallucination_auroc": 0.7445008460236887,
+      "logreg_hallucination_train_auroc": 1.0,
+      "mlp_se_high_auroc": NaN,
+      "mlp_se_high_train_auroc": NaN,
+      "mlp_hallucination_auroc": 0.4873096446700508,
+      "mlp_hallucination_train_auroc": 0.9039059799516074
+    },
+    {
+      "layer": 6,
+      "logreg_se_high_auroc": NaN,
+      "logreg_se_high_train_auroc": NaN,
+      "logreg_hallucination_auroc": 0.43993231810490696,
+      "logreg_hallucination_train_auroc": 1.0,
+      "mlp_se_high_auroc": NaN,
+      "mlp_se_high_train_auroc": NaN,
+      "mlp_hallucination_auroc": 0.61082910321489,
+      "mlp_hallucination_train_auroc": 0.6689710796174675
+    },
+    {
+      "layer": 7,
+      "logreg_se_high_auroc": NaN,
+      "logreg_se_high_train_auroc": NaN,
+      "logreg_hallucination_auroc": 0.5600676818950932,
+      "logreg_hallucination_train_auroc": 1.0,
+      "mlp_se_high_auroc": NaN,
+      "mlp_se_high_train_auroc": NaN,
+      "mlp_hallucination_auroc": 0.739424703891709,
+      "mlp_hallucination_train_auroc": 0.7169028689941237
+    },
+    {
+      "layer": 8,
+      "logreg_se_high_auroc": NaN,
+      "logreg_se_high_train_auroc": NaN,
+      "logreg_hallucination_auroc": 0.5194585448392556,
+      "logreg_hallucination_train_auroc": 1.0,
+      "mlp_se_high_auroc": NaN,
+      "mlp_se_high_train_auroc": NaN,
+      "mlp_hallucination_auroc": 0.7292724196277496,
+      "mlp_hallucination_train_auroc": 0.811959903214656
+    },
+    {
+      "layer": 9,
+      "logreg_se_high_auroc": NaN,
+      "logreg_se_high_train_auroc": NaN,
+      "logreg_hallucination_auroc": 0.42470389170896783,
+      "logreg_hallucination_train_auroc": 1.0,
+      "mlp_se_high_auroc": NaN,
+      "mlp_se_high_train_auroc": NaN,
+      "mlp_hallucination_auroc": 0.5651438240270729,
+      "mlp_hallucination_train_auroc": 0.7230095633137458
+    },
+    {
+      "layer": 10,
+      "logreg_se_high_auroc": NaN,
+      "logreg_se_high_train_auroc": NaN,
+      "logreg_hallucination_auroc": 0.2825719120135364,
+      "logreg_hallucination_train_auroc": 1.0,
+      "mlp_se_high_auroc": NaN,
+      "mlp_se_high_train_auroc": NaN,
+      "mlp_hallucination_auroc": 0.6700507614213199,
+      "mlp_hallucination_train_auroc": 0.8086185044359949
+    },
+    {
+      "layer": 11,
+      "logreg_se_high_auroc": NaN,
+      "logreg_se_high_train_auroc": NaN,
+      "logreg_hallucination_auroc": 0.36040609137055835,
+      "logreg_hallucination_train_auroc": 1.0,
+      "mlp_se_high_auroc": NaN,
+      "mlp_se_high_train_auroc": NaN,
+      "mlp_hallucination_auroc": 0.6480541455160744,
+      "mlp_hallucination_train_auroc": 0.7210508123055652
+    },
+    {
+      "layer": 12,
+      "logreg_se_high_auroc": NaN,
+      "logreg_se_high_train_auroc": NaN,
+      "logreg_hallucination_auroc": 0.4297800338409476,
+      "logreg_hallucination_train_auroc": 1.0,
+      "mlp_se_high_auroc": NaN,
+      "mlp_se_high_train_auroc": NaN,
+      "mlp_hallucination_auroc": 0.6683587140439933,
+      "mlp_hallucination_train_auroc": 0.8096554902638552
+    }
+  ]
+}

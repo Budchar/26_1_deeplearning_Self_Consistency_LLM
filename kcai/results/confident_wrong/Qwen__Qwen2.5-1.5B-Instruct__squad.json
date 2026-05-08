@@ -1,0 +1,1456 @@
+{
+  "n_records": 1000,
+  "greedy_acc": 0.139,
+  "by_metric": {
+    "C_SE_disc": {
+      "ece": 0.07778268971945193,
+      "four_cell": {
+        "high_correct": 139,
+        "high_wrong": 861,
+        "low_correct": 0,
+        "low_wrong": 0,
+        "median_threshold": -2.3025850929940455,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 266,
+        "wrong_in_top_q": 195,
+        "rate": 0.7330827067669173
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.37,
+          "threshold": -1.6094379124341
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.28,
+          "threshold": -1.9730014063936123
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.2633333333333333,
+          "threshold": -2.1639556568820564
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.2225,
+          "threshold": -2.1639556568820564
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.196,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.18,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.16857142857142857,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.15625,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.14888888888888888,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.139,
+          "threshold": -2.3025850929940455
+        }
+      ]
+    },
+    "C_SE_logp": {
+      "ece": 0.07481469500964491,
+      "four_cell": {
+        "high_correct": 98,
+        "high_wrong": 402,
+        "low_correct": 41,
+        "low_wrong": 459,
+        "median_threshold": -2.2480439702121116,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 182,
+        "rate": 0.728
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.37,
+          "threshold": -1.509674033537841
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.275,
+          "threshold": -1.8965793958499941
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.26,
+          "threshold": -2.0787612048387816
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.22,
+          "threshold": -2.1379782821290365
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.196,
+          "threshold": -2.2480247842776655
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.17333333333333334,
+          "threshold": -2.268049258458013
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.16,
+          "threshold": -2.2764930748382604
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.1475,
+          "threshold": -2.283151792481946
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.1411111111111111,
+          "threshold": -2.2888870120851443
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.139,
+          "threshold": -2.300054721558366
+        }
+      ]
+    },
+    "C_logp": {
+      "ece": 0.3375555873647998,
+      "four_cell": {
+        "high_correct": 108,
+        "high_wrong": 392,
+        "low_correct": 31,
+        "low_wrong": 469,
+        "median_threshold": -0.7517663138914257,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 182,
+        "rate": 0.728
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.39,
+          "threshold": -0.4116833910002315
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.315,
+          "threshold": -0.5389897181937033
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.25,
+          "threshold": -0.629267007745857
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.2375,
+          "threshold": -0.6867669686653137
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.216,
+          "threshold": -0.7517547901371187
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.195,
+          "threshold": -0.8094185730618205
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.17142857142857143,
+          "threshold": -0.88056328292016
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.16,
+          "threshold": -0.945324917464047
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.15,
+          "threshold": -1.0399001624515143
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.139,
+          "threshold": -1.4053452225775884
+        }
+      ]
+    }
+  },
+  "disagreement_counts": {
+    "C_SE_disc_high__C_SE_logp_low": 500,
+    "C_SE_disc_low__C_SE_logp_high": 0,
+    "C_SE_disc_high__C_logp_low": 500,
+    "C_SE_disc_low__C_logp_high": 0,
+    "C_SE_logp_high__C_logp_low": 179,
+    "C_SE_logp_low__C_logp_high": 179
+  },
+  "danger_examples": [
+    {
+      "id": "5726887e708984140094c91b",
+      "question": "What is the name of the two-tentacled cydippid that feedsentirely on salps called?",
+      "gold": [
+        "Lampea"
+      ],
+      "greedy": "The two-tentacled cydippid that feeds exclusively on salps is known as Pyrosome.",
+      "samples": [
+        "The sea gooseberry, or Thaumastosalamenia tuberculosa, is a type of two-tentacled cydippid that feeds exclusively on salps.",
+        "The cymatocyst is the term used for the two-tentacled cydippid that exclusively feeds on salps.",
+        "The pyrosome, which has two tentacles and feeds primarily on salps.",
+        "The two-tentacled cydippid that feeds exclusively on salps is known as a pyrosome.",
+        "The sea gooseberry, which feeds exclusively on salps.",
+        "The feeding tentacles of the ctenophore Mnemiopsis leidyi are referred to as \"two-tentacles\".",
+        "The ctenophore that feeds exclusively on salps is known as Mnemiopsis leidyi.",
+        "The two-tentacle ctenophore that exclusively feeds on salps is known as Messelia.",
+        "The two-tentacled cydippid that feeds exclusively on salps is known as Pyrosome or Firefly squid.",
+        "The two-tentacle-cydid that feeds solely on salps is called the Salpa."
+      ],
+      "se_discrete": 2.0253262207700673,
+      "se_logprob": 1.988790317673339,
+      "C_SE_disc": -2.0253262207700673,
+      "n_clusters": 8
+    },
+    {
+      "id": "572825a92ca10214002d9eff",
+      "question": "Bedau notes that illegal protests towards public policy may serve as what purpose?",
+      "gold": [
+        "just a harassment",
+        "propaganda"
+      ],
+      "greedy": "Bedau suggests that illegal protests can sometimes serve to draw attention to the issues they represent and pressure policymakers into action.",
+      "samples": [
+        "Bedau argues that illegal protests toward public policies often aim to highlight injustices, pressure policymakers to change their stance, or disrupt existing structures of power.",
+        "Bedau suggests that such protests might aim to bring attention to issues or influence lawmakers.",
+        "Bedau suggests that illegal protests against public policies might serve as a form of social protest or a cry for attention, but they can also lead to unintended negative consequences and harm.",
+        "Bedau argues that illegal protests aimed at challenging public policy often seek to draw attention to issues and pressure authorities into considering the protesters' views or interests.",
+        "To attract media attention and garner public support for reform efforts.",
+        "Bedaux argues that they can serve as leverage to highlight issues and pressure authorities into reforming policies.",
+        "Bedau suggests that such protests can bring attention to political issues and potentially lead to changes in laws or policies.",
+        "Bedau suggests that illegal protests toward public policy can be instrumental in drawing attention to specific issues and potentially influencing policy changes.",
+        "Bedau suggests that illegal protests toward public policies may serve to bring attention to issues, challenge authority, and advocate for change.",
+        "Bedaux suggests they serve to make the government aware of issues and pressures that might influence decision-making."
+      ],
+      "se_discrete": 1.6957425341696346,
+      "se_logprob": 1.6944658407122009,
+      "C_SE_disc": -1.6957425341696346,
+      "n_clusters": 6
+    },
+    {
+      "id": "572651f9f1498d1400e8dbf1",
+      "question": "How much of a voting majority must there be to effectively censure the Commission?",
+      "gold": [
+        "two-thirds majority",
+        "a two-thirds majority"
+      ],
+      "greedy": "To effectively censure the Commission, there must be at least 2/3rds of the total membership present and voting.",
+      "samples": [
+        "To effectively censure the Commission, there must be a simple majority vote in favor of censure among its members.",
+        "To effectively censure the Commission, there needs to be at least 2/3rds of the total membership present and participating in the vote.",
+        "There is no fixed numerical requirement for what constitutes \"effective\" censure, but typically a supermajority like 2/3rds can be necessary to overcome objections or delays in Congress.",
+        "Two-thirds of members present and voting must be in favor to censure the commission effectively.",
+        "The exact number needed varies by country and process, but typically requires at least 51% plus one vote among those eligible to vote in the relevant chamber or body.",
+        "A two-thirds vote is typically required for effective censure of a government body like the Federal Communications Commission in the United States.",
+        "There is no specific numerical threshold for what constitutes an \"effective\" censure in this context, as it depends on political considerations and procedures unique to each institution or legislative body. Typically, however, censure often requires supermajority support from members present and voting. The exact requirement can vary widely by country's rules,",
+        "At least 2/3rds of all members present and voting.",
+        "A simple 2/3 vote is typically required for effective censure in most democratic legislative bodies.",
+        "A simple majority (more than half) is typically required for effective censure within most organizations, including some commissions."
+      ],
+      "se_discrete": 1.9730014063936123,
+      "se_logprob": 1.8827802948072685,
+      "C_SE_disc": -1.9730014063936123,
+      "n_clusters": 8
+    },
+    {
+      "id": "5726da89dd62a815002e92b6",
+      "question": "What types of responsibilities might a pharmacy technician have?",
+      "gold": [
+        "manage the pharmacy department",
+        "manage the pharmacy department and specialised areas in pharmacy practice",
+        "manage the pharmacy department and specialised areas"
+      ],
+      "greedy": "A pharmacy technician typically has responsibilities such as preparing medications, filling prescriptions, assisting pharmacists, and maintaining inventory.",
+      "samples": [
+        "Assisting pharmacists with medication dispensing, inventory management, patient communication, and administrative tasks such as filling prescriptions, tracking inventory, updating records, and answering patient inquiries.",
+        "A pharmacy technician typically has several key responsibilities, including:\n\n1. Dispensing medications accurately based on prescriptions.\n2. Maintaining accurate records of patients and dispensed drugs.\n3. Assisting pharmacists with patient care, sometimes handling direct interactions.\n4. Preparing and filling orders from scripts under the supervision of licensed pharmac",
+        "A pharmacy technician typically performs tasks such as preparing prescriptions, organizing inventory, answering customer inquiries, and ensuring accuracy in medication dispensing.",
+        "A pharmacy technician's duties typically include compounding medications, recording patient information, organizing inventory, assisting pharmacists in patient consultations, and maintaining cleanliness and safety standards in the pharmacy.",
+        "Typically, pharmacy technicians assist pharmacists in various tasks including preparing prescriptions, organizing inventory, handling patient interactions, and assisting with medication management programs.",
+        "A pharmacy technician typically has tasks such as compounding medications, managing inventory, preparing prescriptions, assisting pharmacists, and communicating with patients about medication use.",
+        "A pharmacy technician may be responsible for preparing medications, counting pills and syringes, organizing stockroom supplies, assisting patients, recording dosages in patient records, and following medication guidelines.",
+        "Types of responsibilities for a pharmacy technician include preparing medications, taking customer orders, and checking prescriptions for accuracy.",
+        "Pharmacy technicians may be responsible for stock taking, filling prescriptions, assisting customers, performing medication compounding (if qualified), and maintaining equipment.",
+        "A pharmacy technician's responsibilities typically include preparing medications, recording inventory levels, assisting patients with their prescriptions, and performing data entry tasks in a pharmacy setting."
+      ],
+      "se_discrete": 2.0253262207700673,
+      "se_logprob": 1.9876227896509269,
+      "C_SE_disc": -2.0253262207700673,
+      "n_clusters": 8
+    },
+    {
+      "id": "573010fab2c2fd14005687da",
+      "question": "Where did a bloody civil war break out?",
+      "gold": [
+        "Algeria"
+      ],
+      "greedy": "The American Civil War broke out in 1861.",
+      "samples": [
+        "A bloody civil war broke out in Ireland during the 1920s.",
+        "The American Civil War, which was indeed a bloody civil war and took place from 1861 to 1865 in the United States.",
+        "A bloody Civil War broke out in the United States, primarily between 1861 and 1865.",
+        "A bloody civil war broke out in the United States during Reconstruction after President Andrew Johnson issued his Ten Percent Plan to restore federal authority and grant citizenship rights. This plan was opposed by Radical Republicans who called for harsher punishment of Confederates, leading to political conflict and ultimately sparking the American Civil War (1861–",
+        "A bloody civil war broke out in Syria in 2011, which lasted until 2016 and was marked by heavy fighting between government forces backed by Russia and opposition fighters.",
+        "The American Civil War broke out in several locations across the southern United States. A significant area was occupied by Confederate forces, including key cities like Richmond, Virginia; Memphis, Tennessee; and Charleston, South Carolina. These areas experienced intense fighting as Confederate troops clashed with Union armies attempting to maintain control over them or protect strategic points",
+        "A bloody civil war broke out in the United States during the American Civil War, 1861-1865.",
+        "The American Civil War broke out in 1861, with major battles occurring first at Fort Sumter in South Carolina and then across the border states of Kentucky and Missouri before spreading to North and South Carolina.",
+        "A bloody civil war broke out in America during the American Civil War, which took place from 1861 to 1865.",
+        "I apologize, but I do not have enough context to definitively identify where a \"bloody\" civil war has broken out. Civil wars and their severity often depend on many factors including the specific conflict, geographical location, ethnic divisions, political dynamics, and external interventions. To provide a precise answer, more information or details"
+      ],
+      "se_discrete": 1.7480673485460891,
+      "se_logprob": 1.5124728681305217,
+      "C_SE_disc": -1.7480673485460891,
+      "n_clusters": 7
+    },
+    {
+      "id": "573062662461fd1900a9cdfa",
+      "question": "imperialism often divides countries by using which technique?",
+      "gold": [
+        "othering"
+      ],
+      "greedy": "Imperialism often divides countries through the use of cultural and linguistic policies, such as promoting one language or culture over others in colonized territories.",
+      "samples": [
+        "Imperialism often divides countries through cultural assimilation, language suppression, and policies favoring the dominant culture or language of the imperial power over local cultures.",
+        "Imperialism often divides countries through cultural and linguistic policies, such as establishing educational systems and media industries to favor the imperial power's language and values.",
+        "Imperialism often divides countries through the use of cultural and educational systems.",
+        "Imperialism often divides countries by using colonialism techniques, such as territorial expansion, resource exploitation, and cultural dominance to control regions for economic and political gain.",
+        "Imperialism often divides countries through the use of colonial rule, where one country exerts control over other territories.",
+        "Imperialism often divides countries by using language or culture as a dividing line.",
+        "Imperialism often divides countries through the technique of creating artificial borders based on ethnic, religious, or cultural lines rather than natural boundaries, leading to conflicts and tensions.",
+        "Imperialism often divides countries through the use of cultural and political dominance, exploitation of resources, and imposition of one nation's language and customs on others. This can lead to nationalistic movements and tensions within colonies or spheres of influence, potentially leading to conflicts and borders based on control rather than ethnic or geographical similarities.",
+        "Imperialism often divides countries by using cultural and linguistic dominance through education, media, and other means.",
+        "Imperialism often divides countries through the use of territorial acquisition and colonization, creating spheres of influence or empires where one nation dominates."
+      ],
+      "se_discrete": 2.0253262207700673,
+      "se_logprob": 2.017380533254703,
+      "C_SE_disc": -2.0253262207700673,
+      "n_clusters": 8
+    },
+    {
+      "id": "57268220f1498d1400e8e218",
+      "question": "Why is it important to precisely date rocks within the stratigraphic section? ",
+      "gold": [
+        "gain information about past climate",
+        "provide better absolute bounds on the timing and rates of deposition"
+      ],
+      "greedy": "Precise dating of rocks in stratigraphy helps establish the chronological sequence and relative ages of rock layers, crucial for understanding Earth's geological history.",
+      "samples": [
+        "Precise dating of rock layers helps establish a chronological sequence, allowing scientists to trace past geological events and understand Earth's history.",
+        "Precise dating of rocks in stratigraphy allows for accurate correlation between rock units at different locations, understanding geological history and evolution over time.",
+        "Precise dating of rocks in a stratigraphic sequence allows scientists to correlate rock layers across different locations and time periods, understanding geological processes over long spans.",
+        "Precise dating of rocks in a stratigraphic sequence allows scientists to understand the relative ages and evolutionary history of rock strata, helping them reconstruct Earth's geological past and track changes over time.",
+        "Precise dating of rock layers in a sequence (stratigraphy) allows scientists to understand geological time and events, provide context for fossils and environmental changes over eons.",
+        "Precise dating of rocks in a stratigraphic column helps establish the chronological order and relative ages of rock layers, crucial for understanding geological processes and Earth's history.",
+        "Precise dating of rocks in a stratigraphic section helps establish absolute chronology and provides clues about past environmental conditions, evolutionary histories, and Earth's geological history.",
+        "Precise dating of rocks in the stratigraphic column allows scientists to reconstruct Earth's history, understand geological processes, and correlate different rock formations across vast distances.",
+        "Precise dating of rocks in stratigraphy allows scientists to understand Earth's history by placing events and layers in correct chronological order, providing insights into past climates, life forms, and environmental changes.",
+        "Precise dating of rocks in a strata sequence helps establish chronological relationships among layers, determining when various fossil assemblages and geological events occurred. This information is crucial for understanding Earth's history and evolutionary processes."
+      ],
+      "se_discrete": 1.8343719702816235,
+      "se_logprob": 1.8477466629543378,
+      "C_SE_disc": -1.8343719702816235,
+      "n_clusters": 7
+    },
+    {
+      "id": "5728f2e26aef051400154897",
+      "question": "What is the term for a hyperactive immune system that attacks normal tissues?",
+      "gold": [
+        "autoimmunity"
+      ],
+      "greedy": "The term for a hyperactive immune system attacking normal tissues is autoimmune disease.",
+      "samples": [
+        "The term for this condition is autoimmune disease.",
+        "This condition is known as autoimmunity.",
+        "Autoimmune disorder",
+        "The term for a hyperactive immune system that attacks normal tissues is autoimmune disease.",
+        "This condition is known as autoimmune disease.",
+        "This describes an autoimmune disorder where the body's immune system mistakenly attacks its own healthy tissue, leading to conditions like rheumatoid arthritis or multiple sclerosis.",
+        "The term for a hyperactive immune system attacking normal tissues is called autoimmunity or autoimmune disease.",
+        "The condition you're describing is called autoimmunity.",
+        "The term for a hyperactive immune system that attacks normal tissues is autoimmunity.",
+        "The condition you are describing is known as autoimmunity or hypersensitivity."
+      ],
+      "se_discrete": 0.9404479886553263,
+      "se_logprob": 0.8650831907395522,
+      "C_SE_disc": -0.9404479886553263,
+      "n_clusters": 4
+    },
+    {
+      "id": "5726caaaf1498d1400e8eb5c",
+      "question": "What was the first international event broadcast by ABC?",
+      "gold": [
+        "coronation of Queen Elizabeth II",
+        "the coronation of Queen Elizabeth II"
+      ],
+      "greedy": "The first international event broadcast by ABC (American Broadcasting Company) was the 1936 Summer Olympics in Berlin, Germany.",
+      "samples": [
+        "The first international event broadcast by ABC was the 1936 Olympics in Berlin, Germany.",
+        "The first international event broadcast by ABC (American Broadcasting Company) was an Olympic Games coverage in 1936, when they aired the Olympics in Berlin, Germany.",
+        "The first international event broadcast by ABC (in what is now Australia) was the 1928 Melbourne Olympics opening ceremony.",
+        "The first international event broadcast by ABC (American Broadcasting Company) was coverage of the 1936 Summer Olympics in Berlin, Germany.",
+        "The first international event broadcast by ABC was the 1936 Summer Olympics held in Berlin, Germany.",
+        "The first internationally televised event to be broadcast live in color and stereo on television by ABC was the Winter Olympics in Squaw Valley, California in 1960.",
+        "The first major international television broadcast in English by ABC, also known as U.S. International Television (USTV), was on February 14, 1950. This included coverage of The Royal Variety Performance which showcased entertainers and politicians to raise funds for British charities.",
+        "The first international event to be broadcast internationally from ABC (American Broadcasting Company) was the 1936 Olympic Games in Berlin, Germany.",
+        "The first major international event broadcast on American television by ABC (alongside CBS) was the Summer Olympics held in Rome in 1960.",
+        "The first international event broadcast by ABC was the 1936 Summer Olympics in Berlin, Germany."
+      ],
+      "se_discrete": 1.6434177197931796,
+      "se_logprob": 1.4719276367861358,
+      "C_SE_disc": -1.6434177197931796,
+      "n_clusters": 6
+    },
+    {
+      "id": "5726cc11dd62a815002e9088",
+      "question": "The V&A library's collection of illuminated manuscripts are dated to which centuries?",
+      "gold": [
+        "from the 12th to 16th",
+        "12th to 16th"
+      ],
+      "greedy": "The V&A library's collection of illuminated manuscripts is dated primarily from the 12th to the 15th centuries.",
+      "samples": [
+        "The V&A library's collection of illuminated manuscripts dates primarily from the 12th to the late 15th century.",
+        "The V&A library's collection of illuminated manuscripts is dated from the medieval period through the Renaissance and early Baroque periods, roughly 1200-1600 CE.",
+        "The V&A library's collection of illuminated manuscripts dates back primarily to the Middle Ages, specifically from around the 9th century until well into the Renaissance period in the late 15th and early 16th centuries.",
+        "The V&A library's collection of illuminated manuscripts dates from the 12th to early 16th century.",
+        "The V&A library's collection of illuminated manuscripts includes works from the 12th to mid-16th centuries.",
+        "The Victorian era from the mid-19th century (1837-1901)",
+        "The V&A library's collection of illuminated manuscripts dates to the 13th to the 15th centuries.",
+        "The V&A library's collection of illuminated manuscripts is dated to the Middle Ages and Early Renaissance, spanning from approximately 1050-1600 CE.",
+        "The V&A library's collection of illuminated manuscripts dates predominantly from the High Middle Ages, specifically from approximately the 12th through the 15th centuries.",
+        "The V&A (Victoria and Albert Museum) library collection includes illuminated manuscripts dating back to the 9th to 16th centuries, spanning several medieval periods including the Carolingian, Ottonian, Romanesque, Gothic Revival, Renaissance, and Baroque eras."
+      ],
+      "se_discrete": 1.6094379124341,
+      "se_logprob": 1.5805443337395637,
+      "C_SE_disc": -1.6094379124341,
+      "n_clusters": 6
+    },
+    {
+      "id": "5728fd3c3f37b31900477f2f",
+      "question": "What should the punishment rely on instead in a just society?",
+      "gold": [
+        "moral reasons to follow this law",
+        "whether it would do more harm than good"
+      ],
+      "greedy": "In a just society, punishment should depend on the severity of the crime and the offender's responsibility for it.",
+      "samples": [
+        "In a just society, punishment should depend on the severity of the offense and often involve deterrence to prevent future crimes.",
+        "The punishment in a just society should ideally depend on the severity and context of the crime, rather than solely on personal feelings or beliefs about the criminal's character.",
+        "A just society's punishments should depend on individual actions and their appropriateness to the wrong committed, rather than personal characteristics or wealth.",
+        "A just society's punishment should depend primarily on guilt and deserved consequences of wrongdoing, rather than on factors like wealth or social status.",
+        "In a just society, punishments should be based on facts and guided by law rather than emotions or arbitrary criteria.",
+        "The punishment should ideally depend on reparation to the victim or correction of the offender, rather than solely on inflicting pain as seen in many legal systems today.",
+        "The punishment in a just society should depend on the gravity of the offense and deserved penalty, not solely on personal feelings or biases.",
+        "In a just society, punishments should be based on laws and justice rather than personal feelings or biases.",
+        "In a just society, punishments should depend on moral culpability rather than on external circumstances like socioeconomic status or background.",
+        "In a just society, punishment should primarily depend on the gravity of the crime and societal norms rather than on personal feelings or relationships."
+      ],
+      "se_discrete": 1.6957425341696346,
+      "se_logprob": 1.716173204614095,
+      "C_SE_disc": -1.6957425341696346,
+      "n_clusters": 6
+    },
+    {
+      "id": "57274ca8dd62a815002e9aa4",
+      "question": "Along with trusts, what other non-profits are allowed to run schools in India?",
+      "gold": [
+        "societies"
+      ],
+      "greedy": "Charities are also allowed to run schools in India along with trusts.",
+      "samples": [
+        "Charitable trust is the only other option besides government-run institutions for running schools in India under law.",
+        "Charities can also run schools in India along with trusts.",
+        "Charities",
+        "Charities are also permitted to run schools in India along with trusts.",
+        "Charities along with trusts are also allowed to run schools in India.",
+        "Charities",
+        "Charitable institutions are also allowed to run schools in India along with educational trusts.",
+        "Charities are also permitted to run schools in India along with trusts.",
+        "Charities. In addition to trusts, certain charitable organizations can also manage and operate educational institutions under specific regulatory frameworks in India.",
+        "Charities"
+      ],
+      "se_discrete": 0.9404479886553263,
+      "se_logprob": 0.8008329466405021,
+      "C_SE_disc": -0.9404479886553263,
+      "n_clusters": 4
+    },
+    {
+      "id": "56d9ccacdc89441400fdb842",
+      "question": "What is the last name of the player who was Manning's top receiver for Super Bowl 50?",
+      "gold": [
+        "Sanders"
+      ],
+      "greedy": "The last name of the player who was Peyton Manning's top receiver for Super Bowl 50 was Rob Gronkowski.",
+      "samples": [
+        "The last name of the player who was Manning's top receiver for Super Bowl 50 was Thompson.",
+        "The last name of the player who was Peyton Manning's top receiver for Super Bowl 50 was Robert Griffin III.",
+        "The last name of the player who was Manning's top receiver for Super Bowl 50 was Rob Gronkowski.",
+        "Rob Gronkowski",
+        "Rob Gronkowski",
+        "The last name of the player who was Peyton Manning's top receiver for Super Bowl 50 is Davante Adams.",
+        "Dalton. The last name of the player who was Peyton Manning's top receiver for Super Bowl 50 was Dalvin Cook, who was also running back on the Green Bay Packers' offense.",
+        "The last name of the player who was Manning's top receiver for Super Bowl 50 was Roby.",
+        "Rob Gronkowski",
+        "The last name of the player who was Peyton Manning's top receiver for Super Bowl 50 was Kellen Davis."
+      ],
+      "se_discrete": 1.7480673485460891,
+      "se_logprob": 1.797462419882794,
+      "C_SE_disc": -1.7480673485460891,
+      "n_clusters": 7
+    },
+    {
+      "id": "5729f4273f37b319004785fd",
+      "question": "What can significantly contribute to the continuing inequality in a society over time?",
+      "gold": [
+        "wealth condensation"
+      ],
+      "greedy": "Persistent economic disparities, systemic discrimination, and lack of access to quality education can significantly contribute to ongoing inequality in a society over time.",
+      "samples": [
+        "Poverty, discrimination, and lack of social mobility often contribute to significant ongoing inequality within societies over time.",
+        "Persistent discrimination and systemic injustices can significantly contribute to the ongoing inequality within a society through generations.",
+        "Limited access to quality education significantly contributes to continued social inequalities over time by providing unequal opportunities for advancement and upward mobility, perpetuating disparities in income, wealth, and social status.",
+        "Structural inequalities and systemic discrimination can significantly contribute to continued inequality in societies over time.",
+        "The perpetuation of inequalities in society over time is often due to structural issues such as economic disparity, systemic racism, gender biases, and lack of equal opportunities across different demographic groups.",
+        "Inequality is often perpetuated through systemic policies and institutional practices favoring certain groups.",
+        "Systematic discrimination and lack of access to education are significant contributors to ongoing inequality in societies.",
+        "Structural barriers and unequal access to opportunities over generations.",
+        "Persistent discrimination against certain groups, economic disparities based on race, gender, or socio-economic status, and structural barriers like education and healthcare inequalities all play significant roles in perpetuating societal inequality over time.",
+        "Poverty, education disparities, and unequal access to economic opportunities can significantly contribute to continued inequality in a society over time."
+      ],
+      "se_discrete": 2.0253262207700673,
+      "se_logprob": 2.0354820878045663,
+      "C_SE_disc": -2.0253262207700673,
+      "n_clusters": 8
+    },
+    {
+      "id": "5710f4b8b654c5140001fa49",
+      "question": "In what year was the agreement to allow the Saarland settlement reached?",
+      "gold": [
+        "1604"
+      ],
+      "greedy": "The agreement to allow the Saarland settlement, which led to the creation of the Saarland region in Germany, was reached in 1957.",
+      "samples": [
+        "The agreement to allow the Saarland settlement, known as the Eifel-Kreuz Agreement in German, was reached on February 17, 1958.",
+        "The agreement allowing for the Saarland's settlement was reached in 1957.",
+        "The agreement to allow the Saarland settlement was reached in 1957.",
+        "The agreement to allow the Saarland settlement, which granted autonomy to the Saar region (now part of Germany), was reached in 1957.",
+        "The agreement to allow the Saarland settlement was reached in 1957.",
+        "The agreement to allow the Saarland settlement was reached in 1957.",
+        "The German–French accord to allow for the Saar Protectorate's status as an autonomous state within Germany, known informally as the Saar Settlement or Treaty of Paris, was signed in December 1935. This led to the establishment of the Saar Basin as part of the Third Reich's administrative structure",
+        "The Saarland settlement agreement, which allowed the territory of Saarland to join Germany in 1957 after serving under France for six years following World War II, was reached in 1948.",
+        "The agreement allowing the Saarland settlement was reached in 1957.",
+        "The agreement to allow the Saarland settlement, which transferred parts of eastern Germany to France after World War II, was reached in 1947."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.2857706899696435,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "57274e975951b619008f87fb",
+      "question": "Many construction companies are now placing more emphasis on what?",
+      "gold": [
+        "establishing relationships with other necessary participants",
+        "establishing relationships with other necessary participants through the design-build process"
+      ],
+      "greedy": "Sustainability in their practices.",
+      "samples": [
+        "Many construction companies are now placing more emphasis on sustainability and eco-friendly practices to reduce their environmental impact and comply with growing demand for green building solutions.",
+        "sustainability in their projects.",
+        "Sustainability in their projects.",
+        "Environmental sustainability and green building practices.",
+        "Sustainability and eco-friendly practices.",
+        "Environmental sustainability and green practices.",
+        "Many construction companies are now placing more emphasis on sustainability and green building practices to reduce their environmental impact and meet regulatory requirements for eco-friendly development.",
+        "The focus has shifted towards sustainability and eco-friendly practices in the construction industry.",
+        "Green practices and sustainability efforts in construction projects.",
+        "Environmental sustainability."
+      ],
+      "se_discrete": 1.4184836619456564,
+      "se_logprob": 1.4359072001495832,
+      "C_SE_disc": -1.4184836619456564,
+      "n_clusters": 5
+    },
+    {
+      "id": "573408ef4776f41900661757",
+      "question": "When did the North American French and Indian War end?",
+      "gold": [
+        "10 February 1763",
+        "signing of the Treaty of Paris on 10 February 1763"
+      ],
+      "greedy": "The North American French and Indian War ended with the Treaty of Paris in 1763.",
+      "samples": [
+        "The North American French and Indian War ended with the Treaty of Paris in 1763.",
+        "The North American French and Indian War ended with the Treaty of Paris in 1763.",
+        "The French and Indian War ended in 1763 following Britain's victory over France.",
+        "The North American French and Indian War ended with the Treaty of Paris in 1763.",
+        "The North American French and Indian War ended in 1763 after the British victory over France following several years of conflict during the Seven Years' War.",
+        "The North American French and Indian War ended with the signing of the Treaty of Paris in 1763.",
+        "The North American French and Indian War ended in 1763 with Britain's victory over France in the Seven Years' War (known as the French and Indian War in North America).",
+        "The North American French and Indian War ended with the signing of the Treaty of Paris in 1763.",
+        "The North American French and Indian War ended in 1763 with the Treaty of Paris, which concluded the Seven Years' War between Great Britain and France across Europe and in North America.",
+        "The North American French and Indian War ended in 1763 with the Treaty of Paris, following France's defeat by Great Britain during this conflict."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.2206817473344853,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "5726c0c5dd62a815002e8f77",
+      "question": "Who ordered the attack on the caravan of traders Genghis Khan send to Khwarezmia?",
+      "gold": [
+        "Inalchuq"
+      ],
+      "greedy": "Genghis Khan ordered the attack on the caravan of traders sent to Khwarezmia in 1219.",
+      "samples": [
+        "Genghis Khan dispatched the attack after hearing about the wealth and resources in Khwarezmia.",
+        "Genghis Khan ordered the attack on the caravan of traders heading towards Khwarezmia in 1219.",
+        "Genghis Khan's grandson Ögedei ordered this attack in 1219.",
+        "Genghis Khan sent an expeditionary force westward from Mongolia, and one part of this force attacked a traveling caravan near the oasis city of Otrar (Orgyan) in Western Turkestan region around 1219 or 1220 AD.",
+        "Genghis Khan ordered the attack.",
+        "Genghis Khan dispatched the attack after receiving intelligence suggesting the Khwarezmian state was amassing an army in preparation for war against him.",
+        "Genghis Khan ordered this attack.",
+        "Genghis Khan's general Subutai was responsible for ordering the attack on the caravan of traders traveling from Bukhara (then part of Khorasan) to Maragha in Iran. The expedition, conducted in 1219 during the Mongol invasion of Central Asia, led to significant looting",
+        "Genghis Khan ordered the attack on the caravan of traders sent to Khwarezmia.",
+        "Genghis Khan sent an invasion force, including part of his cavalry, against Khwarezmia in 1219-20 as part of his campaign. This led to raids and attacks on merchant caravans crossing the desert route."
+      ],
+      "se_discrete": 1.9730014063936125,
+      "se_logprob": 1.8126136517295397,
+      "C_SE_disc": -1.9730014063936125,
+      "n_clusters": 8
+    },
+    {
+      "id": "56f8a2969e9bad19000a022f",
+      "question": "What book did Luther write in response to Agricola and the antinomians?",
+      "gold": [
+        "On the Councils",
+        "On the Councils and the Church"
+      ],
+      "greedy": "Luther wrote \"The Babylonian Captivity of the Church\" in response to Agricola and the antinomians.",
+      "samples": [
+        "Luther wrote \"The Bondage of the Will\" in response to Agricola and the antinomians.",
+        "Luther wrote \"On the Babylonian Captivity of the Church\" as a direct response to Agricola and the antinomians.",
+        "Luther wrote the Book of Concord in response to Agricola and the antinomians.",
+        "Luther wrote \"The Bondage of the Will\" in response to Agricola and the antinomians.",
+        "Luther wrote \"The Large Catechism\" (also known as \"The Shorter Catechism\") in response to Agricola and the antinomians.",
+        "Luther wrote the book \"The Babylonian Captivity of the Church\" as a reply to Agricola and the antinomians.",
+        "Luther wrote \"The Babylonian Captivity of the Church\" in response to Agricola and the antinomians.",
+        "Luther wrote \"On The Babylonian Captivity of the Church\" in response to Agricola and the antinomians.",
+        "Luther wrote \"On the Freedom of a Christian\" (German: \"Von der Freiheit eines Christians\") in response to Agricola and the antinomian teachings.",
+        "Luther wrote the book \"On The Babylonian Captivity of the Church\" (German: \"Babylonierliche Festung der Kirche\") in response to Agricola and the antinomians."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.3627331517672887,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "572908c13f37b31900477fbf",
+      "question": "Innate cells can act as mediators in the activation of what branch of the immune system?",
+      "gold": [
+        "adaptive immune system",
+        "adaptive immune system.",
+        "adaptive"
+      ],
+      "greedy": "Innate cells can act as mediators in the activation of the innate immune system.",
+      "samples": [
+        "Innate cells can act as mediators in the activation of the innate immune system.",
+        "Innate cells can act as mediators in the activation of the adaptive immune system.",
+        "T cell activation.",
+        "Innate cells can act as mediators in the activation of innate immunity.",
+        "Innate cells can activate the innate arm of the immune system, which is the first line of defense against pathogens.",
+        "Immune response.",
+        "Toll-like receptors",
+        "Innate cells can act as mediators in the activation of innate immunity, which is the first line of defense against pathogens.",
+        "Innate cells can act as mediators in the activation of both innate and adaptive immune systems, but they primarily play roles in innate immunity through processes such as phagocytosis, antigen presentation to T cells, cytokine release, and direct cytotoxicity against pathogens.",
+        "T-cell activation."
+      ],
+      "se_discrete": 1.8866967846580784,
+      "se_logprob": 1.7565050761790244,
+      "C_SE_disc": -1.8866967846580784,
+      "n_clusters": 7
+    },
+    {
+      "id": "5727f05b4b864d190016406a",
+      "question": "What does less education lead to when working?",
+      "gold": [
+        "lower wages"
+      ],
+      "greedy": "Less education typically leads to lower earning potential and increased job insecurity in the workforce.",
+      "samples": [
+        "Less education often leads to lower earning potential and increased economic insecurity for workers.",
+        "Less education often leads to lower earnings and job opportunities compared to those with higher levels of schooling.",
+        "Less education typically leads to lower earnings and job prospects compared to those with higher levels of education.",
+        "Less education typically leads to lower earning potential and job opportunities compared to those with more formal schooling.",
+        "Less education often leads to lower wages and limited job opportunities compared to more educated workers in the same field or industry.",
+        "Less education typically leads to lower income and reduced job opportunities compared to those with more formal education.",
+        "Less education typically leads to earning lower wages and potentially fewer job opportunities as employers seek workers with higher qualifications.",
+        "Less education typically leads to lower wages and fewer career opportunities.",
+        "Less education typically leads to lower income, fewer employment opportunities, and increased reliance on government benefits or welfare programs.",
+        "Less education typically leads to lower earnings and limited career advancement opportunities compared to those with higher levels of education."
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.1404474962096418,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "5730ac6b8ab72b1400f9c671",
+      "question": "What is Prevenient grace?",
+      "gold": [
+        "It is that power which enables us to love and motivates us to seek a relationship with God through Jesus Christ.",
+        "the grace that \"goes before\" us",
+        "that power which enables us to love and motivates us to seek a relationship with God through Jesus Christ."
+      ],
+      "greedy": "Prevenient grace, also known as foreknowing grace or prevenient power, refers to God's free gift of salvation before the moment of sinning in which He enables people to believe and repent.",
+      "samples": [
+        "Prevenient Grace, also known as foreordained grace or irresistible grace, refers to God's free gift of salvation and the assurance of eternal life that enables people without faith to accept Jesus Christ as their savior.",
+        "Prevenient grace refers to God's gift of salvation and the work of the Holy Spirit in advance of man's free response, providing essential spiritual help necessary for conversion and sanctification.",
+        "Prevenient grace refers to the initial divine gift of God's presence and love, which enables a person to choose faith in Jesus Christ for salvation.",
+        "Prevenient grace is God's initial, sovereign gift of all necessary grace to enable faith and justification prior to any response from the individual.",
+        "Prevenient grace is God's free, unmerited gift of salvation prior to man's voluntary choice.",
+        "Prevenient grace is God's initial and necessary spiritual gift of salvation, enabling believers to receive and use sanctifying grace by faith in Jesus Christ.",
+        "Prevenient grace, also known as foreordained grace or prior gift, refers to God's active and unconditional intervention in human circumstances to bring about salvation before the individual even asks for it. It involves divine action prior to an individual's conscious decision to believe, ensuring their ability to accept salvation independently of human efforts.",
+        "Prevenient grace, also known as foreknowledge or prevenient preparation of the Spirit, refers to an innate ability within people to respond to God's offer of salvation by faith and repentance before they receive actual spiritual gifts from God.",
+        "Prevenient grace, often referred to as \"God's work within us before we ask,\" refers to the divine action of opening hearts and minds to receive faith prior to individual choice or explicit request for salvation. It enables believers by God's grace rather than our own free will.",
+        "Prevenient grace is God's initiative in bestowing initial salvation and the power of faith upon sinners before their personal decisions or works, enabling them to repent and believe. It's often described as \"free gift\" because it comes apart from any human effort to earn salvation."
+      ],
+      "se_discrete": 1.9730014063936125,
+      "se_logprob": 1.9749458584815975,
+      "C_SE_disc": -1.9730014063936125,
+      "n_clusters": 8
+    },
+    {
+      "id": "5725ce4d38643c19005acd51",
+      "question": "How do you pronounce Fresno?",
+      "gold": [
+        "FREZ-noh",
+        "(/ˈfrɛznoʊ/ FREZ-noh)"
+      ],
+      "greedy": "Fresno is pronounced as \"fruh-SON\".",
+      "samples": [
+        "Fresno is pronounced as \"FRU-sow.\"",
+        "The pronunciation of \"Fresno\" is /ˈfɹɛsəʊ/.",
+        "The pronunciation of Fresno is /froʊsə/.",
+        "Fresno is pronounced roughly as FRAY-zoh in English.",
+        "Fresno is pronounced as FRI-sawn.",
+        "Fresno is pronounced as \"frēsh-no.\"",
+        "The pronunciation of \"Fresno\" in English is /ˈfrɛsən/.",
+        "The pronunciation of Fresno is /ˈfɾoʊsər/.",
+        "Fresno is pronounced as FRESH-no.",
+        "Fresno is pronounced FRY-sow."
+      ],
+      "se_discrete": 2.0253262207700673,
+      "se_logprob": 2.016718831537745,
+      "C_SE_disc": -2.0253262207700673,
+      "n_clusters": 8
+    },
+    {
+      "id": "571c3a685efbb31900334db3",
+      "question": "Of what group in the periodic table is oxygen a member?",
+      "gold": [
+        "the chalcogen group",
+        "chalcogen"
+      ],
+      "greedy": "Oxygen is a member of Group 16 (or VIA) in the periodic table.",
+      "samples": [
+        "Oxygen is a member of Group 16 (or VIA) in the periodic table.",
+        "Oxygen is a member of Group 16 (or VIA) in the periodic table.",
+        "Oxygen is a member of Group 16 (or VIA) of the periodic table.",
+        "Oxygen is a member of Group 16 (or VIA) of the periodic table.",
+        "Oxygen is a member of Group 16 (also known as the chalcogens) in the periodic table.",
+        "Oxygen is a member of the Group 16 (or VIA) on the periodic table.",
+        "Oxygen is a member of the Group 16 (or VIA) in the periodic table, also known as the chalcogens.",
+        "Oxygen is a member of Group 16 (or VIA) in the periodic table.",
+        "Oxygen is a member of Group 16 (also known as the chalcogens) in the periodic table.",
+        "Oxygen is a member of Group 16 (also known as VIA) of the periodic table."
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.7979781095365893,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "57377862c3c5551400e51ef3",
+      "question": "What occurs when traveling across a surface at a constant velocity with regard to friction?",
+      "gold": [
+        "dynamic equilibrium"
+      ],
+      "greedy": "No net force acts on the object, so it maintains its speed and direction.",
+      "samples": [
+        "When traveling across a surface at a constant velocity, there is no change in velocity due to frictional forces; the system moves at its specified speed.",
+        "No significant change in motion, as the force of friction opposes but does not accelerate an object moving at a steady speed.",
+        "No net force is acting on the object.",
+        "Slowing down due to frictional forces.",
+        "The force of friction acts opposite to the direction of motion, causing slowing down or deceleration.",
+        "Traveling across a surface at a constant velocity is generally unaffected by friction if the motion is uniform (constant velocity). Friction acts to resist the motion, but under conditions of constant speed and no changes in direction or acceleration, it does not significantly alter the travel pace.",
+        "The object maintains its speed and direction of travel, assuming no other forces act upon it directly opposite to motion.",
+        "When traveling across a surface at a constant velocity, there is no acceleration and thus the net force acting on the object must be zero. This means that any resistive forces (such as static or kinetic friction) opposing motion must exactly cancel out the driving force providing acceleration.",
+        "No net force acts on the object.",
+        "No acceleration occurs."
+      ],
+      "se_discrete": 1.8866967846580782,
+      "se_logprob": 1.8643192602769263,
+      "C_SE_disc": -1.8866967846580782,
+      "n_clusters": 7
+    },
+    {
+      "id": "56bf3e803aeaaa14008c9589",
+      "question": "What position does Brandon Marshall currently play? ",
+      "gold": [
+        "Linebacker"
+      ],
+      "greedy": "Brandon Marshall currently plays as a wide receiver in the National Football League (NFL).",
+      "samples": [
+        "Brandon Marshall currently plays wide receiver in the NFL.",
+        "Brandon Marshall currently plays wide receiver in the National Football League (NFL).",
+        "Brandon Marshall currently plays wide receiver for the New York Giants in the National Football League (NFL).",
+        "Brandon Marshall currently plays cornerback in the National Football League (NFL).",
+        "Brandon Marshall currently plays wide receiver in the NFL.",
+        "Brandon Marshall currently plays cornerback in the National Football League (NFL).",
+        "Brandon Marshall currently plays wide receiver for the New York Giants in the National Football League (NFL).",
+        "Brandon Marshall is an NFL wide receiver.",
+        "Brandon Marshall is an American former professional football cornerback and wide receiver, most recently playing in the NFL as of 2023.",
+        "Brandon Marshall currently plays as a wide receiver in professional football."
+      ],
+      "se_discrete": 1.4708084763221112,
+      "se_logprob": 1.4531182781816292,
+      "C_SE_disc": -1.4708084763221112,
+      "n_clusters": 5
+    },
+    {
+      "id": "5730b9852461fd1900a9cffb",
+      "question": "The Church supports those persons who conscientiously oppose what?",
+      "gold": [
+        "all war",
+        "war"
+      ],
+      "greedy": "The Church supports those persons who conscientiously oppose birth control methods as prescribed by the state or any other authority, provided they do not interfere with others' rights to choose freely.",
+      "samples": [
+        "The Church supports those persons who conscientiously oppose contraception.",
+        "Conscientious objection to military service.",
+        "Conscientious objection to certain military service or war-related activities.",
+        "The Church generally supports individuals who conscientiously oppose violence, capital punishment, and the death penalty, based on moral opposition to killing innocent or vulnerable people.",
+        "The Church, particularly Catholicism, traditionally opposes euthanasia and assisted suicide due to its stance on life as sacred and the inherent dignity of every human person.",
+        "The Church generally supports and does not explicitly prohibit acts of civil disobedience by individuals who conscientiously oppose certain laws or policies deemed immoral, unethical, or in violation of basic human rights. This stance aims to preserve the dignity of the individual conscience while upholding civil obligations where applicable. However, this support may vary based on",
+        "The Church supports those persons who conscientiously oppose contraception.",
+        "The Church supports those persons who conscientiously oppose assisted suicide and euthanasia.",
+        "The Church supports those persons who conscientiously oppose contraception.",
+        "The Church supports those persons who conscientiously object to war and military service."
+      ],
+      "se_discrete": 1.8343719702816235,
+      "se_logprob": 1.740890065206394,
+      "C_SE_disc": -1.8343719702816235,
+      "n_clusters": 7
+    },
+    {
+      "id": "56f80ad1a6d7ea1400e1739c",
+      "question": "What sections of Church dogma did Luther come to view in another way?",
+      "gold": [
+        "penance and righteousness"
+      ],
+      "greedy": "Luther came to view the sections of Church dogma concerning indulgences and the papal authority as corrupt.",
+      "samples": [
+        "Luther came to question the authority and practice of indulgences, penance, and papal supremacy.",
+        "Luther came to view the doctrines of indulgences, papal authority, and transubstantiation differently.",
+        "Luther initially viewed indulgences as part of the corrupt practices of the Roman Catholic Church and sought their reform, but over time he came to see them as an essential component of church doctrine. Initially considering them fraudulent, he later acknowledged their legitimacy.",
+        "Luther came to view sections such as indulgences and papal authority negatively or differently.",
+        "Luther came to view indulgences, faith alone (sola fide), and the papal authority as being incorrect or corrupt within the church dogma.",
+        "Luther came to see the authority and importance of indulgences differently, challenging papal decrees on salvation and penance.",
+        "Luther came to view certain sections, specifically those related to indulgences and church practices, as corrupt or insufficient.",
+        "Luther came to view the indulgences, papal authority, and church practices as irrelevant or corrupt. He rejected these elements of Catholic doctrine and established his own beliefs on salvation through faith alone.",
+        "Luther came to view church practices such as the sale of indulgences and the authority of the Pope in questioning papal supremacy. He rejected both practices, leading to the Protestant Reformation.",
+        "Luther came to question and reform many aspects of the Catholic Church, notably papal authority, clerical celibacy, and the sale of indulgences. He also promoted the doctrine of \"justification by faith\" rather than through good works as taught by the Roman Catholic Church."
+      ],
+      "se_discrete": 1.9730014063936125,
+      "se_logprob": 1.9964222425830371,
+      "C_SE_disc": -1.9730014063936125,
+      "n_clusters": 8
+    },
+    {
+      "id": "57107d73b654c5140001f91e",
+      "question": "When was this edict declared?",
+      "gold": [
+        "1685"
+      ],
+      "greedy": "The Edict of Nantes, which granted religious freedom to Huguenots in France, was declared on August 25, 1598.",
+      "samples": [
+        "The Edict of Milan, which established religious toleration for Christianity and officially ended persecution by the Roman Empire, was declared on August 28, 313 AD.",
+        "I'm sorry, but I need more context to answer your question accurately. What specific edict are you referring to? There have been many important events or decrees throughout history with various dates associated with them. Providing the name of the particular document would help me give you a precise answer.",
+        "I'm sorry, but you haven't specified which edict you're asking about. Could you please provide more context or clarify your question?",
+        "I'm sorry, but I need more context to answer your question accurately. Could you please provide the name of the edict and the period or event it relates to? Without this information, it's impossible for me to determine when an edict was declared.",
+        "The specific date of the declaration is not provided in your question, so I cannot give an accurate time frame for when this edict was proclaimed without additional context about which edict you're referring to or in what historical period it occurred. Could you please provide more details?",
+        "I'm sorry, I cannot provide an accurate date for which \"this\" edict is without more context information about the specific document or its history. To give a precise response, please provide the name of the edict or additional details about when and where it was issued.",
+        "I'm sorry, but I cannot provide an accurate answer as there seems to be no specific edict or document mentioned in your question for me to refer to. Could you please provide more context or clarify which \"edict\" you are referring to? Without sufficient information, I am unable to determine when it was declared.",
+        "I'm sorry, but your question is unclear. Could you please provide more context or clarify what \"this edict\" refers to? I'd be happy to help if you can give me some additional information about the context of your question.",
+        "I'm sorry, but I need more context to answer your question accurately. Could you please provide the name of the document or edict in question? Without that information, it's impossible for me to give an accurate date for when it was declared.",
+        "I'm sorry, but I need more context to answer your question accurately. Could you please provide me with the name of the specific edict and its context?"
+      ],
+      "se_discrete": 1.8343719702816235,
+      "se_logprob": 1.8409340403729917,
+      "C_SE_disc": -1.8343719702816235,
+      "n_clusters": 7
+    },
+    {
+      "id": "5727fc37ff5b5019007d9a1b",
+      "question": "What has replaced lower skilled workers in the United States?",
+      "gold": [
+        "machine labor"
+      ],
+      "greedy": "Automation and technology have largely replaced lower-skilled workers in the United States.",
+      "samples": [
+        "Technology. Technology and automation have largely replaced lower-skilled workers in many sectors of the U.S. economy.",
+        "Automation and technological advancements have displaced lower-skilled workers in the United States.",
+        "Technology and automation have largely replaced lower-skilled workers in many sectors of the U.S. economy over recent decades.",
+        "Automation and technological advancements have led to significant job displacement of lower-skilled workers in the US.",
+        "Automation and technological advancements have largely replaced lower-skilled workers in the U.S., reducing employment opportunities for those without specialized skills or education.",
+        "Technology and automation have largely replaced lower-skilled workers in the United States, leading to concerns about job displacement and rising income inequality.",
+        "Automation and technological advancements have largely displaced lower-skilled workers in the U.S., leading to increased unemployment rates and economic inequality.",
+        "Automation and technology have replaced lower-skilled workers in the United States.",
+        "Technology and automation have largely replaced lower-skilled workers in the United States.",
+        "Automation and technology have largely replaced lower-skilled workers in many sectors of the US economy."
+      ],
+      "se_discrete": 1.5047882836811908,
+      "se_logprob": 1.4779299000688022,
+      "C_SE_disc": -1.5047882836811908,
+      "n_clusters": 5
+    },
+    {
+      "id": "5729fb003f37b31900478629",
+      "question": "The production of what signalling molecules is regulated by the immune system?",
+      "gold": [
+        "hormones"
+      ],
+      "greedy": "The production of cytokines is regulated by the immune system.",
+      "samples": [
+        "The production of cytokines is regulated by the immune system.",
+        "The production of cytokines is regulated by the immune system.",
+        "Hormones such as cytokines and lymphokines.",
+        "Proteins called cytokines are typically produced and regulated by the immune system.",
+        "The production of cytokines is regulated by the immune system.",
+        "The production of cytokines is regulated by the immune system.",
+        "T-cell receptor signaling.",
+        "Proteins called cytokines are produced and regulated by the immune system as signaling molecules.",
+        "Chemokines and cytokines are signaling molecules regulated by the immune system.",
+        "The production of cytokines is regulated by the immune system. Cytokines are signaling molecules primarily involved in cell-mediated immunity and inflammation, often produced by activated immune cells to coordinate the response against pathogens or tumors."
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 0.9520598471083811,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "56bebd713aeaaa14008c9331",
+      "question": "How long will the event at Santa Clara Convention Center last?",
+      "gold": [
+        "a week",
+        "week"
+      ],
+      "greedy": "The exact duration of events at Santa Clara Convention Center is not specified in your question, so I cannot provide an accurate timeframe without additional information about which specific event you're referring to. Typically, such details would be announced closer to the date or available on the official event website.",
+      "samples": [
+        "The event at Santa Clara Convention Center lasts approximately 3 days.",
+        "The length of time for an event typically depends on its specific agenda and duration, but it usually lasts from several days to multiple weeks. Without knowing the exact name or nature of the event, I can't specify a precise duration. For instance, if we consider a major conference with hundreds of speakers over three days, it",
+        "The exact duration of the event is not specified in your question, so I cannot provide an accurate timeframe without additional information about what specific event you're referring to at Santa Clara Convention Center. Typically, such events might span days or weeks, depending on their scale and content. To get precise details, please specify which event or",
+        "The exact duration of an event at Santa Clara Convention Center is not specified in your question, so I can't provide a numerical answer about how long it lasts. Typically, such information would be included on the official event details page or program brochure. If you have any specific event name or date in mind, please share and",
+        "The duration of an event is not specified in the question, so I cannot provide a specific timeframe. Please provide more details about the event you're asking about.",
+        "The specific duration of an event cannot be determined without knowing which event is being referred to. Please provide more context or clarify your question.",
+        "The duration of the event is not specified in your question, so I cannot provide an accurate timeframe for its length. Please provide more specific details about the event you're referring to.",
+        "The event duration is not specified in your question, so I cannot provide an accurate time period for its length. To give you a precise answer, please let me know the specific details about which event you are referring to.",
+        "The exact duration of the event is not specified in the prompt, so I cannot provide an accurate timeframe for its length. To get a precise duration, you would need to refer directly to the official information or announcement about the event's schedule and timeline.",
+        "The event lasts from Saturday, April 25, to Wednesday, April 29."
+      ],
+      "se_discrete": 1.7480673485460891,
+      "se_logprob": 1.6592501249121,
+      "C_SE_disc": -1.7480673485460891,
+      "n_clusters": 7
+    },
+    {
+      "id": "56e1a564cd28a01900c67a4a",
+      "question": "What term corresponds to the maximum measurement of time across all functions of n? ",
+      "gold": [
+        "worst-case time complexity",
+        "the worst-case time complexity"
+      ],
+      "greedy": "The term that corresponds to the maximum measurement of time across all functions of n is Big O notation.",
+      "samples": [
+        "The term that corresponds to the maximum measurement of time across all functions of n is Big O notation, specifically O(n).",
+        "The term for the maximum measurement of time across all functions of n is \"Omega Notation\" or Ω.",
+        "The term that corresponds to the maximum measurement of time across all functions of n is Big O notation.",
+        "The term that corresponds to the maximum measurement of time across all functions of n is Big-O notation.",
+        "The term that corresponds to the maximum measurement of time across all functions of n is Big O notation, denoted as O(f(n)).",
+        "The term that corresponds to the maximum measurement of time across all functions of n is Big O notation.",
+        "The term that corresponds to the maximum measurement of time across all functions of n is \"Big-O notation\".",
+        "The term that corresponds to the maximum measurement of time across all functions of \\( n \\) is Big O notation, which describes an upper bound on the complexity in terms of big-oh.",
+        "Turing Jump",
+        "The term that corresponds to the maximum measurement of time across all functions of n is Big O notation."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.2787230021194012,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "5733f309d058e614000b6649",
+      "question": "What were casualties of battle?",
+      "gold": [
+        "Canadians, including their commanding officer",
+        "killed many of the Canadians, including their commanding officer, Joseph Coulon de Jumonville",
+        "many of the Canadians, including their commanding officer, Joseph Coulon de Jumonville"
+      ],
+      "greedy": "Casualties in battle refer to the number of people who died or became injured as a result of combat activities.",
+      "samples": [
+        "Casualties of battle include the dead and those wounded or disabled during an armed conflict, formal or informal, large-scale or small-scale, peacekeeping or war.",
+        "Casualties of battle include dead, wounded, and missing soldiers from combat engagements.",
+        "Casualties in battle typically include those who died, either directly or indirectly due to wounds from combat injuries, suicide attempts, accidental deaths, disease contracted during the conflict, and those taken prisoner of war. Additionally, there might be civilian casualties from attacks on infrastructure or displacement of civilians for military purposes.",
+        "Casualties of battle include wounded or killed soldiers on both sides, civilians affected by conflict (e.g., through bombing raids), and missing persons.",
+        "Casualties in battle refer to the wounded or dead soldiers involved in combat operations.",
+        "Casualties of battle refer to the wounded or dead individuals who were directly involved in the fighting during a military conflict. This includes both those killed outright and injured but survive long enough to be counted as casualties after medical treatment has been administered. The term typically excludes non-combatants such as civilians or enemy combatants captured",
+        "Casualties in battle include dead or injured soldiers.",
+        "Casualties of battle include the dead and those wounded or disabled who cannot continue fighting.",
+        "Casualties in battle refer to the dead, wounded, or missing people on both sides. They include soldiers who die as a result of injuries sustained during combat and those left disabled or incapacitated by wounds they received.",
+        "Casualties include the dead and those injured or made unfit for service as a result of war, conflict, or military engagement."
+      ],
+      "se_discrete": 1.9730014063936125,
+      "se_logprob": 1.8868130807187034,
+      "C_SE_disc": -1.9730014063936125,
+      "n_clusters": 8
+    },
+    {
+      "id": "572fcd86947a6a140053ccdb",
+      "question": "Who may introduce new laws or amendments to laws already on the books as a bill?",
+      "gold": [
+        "Scottish Government",
+        "the Scottish Government"
+      ],
+      "greedy": "Members of Congress may introduce new laws or amendments to existing laws as bills in their respective legislative bodies.",
+      "samples": [
+        "A member of Congress can introduce new laws (legislation) or propose amendments to existing laws as part of their legislative role in government.",
+        "Members of a legislature, like in Congress or Parliament, may introduce new laws or amend existing ones as bills.",
+        "Members of Congress.",
+        "Members of Congress may introduce bills in the legislative process, which is also known as \"introducing\" new laws or amendments to existing laws (laws already on the books).",
+        "Members of Congress may introduce bills, which become law after passing both houses of Congress and being signed into law by the president. Bills typically fall under several categories such as taxation, social issues, or public health matters, among others.",
+        "A person who proposes such changes presents them as a bill to Congress, which is typically a member of the House of Representatives or Senate in the United States government legislative process.",
+        "Members of Congress may introduce bills, which serve as proposals for new legislation or changes to existing laws.",
+        "Members of Congress may introduce bills which become law when approved by both houses and signed into law by the president.",
+        "The House of Representatives or Senate can introduce new laws or amend existing laws as bills.",
+        "Members of Congress may introduce new laws or amend existing ones as bills in their respective legislative bodies."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.465699290692072,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "57280f974b864d1900164370",
+      "question": "If the head of government refuses to enforce a decision of the highest court what terminology could be used?",
+      "gold": [
+        "her or his capacity as public official",
+        "capacity as public official",
+        "constitutional impasse"
+      ],
+      "greedy": "The term \"judicial override\" or \"judicial veto\" could be used in this context.",
+      "samples": [
+        "The term \"judicial activism\" could be used when referring to this scenario, although it has more negative connotations associated with it in some contexts. However, a broader neutral term is simply \"refusal to comply.\"",
+        "The head of government refusing to enforce a decision of the highest court is often referred to as \"withholding implementation\".",
+        "The head of government refusing to enforce a decision of the highest court is referred to as \"withholding enforcement.\"",
+        "The head of government refusing to enforce a court decision is typically referred to as \"withholding enforcement\" or \"blocking implementation\".",
+        "Obstruction of justice.",
+        "If the head of government refuses to enforce an order of the highest court, the official may use terms like \"refuses to comply\" or \"withholds implementation\".",
+        "When the head of government rejects an order from the highest court, it can be referred to as a \"rejection\" or \"non-enforcement\" in terms of official protocol and communication with other branches or institutions.",
+        "The situation would involve \"interference\" or \"obstruction\" of judicial decision-making.",
+        "\"Judicial override\" or \"judicial veto\" could be used as terms for this scenario.",
+        "\"Judicial activism\" could be used as terminology to describe such an action."
+      ],
+      "se_discrete": 2.0253262207700673,
+      "se_logprob": 2.0051970329722426,
+      "C_SE_disc": -2.0253262207700673,
+      "n_clusters": 8
+    },
+    {
+      "id": "57268a37f1498d1400e8e33d",
+      "question": "What is the oncorhynchus also called?",
+      "gold": [
+        "chum salmon"
+      ],
+      "greedy": "The Oncorhynchus genus, which includes salmon and trout species, is also known as Salmonidae.",
+      "samples": [
+        "The Oncorhynchus is also known as trout.",
+        "Oncorhynchus is commonly known as salmon.",
+        "Oncorhynchus is commonly known as salmon or trout, depending on the species.",
+        "The Oncorhynchus, genus of salmonid fish commonly known as trout.",
+        "Oncorhynchus is also commonly referred to as Pacific salmon or Chinook salmon, depending on specific species within this genus of fish.",
+        "The Oncorhynchus genus of fish, including salmon and trout species, is commonly known as Salmonidae.",
+        "Oncorhynchus also known as Oncorhynchus.",
+        "The Oncorhynchus is also known as Salmon or Trout, depending on the species.",
+        "Oncorhynchus is also commonly known as trout.",
+        "Onchorhynchus is also known as trout."
+      ],
+      "se_discrete": 1.8343719702816235,
+      "se_logprob": 1.8083491805222374,
+      "C_SE_disc": -1.8343719702816235,
+      "n_clusters": 7
+    },
+    {
+      "id": "56e0f6aa231d4119001ac4f0",
+      "question": "Where are longitudinal waves found?",
+      "gold": [
+        "waves in plasmas",
+        "force-free magnetic fields",
+        "in force-free magnetic fields"
+      ],
+      "greedy": "Longitudinal waves are found in solids, liquids, and gases.",
+      "samples": [
+        "Longitudinal waves are found in fluids, solids, and gases. They travel through media where the particles move back and forth parallel to the direction of wave propagation. Examples include sound waves and water waves.",
+        "Longitudinal waves are found in solids, gases, and liquids where particles vibrate back and forth along the direction of wave propagation.",
+        "Longitudinal waves are found in solid materials, such as steel or air molecules during compression waves.",
+        "Longitudinal waves are found in compressions and rarefactions of a medium, such as air or water, where the particles vibrate parallel to the direction of wave propagation.",
+        "Longitudinal waves are found in solids and gases where particles move back and forth along the direction of wave propagation.",
+        "Longitudinal waves are found in solids, liquids, and gases where particles move parallel to the direction of wave propagation. Examples include sound waves traveling through air or steel.",
+        "Longitudinal waves can be found in gases, liquids, and solids.",
+        "Longitudinal waves can be found in solids, liquids, and gases. They represent pressure variations traveling through matter where particles oscillate parallel to the direction of wave propagation.",
+        "Longitudinal waves are found in solids and compressible fluids.",
+        "Longitudinal waves are found in solids, liquids, and gases."
+      ],
+      "se_discrete": 2.0253262207700673,
+      "se_logprob": 1.9762306483287666,
+      "C_SE_disc": -2.0253262207700673,
+      "n_clusters": 8
+    },
+    {
+      "id": "573081c2069b531400832137",
+      "question": "Most imperialism was carried out using which method of transport?",
+      "gold": [
+        "land",
+        "seaborne",
+        "sea and trade routes",
+        "sea"
+      ],
+      "greedy": "Most imperialism was carried out using ships.",
+      "samples": [
+        "Most imperialism was carried out using ships.",
+        "Most imperialism was carried out primarily using sea-based transportation, facilitated by ships and naval forces.",
+        "Most imperialism during the age of sail (late 15th to early 20th centuries) was carried out using ships as their main method of transport, particularly naval fleets and merchant ships for trade. As steam power became more prevalent in the late 19th century, railways replaced some overland transportation needs",
+        "Most imperialist expeditions used the steamship as their primary means of transportation.",
+        "Railways",
+        "The most common mode of transportation for imperial expansion was the ship or ship-based fleet.",
+        "Most imperialism was carried out using naval power.",
+        "Most imperialism was carried out using sea ships.",
+        "Most imperialism in the 19th and early 20th centuries utilized military expeditions by naval or sea-going land forces for transportation and logistics.",
+        "Most imperialism during the colonial era was primarily achieved through maritime means, with ships serving as key vehicles for transporting imperial armies and goods across vast distances. The British East India Company is one well-known example where their fleet played a significant role in establishing and maintaining empire across Asia."
+      ],
+      "se_discrete": 1.8343719702816235,
+      "se_logprob": 1.6331436425541364,
+      "C_SE_disc": -1.8343719702816235,
+      "n_clusters": 7
+    },
+    {
+      "id": "56e190bce3433e1400422fc8",
+      "question": "What kind of problems are one of the main topics studied in computational complexity theory?",
+      "gold": [
+        "Decision problems",
+        "Decision"
+      ],
+      "greedy": "One of the main topics studied in computational complexity theory is the classification and comparison of computational problems based on their inherent difficulty, often measured by time or space requirements.",
+      "samples": [
+        "One of the main topics studied in computational complexity theory is understanding how efficiently (or inefficiently) various computational problems can be solved on a computer. This includes identifying which problems can be solved quickly (in polynomial time), or if they require exponential time or more complex approaches. Complexity classes like P, NP, and beyond help",
+        "The study of computational complexity focuses on understanding time and space requirements of algorithms to solve various computational problems effectively and efficiently.",
+        "One of the main topics in computational complexity theory includes classifying problems by their inherent difficulty, with emphasis on understanding time and space requirements for solving them.",
+        "One of the main topics studied in computational complexity theory is the classification and comparison of algorithms based on how efficiently they solve problems, leading to the definition of complexity classes such as P, NP, and others.",
+        "One of the main topics studied in computational complexity theory includes the classification and comparison of algorithms according to how efficiently they solve problems, particularly focusing on time complexity (the amount of computation required for an algorithm) versus space complexity (memory usage). This involves understanding the inherent difficulty of solving certain problems using classical or parallel computing models.",
+        "The main focus areas include algorithms and their time/space complexity, NP-completeness, circuit lower bounds, probabilistic and quantum computing models, derandomization techniques, approximation algorithms, communication complexity, data structures, parameterized complexity, trade-offs between different resources, and more.",
+        "One of the main topics in computational complexity theory is measuring the resources required to solve a problem, such as time or space needed by an algorithm.",
+        "One of the main topics studied in computational complexity theory is the classification and comparison of computational problems based on their difficulty, typically measured by time or space requirements.",
+        "One of the main topics studied in computational complexity theory are algorithms and their inherent time/space costs for solving computational problems.",
+        "One of the main topics studied in computational complexity theory is the classification and comparison of problem-solving techniques based on their inherent difficulty or tractability. This includes understanding what types of problems can be solved quickly (in polynomial time) versus those that require exponentially long computation times, known as NP-complete problems. Complexity also examines whether there"
+      ],
+      "se_discrete": 1.8343719702816235,
+      "se_logprob": 1.7968861488283114,
+      "C_SE_disc": -1.8343719702816235,
+      "n_clusters": 7
+    },
+    {
+      "id": "56e77a8700c9c71400d7718e",
+      "question": "What website are teachers using to sell their lesson plans?",
+      "gold": [
+        "TeachersPayTeachers.com"
+      ],
+      "greedy": "Teachers can use websites like Teachers Pay Teachers to sell their lesson plans online.",
+      "samples": [
+        "Teachers may use websites such as TeachersPayTeachers or Chegg for selling their lesson plans online.",
+        "Teachers can use platforms like TeachersPayTeachers, Etsy, or TpT (Teachers Pay Teachers) to sell their lesson plans online.",
+        "Teachers can use platforms like TeachersPayTeachers or Lesson Planet to sell their lesson plans online.",
+        "Teachers.com",
+        "Teachers can use websites like TeachersPayTeachers or Chegg Tutors to sell their lesson plans online for sale.",
+        "Teachers may use websites like TeachersPayTeachers for selling lesson plans and other educational materials online.",
+        "Teachers can use websites such as Lesson Planet or Teachers Pay Teachers to sell their lesson plans online for others to purchase and use in their classrooms.",
+        "Teachers.com is one example of a website where teachers can list and sell their lesson plans online.",
+        "Teachers may use sites like Teachers Pay Teachers or Lesson Planet to sell their lesson plans online.",
+        "Teachers can use websites like Lesson Planet or Teachers Pay Teachers for selling their lesson plans online."
+      ],
+      "se_discrete": 1.8343719702816235,
+      "se_logprob": 1.8227096068605695,
+      "C_SE_disc": -1.8343719702816235,
+      "n_clusters": 7
+    },
+    {
+      "id": "573088da069b53140083216c",
+      "question": "Where was Halford Mackinder born?",
+      "gold": [
+        "Britain"
+      ],
+      "greedy": "Halford Mackinder was born in London, England.",
+      "samples": [
+        "Halford MacKenzie Mackinder was born in Edinburgh, Scotland.",
+        "Halford MacKenzie Mackinder was born in Edinburgh, Scotland.",
+        "Halford Mackinder was born in Nottingham, England.",
+        "Halford Mackinder was born in London, England.",
+        "Halford Mackinder was born in Derby, England.",
+        "Halford Mackinder was born in Nottingham, England.",
+        "Halford Mackinder was born in Oxford, England.",
+        "Halford Mackinder was born in London, England.",
+        "Halford MacKenzie Mackinder was born in York, England.",
+        "Halford Mackinder was born in London, England."
+      ],
+      "se_discrete": 1.6957425341696344,
+      "se_logprob": 1.654687254655891,
+      "C_SE_disc": -1.6957425341696344,
+      "n_clusters": 6
+    },
+    {
+      "id": "57060df252bb891400689821",
+      "question": "Other than San Bernardino, what is the name of the other city that maintains the districts including University Town?",
+      "gold": [
+        "Riverside",
+        "Downtown Riverside"
+      ],
+      "greedy": "Pasadena maintains the districts including University Town.",
+      "samples": [
+        "Pasadena maintains the districts including University Town in addition to San Bernardino.",
+        "Ontario maintains the district including University Town.",
+        "Pasadena maintains the district including University Town.",
+        "Pasadena maintains these districts along with San Bernardino.",
+        "Yuma",
+        "Pasadena maintains the district including University Town in addition to San Bernardino.",
+        "Pasadena maintains the same district structure as San Bernardino but has developed on its own.",
+        "Pasadena maintains the university district along with San Bernardino.",
+        "Pasadena maintains the city's districting system.",
+        "Anaheim maintains the same district structure as San Bernardino, including areas like University Town."
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 0.9870223180919938,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "571cde695efbb31900334e19",
+      "question": "Besides fats, fatty acids, and amino acids,what other organic compounds contain oxygen?",
+      "gold": [
+        "proteins"
+      ],
+      "greedy": "Carbohydrates contain oxygen.",
+      "samples": [
+        "carbohydrates",
+        "Carbohydrates contain carbon, hydrogen, and oxygen.",
+        "Carbohydrates contain oxygen.",
+        "Carbohydrates, such as sugars and starches.",
+        "Carbohydrates containing oxygen, like glucose.",
+        "Carbohydrates containing oxygen include sugars, starches, and cellulose.",
+        "Carbohydrates contain oxygen along with hydrogen and carbon.",
+        "Carbohydrates also contain oxygen.",
+        "Carbohydrates also contain oxygen.",
+        "Nucleic acids containing nitrogenous bases also include organic compounds with oxygen."
+      ],
+      "se_discrete": 1.6094379124341,
+      "se_logprob": 1.5135342504022853,
+      "C_SE_disc": -1.6094379124341,
+      "n_clusters": 6
+    },
+    {
+      "id": "56f86b44a6d7ea1400e175f7",
+      "question": "What did he work on refining until the end of his life?",
+      "gold": [
+        "the translation",
+        "translation"
+      ],
+      "greedy": "He worked on refining petroleum until the end of his life.",
+      "samples": [
+        "Astronomy",
+        "Einstein worked on refining general relativity until the end of his life.",
+        "The Hubble Space Telescope.",
+        "Astronomy.",
+        "He worked on refining oil.",
+        "Alexander Graham Bell worked on refining sonar technology until the end of his life.",
+        "He worked on refining oil.",
+        "He worked on refining petroleum technology until the end of his life, including developing processes for extracting and producing gasoline from crude oil. This effort contributed to advancements in automotive fuel systems.",
+        "He worked on refining petroleum through distillation, which became an important aspect of oil production and use in industry and transportation.",
+        "He worked on refining Einstein's theory of general relativity, particularly extending it to include gravitational waves and black holes, until the end of his life."
+      ],
+      "se_discrete": 2.0253262207700673,
+      "se_logprob": 2.0424868092655886,
+      "C_SE_disc": -2.0253262207700673,
+      "n_clusters": 8
+    },
+    {
+      "id": "56f84e63aef2371900625fc3",
+      "question": "What did Luther call the revolting peasants?",
+      "gold": [
+        "mad dogs",
+        "Murderous, Thieving Hordes"
+      ],
+      "greedy": "Luther called the revolting peasants \"the people.\"",
+      "samples": [
+        "Luther called the revolting peasants \"the world.\"",
+        "Luther called the revolting peasants \"Witches\".",
+        "Luther called the revolting peasants \"The People's War\" or \"Peasants' War\".",
+        "Luther called the revolting peasants \"the oppressed people.\"",
+        "Luther referred to the revolting peasants as \"thieves and robbers\" (Güterlaunderer und Raubritter).",
+        "Luther called the revolting peasants \"the heathen\" or simply \"heathens.\"",
+        "Luther called the revolting peasants \"heretics.\"",
+        "Luther called the revolting peasants \"heretics.\"",
+        "Luther referred to the revolting peasants as \"heretics.\"",
+        "Luther called the revolting peasants \"Christ's vassals.\""
+      ],
+      "se_discrete": 1.9730014063936125,
+      "se_logprob": 1.8687944433190242,
+      "C_SE_disc": -1.9730014063936125,
+      "n_clusters": 8
+    },
+    {
+      "id": "5728f2e26aef051400154899",
+      "question": "What acquired condition results in immunodeficiency in humans?",
+      "gold": [
+        "HIV/AIDS"
+      ],
+      "greedy": "Acquired immunodeficiency resulting from HIV infection.",
+      "samples": [
+        "Acquired immunodeficiency results from HIV infection in humans.",
+        "Acquired Immunodeficiency Syndrome (AIDS) is a medical condition resulting from the HIV virus, which impairs the immune system and significantly reduces the body's ability to fight off infections.",
+        "HIV/AIDS (Human Immunodeficiency Virus Infection and Acquired Immune Deficiency Syndrome) is the most common acquired immunodeficiency condition resulting in reduced immune function in humans.",
+        "Acquired Immunodeficiency Syndrome (AIDS)",
+        "Ataxia-telangiectasia",
+        "Acquired immunodeficiency resulting from HIV infection.",
+        "Human Immunodeficiency Virus (HIV) acquisition results in immunodeficiency.",
+        "Acquired conditions resulting in immunodeficiency in humans include HIV/AIDS and autoimmune diseases.",
+        "Acquired immunodeficiency resulting from HIV infection.",
+        "Acquired immune deficiency occurs when the immune system is weakened due to various infections, certain medications, or autoimmune diseases."
+      ],
+      "se_discrete": 1.7480673485460891,
+      "se_logprob": 1.6773085152955933,
+      "C_SE_disc": -1.7480673485460891,
+      "n_clusters": 7
+    },
+    {
+      "id": "57108198b654c5140001f93a",
+      "question": "What is the southern region where protestants are concentrated?",
+      "gold": [
+        "Cévennes",
+        "Cévennes mountain region"
+      ],
+      "greedy": "The Southern United States, particularly states like Mississippi, Alabama, and Georgia, have historically been home to significant concentrations of Protestantism.",
+      "samples": [
+        "Southeastern United States (e.g., Georgia, South Carolina)",
+        "The southern United States is known for having a concentration of Protestant Christians, primarily belonging to denominations such as Southern Baptist, African Methodist Episcopal (AME) Church, and historically including some branches of Methodism.",
+        "Southeastern United States",
+        "Southeastern United States.",
+        "The southern United States has been home to a significant concentration of Protestant Christians throughout U.S. history due in large part to historical migrations and the strong influence of European Protestants during colonial times. The South's unique cultural heritage, deep religious traditions, and historical significance have played key roles in shaping this demographic trend.",
+        "Southeastern United States",
+        "The United States of America.",
+        "Southeastern United States",
+        "The southern United States is where Protestants are concentrated.",
+        "Southeastern United States."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.3619289704156265,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "57268739708984140094c8f1",
+      "question": "ABC continued NBC Blue's tradition of what?",
+      "gold": [
+        "public service"
+      ],
+      "greedy": "Continuing NBC Blue's tradition of providing sports programming.",
+      "samples": [
+        "Continued NBC Blue's tradition of providing early morning programming.",
+        "Continued NBC Blue's tradition of color programming during the 1980s.",
+        "Broadcasting news programs.",
+        "Continuing NBC Blue's tradition of broadcasting news programming.",
+        "Continued NBC Blue's tradition of providing educational and inspirational content aimed at families.",
+        "ABC carried on NBC Blue's tradition of syndication and late-night programming.",
+        "ABC continued NBC Blue's tradition of offering premium content through its OWN (Originals) division.",
+        "Continued NBC Blue's tradition of breaking news at 1 p.m. on Sundays in New York City.",
+        "ABC continued NBC Blue's tradition of early morning programming.",
+        "Continued the \"All In\" concept introduced by NBC Blue."
+      ],
+      "se_discrete": 2.0253262207700673,
+      "se_logprob": 1.9716894464680117,
+      "C_SE_disc": -2.0253262207700673,
+      "n_clusters": 8
+    },
+    {
+      "id": "57264228ec44d21400f3dcf9",
+      "question": "Telnet was sold to ",
+      "gold": [
+        "Telenet was incorporated in 1973 and started operations in 1975. It went public in 1979 and was then sold to GTE",
+        "GTE"
+      ],
+      "greedy": "Cisco Systems",
+      "samples": [
+        "Cisco Systems.",
+        "Cisco Systems acquired the Telnet protocol and technology in 1984 for $35 million.",
+        "Cisco收购了Telnet。",
+        "Cisco Systems",
+        "Verizon.",
+        "Cisco Systems",
+        "Cisco Systems",
+        "Cisco Systemz",
+        "Cisco System Inc.",
+        "Cisco Systems"
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.0657862214107936,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    }
+  ]
+}

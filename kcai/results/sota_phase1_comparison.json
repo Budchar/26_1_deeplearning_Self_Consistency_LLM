@@ -1,0 +1,654 @@
+{
+  "phase1_v1": {
+    "Qwen__Qwen2.5-1.5B-Instruct/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.225,
+      "se_discrete_auroc": 0.6718078853046595,
+      "seps_best_auroc": 0.744516129032258,
+      "mean_logprob_auroc": 0.6617290322580645,
+      "selfcheck_unigram_auroc": 0.5979125448028674,
+      "selfcheck_nli_auroc": 0.6695369175627238
+    },
+    "Qwen__Qwen2.5-1.5B-Instruct/squad": {
+      "n": 1000,
+      "greedy_acc": 0.139,
+      "se_discrete_auroc": 0.6760584563707919,
+      "seps_best_auroc": 0.6401578073089701,
+      "mean_logprob_auroc": 0.7147452769491724,
+      "selfcheck_unigram_auroc": 0.679760024732827,
+      "selfcheck_nli_auroc": 0.6757701852455318
+    },
+    "Qwen__Qwen2.5-1.5B-Instruct/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.45962732919254656,
+      "se_discrete_auroc": 0.7366633875254565,
+      "seps_best_auroc": 0.7986111111111112,
+      "mean_logprob_auroc": 0.709019364191778,
+      "selfcheck_unigram_auroc": 0.692127472299886,
+      "selfcheck_nli_auroc": 0.7367906699803252
+    },
+    "Qwen__Qwen2.5-3B-Instruct/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.277,
+      "se_discrete_auroc": 0.6992799756330174,
+      "seps_best_auroc": 0.7044514106583073,
+      "mean_logprob_auroc": 0.6935252732547399,
+      "selfcheck_unigram_auroc": 0.6369968692421769,
+      "selfcheck_nli_auroc": 0.6986433382766353
+    },
+    "Qwen__Qwen2.5-3B-Instruct/squad": {
+      "n": 1000,
+      "greedy_acc": 0.165,
+      "se_discrete_auroc": 0.699292324442025,
+      "seps_best_auroc": 0.6953365995282164,
+      "mean_logprob_auroc": 0.7301469787697333,
+      "selfcheck_unigram_auroc": 0.7125639629831247,
+      "selfcheck_nli_auroc": 0.6976483396842678
+    },
+    "Qwen__Qwen2.5-3B-Instruct/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.5600414078674948,
+      "se_discrete_auroc": 0.7990670870936174,
+      "seps_best_auroc": 0.7819602272727274,
+      "mean_logprob_auroc": 0.7410481678808307,
+      "selfcheck_unigram_auroc": 0.6953919756442317,
+      "selfcheck_nli_auroc": 0.7969011634228553
+    },
+    "Qwen__Qwen2.5-7B-Instruct/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.311,
+      "se_discrete_auroc": 0.7509345292819175,
+      "seps_best_auroc": 0.6943665264142123,
+      "mean_logprob_auroc": 0.7265760993844474,
+      "selfcheck_unigram_auroc": 0.6791869478576995,
+      "selfcheck_nli_auroc": 0.7505891851278006
+    },
+    "Qwen__Qwen2.5-7B-Instruct/squad": {
+      "n": 1000,
+      "greedy_acc": 0.181,
+      "se_discrete_auroc": 0.7437381525779316,
+      "seps_best_auroc": 0.7306910569105691,
+      "mean_logprob_auroc": 0.7536410796079305,
+      "selfcheck_unigram_auroc": 0.7391981867119989,
+      "selfcheck_nli_auroc": 0.7429117843482484
+    },
+    "Qwen__Qwen2.5-7B-Instruct/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.5942028985507246,
+      "se_discrete_auroc": 0.8180531358885018,
+      "seps_best_auroc": 0.7861719718892103,
+      "mean_logprob_auroc": 0.7355427362582663,
+      "selfcheck_unigram_auroc": 0.7127768790443006,
+      "selfcheck_nli_auroc": 0.8163887506222002
+    },
+    "meta-llama__Llama-3.2-1B-Instruct/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.284,
+      "se_discrete_auroc": 0.6373509914234008,
+      "seps_best_auroc": 0.7310759416022574,
+      "mean_logprob_auroc": 0.6884245416633881,
+      "selfcheck_unigram_auroc": 0.6784365410339129,
+      "selfcheck_nli_auroc": 0.6371960815170352
+    },
+    "meta-llama__Llama-3.2-1B-Instruct/squad": {
+      "n": 1000,
+      "greedy_acc": 0.111,
+      "se_discrete_auroc": 0.5362083117988631,
+      "seps_best_auroc": 0.7239530132788559,
+      "mean_logprob_auroc": 0.627326989531714,
+      "selfcheck_unigram_auroc": 0.6647614994071687,
+      "selfcheck_nli_auroc": 0.5337964511192858
+    },
+    "meta-llama__Llama-3.2-1B-Instruct/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.46790890269151136,
+      "se_discrete_auroc": 0.714009934230915,
+      "seps_best_auroc": 0.7677620339664355,
+      "mean_logprob_auroc": 0.7307728728349575,
+      "selfcheck_unigram_auroc": 0.6948559794772908,
+      "selfcheck_nli_auroc": 0.7140852587720808
+    },
+    "meta-llama__Llama-3.2-3B-Instruct/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.417,
+      "se_discrete_auroc": 0.6369209949364694,
+      "seps_best_auroc": 0.7034291010194624,
+      "mean_logprob_auroc": 0.689680845375158,
+      "selfcheck_unigram_auroc": 0.6807919016416368,
+      "selfcheck_nli_auroc": 0.6366556840291061
+    },
+    "meta-llama__Llama-3.2-3B-Instruct/squad": {
+      "n": 1000,
+      "greedy_acc": 0.167,
+      "se_discrete_auroc": 0.5512504402958789,
+      "seps_best_auroc": 0.7668299764108147,
+      "mean_logprob_auroc": 0.6898663657079598,
+      "selfcheck_unigram_auroc": 0.711237788528585,
+      "selfcheck_nli_auroc": 0.5512899770686718
+    },
+    "meta-llama__Llama-3.2-3B-Instruct/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.6687370600414079,
+      "se_discrete_auroc": 0.7668948335913314,
+      "seps_best_auroc": 0.8369516056083219,
+      "mean_logprob_auroc": 0.8100570820433436,
+      "selfcheck_unigram_auroc": 0.7772010448916409,
+      "selfcheck_nli_auroc": 0.7664352747678018
+    }
+  },
+  "sweep_b": {
+    "EleutherAI__pythia-1.4b-deduped/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.061,
+      "se_discrete_auroc": 0.6403306621973148,
+      "seps_best_auroc": 0.7987588652482269,
+      "mean_logprob_auroc": 0.6570820021299255,
+      "selfcheck_unigram_auroc": 0.598945512316905,
+      "selfcheck_nli_auroc": 0.6415091045583896
+    },
+    "EleutherAI__pythia-1.4b-deduped/squad": {
+      "n": 1000,
+      "greedy_acc": 0.045,
+      "se_discrete_auroc": 0.569284467713787,
+      "seps_best_auroc": 0.8062827225130891,
+      "mean_logprob_auroc": 0.6523327515997673,
+      "selfcheck_unigram_auroc": 0.49531122745782435,
+      "selfcheck_nli_auroc": 0.5681093659104131
+    },
+    "EleutherAI__pythia-1.4b-deduped/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.21428571428571427,
+      "se_discrete_auroc": 0.6659919930241291,
+      "seps_best_auroc": 0.7598874240853207,
+      "mean_logprob_auroc": 0.6405707993609695,
+      "selfcheck_unigram_auroc": 0.5814923017191448,
+      "selfcheck_nli_auroc": 0.6642257483467314
+    },
+    "EleutherAI__pythia-160m-deduped/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.014,
+      "se_discrete_auroc": 0.4993117936829905,
+      "seps_best_auroc": 0.8849407783417936,
+      "mean_logprob_auroc": 0.5587510866415532,
+      "selfcheck_unigram_auroc": 0.4608809040857723,
+      "selfcheck_nli_auroc": 0.4995653433787308
+    },
+    "EleutherAI__pythia-160m-deduped/squad": {
+      "n": 1000,
+      "greedy_acc": 0.011,
+      "se_discrete_auroc": 0.48772865153047157,
+      "seps_best_auroc": 0.8080808080808081,
+      "mean_logprob_auroc": 0.7007997058553176,
+      "selfcheck_unigram_auroc": 0.4701718907987867,
+      "selfcheck_nli_auroc": 0.4890614946226675
+    },
+    "EleutherAI__pythia-160m-deduped/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.050724637681159424,
+      "se_discrete_auroc": 0.5054859457414372,
+      "seps_best_auroc": 0.7521052631578947,
+      "mean_logprob_auroc": 0.6167182249126477,
+      "selfcheck_unigram_auroc": 0.5006787884183117,
+      "selfcheck_nli_auroc": 0.5043620501635769
+    },
+    "EleutherAI__pythia-1b-deduped/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.057,
+      "se_discrete_auroc": 0.5372830272925153,
+      "seps_best_auroc": 0.5868205868205869,
+      "mean_logprob_auroc": 0.6135513757883574,
+      "selfcheck_unigram_auroc": 0.5927517627579022,
+      "selfcheck_nli_auroc": 0.5373295380551059
+    },
+    "EleutherAI__pythia-1b-deduped/squad": {
+      "n": 1000,
+      "greedy_acc": 0.037,
+      "se_discrete_auroc": 0.5878167887513682,
+      "seps_best_auroc": 0.8741672834937083,
+      "mean_logprob_auroc": 0.5139344952429065,
+      "selfcheck_unigram_auroc": 0.5635261429653953,
+      "selfcheck_nli_auroc": 0.5873537088490359
+    },
+    "EleutherAI__pythia-1b-deduped/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.18944099378881987,
+      "se_discrete_auroc": 0.6315767435043863,
+      "seps_best_auroc": 0.7555960868844306,
+      "mean_logprob_auroc": 0.5908059934817048,
+      "selfcheck_unigram_auroc": 0.5842667615797444,
+      "selfcheck_nli_auroc": 0.6313150346502523
+    },
+    "EleutherAI__pythia-2.8b-deduped/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.091,
+      "se_discrete_auroc": 0.6413339136111412,
+      "seps_best_auroc": 0.6797924297924298,
+      "mean_logprob_auroc": 0.6480615094476481,
+      "selfcheck_unigram_auroc": 0.5550236342315551,
+      "selfcheck_nli_auroc": 0.641073997509641
+    },
+    "EleutherAI__pythia-2.8b-deduped/squad": {
+      "n": 1000,
+      "greedy_acc": 0.068,
+      "se_discrete_auroc": 0.564969389043171,
+      "seps_best_auroc": 0.7784178187403994,
+      "mean_logprob_auroc": 0.6068858874021712,
+      "selfcheck_unigram_auroc": 0.548756627114365,
+      "selfcheck_nli_auroc": 0.565829336026256
+    },
+    "EleutherAI__pythia-2.8b-deduped/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.2722567287784679,
+      "se_discrete_auroc": 0.6636468367506991,
+      "seps_best_auroc": 0.7826959247648902,
+      "mean_logprob_auroc": 0.6008740379362753,
+      "selfcheck_unigram_auroc": 0.5745176835831229,
+      "selfcheck_nli_auroc": 0.6634304907268685
+    },
+    "EleutherAI__pythia-410m-deduped/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.037,
+      "se_discrete_auroc": 0.5331172293789116,
+      "seps_best_auroc": 0.8119911176905996,
+      "mean_logprob_auroc": 0.6039965198843704,
+      "selfcheck_unigram_auroc": 0.5829193679660969,
+      "selfcheck_nli_auroc": 0.5329207712385282
+    },
+    "EleutherAI__pythia-410m-deduped/squad": {
+      "n": 1000,
+      "greedy_acc": 0.018,
+      "se_discrete_auroc": 0.5895281737949764,
+      "seps_best_auroc": 0.7270408163265306,
+      "mean_logprob_auroc": 0.6767368182846797,
+      "selfcheck_unigram_auroc": 0.6248019914007694,
+      "selfcheck_nli_auroc": 0.5890190088255262
+    },
+    "EleutherAI__pythia-410m-deduped/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.12732919254658384,
+      "se_discrete_auroc": 0.6054065522861636,
+      "seps_best_auroc": 0.657603890362511,
+      "mean_logprob_auroc": 0.5892235434809864,
+      "selfcheck_unigram_auroc": 0.5548804598366268,
+      "selfcheck_nli_auroc": 0.6059659173104186
+    },
+    "EleutherAI__pythia-6.9b-deduped/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.097,
+      "se_discrete_auroc": 0.6792535762806682,
+      "seps_best_auroc": 0.8002326257633033,
+      "mean_logprob_auroc": 0.6412302633832243,
+      "selfcheck_unigram_auroc": 0.6020024888401776,
+      "selfcheck_nli_auroc": 0.6789510337820096
+    },
+    "EleutherAI__pythia-6.9b-deduped/squad": {
+      "n": 1000,
+      "greedy_acc": 0.072,
+      "se_discrete_auroc": 0.6102954382183909,
+      "seps_best_auroc": 0.7004608294930876,
+      "mean_logprob_auroc": 0.5955160440613028,
+      "selfcheck_unigram_auroc": 0.5170318486590039,
+      "selfcheck_nli_auroc": 0.609367516762452
+    },
+    "EleutherAI__pythia-6.9b-deduped/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.3302277432712215,
+      "se_discrete_auroc": 0.7165746900330922,
+      "seps_best_auroc": 0.7966983265490729,
+      "mean_logprob_auroc": 0.5847775845111026,
+      "selfcheck_unigram_auroc": 0.6029128894875311,
+      "selfcheck_nli_auroc": 0.7138371940908849
+    },
+    "EleutherAI__pythia-70m-deduped/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.009,
+      "se_discrete_auroc": 0.5330754568897859,
+      "seps_best_auroc": 0.5,
+      "mean_logprob_auroc": 0.6650969839668124,
+      "selfcheck_unigram_auroc": 0.571252382554098,
+      "selfcheck_nli_auroc": 0.5341966588182532
+    },
+    "EleutherAI__pythia-70m-deduped/squad": {
+      "n": 1000,
+      "greedy_acc": 0.006,
+      "se_discrete_auroc": 0.7601441985244802,
+      "seps_best_auroc": 0.9698492462311558,
+      "mean_logprob_auroc": 0.573943661971831,
+      "selfcheck_unigram_auroc": 0.5819919517102615,
+      "selfcheck_nli_auroc": 0.7601441985244802
+    },
+    "EleutherAI__pythia-70m-deduped/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.030020703933747412,
+      "se_discrete_auroc": 0.5175909910572996,
+      "seps_best_auroc": 0.6417525773195877,
+      "mean_logprob_auroc": 0.6430648069775144,
+      "selfcheck_unigram_auroc": 0.4900452655209215,
+      "selfcheck_nli_auroc": 0.5182166120781658
+    }
+  },
+  "sweep_a": {
+    "EleutherAI__gpt-neo-1.3B/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.056,
+      "se_discrete_auroc": 0.6126475484261501,
+      "seps_best_auroc": 0.8696488696488697,
+      "mean_logprob_auroc": 0.6237325968523002,
+      "selfcheck_unigram_auroc": 0.5308527542372881,
+      "selfcheck_nli_auroc": 0.611701725181598
+    },
+    "EleutherAI__gpt-neo-1.3B/squad": {
+      "n": 1000,
+      "greedy_acc": 0.039,
+      "se_discrete_auroc": 0.648189652872275,
+      "seps_best_auroc": 0.734375,
+      "mean_logprob_auroc": 0.5441180394354173,
+      "selfcheck_unigram_auroc": 0.4852050481603031,
+      "selfcheck_nli_auroc": 0.6489500787107446
+    },
+    "EleutherAI__gpt-neo-1.3B/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.16977225672877846,
+      "se_discrete_auroc": 0.6450641688461771,
+      "seps_best_auroc": 0.7228915662650602,
+      "mean_logprob_auroc": 0.5721975548932547,
+      "selfcheck_unigram_auroc": 0.5495635910224439,
+      "selfcheck_nli_auroc": 0.6452884556900431
+    },
+    "EleutherAI__pythia-1.4b-deduped/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.061,
+      "se_discrete_auroc": 0.6150508912515931,
+      "seps_best_auroc": 0.7987588652482269,
+      "mean_logprob_auroc": 0.6601721398767436,
+      "selfcheck_unigram_auroc": 0.6361144573054697,
+      "selfcheck_nli_auroc": 0.6149635992248469
+    },
+    "EleutherAI__pythia-1.4b-deduped/squad": {
+      "n": 1000,
+      "greedy_acc": 0.045,
+      "se_discrete_auroc": 0.609214659685864,
+      "seps_best_auroc": 0.8062827225130891,
+      "mean_logprob_auroc": 0.6640605002908667,
+      "selfcheck_unigram_auroc": 0.5023152995927865,
+      "selfcheck_nli_auroc": 0.608609656777196
+    },
+    "EleutherAI__pythia-1.4b-deduped/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.21428571428571427,
+      "se_discrete_auroc": 0.6367200677219581,
+      "seps_best_auroc": 0.7598874240853207,
+      "mean_logprob_auroc": 0.5966088102193963,
+      "selfcheck_unigram_auroc": 0.5584579251876038,
+      "selfcheck_nli_auroc": 0.6369014658239611
+    },
+    "Qwen__Qwen2.5-1.5B/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.0,
+      "skipped": "too_imbalanced"
+    },
+    "Qwen__Qwen2.5-1.5B/squad": {
+      "n": 1000,
+      "greedy_acc": 0.003,
+      "skipped": "too_imbalanced"
+    },
+    "Qwen__Qwen2.5-1.5B/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.003105590062111801,
+      "skipped": "too_imbalanced"
+    },
+    "facebook__opt-1.3b/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.075,
+      "se_discrete_auroc": 0.6477765765765766,
+      "seps_best_auroc": 0.6529729729729731,
+      "mean_logprob_auroc": 0.6574990990990991,
+      "selfcheck_unigram_auroc": 0.5933261261261261,
+      "selfcheck_nli_auroc": 0.6487423423423423
+    },
+    "facebook__opt-1.3b/squad": {
+      "n": 1000,
+      "greedy_acc": 0.063,
+      "se_discrete_auroc": 0.6725195236401212,
+      "seps_best_auroc": 0.6524064171122995,
+      "mean_logprob_auroc": 0.5916552319967475,
+      "selfcheck_unigram_auroc": 0.4011451610170927,
+      "selfcheck_nli_auroc": 0.6720536667174875
+    },
+    "facebook__opt-1.3b/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.19254658385093168,
+      "se_discrete_auroc": 0.6964398952302178,
+      "seps_best_auroc": 0.8436056696926262,
+      "mean_logprob_auroc": 0.5963399503722084,
+      "selfcheck_unigram_auroc": 0.5534877309070857,
+      "selfcheck_nli_auroc": 0.6956334436173146
+    },
+    "meta-llama__Llama-3.2-1B/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.138,
+      "se_discrete_auroc": 0.6134873398567537,
+      "seps_best_auroc": 0.6829318936877077,
+      "mean_logprob_auroc": 0.6070563905982044,
+      "selfcheck_unigram_auroc": 0.5227310938498269,
+      "selfcheck_nli_auroc": 0.6146348229597498
+    },
+    "meta-llama__Llama-3.2-1B/squad": {
+      "n": 1000,
+      "greedy_acc": 0.11,
+      "se_discrete_auroc": 0.6469611848825333,
+      "seps_best_auroc": 0.6654749744637385,
+      "mean_logprob_auroc": 0.6579366700715015,
+      "selfcheck_unigram_auroc": 0.5381716036772216,
+      "selfcheck_nli_auroc": 0.6460929519918284
+    },
+    "meta-llama__Llama-3.2-1B/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.41718426501035194,
+      "se_discrete_auroc": 0.6660679891929534,
+      "seps_best_auroc": 0.7401477832512315,
+      "mean_logprob_auroc": 0.6294619836131324,
+      "selfcheck_unigram_auroc": 0.5945065648841503,
+      "selfcheck_nli_auroc": 0.6638510461062458
+    }
+  },
+  "option1": {
+    "TinyLlama__TinyLlama-1.1B-intermediate-step-1431k-3T/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.136,
+      "se_discrete_auroc": 0.588235294117647,
+      "seps_best_auroc": 0.7842003853564548,
+      "mean_logprob_auroc": 0.6206597222222221,
+      "selfcheck_unigram_auroc": 0.5248757489106753,
+      "selfcheck_nli_auroc": 0.5882438044662309
+    },
+    "TinyLlama__TinyLlama-1.1B-intermediate-step-1431k-3T/squad": {
+      "n": 1000,
+      "greedy_acc": 0.087,
+      "se_discrete_auroc": 0.6573441099822487,
+      "seps_best_auroc": 0.8437801350048216,
+      "mean_logprob_auroc": 0.6594402689126411,
+      "selfcheck_unigram_auroc": 0.5659629112059523,
+      "selfcheck_nli_auroc": 0.657847691707268
+    },
+    "TinyLlama__TinyLlama-1.1B-intermediate-step-1431k-3T/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.35196687370600416,
+      "se_discrete_auroc": 0.6949210674685211,
+      "seps_best_auroc": 0.7412381264330167,
+      "mean_logprob_auroc": 0.650521518511558,
+      "selfcheck_unigram_auroc": 0.6179853411012968,
+      "selfcheck_nli_auroc": 0.6940424732193197
+    },
+    "allenai__OLMo-1B-hf/squad": {
+      "n": 1000,
+      "greedy_acc": 0.002,
+      "skipped": "too_imbalanced"
+    },
+    "allenai__OLMo-1B-hf/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.008281573498964804,
+      "se_discrete_auroc": 0.46242171189979125,
+      "seps_best_auroc": 0.7146464646464646,
+      "mean_logprob_auroc": 0.4642484342379959,
+      "selfcheck_unigram_auroc": 0.42053757828810023,
+      "selfcheck_nli_auroc": 0.46242171189979125
+    },
+    "cerebras__Cerebras-GPT-1.3B/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.025,
+      "se_discrete_auroc": 0.5008410256410256,
+      "seps_best_auroc": 0.8082051282051281,
+      "mean_logprob_auroc": 0.5769435897435898,
+      "selfcheck_unigram_auroc": 0.6319999999999999,
+      "selfcheck_nli_auroc": 0.5009846153846154
+    },
+    "cerebras__Cerebras-GPT-1.3B/squad": {
+      "n": 1000,
+      "greedy_acc": 0.021,
+      "se_discrete_auroc": 0.46942944695753686,
+      "seps_best_auroc": 0.8405612244897959,
+      "mean_logprob_auroc": 0.5810107495500755,
+      "selfcheck_unigram_auroc": 0.5119412422783209,
+      "selfcheck_nli_auroc": 0.4687241597353957
+    },
+    "cerebras__Cerebras-GPT-1.3B/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.08902691511387163,
+      "se_discrete_auroc": 0.5412394291754756,
+      "seps_best_auroc": 0.7838827838827839,
+      "mean_logprob_auroc": 0.5493789640591966,
+      "selfcheck_unigram_auroc": 0.5570560253699789,
+      "selfcheck_nli_auroc": 0.5410412262156448
+    }
+  },
+  "option2": {
+    "step1000/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.0,
+      "skipped": "too_imbalanced"
+    },
+    "step1000/squad": {
+      "n": 1000,
+      "greedy_acc": 0.002,
+      "skipped": "too_imbalanced"
+    },
+    "step1000/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.016563146997929608,
+      "se_discrete_auroc": 0.48625,
+      "seps_best_auroc": 0.7343485617597294,
+      "mean_logprob_auroc": 0.6533552631578947,
+      "selfcheck_unigram_auroc": 0.66125,
+      "selfcheck_nli_auroc": 0.48625
+    },
+    "step10000/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.029,
+      "se_discrete_auroc": 0.5220710962747257,
+      "seps_best_auroc": 0.743127147766323,
+      "mean_logprob_auroc": 0.5962569693526049,
+      "selfcheck_unigram_auroc": 0.5658226499520579,
+      "selfcheck_nli_auroc": 0.5253560140629994
+    },
+    "step10000/squad": {
+      "n": 1000,
+      "greedy_acc": 0.024,
+      "se_discrete_auroc": 0.5679217896174864,
+      "seps_best_auroc": 0.6841025641025641,
+      "mean_logprob_auroc": 0.6140283469945356,
+      "selfcheck_unigram_auroc": 0.5877732240437158,
+      "selfcheck_nli_auroc": 0.5685835040983607
+    },
+    "step10000/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.09006211180124224,
+      "se_discrete_auroc": 0.6196043047873107,
+      "seps_best_auroc": 0.644993894993895,
+      "mean_logprob_auroc": 0.57010971192447,
+      "selfcheck_unigram_auroc": 0.5682528474101971,
+      "selfcheck_nli_auroc": 0.6197546846599454
+    },
+    "step100000/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.061,
+      "se_discrete_auroc": 0.6032490092354965,
+      "seps_best_auroc": 0.7105496453900709,
+      "mean_logprob_auroc": 0.560397353305749,
+      "selfcheck_unigram_auroc": 0.6248014106391522,
+      "selfcheck_nli_auroc": 0.6044361807992459
+    },
+    "step100000/squad": {
+      "n": 1000,
+      "greedy_acc": 0.048,
+      "se_discrete_auroc": 0.5711221988795518,
+      "seps_best_auroc": 0.8536842105263158,
+      "mean_logprob_auroc": 0.5389968487394958,
+      "selfcheck_unigram_auroc": 0.4785976890756303,
+      "selfcheck_nli_auroc": 0.5716474089635853
+    },
+    "step100000/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.20186335403726707,
+      "se_discrete_auroc": 0.6665236622435066,
+      "seps_best_auroc": 0.7164062499999999,
+      "mean_logprob_auroc": 0.5524693205627058,
+      "selfcheck_unigram_auroc": 0.5933220260068509,
+      "selfcheck_nli_auroc": 0.6681665502677175
+    },
+    "step143000/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.061,
+      "se_discrete_auroc": 0.6014857102952216,
+      "seps_best_auroc": 0.7987588652482269,
+      "mean_logprob_auroc": 0.665531870318965,
+      "selfcheck_unigram_auroc": 0.5904432689118175,
+      "selfcheck_nli_auroc": 0.6014333350791738
+    },
+    "step143000/squad": {
+      "n": 1000,
+      "greedy_acc": 0.045,
+      "se_discrete_auroc": 0.5947527632344386,
+      "seps_best_auroc": 0.8062827225130891,
+      "mean_logprob_auroc": 0.5750785340314136,
+      "selfcheck_unigram_auroc": 0.48344386271087847,
+      "selfcheck_nli_auroc": 0.5951483420593369
+    },
+    "step143000/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.21428571428571427,
+      "se_discrete_auroc": 0.6566706765194479,
+      "seps_best_auroc": 0.7598874240853207,
+      "mean_logprob_auroc": 0.5680752070166059,
+      "selfcheck_unigram_auroc": 0.5834017554244397,
+      "selfcheck_nli_auroc": 0.6555122746049022
+    },
+    "step50000/nq_open": {
+      "n": 1000,
+      "greedy_acc": 0.042,
+      "se_discrete_auroc": 0.6439009841932598,
+      "seps_best_auroc": 0.748046875,
+      "mean_logprob_auroc": 0.6039367730390695,
+      "selfcheck_unigram_auroc": 0.5320856944030222,
+      "selfcheck_nli_auroc": 0.645479172880008
+    },
+    "step50000/squad": {
+      "n": 1000,
+      "greedy_acc": 0.041,
+      "se_discrete_auroc": 0.5679315343726952,
+      "seps_best_auroc": 0.783203125,
+      "mean_logprob_auroc": 0.5537017726798749,
+      "selfcheck_unigram_auroc": 0.4986902006663445,
+      "selfcheck_nli_auroc": 0.5672321269615198
+    },
+    "step50000/triviaqa": {
+      "n": 966,
+      "greedy_acc": 0.15113871635610765,
+      "se_discrete_auroc": 0.6762487470765118,
+      "seps_best_auroc": 0.7588235294117647,
+      "mean_logprob_auroc": 0.580045105245573,
+      "selfcheck_unigram_auroc": 0.6189024390243903,
+      "selfcheck_nli_auroc": 0.6771007350484464
+    }
+  }
+}

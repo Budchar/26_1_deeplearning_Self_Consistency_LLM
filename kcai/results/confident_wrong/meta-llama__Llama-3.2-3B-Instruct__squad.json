@@ -1,0 +1,1458 @@
+{
+  "n_records": 1000,
+  "greedy_acc": 0.167,
+  "by_metric": {
+    "C_SE_disc": {
+      "ece": 0.16392303302069025,
+      "four_cell": {
+        "high_correct": 92,
+        "high_wrong": 449,
+        "low_correct": 75,
+        "low_wrong": 384,
+        "median_threshold": -2.0253262207700673,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 253,
+        "wrong_in_top_q": 198,
+        "rate": 0.782608695652174
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.28,
+          "threshold": -0.9433483923290391
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.225,
+          "threshold": -1.4184836619456564
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.21333333333333335,
+          "threshold": -1.7480673485460891
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.1925,
+          "threshold": -1.8866967846580784
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.176,
+          "threshold": -2.0253262207700673
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.17166666666666666,
+          "threshold": -2.1639556568820564
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.1742857142857143,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.17,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.16777777777777778,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.167,
+          "threshold": -2.3025850929940455
+        }
+      ]
+    },
+    "C_SE_logp": {
+      "ece": 0.17002423282269832,
+      "four_cell": {
+        "high_correct": 88,
+        "high_wrong": 412,
+        "low_correct": 79,
+        "low_wrong": 421,
+        "median_threshold": -1.977072269296457,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 194,
+        "rate": 0.776
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.31,
+          "threshold": -0.9331809475236366
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.235,
+          "threshold": -1.3706339559306977
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.21,
+          "threshold": -1.638163318316329
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.1875,
+          "threshold": -1.826292651209979
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.176,
+          "threshold": -1.9762136609301812
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.17166666666666666,
+          "threshold": -2.118643965452632
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.1742857142857143,
+          "threshold": -2.227478552294335
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.17125,
+          "threshold": -2.273043018688604
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.16666666666666666,
+          "threshold": -2.284258769285467
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.167,
+          "threshold": -2.301118130845846
+        }
+      ]
+    },
+    "C_logp": {
+      "ece": 0.41780705247892314,
+      "four_cell": {
+        "high_correct": 115,
+        "high_wrong": 385,
+        "low_correct": 52,
+        "low_wrong": 448,
+        "median_threshold": -0.5953634644592032,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 169,
+        "rate": 0.676
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.55,
+          "threshold": -0.30821174263284995
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.37,
+          "threshold": -0.4061520147158763
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.2866666666666667,
+          "threshold": -0.47957898877687877
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.2525,
+          "threshold": -0.5449885896770426
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.23,
+          "threshold": -0.5953016418161445
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.21166666666666667,
+          "threshold": -0.6485410791781228
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.19857142857142857,
+          "threshold": -0.7071106906509695
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.19,
+          "threshold": -0.7783218367745481
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.17888888888888888,
+          "threshold": -0.8754225084357428
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.167,
+          "threshold": -1.4317762745457363
+        }
+      ]
+    }
+  },
+  "disagreement_counts": {
+    "C_SE_disc_high__C_SE_logp_low": 45,
+    "C_SE_disc_low__C_SE_logp_high": 4,
+    "C_SE_disc_high__C_logp_low": 157,
+    "C_SE_disc_low__C_logp_high": 116,
+    "C_SE_logp_high__C_logp_low": 149,
+    "C_SE_logp_low__C_logp_high": 149
+  },
+  "danger_examples": [
+    {
+      "id": "5729789b6aef051400154f6e",
+      "question": "How large are the outer PD ring's filaments?",
+      "gold": [
+        "5 nanometers across",
+        "about 5 nanometers across"
+      ],
+      "greedy": "I'm not aware of any information about an \"outer PD ring\" or its filaments. Could you provide more context or clarify what you are referring to?",
+      "samples": [
+        "I'm not aware of any specific information about the size of the outer PD ring's filaments.",
+        "I'm unable to find information on the size of the outer PD ring's filaments.",
+        "I couldn't find any specific information on the \"outer PD ring's filaments.\" Could you please provide more context or clarify which \"outer PD ring\" you are referring to?",
+        "I'm unable to verify the size of the outer PD ring's filaments.",
+        "I don't have information on the size of the outer PD ring's filaments.",
+        "I couldn't find information on an \"outer PD ring\" or its filaments. Could you provide more context or clarify what you're referring to?",
+        "I cannot verify what you are referring to.",
+        "I am unable to verify the size of the outer PD ring's filaments.",
+        "I'm unable to locate information on the \"outer PD ring's filaments.\"",
+        "I don't have information on the outer PD ring's filaments."
+      ],
+      "se_discrete": 0.5004024235381879,
+      "se_logprob": 0.5095714217422181,
+      "C_SE_disc": -0.5004024235381879,
+      "n_clusters": 2
+    },
+    {
+      "id": "5726c80c5951b619008f7dea",
+      "question": "Some of the museum's collection of Korean boxes are inlaid with what objects?",
+      "gold": [
+        "mother-of-pearl"
+      ],
+      "greedy": "I don't have specific information about the museum's collection of Korean boxes.",
+      "samples": [
+        "I do not have that information.",
+        "Some Korean boxes are inlaid with precious stones, such as jade, jasper, and turquoise, as well as metals like gold, silver, and copper.",
+        "I don't have specific information on the objects inlaid in Korean boxes in a museum, if you can provide more context or details about the museum, I'd be happy to try and help further.",
+        "I'm unable to provide specific information on the objects used in the museum's collection of Korean boxes.",
+        "I don't have information on specific museum collections.",
+        "I'm not aware of the specific details regarding a museum's collection of Korean boxes.",
+        "I don't have specific information about the objects used for inlay in the museum's Korean boxes.",
+        "I don't have the specific information about Korean boxes in your museum.",
+        "I don't have information on which specific Korean boxes are inlaid with objects.",
+        "I'm unsure of what objects in Korean boxes, can you provide more context?"
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.4833865450900654,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "5726ace8dd62a815002e8c9f",
+      "question": "What did the museum acquire from the Royal College of Science?",
+      "gold": [
+        "Henry Cole wing"
+      ],
+      "greedy": "I don't have information on a specific acquisition by a museum from the Royal College of Science.",
+      "samples": [
+        "I couldn't find any information on a museum acquiring items from the Royal College of Science. However, the British Science Museum acquired the collection of the Royal College of Physicians and the Royal College of Physicians of Edinburgh, and part of the collection of the Royal College of Engineers, Royal College of Art, Royal College of Military Engineers",
+        "I don't have enough information about a specific museum acquisition from the Royal College of Science. Could you please provide more context or specify the museum and the Royal College of Science you are referring to?",
+        "I'm not aware of the specific details of your question. However, I can suggest possible sources.",
+        "I don't have specific information on what a particular museum acquired from the Royal College of Science. Could you provide more context or clarify which museum and time period you are referring to?",
+        "I don't have specific information about a specific acquisition from the Royal College of Science, but the Royal College of Science is now part of Imperial College London, which acquired the museum's collections.",
+        "Unfortunately, I don't have any information on a specific acquisition of a museum by the Royal College of Science.",
+        "I don't have the information on the specific acquisition made by the museum from the Royal College of Science.",
+        "I couldn't find any information about a specific acquisition by a museum from the Royal College of Science.",
+        "I don't have enough information to provide a specific answer. Can you please provide more context or clarify which museum and which Royal College of Science you are referring to?",
+        "I don't have information on what the museum acquired from the Royal College of Science."
+      ],
+      "se_discrete": 1.6094379124341,
+      "se_logprob": 1.5016559475743023,
+      "C_SE_disc": -1.6094379124341,
+      "n_clusters": 6
+    },
+    {
+      "id": "5726da89dd62a815002e92b6",
+      "question": "What types of responsibilities might a pharmacy technician have?",
+      "gold": [
+        "manage the pharmacy department",
+        "manage the pharmacy department and specialised areas in pharmacy practice",
+        "manage the pharmacy department and specialised areas"
+      ],
+      "greedy": "Pharmacy technicians may have responsibilities such as:\n\n- Receiving and organizing inventory\n- Processing prescriptions\n- Assisting pharmacists with medication preparation and dispensing\n- Maintaining patient records\n- Answering phone calls and responding to customer inquiries\n- Operating cash registers and handling transactions\n- Maintaining a clean and organized",
+      "samples": [
+        "Pharmacy technicians typically have responsibilities that include:\n\n- Assisting pharmacists with medication preparation and dispensing\n- Handling cash transactions and managing cash handling\n- Maintaining patient records and ensuring accuracy\n- Stocking shelves and managing inventory\n- Communicating with patients and healthcare providers\n- Following regulations and protocols\n- Performing",
+        "A pharmacy technician typically has responsibilities such as:\n\n- Receiving, organizing, and stocking medications and supplies\n- Processing prescriptions, including labeling and packaging\n- Assisting pharmacists with patient care and medication counseling\n- Maintaining accurate and up-to-date patient records\n- Operating cash registers and handling customer transactions\n- Ens",
+        "A pharmacy technician typically has responsibilities including:\n\n* Assisting pharmacists with dispensing medications and managing inventory\n* Processing prescriptions, filling prescription orders, and verifying accuracy\n* Operating pharmacy equipment, such as cash registers and computer systems\n* Maintaining patient records and medical history\n* Providing customer service and answering patient questions",
+        "A pharmacy technician's responsibilities may include:\n\n- Receiving and organizing medications, supplies, and patient prescriptions\n- Counting and processing patient prescriptions and dispensing medication\n- Assisting pharmacists with medication preparation and administration\n- Maintaining patient records and filing systems\n- Answering patient calls and providing information\n- Pre",
+        "Pharmacy technicians typically have the following responsibilities:\n\n* Receiving and organizing inventory\n* Counting and verifying medications\n* Filling prescriptions\n* Operating cash register and handling customer transactions\n* Maintaining patient records\n* Assisting pharmacists with clinical tasks and patient consultations\n* Sterilizing equipment and supplies\n*",
+        "Pharmacy technicians typically have responsibilities including:\n\n1. Receiving and organizing prescription orders\n2. Counting and labeling medication\n3. Preparing patient prescription labels\n4. Maintaining patient records\n5. Assisting pharmacists with dispensing medication\n6. Answering patient questions\n7. Operating pharmacy software and",
+        "Pharmacy technicians may have responsibilities such as:\n\n* Receiving and organizing stock and inventory\n* Processing prescriptions and filling medication orders\n* Preparing patient information for prescriptions\n* Operating pharmacy cash handling systems\n* Assisting pharmacists with patient consultations and medication administration\n* Maintaining patient records and documentation.",
+        "Pharmacy technicians typically have responsibilities such as:\n\n* Receiving and processing prescriptions\n* Filling medication orders\n* Maintaining patient records\n* Assisting pharmacists with dispensing medication\n* Labeling and organizing inventory\n* Conducting health screenings and educating patients on medication use\n* Operating automated dispensing systems and",
+        "Pharmacy technicians often have responsibilities such as:\n\n* Receiving and processing prescriptions\n* Counting and preparing medications\n* Labeling and organizing medications\n* Assisting pharmacists with medication dispensing\n* Answering patient questions and providing customer service\n* Maintaining patient records and inventory management\n* Performing administrative tasks,",
+        "Pharmacy technicians may have various responsibilities, including:\n\n- Assisting pharmacists with dispensing medication and managing inventory\n- Preparing prescriptions and filling medication orders\n- Monitoring patient medication regimens and answering questions\n- Maintaining accurate records and reports\n- Conducting inventory management and controlling supplies\n- Providing patient counseling and"
+      ],
+      "se_discrete": 0.6108643020548935,
+      "se_logprob": 0.5807416353125916,
+      "C_SE_disc": -0.6108643020548935,
+      "n_clusters": 2
+    },
+    {
+      "id": "572764855951b619008f8953",
+      "question": "Between what times does Good Morning America air on ABC?",
+      "gold": [
+        "7:00 to 9:00 a.m",
+        "7:00 to 9:00 a.m. weekdays",
+        "7:00 to 9:00 a.m."
+      ],
+      "greedy": "Good Morning America typically airs from 7:00 AM to 9:00 AM ET (Eastern Time) on ABC.",
+      "samples": [
+        "Good Morning America typically airs Monday through Friday from 7:00 AM to 9:00 AM Eastern Time (ET).",
+        "Good Morning America typically airs from 7:00-9:00 AM ET (Eastern Time) on ABC.",
+        "Good Morning America typically airs from 7:00 AM to 9:00 AM ET (Eastern Time).",
+        "Good Morning America typically airs from 7:00 AM to 9:00 AM ET (Eastern Time) Monday through Friday.",
+        "Good Morning America typically airs on ABC from 7:00 a.m. to 9:00 a.m. ET.",
+        "Good Morning America typically airs from 7:00-9:00 a.m. ET, Monday through Friday.",
+        "Good Morning America typically airs from 7:00 AM - 9:00 AM ET (Eastern Time).",
+        "Good Morning America typically airs from 7:00 a.m. to 9:00 a.m. ET on weekdays (Monday-Friday) on ABC.",
+        "Good Morning America typically airs from 7:00 AM ET to 9:00 AM ET.",
+        "Good Morning America typically airs on ABC from 7:00 AM to 9:00 AM ET."
+      ],
+      "se_discrete": 0.6730116670092565,
+      "se_logprob": 0.6632105804614699,
+      "C_SE_disc": -0.6730116670092565,
+      "n_clusters": 2
+    },
+    {
+      "id": "56f86966aef2371900626054",
+      "question": "What work is useful for pastors?",
+      "gold": [
+        "Larger Catechism"
+      ],
+      "greedy": "Pastors often engage in various tasks, including:\n\n1. Preaching and teaching sermons\n2. Counseling and pastoral care\n3. Leading worship services and community events\n4. Visiting the sick and the elderly\n5. Mentoring and discipling new believers\n6. Administering sacraments and performing",
+      "samples": [
+        "Useful works for pastors include:\n\n- Preaching and teaching the Bible\n- Counseling and guidance for church members\n- Administering sacraments (e.g., baptisms, weddings, funerals)\n- Visiting and caring for the sick and elderly\n- Leading worship services and hymn singing\n- Facilitating",
+        "Pastors often engage in various activities that are useful for their roles, including:\n\n1. Preaching and teaching the Bible to congregants.\n2. Counseling and guiding members on spiritual and emotional matters.\n3. Leading worship services and creating a sense of community.\n4. Organizing and overseeing church events, programs, and",
+        "Pastors perform various tasks, including:\n\n1. Preaching and teaching biblical sermons.\n2. Spiritual guidance and counseling to congregation members.\n3. Pastoral care and pastoral counseling to members in need.\n4. Community outreach and organizing events.\n5. Leading worship services, including selecting music and creating liturgies.",
+        "Pastors often find the following types of work to be useful:\n\n1. Preaching and teaching sermons and Bible studies.\n2. Counseling and mentoring individuals and small groups.\n3. Planning and leading worship services and events.\n4. Providing pastoral care and support to congregation members.\n5. Writing and editing church materials,",
+        "Pastors are responsible for various duties, including:\n\n- Preaching and teaching the Bible\n- Leading worship services and Bible studies\n- Counseling and counseling members of the congregation\n- Providing pastoral support and guidance to individuals and families\n- Managing church administration and staff\n- Visiting and supporting community groups and outreach programs",
+        "Some examples of work useful for pastors include:\n\n1. Preaching and teaching church sermons.\n2. Counseling and spiritual guidance.\n3. Leading worship services and prayer meetings.\n4. Administering sacraments, such as baptism and communion.\n5. Discipling and mentoring church members.\n6. Fundraising and",
+        "Pastors often engage in various tasks such as:\n\n- Preaching and teaching biblical sermons\n- Counseling and pastoral care\n- Community building and outreach\n- Leading worship services\n- Discipling and mentoring congregation members\n- Managing church administration and logistics\n- Developing and planning church programs",
+        "Useful work for pastors can include:\n\n1. Preaching and teaching biblical sermons\n2. Counseling and discipleship\n3. Community outreach and evangelism\n4. Church administration and organization\n5. Writing and publishing books and articles\n6. Leadership and mentoring\n\nThese tasks contribute to the overall well-being and",
+        "Pastors are typically involved in various roles, but some useful work includes:\n\n1. Preaching and teaching sermons and Bible studies\n2. Counseling and spiritual guidance\n3. Community outreach and outreach programs\n4. Church administration and organization\n5. Prayer and spiritual support",
+        "Pastors often do work that involves:\n\n* Preaching and teaching scripture\n* Leading and guiding congregations\n* Counseling and providing spiritual guidance\n* Organizing community events and outreach programs\n* Providing pastoral care and support to individuals and families\n* Administering church finances and overseeing staff"
+      ],
+      "se_discrete": 0.6108643020548935,
+      "se_logprob": 0.6031132841843079,
+      "C_SE_disc": -0.6108643020548935,
+      "n_clusters": 2
+    },
+    {
+      "id": "5726516a708984140094c224",
+      "question": "Why are researchers struggling to identify the history of the plague?",
+      "gold": [
+        "the lack of reliable statistics",
+        "the lack of reliable statistics from this period",
+        "lack of reliable statistics"
+      ],
+      "greedy": "Researchers struggle to identify the history of the plague due to several factors:\n\n1. **Limited written records**: Many historical records from the time of the plague were destroyed or lost, especially during the Middle Ages.\n2. **Lack of consistent naming**: The plague has been known by different names throughout history, such as the",
+      "samples": [
+        "Researchers struggle to identify the exact history of the plague due to several factors:\n\n1. Limited historical records: Many historical records from the time of the plague were incomplete, destroyed, or inaccurate, making it difficult to gather reliable information.\n2. Plague's multiple outbreaks: The plague has occurred in multiple forms throughout history,",
+        "Researchers struggle to identify the history of the plague due to several factors:\n\n1. **Lack of written records**: Many plague outbreaks occurred during ancient times, when written records were limited, making it difficult to gather accurate historical information.\n2. **Incomplete fossil record**: The black death, in particular, occurred during the Middle",
+        "Researchers are struggling to identify the history of the plague due to several factors:\n\n1. **Disease variability**: The plague has taken many forms throughout history, including bubonic, pneumonic, and septicemic, making it difficult to pinpoint a single common cause.\n2. **Limited fossil record**: Human remains and affected",
+        "Researchers are struggling to identify the history of the plague due to several factors:\n\n1. **Limited written records**: The plague, caused by the bacterium Yersinia pestis, has been present for thousands of years, but many records from the past are incomplete, destroyed, or scarce.\n2. **Lack of",
+        "Researchers are struggling to identify the history of the plague due to several factors:\n\n1. **Limited written records**: Many records from the Middle Ages were destroyed or lost over time, leaving gaps in historical accounts.\n2. **Lack of reliable documentation**: In many cases, plague outbreaks were not well-documented, especially during",
+        "Researchers struggle to identify the history of the plague due to several factors:\n\n1. **Limited written records**: The plague has occurred in various forms throughout history, and many ancient civilizations left behind few written records of the disease, making it challenging to reconstruct its timeline.\n2. **Multiple pandemics**: The plague has occurred in",
+        "Researchers face challenges in identifying the history of the plague due to:\n\n1. **Limited written records**: Many areas affected by the plague had no written records or oral traditions.\n2. **Misidentification**: Early cases of plague might have been misdiagnosed as other diseases.\n3. **Rapid spread**: Plague",
+        "Researchers face challenges in accurately pinpointing the origin of the plague due to the destruction and lack of records from the time of its initial outbreak. The plague's earliest recorded events occurred during the 6th century, and much of ancient history is based on fragmentary or biased accounts. Additionally, the plague spread across the ancient",
+        "Researchers struggle to identify the history of the plague due to several factors:\n\n1. Destruction of historical records: Many historical records from the time of the plague, especially during the Middle Ages, were destroyed or lost due to fire, war, and natural disasters.\n\n2. Lack of reliable documentation: During the plague, many areas",
+        "Researchers are struggling to identify the history of the plague due to several factors:\n\n1. **Limited historical records**: Many historical records of the plague were destroyed or incomplete, especially during the Middle Ages and earlier periods.\n2. **Lack of consistent naming and classification**: The plague has been known by different names throughout history,"
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.6862810119254463,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "5710e9f8a58dae1900cd6b34",
+      "question": "When was the colony destroyed?",
+      "gold": [
+        "1565"
+      ],
+      "greedy": "I don't have enough information to determine which colony you are referring to. Could you please provide more context or specify the name of the colony?",
+      "samples": [
+        "I don't have enough information to provide a specific answer. Can you please provide more context or clarify which colony you are referring to?",
+        "I don't have enough information to answer your question. Could you please provide more context or specify which colony you are referring to?",
+        "I'm sorry, I don't have enough information to determine which colony you are referring to. Could you please provide more context or clarify which colony you are asking about?",
+        "I don't have enough information to determine which colony you are referring to. Could you please provide more context or clarify which colony you are asking about?",
+        "I need more information about the colony you are referring to. Could you please provide more context or specify the name of the colony?",
+        "I need more information to provide an accurate answer. Can you please provide the name of the colony you are referring to?",
+        "I need more information. Can you please provide more context about the colony you are referring to?",
+        "I need more information about which colony you are referring to. There have been several colonies destroyed throughout history, so could you please specify the colony's name and time period?",
+        "I don't have enough information to provide a specific answer. Can you please provide more context or clarify which colony you are referring to?",
+        "I don't have enough information to determine which colony you're referring to. Could you please specify the name of the colony?"
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2664833596023119,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "56e10d2dcd28a01900c674db",
+      "question": "When did Tesla make these claims?",
+      "gold": [
+        "1935",
+        "In 1935"
+      ],
+      "greedy": "I don't have enough information to provide a specific answer. Could you please provide more context or details about the claims you're referring to?",
+      "samples": [
+        "I'm ready to assist. What are the claims you're referring to regarding Tesla?",
+        "I don't have any information about specific claims made by Tesla. Could you please provide more context or details about the claim you're referring to?",
+        "I don't have any context for what specific claims you're referring to. Could you please provide more information or clarify which claims you'd like to know about?",
+        "I'm ready to help. What are the claims you're referring to?",
+        "I'm not provided with information about specific claims by Tesla. Could you please provide more context or details about the claims you're referring to?",
+        "I don't have information on a specific claim made by Tesla that you are referring to. Could you please provide more context or details about the claim you're asking about?",
+        "I don't have enough information to determine which specific claims you are referring to. Could you please provide more context or details about the claims?",
+        "I don't have enough information to provide a specific answer. Please provide more context about the claims you're referring to, and I'll do my best to provide a factual answer.",
+        "I don't have information about a specific claim made by Tesla. Could you please provide more context or information about the claim you are referring to?",
+        "I don't have enough context to answer the question. Could you provide more information about the claims you're referring to made by Tesla?"
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.7909415439673764,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "57286c8cff5b5019007da21c",
+      "question": "How many people in Quzhou are descended from Confucius?",
+      "gold": [
+        "30,000"
+      ],
+      "greedy": "I couldn't find any reliable information on the exact number of people in Quzhou who are directly descended from Confucius.",
+      "samples": [
+        "Unfortunately, I couldn't find specific information on the exact number of people in Quzhou who are directly descended from Confucius.",
+        "I couldn't find a definitive answer on the number of people directly descended from Confucius. However, according to local records in Quzhou, Zhejiang, China, many residents claim to be descendants of Confucius, but this claim is not verified or quantifiable.",
+        "I'm not aware of any specific, credible information regarding the population percentage or number of people in Quzhou, China who are descended from Confucius.",
+        "I couldn't find a verified figure, but Quzhou, a city in eastern China, is said to be the birthplace of Confucius.",
+        "I could not verify that there is a confirmed number of people in Quzhou, China who are direct descendants of Confucius.",
+        "I am unable to verify the number of people in Quzhou who are descendants of Confucius.",
+        "I am unable to find reliable information on the number of people in Quzhou who are directly descended from Confucius.",
+        "I couldn't find reliable information on the specific number of people in Quzhou who are directly descended from Confucius.",
+        "I do not have specific information about the number of people in Quzhou who are directly descended from Confucius.",
+        "I am unable to verify this, however it is known that a famous philosopher from the city of Qufu, which is the hometown of Confucius, is the city you may be looking for."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.2808614598500678,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "5730b8ca8ab72b1400f9c705",
+      "question": "When was Isiah Bowman appointed to President Wilson's Inquiry?",
+      "gold": [
+        "1917"
+      ],
+      "greedy": "I couldn't find any information on an Isiah Bowman being appointed to President Wilson's Inquiry.",
+      "samples": [
+        "I am unsure who Isiah Bowman is in relation to President Wilson's Inquiry.",
+        "I couldn't find specific information on an 'President Wilson's Inquiry' you are referring to.",
+        "I am unable to verify the name Isiah Bowman being appointed to President Wilson's Inquiry.",
+        "I couldn't find any information about Isiah Bowman being appointed to President Wilson's Inquiry. However, I found a notable figure named A. Philip Randolph was an associate, and Isaiah Bowman was an aide to the President Wilson's commission, however I am unsure what \"President Wilson's Inquiry\" specifically refers to, could you",
+        "I couldn't verify any information regarding Isiah Bowman's appointment to President Wilson's Inquiry.",
+        "I cannot verify when Isiah Bowman was appointed to the President Wilson's Inquiry.",
+        "I couldn't find any information on an Isiah Bowman being appointed to President Wilson's Inquiry.",
+        "I am unable to verify when Isiah Bowman was appointed to President Wilson's Inquiry.",
+        "I do not have information about who Isiah Bowman was appointed to President Wilson's Inquiry.",
+        "I couldn't find any information about an Isiah Bowman being appointed to President Wilson's Inquiry."
+      ],
+      "se_discrete": 1.2206072645530175,
+      "se_logprob": 1.1309795208933413,
+      "C_SE_disc": -1.2206072645530175,
+      "n_clusters": 4
+    },
+    {
+      "id": "56d9ccacdc89441400fdb842",
+      "question": "What is the last name of the player who was Manning's top receiver for Super Bowl 50?",
+      "gold": [
+        "Sanders"
+      ],
+      "greedy": "The player who was Peyton Manning's top receiver for Super Bowl 50 was Demaryius Thomas.",
+      "samples": [
+        "The answer is Demaryius Thomas.",
+        "Demaryius Thomas.",
+        "The player you are referring to is Emmanuel Sanders' teammate on the Denver Broncos, Demaryius Thomas' teammate Emmanuel Sanders' and the player who had the most catches for Super Bowl 50, is Emmanuel Sanders was not one of the main receivers in that game but Emmanuel Sanders was in it. Emmanuel Sanders' teammate for",
+        "The last name of the player who was Peyton Manning's top receiver for Super Bowl 50 was Demaryius Thomas.",
+        "Demaryius Thomas, also known as Demaryius Thomas Jr., was a top receiver for Peyton Manning during Super Bowl 50.",
+        "The answer is Emmanuel Sanders.",
+        "The answer is Emmanuel Sanders.",
+        "The player who was Peyton Manning's top receiver for Super Bowl 50 was Emmanuel Sanders.",
+        "The answer is Emmanuel Sanders.",
+        "The player who was Demaryius Thomas' receiving yards leader in Super Bowl 50, and one of Manning's top receivers, was  Demaryius Thomas' counterpart in the receiving yards,  Emmanuel Sanders"
+      ],
+      "se_discrete": 1.6094379124341,
+      "se_logprob": 1.5999653095355517,
+      "C_SE_disc": -1.6094379124341,
+      "n_clusters": 6
+    },
+    {
+      "id": "5710f4b8b654c5140001fa49",
+      "question": "In what year was the agreement to allow the Saarland settlement reached?",
+      "gold": [
+        "1604"
+      ],
+      "greedy": "The agreement to allow the Saarland settlement was reached in 1920.",
+      "samples": [
+        "The agreement to allow the Saarland settlement was reached in 1957.",
+        "The Saarland settlement was reached in 1957.",
+        "The Saarland settlement was reached in 1920.",
+        "The Saar-Palatinate Peace Treaty was signed in 1377, however, a more likely answer might refer to the Saarbrücken Agreement of 1935 or the Saar Territory's independence and its re-annexation to Germany after the Treaty of Saar, which was reached in 1920",
+        "The agreement to allow Saarland to be annexed by Germany was reached in 1920.",
+        "The Saarland settlement agreement was reached in 1920.",
+        "The Saarland settlement was reached in 1935.",
+        "The agreement allowing the Saarland settlement was reached in 1920.",
+        "The agreement to allow the Saarland settlement was reached in 1920.",
+        "The agreement to allow the Saarland settlement was reached in 1957."
+      ],
+      "se_discrete": 1.4184836619456564,
+      "se_logprob": 1.3235813077173844,
+      "C_SE_disc": -1.4184836619456564,
+      "n_clusters": 5
+    },
+    {
+      "id": "573408ef4776f41900661757",
+      "question": "When did the North American French and Indian War end?",
+      "gold": [
+        "10 February 1763",
+        "signing of the Treaty of Paris on 10 February 1763"
+      ],
+      "greedy": "The North American French and Indian War ended with the signing of the Treaty of Paris on February 10, 1763.",
+      "samples": [
+        "The North American French and Indian War (also known as the Seven Years' War) ended with the signing of the Treaty of Paris on February 10, 1763.",
+        "The North American French and Indian War ended with the signing of the Treaty of Paris on February 10, 1763.",
+        "The North American French and Indian War ended with the Treaty of Paris in 1763, officially ending British rule over most of North America.",
+        "The North American French and Indian War ended with the Treaty of Paris on February 10, 1763.",
+        "The North American French and Indian War ended on February 10, 1763.",
+        "The North American French and Indian War (also known as the French and Indian War) ended with the Treaty of Paris, which was signed on February 10, 1763.",
+        "The North American French and Indian War ended in 1763 with the Treaty of Paris, signed on February 10, 1763.",
+        "The North American French and Indian War ended with the signing of the Treaty of Paris on February 10, 1763.",
+        "The North American French and Indian War (1754-1763) ended with the Treaty of Paris, signed on February 10, 1763.",
+        "The North American French and Indian War (also known as the Seven Years' War) ended in 1763 with the Treaty of Paris, signed on February 10, 1763."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.326367790423148,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "5709686c200fba1400367f78",
+      "question": "How many people were registered to receive the HD service prior to launch?",
+      "gold": [
+        "40,000"
+      ],
+      "greedy": "I don't have information on the specific number of people registered to receive the HD service prior to its launch.",
+      "samples": [
+        "I don't have any information about the specific HD service you're referring to.",
+        "I couldn't find the specific number of people registered for the HD service prior to its launch.",
+        "I don't have specific information on the exact number of people registered to receive the HD service prior to its launch.",
+        "I'm unable to provide information on how many people were registered for the HD service prior to launch as I do not have access to that specific data.",
+        "I don't have information on a specific HD service you're referring to, as I'm a general knowledge assistant. Could you please provide more context or clarify which HD service you are asking about?",
+        "I don't have information on the number of people registered to receive an HD service.",
+        "I couldn't find any information regarding the HD service you are referring to. Could you please specify which HD service you are referring to (e.g. HBO, Netflix, etc.)",
+        "I don't have enough information to provide an accurate answer. Can you provide more context about the HD service you are referring to?",
+        "I'm not provided with any information about an HD service you are referring to.",
+        "I don't have enough information to provide the exact number of people registered for HD (High Definition) service prior to its launch."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.5393121825345741,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "5706149552bb891400689884",
+      "question": "When is the suspended team scheduled to return?",
+      "gold": [
+        "in 2018",
+        "2018"
+      ],
+      "greedy": "I don't have enough information to provide a specific answer. Could you please provide more context or specify which team you are referring to?",
+      "samples": [
+        "I don't have enough information to provide a specific answer. Could you please provide more context or details about the suspended team you are referring to?",
+        "I don't have enough information to provide an accurate answer. Can you please provide more context or details about the team you are referring to?",
+        "I'm not aware of any information regarding a specific suspended team. Could you please provide more context or details about the team you're referring to?",
+        "I don't have enough information to provide a specific answer. Could you please provide more context or specify which team you are referring to?",
+        "I don't have enough information to provide a specific answer. Please provide more context or details about the suspended team you are referring to.",
+        "I don't have enough information to answer your question. Could you provide more details about the team you're referring to?",
+        "I don't have the information on a specific suspended team. Please provide more context or details about the team you are referring to, and I'll do my best to provide an answer.",
+        "I'm not aware of any specific information about a suspended team returning. Could you please provide more context or specify which team you are referring to?",
+        "I don't have enough information about the specific team you're referring to. Could you please provide more context or details about the team, such as the sport or organization?",
+        "I don't have any information about a specific suspended team. Could you provide more context or specify the team you're referring to?"
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.6054289782366841,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "5710f4b8b654c5140001fa46",
+      "question": "Which Count did the Prince strike an arrangement with?",
+      "gold": [
+        "Count Ludwig von Nassau-Saarbrücken",
+        "Ludwig von Nassau-Saarbrücken"
+      ],
+      "greedy": "I don't have enough information to provide an accurate answer. Could you please provide more context or clarify which Prince you are referring to?",
+      "samples": [
+        "I don't have enough context to answer your question. Could you please provide more information about \"The Prince\" and the arrangement you are referring to?",
+        "I don't have enough information about the context. You haven't specified which Prince or Prince you are referring to. If you could provide more context, I'd be happy to help.",
+        "I don't have enough information to answer your question. Can you provide more context or clarify which Prince and Count you are referring to?",
+        "I don't have enough information to determine which Prince you're referring to. Could you provide more context or clarify which Prince you're asking about?",
+        "I don't have enough information to determine which Prince you're referring to. Could you please provide more context or specify which Prince you are asking about?",
+        "I don't have enough context about the specific Prince. Could you please provide more information about which Prince you are referring to?",
+        "I'm sorry, I don't have enough information to provide an answer.",
+        "There are many historical examples of princes striking arrangements with counts, so it's necessary to clarify which specific prince and count you are referring to. Can you please provide more context or specify the prince and count you are asking about?",
+        "I don't have enough information to answer that question. Could you please provide more context about who \"the Prince\" and \"the arrangement\" are?",
+        "I don't have enough context to provide an answer. Can you provide more information or clarify who \"the Prince\" and what \"arrangement\" you are referring to?"
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.175393883862547,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "57265a58dd62a815002e8270",
+      "question": "Name a type of Toyota compact trucks?",
+      "gold": [
+        "Toyota Hilux",
+        "Hilux"
+      ],
+      "greedy": "The Toyota Tacoma is a type of compact pickup truck.",
+      "samples": [
+        "One type of Toyota compact truck is the Tacoma.",
+        "The Toyota Tacoma is a type of compact pickup truck.",
+        "The Toyota Tacoma is a type of compact pickup truck.",
+        "The Tacoma.",
+        "The Toyota Tacoma is a popular compact pickup truck.",
+        "The Toyota Tacoma is a well-known compact truck model produced by Toyota.",
+        "The Tacoma is a type of Toyota compact pickup truck.",
+        "The Toyota Tacoma is a popular type of compact pickup truck.",
+        "The Toyota Tacoma is a well-known compact truck model.",
+        "The Toyota Tacoma."
+      ],
+      "se_discrete": 1.0888999753452238,
+      "se_logprob": 1.0757799724967825,
+      "C_SE_disc": -1.0888999753452238,
+      "n_clusters": 3
+    },
+    {
+      "id": "5727e6cbff5b5019007d97ef",
+      "question": "According to Oxfam, the 85 richest people have wealth equal to how many average people?",
+      "gold": [
+        "50%",
+        "3.5 billion",
+        "about 3.5 billion people"
+      ],
+      "greedy": "According to Oxfam, the 85 richest people in the world have a combined wealth equal to the wealth of 4.6 billion people.",
+      "samples": [
+        "According to Oxfam, the 85 richest people in the world hold as much wealth as 4.6 billion people.",
+        "According to Oxfam, the 85 richest people have a combined wealth equal to that of 4.6 billion people.",
+        "According to Oxfam, the 85 richest people have a combined wealth equal to that of 4.6 billion people.",
+        "According to Oxfam, the 85 richest people in the world have a combined wealth equal to that of 4.5 billion people, or approximately 56% of the global population.",
+        "According to Oxfam, the wealth of the 85 richest people in the world is equivalent to the wealth of 4.5 billion people.",
+        "According to Oxfam, the 85 richest people have a combined wealth equal to the total wealth of 4.6 billion people.",
+        "According to Oxfam, the 85 richest people in the world have a combined wealth equal to the wealth of 4.6 billion people.",
+        "According to Oxfam, the 85 richest people have a wealth equivalent to the entire GDP of Europe.",
+        "According to Oxfam, the 85 richest people in the world have a combined wealth equal to approximately 4.6 billion people.",
+        "According to Oxfam, the 85 richest people in the world have a combined wealth equal to the combined wealth of 4.6 billion people."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.5277374014621131,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "57282f204b864d190016468e",
+      "question": "Why did the series end in 2011?",
+      "gold": [
+        "the death of Elisabeth Sladen",
+        "due to the death of Elisabeth Sladen"
+      ],
+      "greedy": "I don't have enough information to determine which series you are referring to. Could you please provide more context or specify the name of the series?",
+      "samples": [
+        "I'm not aware of a specific series that ended in 2011 without more context. Can you please provide more information about the series you're referring to, such as its genre or title?",
+        "I'm not aware of the specific series you are referring to. Could you please provide more context or details about the series?",
+        "I'm not aware of a specific series that ended in 2011. However, I can provide information on popular series that ended in 2011, such as \"The Wire\" or \"Lost\". If you specify a particular series, I can provide a short factual answer.",
+        "I'm not aware of a specific series you are referring to. However, I can try to guess. Is it \"Jericho\"?",
+        "I'm not aware of a specific series that ended in 2011. Can you please provide more context or information about the series you are referring to?",
+        "I'm not sure which specific series you are referring to. Could you please provide more context or specify the name of the series?",
+        "I don't have enough information to answer your question about which series you are referring to. Can you please provide more context or clarify which series you are talking about?",
+        "I couldn't find specific information about a series ending in 2011. Could you please provide more context or details about the series in question?",
+        "I couldn't find specific information on a notable series that ended in 2011. Could you please provide more context or specify the name of the series? I'd be happy to try and help you.",
+        "I don't have a specific series to refer to. Can you please provide more context or information about the series in question?"
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.1474358075934685,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "5728e5f43acd2414000e0173",
+      "question": "How can you protest against the government in an individual way?",
+      "gold": [
+        "Threatening government officials",
+        "forbidden speech",
+        "speech",
+        "engaging in the forbidden speech"
+      ],
+      "greedy": "There are several ways to protest against the government individually:\n\n1. **Write to your representatives**: Contact your local, state, or federal representatives via mail, email, or phone to express your opinions on policies and issues.\n2. **Sign petitions**: Join online or offline petitions that align with your views and show support for",
+      "samples": [
+        "To protest individually, you can:\n\n1. Write letters or emails to elected officials and government departments expressing your concerns.\n2. Attend local town hall meetings, city council sessions, or community gatherings to voice your opinions.\n3. Use social media platforms to raise awareness about your cause and engage in online activism.\n4. Particip",
+        "There are several ways to protest against the government individually:\n\n1. **Write to your representative**: Email, letter, or mail a personal letter to your elected representative expressing your concerns and opinions.\n2. **Petition online**: Sign and share petitions on platforms like Change.org or Care2, which can bring attention to your",
+        "Individual ways to protest against the government include:\n\n1. Voting: Participating in local and national elections to elect representatives who share similar views.\n2. Writing letters: Expressing opinions to elected officials, either through official channels or media.\n3. Boycotts: Refusing to support businesses or services that align with or",
+        "There are several ways to protest against the government individually, including:\n\n1. Voting: Exercising your right to vote in local, national, or municipal elections.\n2. Contacting representatives: Writing letters, sending emails, or making phone calls to express your opinions to local representatives.\n3. Boycotting: Ref",
+        "There are several ways to protest against a government in an individual way:\n\n1. **Writing to your representatives**: Send letters, emails, or postcards to your local representatives expressing your opinions and concerns.\n2. **Signing petitions**: Sign online or in-person petitions that align with your values and concerns.\n3. **V",
+        "There are several ways to protest against the government in an individual way:\n\n1. **Write to your representatives**: Send emails, letters, or participate in phone calls to express your concerns and opinions.\n2. **Sign petitions**: Online platforms and local organizations often allow individuals to sign petitions that can be presented to the government.",
+        "In the United States, individuals can protest against the government in various ways, including:\n\n1. Voting: Exercising their right to vote in elections and supporting candidates who share their views.\n2. Contacting representatives: Calling, writing, or emailing elected officials to express dissent.\n3. Peaceful assembly: Participating",
+        "In many countries, individuals can protest against the government in various ways, including:\n\n1. Voting: Exercising one's right to vote in elections to elect representatives who share your views.\n2. Contacting representatives: Writing letters, emails, or calling representatives to express concerns.\n3. Peaceful demonstrations: Participating",
+        "Individuals can protest against a government in various ways, including:\n\n1. Voting: Exercising one's right to vote in local, national, or parliamentary elections to choose representatives who share similar views.\n2. Contacting representatives: Writing letters, sending emails, or making phone calls to express dissenting opinions and advocate",
+        "There are several ways to protest against the government in an individual way:\n\n1. **Voting**: Exercise your right to vote in elections and choose candidates that align with your views.\n2. **Petitioning**: Start a petition on platforms like Change.org or Care2 to gather signatures against a specific policy or issue."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.6538671407497184,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "56bec0dd3aeaaa14008c935b",
+      "question": "What was the resolution of the cameras used in the EyeVision 360 system?",
+      "gold": [
+        "5K"
+      ],
+      "greedy": "I don't have information on the resolution of the cameras used in the EyeVision 360 system.",
+      "samples": [
+        "I don't have information on a specific \"EyeVision 360\" system.",
+        "I don't have information about the EyeVision 360 system's camera resolution.",
+        "I'm unable to verify the resolution of the cameras used in the EyeVision 360 system.",
+        "I couldn't find specific information about the resolution of the EyeVision 360 system.",
+        "I couldn't find any information about the EyeVision 360 system, could you provide more context or information about it?",
+        "I'm unable to verify the resolution of the EyeVision 360 system.",
+        "I do not have access to information about the EyeVision 360 system.",
+        "I couldn't find specific information on the resolution of the cameras used in the EyeVision 360 system. If you could provide more context or details about the system, I'd be happy to try and help further.",
+        "I do not have specific information on the EyeVision 360 system.",
+        "I couldn't find any information on the resolution of the cameras used in the EyeVision 360 system."
+      ],
+      "se_discrete": 1.0888999753452235,
+      "se_logprob": 1.1045247042240802,
+      "C_SE_disc": -1.0888999753452235,
+      "n_clusters": 4
+    },
+    {
+      "id": "5726f4a0708984140094d6eb",
+      "question": "What was the goal of John Sheepshanks considerable bequest to the museum?",
+      "gold": [
+        "forming a 'A National Gallery of British Art',",
+        "forming a 'A National Gallery of British Art'"
+      ],
+      "greedy": "I couldn't find any information on a person named John Sheepshanks making a bequest to a museum.",
+      "samples": [
+        "I am unable to verify John Sheepshanks considerable bequest to a museum, however I did find John Sheepshanks, an English railway engineer, made a significant bequest to the London and North Western Railway.",
+        "I am unable to verify the goal of John Sheepshanks considerable bequest.",
+        "I'm unable to verify any information about a John Sheepshanks.",
+        "I'm unable to verify any information about John Sheepshanks or a bequest to a museum.",
+        "I do not have information on a person named John Sheepshanks.",
+        "I am unable to verify information regarding John Sheepshanks' bequest.",
+        "I couldn't find any information about John Sheepshanks' bequest to a museum. Could you provide more context?",
+        "I don't have information on a notable person named John Sheepshanks.",
+        "I'm not aware of any information about a historical figure named John Sheepshanks.",
+        "I couldn't find any information about a person named John Sheepshanks making a bequest to a museum."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.3135559062396,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "57377ec7c3c5551400e51f07",
+      "question": "What is more fundamental than force in quanton field theory?",
+      "gold": [
+        "conservation of momentum",
+        "the currently known fundamental forces"
+      ],
+      "greedy": "In quantum field theory, space is more fundamental than force.",
+      "samples": [
+        "In quantum field theory, the field itself is more fundamental than force.",
+        "In Quantum Field Theory, more fundamental than force is the point or field's value, specifically the vacuum expectation value.",
+        "In Quantum Field Theory, potential is more fundamental than force.",
+        "In quantum field theory, space-time is more fundamental than force.",
+        "In quantum field theory, space is considered more fundamental than force.",
+        "In quantum field theory, space-time is more fundamental than force.",
+        "In quantum field theory, the field itself is more fundamental than force.",
+        "In quanton field theory, the fundamental object is the qubit (quantum bit) which is more fundamental than force.",
+        "In quantum field theory, space itself is considered more fundamental than force.",
+        "In Quantum Field Theory, space-time is more fundamental than force."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.1948152303769481,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "57332442d058e614000b5723",
+      "question": "What did Warsz own?",
+      "gold": [
+        "village",
+        "a village"
+      ],
+      "greedy": "I couldn't find any information on a person or entity named Warsz. Could you provide more context or details about who or what Warsz refers to?",
+      "samples": [
+        "I couldn't find any notable information on a person or character named Warsz. If you could provide more context, I may be able to help you better.",
+        "I couldn't find any notable information about a person named Warsz. Could you provide more context or details about Warsz?",
+        "I don't have information about a person or entity named Warsz. Can you provide more context or clarify who or what Warsz refers to?",
+        "I don't have information about a person or entity named Warsz. Could you provide more context or clarify who or what Warsz refers to?",
+        "I don't have any information about a person or entity named Warsz.",
+        "I don't have enough information to provide an accurate answer about what Warsz owned. Can you provide more context or details about Warsz?",
+        "I couldn't find any information on a person or entity named Warsz. Could you provide more context or clarify who or what Warsz refers to?",
+        "I don't have information about a person named Warsz. Could you provide more context or details about who Warsz is?",
+        "I couldn't find any information on a person or entity named Warsz. Could you provide more context or details about who or what Warsz is?",
+        "I couldn't find any information on a person named Warsz. Could you provide more context or details?"
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.3421255315635747,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "56de10b44396321400ee2593",
+      "question": "What was the name of the Norman castle?",
+      "gold": [
+        "Afranji"
+      ],
+      "greedy": "I'm not sure which Norman castle you are referring to. Could you please provide more context or specify the location of the castle you are interested in?",
+      "samples": [
+        "I don't have enough information to provide a specific answer about a Norman castle. Could you please provide more context or details?",
+        "I'm not sure which Norman castle you are referring to. Could you please provide more context or specify the location?",
+        "You didn't specify which Norman castle you are referring to. Could you please provide more information or specify the location of the castle you are interested in?",
+        "I need more information about the context. Could you please provide more details, such as the location or time period, of the Norman castle you are referring to? I'll be happy to help.",
+        "I need more information. Could you please specify which Norman castle you are referring to?",
+        "I'm not sure which specific Norman castle you are referring to. Could you please provide more context or information about the castle you are interested in?",
+        "I'm not given a specific Norman castle to refer to. Can you please provide more context or specify which Norman castle you are referring to?",
+        "I need more information. Could you please provide the location or type of the Norman castle you are referring to?",
+        "I don't have specific information about a particular Norman castle. Could you provide more context or details about the Norman castle you are referring to?",
+        "I'm not sure which Norman castle you are referring to, as there are many Norman castles throughout history. Could you provide more context or specify which castle you are looking for?"
+      ],
+      "se_discrete": 1.4184836619456564,
+      "se_logprob": 1.4112339167644048,
+      "C_SE_disc": -1.4184836619456564,
+      "n_clusters": 5
+    },
+    {
+      "id": "56f8225ea6d7ea1400e173f3",
+      "question": "Of what was the Diet of Worms an assembly? ",
+      "gold": [
+        "estates of the Holy Roman Empire",
+        "general assembly of the estates of the Holy Roman Empire"
+      ],
+      "greedy": "The Diet of Worms was an assembly of the Holy Roman Empire.",
+      "samples": [
+        "The Diet of Worms was an assembly of the Holy Roman Empire.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire in 1521 where Martin Luther was condemned as a heretic.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire, specifically the final Diet (assembly) of the empire that lasted from 1521 to 1620, convened by Charles V, King of the Romans.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire, held in 1521, during the Protestant Reformation.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire, convened in 1521.",
+        "The Diet of Worms (Diet von Worms) was an assembly of the Holy Roman Empire."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.363753328685383,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "572771a5f1498d1400e8f842",
+      "question": "The merger between ITT and ABC was suspended after a complaint was filed by whom in July 1967?",
+      "gold": [
+        "Department of Justice"
+      ],
+      "greedy": "I couldn't find any information about a merger between ITT and ABC in 1967.",
+      "samples": [
+        "I am unable to verify who filed the complaint that resulted in the suspension of the ITT-ABC merger in July 1967.",
+        "I'm unable to verify who filed the complaint to suspend the merger between ITT and ABC in July 1967.",
+        "I couldn't find any information on a merger between ITT and ABC that was suspended in July 1967.",
+        "I'm unable to verify who filed a complaint that suspended the ITT-ABC merger in July 1967.",
+        "I do not have that information.",
+        "I do not have information about the merger between ITT and ABC being suspended after a complaint was filed in July 1967.",
+        "I couldn't find any information about the merger between ITT and ABC in 1967, including a complaint.",
+        "I do not have access to information about the merger between ITT and ABC being suspended due to a complaint filed in July 1967.",
+        "I am unable to verify who filed a complaint that suspended the merger between ITT and ABC in July 1967.",
+        "I couldn't find any information about the merger between ITT and ABC being suspended due to a complaint filed in July 1967. Can you provide more context?"
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.8241969276014802,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "5726bf135951b619008f7ce9",
+      "question": "What strategy did Jebe's army use against Kuchlug and his supporters?",
+      "gold": [
+        "inciting internal revolt",
+        "inciting internal revolt among Kuchlug's supporters"
+      ],
+      "greedy": "I couldn't find any information on a historical figure named Jebe and a person named Kuchlug.",
+      "samples": [
+        "I couldn't find any specific information on \"Jebe's army\" and the battle against \"Kuchlug and his supporters.\"",
+        "I couldn't find any information on Jebe's army or a specific battle involving a person named Kuchlug. Could you provide more context or clarify the time period and location of the event?",
+        "I couldn't find any information on the battle between Jebe's army and Kuchlug and his supporters.",
+        "I couldn't find any information about Jebe's army and a historical figure named Kuchlug.",
+        "I do not have information about Jebe's army or a person named Kuchlug.",
+        "I couldn't find any information on a historical event involving Jebe's army and Kuchlug.",
+        "I couldn't find any information on a historical event involving Jebe's army against Kuchlug.",
+        "I couldn't find any information on a historical figure named Jebe and his interaction with Kuchlug. It's possible that you may have provided a fictional or incomplete historical reference. If you could provide more context or clarify who Jebe and Kuchlug are, I'll do my best to provide an accurate answer.",
+        "I couldn't find information about Jebe's army defeating Kuchlug.",
+        "I couldn't find any information about a historical figure named Jebe and a conflict involving him and someone named Kuchlug."
+      ],
+      "se_discrete": 1.0888999753452235,
+      "se_logprob": 1.10575879226001,
+      "C_SE_disc": -1.0888999753452235,
+      "n_clusters": 4
+    },
+    {
+      "id": "56f85cf0aef237190062601d",
+      "question": "What did the new mass allow as regards ceremony?",
+      "gold": [
+        "wine as well as the bread",
+        "freedom of ceremony",
+        "freedom"
+      ],
+      "greedy": "I'm not aware of any specific information about a \"new mass\" regarding ceremony. Could you provide more context or clarify what you are referring to?",
+      "samples": [
+        "I don't have enough context to answer the question. Could you please provide more information about the \"new mass\" you are referring to?",
+        "I don't have information on what 'the new mass' refers to, as it's not specified. Could you please provide more context?",
+        "I couldn't find any information about a specific \"new mass\" that is widely recognized. However, it's possible that you are referring to the \"Mass\" as in the Catholic Eucharist. In that case, the Mass is a sacrament and has a long history, and its ceremonial elements vary across different Christian",
+        "I don't have enough information to provide a specific answer. Can you provide more context or clarify which \"new mass\" you are referring to?",
+        "I'm not aware of any specific information about a 'new mass' that you're referring to, as this could be related to many different contexts.",
+        "I don't have the information to provide a specific answer to that question. Can you please provide more context or clarify what \"the new mass\" refers to?",
+        "I don't have information about a specific \"new mass\" you're referring to. Could you please provide more context or clarify what you mean by \"new mass\"?",
+        "I'm not given any context, but I'm assuming you're referring to the \"Commonwealth of Nations.\" According to the UK's 1953 Succession to the Crown Act, the 1953 Succession to the Crown Act changed the rules of succession by allowing the Mass, not just males, to inherit the",
+        "I couldn't find any specific information on a \"new mass\" that relates to a ceremony. Could you please provide more context or clarify what you're referring to?",
+        "I couldn't find any specific information on a \"new mass\" regarding ceremony without more context. Could you please provide more details or clarify which \"mass\" you are referring to?"
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.2016395922189482,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "5729fb003f37b31900478629",
+      "question": "The production of what signalling molecules is regulated by the immune system?",
+      "gold": [
+        "hormones"
+      ],
+      "greedy": "The production of cytokines is regulated by the immune system.",
+      "samples": [
+        "The production of cytokines, chemokines, and interferons are regulated by the immune system.",
+        "Cytokines, chemokines, and growth factors.",
+        "The production of cytokines is regulated by the immune system.",
+        "The immune system regulates the production of cytokines, which are small signalling molecules that facilitate communication between immune cells.",
+        "The production of cytokines is regulated by the immune system.",
+        "The production of cytokines is regulated by the immune system. Cytokines are small proteins that facilitate communication between immune cells and play a key role in inflammation and the immune response.",
+        "The production of cytokines is regulated by the immune system.",
+        "The production of cytokines.",
+        "The immune system regulates the production of cytokines, chemokines, and prostaglandins, which are signalling molecules involved in the immune response.",
+        "The production of cytokines is regulated by the immune system."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.3416109026608545,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "56d722330d65d214001983a7",
+      "question": "Which company had a commercial aired for free as a result of the Quickbooks contest?",
+      "gold": [
+        "Death Wish Coffee"
+      ],
+      "greedy": "I'm not aware of any specific information about a QuickBooks contest that resulted in a commercial being aired for free.",
+      "samples": [
+        "I do not have information regarding a specific company that was featured in a commercial aired as a result of the QuickBooks contest.",
+        "I do not have information on a \"Quickbooks contest\" that results in free commercials.",
+        "I don't have information on a specific QuickBooks contest that resulted in a company having a free commercial aired.",
+        "I don't have enough information to answer this question. Could you please provide more context about the contest you're referring to?",
+        "I don't have enough information to provide an accurate answer. Can you provide more context or details about the QuickBooks contest?",
+        "I do not have any information on that specific contest.",
+        "I don't have information on a QuickBooks contest that resulted in a free commercial being aired.",
+        "I'm not aware of a specific QuickBooks contest that had a commercial aired for free.",
+        "I'm not aware of a specific company that won a QuickBooks contest. However, Intuit, the company that makes QuickBooks, did have a contest on their website to give away a commercial and the ad was aired in 2008.",
+        "I am unable to verify which company had a commercial aired for free as a result of the QuickBooks contest."
+      ],
+      "se_discrete": 1.2206072645530173,
+      "se_logprob": 1.1053433573414937,
+      "C_SE_disc": -1.2206072645530173,
+      "n_clusters": 4
+    },
+    {
+      "id": "56e74faf00c9c71400d76f94",
+      "question": "Who could be the subjects of a teacher's college investigation?",
+      "gold": [
+        "members"
+      ],
+      "greedy": "The subjects of a teacher's college investigation can include:\n\n1. Student behavior\n2. Lesson plans\n3. Classroom management\n4. Lesson delivery\n5. Assessment methods\n6. Staff relationships\n7. School policies\n8. Classroom environment\n9. Parent-teacher interactions\n10. Professional conduct.",
+      "samples": [
+        "Potential subjects of a teacher's college investigation can include:\n\n1. Students\n2. Fellow teachers\n3. Parents\n4. Administrators\n5. Colleagues\n6. Employers (school administrators)\n7. Local government officials.",
+        "A teacher's college investigation could be about various subjects. This may include:\n\n* Student performance or progress\n* Classroom management or safety\n* Academic integrity or cheating\n* Professional conduct\n* Special needs or diversity issues\n* Curriculum implementation or effectiveness\n* Teacher-student interactions or relationships",
+        "The subjects of a teacher's college investigation can include:\n\n* A student's academic performance or behavior\n* Staff members, including colleagues or administrators\n* Other school personnel, such as support staff or parents\n* The teacher themselves, possibly for misconduct or performance issues",
+        "The subjects of a teacher's college investigation could be: \n\n1. Pupils\n2. Staff members\n3. Other teachers\n4. Parents\n5. External agencies or local authorities",
+        "The subjects of a teacher's college investigation can include:\n\n1. Student performance or academic progress\n2. Allegations of misconduct, harassment, or bullying\n3. Safety concerns or risk to students, colleagues, or property\n4. Misuse of school resources or equipment\n5. Failure to follow school policies or procedures",
+        "A teacher's college investigation could be based on any number of subjects, but some examples include:\n\n1. Misconduct or alleged misconduct by the teacher.\n2. Poor student performance or academic integrity.\n3. Workplace conflicts or staff behavior.\n4. Allegations of abuse or misconduct by colleagues.\n5. The teacher's professional",
+        "The subjects of a teacher's college investigation could include a range of individuals. These may include:\n\n1. Students.\n2. Colleagues.\n3. Parents.\n4. Local authorities.\n5. Former employees.\n6. School administrators.\n7. Volunteers.\n8. Visitors.",
+        "The subjects of a teacher's college investigation can include:\n\n1. Student performance or behavior\n2. Class material or curriculum\n3. Teaching practices or methods\n4. Staff conflicts or relationships\n5. School policies or procedures\n6. Student or staff misconduct.",
+        "The subjects of a teacher's college investigation could include:\n\n1. Pupils or students\n2. Colleagues or fellow teachers\n3. School administrators or staff\n4. Parents or guardians\n5. Members of the local community",
+        "The subjects of a teacher's college investigation could include:\n\n1. Students\n2. Colleagues\n3. Parents\n4. Other staff members\n5. The student's previous school."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "572849b4ff5b5019007da0f4",
+      "question": "How much did the Milton Friedman Institute roughly cost?",
+      "gold": [
+        "around $200 million",
+        "$200 million"
+      ],
+      "greedy": "I couldn't find any information on a specific \"Milton Friedman Institute\" that has a publicly available budget or cost. However, the Milton Friedman Institute at the University of Chicago, which was established in 2007, is a research center affiliated with the University of Chicago.",
+      "samples": [
+        "I am unable to verify how much the Milton Friedman Institute costs, however, I can tell you that it was founded with an initial endowment of $185 million, with a subsequent donation from the Sackler family being  $500 million.",
+        "The Milton Friedman Institute for Advanced Studies, a think tank based at the University of Chicago, is free and does not require a fee for membership or attendance, as it is funded through donations and endowments.",
+        "I do not have information on a specific Milton Friedman Institute's costs. However, I found an Institute of Policy Studies was named after Milton Friedman. If you can provide more details, I might be able to provide a more accurate response.",
+        "I am unable to verify the amount that the Milton Friedman Institute costs.",
+        "I don't have information on the exact cost of the Milton Friedman Institute.",
+        "I couldn't find specific information on the exact budget or cost of the Milton Friedman Institute.",
+        "I'm not aware of information regarding an exact total.",
+        "I'm unable to verify how much the Milton Friedman Institute costs.",
+        "The Milton Friedman Institute is estimated to have cost roughly $130 million to build and $50 million to maintain annually.",
+        "I couldn't find any specific information about the cost of the Milton Friedman Institute."
+      ],
+      "se_discrete": 1.4978661367769954,
+      "se_logprob": 1.3375896176198492,
+      "C_SE_disc": -1.4978661367769954,
+      "n_clusters": 6
+    },
+    {
+      "id": "56e77a8700c9c71400d7718e",
+      "question": "What website are teachers using to sell their lesson plans?",
+      "gold": [
+        "TeachersPayTeachers.com"
+      ],
+      "greedy": "There isn't a single website where all teachers sell their lesson plans. However, some popular platforms include Teachers Pay Teachers (TPT), Educents, and Teachers Notebook.",
+      "samples": [
+        "There isn't a single website that all teachers use to sell their lesson plans. However, some popular platforms where teachers can sell their lesson plans include:\n\n* Teachers Pay Teachers (TPT)\n* Educents\n* Teachers Domain\n* School Sprout\n* Educate\n\nThese websites cater to different needs and offer varying",
+        "There isn't a single website that is widely used by all teachers to sell their lesson plans. However, some popular options include:\n\n* Teachers Pay Teachers (TPT)\n* Educents\n* Teachers' Pay Teachers\n* School Sprouts\n* Educate.com\n\nThese websites primarily cater to teachers looking to share and",
+        "There are multiple websites where teachers can share and sell their lesson plans. Some popular options include:\n\n1. Teachers Pay Teachers (TPT)\n2. Educents\n3. Teachers Notebooks\n4. Lessonary\n\nThese websites allow teachers to create, share, and sell their lesson plans, resources, and other educational",
+        "I'm not aware of a specific website widely used by teachers to sell their lesson plans. However, some popular platforms for sharing and selling educational resources include Teachers Pay Teachers and Educents.",
+        "Several websites allow teachers to sell their lesson plans, including:\n\n1. Teachers Pay Teachers (TPT): A popular platform specifically for educators.\n2. Educents: A marketplace for teachers to sell and share educational resources.\n3. Teachers' Aid: A website that allows teachers to buy and sell educational materials.\n4.",
+        "Teachers often use Teachers Pay Teachers (TPT) to sell their lesson plans, as well as other educational resources, but another popular option is Educents, although the primary platform most widely used for selling lesson plans is TPT.",
+        "Several websites are used by teachers to sell their lesson plans, but some popular options include Teachers Pay Teachers (TPT), Educents, and Teachers Notebook.",
+        "There isn't a single website where teachers are exclusively selling lesson plans. However, some popular platforms where teachers share and sell their resources, including lesson plans, are:\n\n- Teachers Pay Teachers (tpt.com)\n- Educents (educents.com)\n- Teachers Notebook (teachersnotebook.com)\n-Teachers' Pet (",
+        "I'm not aware of a specific website where all teachers sell their lesson plans. However, teachers often share and sell or exchange lesson plans through online platforms such as Teachers Pay Teachers (TPT), Lesson Planet, Educents, or Share Your Style.",
+        "There isn't a single website that teachers use to sell all their lesson plans. However, some popular platforms include:\n\n- Teachers Pay Teachers (TPT): A widely used platform where teachers sell and share educational resources, including lesson plans.\n- Educents: A marketplace for educators to sell and purchase lesson plans, worksheets,"
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.475785835694826,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "5733f5f24776f419006615c3",
+      "question": "How many casualties did British get?",
+      "gold": [
+        "Approximately 1,000 British soldiers were killed or injured.",
+        "1,000 British soldiers",
+        "Approximately 1,000",
+        "1,000"
+      ],
+      "greedy": "I don't have enough information to provide a specific answer. Could you please provide more context or clarify which event or conflict you are referring to?",
+      "samples": [
+        "I don't have enough information about which event or conflict you're referring to. Please provide more context so I can give a more accurate answer.",
+        "I don't have information on a specific event. Can you please provide more context or details about what event you're referring to?",
+        "I don't have enough information to provide an accurate answer about the number of casualties the British suffered. Could you please provide more context or specify which event or conflict you are referring to?",
+        "I don't have enough information to provide the number of casualties the British suffered. Could you provide more context or specify which event or conflict you are referring to?",
+        "I don't have specific information on the number of casualties the British suffered. Could you please provide more context or clarify which event or conflict you're referring to?",
+        "I don't have the specific information on British casualties for a particular event or operation. Can you please provide more context or clarify which event you are referring to?",
+        "I don't have enough information to provide the number of British casualties. Can you provide more context or specify the event you are referring to?",
+        "The question is unclear, as it doesn't specify what \"British\" refers to or what event or conflict you are asking about. Could you please provide more context or clarify what you are referring to (e.g. a specific war, battle, or time period)?",
+        "I don't have enough information to provide a specific answer. Could you please provide more context or clarify which event or conflict you're referring to?",
+        "I don't have specific information on the number of British casualties. Could you please provide more context or clarify which event or conflict you are referring to?"
+      ],
+      "se_discrete": 1.0888999753452235,
+      "se_logprob": 1.0432345431686345,
+      "C_SE_disc": -1.0888999753452235,
+      "n_clusters": 4
+    },
+    {
+      "id": "572666d9dd62a815002e83b6",
+      "question": "How high was the stone wall built around Newcastle in the 13th century?",
+      "gold": [
+        "25-foot",
+        "25-foot (7.6 m) high"
+      ],
+      "greedy": "I couldn't find any information on a stone wall specifically built around Newcastle in the 13th century.",
+      "samples": [
+        "I am unable to verify the height of the stone wall built around Newcastle in the 13th century.",
+        "I'm unable to find specific information on a stone wall specifically built around Newcastle in the 13th century.",
+        "I am unable to confirm the height of a stone wall specifically built around Newcastle in the 13th century",
+        "I couldn't verify the height of the stone wall around Newcastle.",
+        "I couldn't find any historical records of a stone wall specifically built around Newcastle in the 13th century. However, it's possible you may be thinking of Hadrian's Wall, a Roman wall built around 122-128 AD, which is located near Newcastle.",
+        "The stone wall around Newcastle was built in the 13th century and stood around 12-15 feet (3.6-4.5 meters) high.",
+        "The wall built around Newcastle in the 13th century was approximately 11 feet (3.4 meters) high.",
+        "I am unable to find any information about a stone wall built around Newcastle specifically in the 13th century.",
+        "I'm unable to verify the exact height of the stone wall built around Newcastle in the 13th century.",
+        "I do not have information on the height of the stone wall built around Newcastle in the 13th century."
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.1614041715076895,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "5711163bb654c5140001fb17",
+      "question": "What is the name of the third, permanent Huguenot church in New Rochelle?",
+      "gold": [
+        "Trinity-St. Paul's Episcopal Church"
+      ],
+      "greedy": "I do not have information about the third, permanent Huguenot church in New Rochelle.",
+      "samples": [
+        "The Third Huguenot Church in New Rochelle is Trinity Reformed Church.",
+        "I couldn't verify information about the third Huguenot church in New Rochelle.",
+        "I am unsure about the details about the third permanent Huguenot church in New Rochelle.",
+        "I do not have the information for the third Huguenot church in New Rochelle.",
+        "I'm unable to verify the name of the third, permanent Huguenot church in New Rochelle.",
+        "I am unable to verify the name of the third Huguenot church in New Rochelle.",
+        "I do not have information about the specific third, permanent Huguenot church in New Rochelle.",
+        "I cannot verify the name of the third Huguenot church in New Rochelle",
+        "I am unable to search for the name of the third, permanent Huguenot church in New Rochelle.",
+        "I cannot verify the name of the third, permanent Huguenot church in New Rochelle."
+      ],
+      "se_discrete": 1.0888999753452235,
+      "se_logprob": 1.0405619339627337,
+      "C_SE_disc": -1.0888999753452235,
+      "n_clusters": 4
+    },
+    {
+      "id": "57060df252bb891400689821",
+      "question": "Other than San Bernardino, what is the name of the other city that maintains the districts including University Town?",
+      "gold": [
+        "Riverside",
+        "Downtown Riverside"
+      ],
+      "greedy": "I'm not aware of any information about a city that maintains districts including \"University Town\" besides San Bernardino.",
+      "samples": [
+        "I couldn't find any information on \"University Town\" districts. However, I can suggest some possible districts or cities that might have a \"University Town\" designation.",
+        "I do not have information about cities that maintain districts including University Town other than San Bernardino.",
+        "I'm not aware of any specific information about cities with a \"University Town\" district beside San Bernardino.",
+        "However, I need more information to answer this question accurately. Based on my knowledge, the University Town district is typically associated with San Bernardino, California. Could you provide more context or clarify which city you are referring to, or which University Town district you are interested in?",
+        "Unfortunately, I am unable to provide the name of the city other than San Bernardino for this question.",
+        "I do not have enough information to answer that question. Can you provide more context about University Town or the area you are referring to?",
+        "I couldn't verify which city besides San Bernardino maintains University Town districts.",
+        "I do not have enough information about the specific district you are referring to, can you please provide more context about the district you're asking about.",
+        "I'm not aware of any other U.S. city besides San Bernardino that is notable for having a district named \"University Town.\"",
+        "I couldn't find any information about districts including \"University Town\" besides San Bernardino."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.3375458006471104,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "56f86b44a6d7ea1400e175f7",
+      "question": "What did he work on refining until the end of his life?",
+      "gold": [
+        "the translation",
+        "translation"
+      ],
+      "greedy": "I don't have enough information to provide a specific answer. Could you please provide more context or details about the person you are referring to?",
+      "samples": [
+        "I don't have enough information to answer the question. Could you please provide more context or details about who \"he\" is?",
+        "I'm not given the context of who \"he\" is. Can you provide more information about the person you are referring to?",
+        "Unfortunately, I don't have enough information to determine who you are referring to. Can you please provide more context or clarify who \"he\" is?",
+        "I don't have enough information to answer that question. Can you please provide more context or clarify who \"he\" refers to?",
+        "I don't have enough information to provide a specific answer. Could you please provide more context or information about who \"he\" is?",
+        "I don't have enough context to provide a specific answer. Can you provide more information about who \"he\" is?",
+        "I'm happy to help, but there are multiple individuals who might be referred to in this context. Could you please provide more information about the person you are referring to, such as their field of work or nationality? I'll do my best to provide a concise answer.",
+        "I need more context to answer your question. Could you please provide more information about who \"he\" is?",
+        "I don't have enough information to answer the question. Could you please provide more context or specify who \"he\" refers to?",
+        "I don't have enough information to determine who you are referring to. Could you please provide more context or specify the name of the person you are asking about?"
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.6115032406977108,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "56dfaa047aa994140058dfbf",
+      "question": "Milutin Tesla died at what age?",
+      "gold": [
+        "60"
+      ],
+      "greedy": "Nikola Tesla died on January 7, 1943, at the age of 86.",
+      "samples": [
+        "Nikola Tesla died on January 7, 1943, at the age of 86.",
+        "Nikola Tesla died on January 7, 1943, at the age of 86.",
+        "Nikola Tesla died on January 7, 1943, at the age of 86.",
+        "Nikola Tesla died on January 7, 1943, at the age of 86.",
+        "Milutin Tesla died on January 7, 1943, at the age of 78.",
+        "Mileva Marić died at the age of 54.",
+        "Nikola Tesla died on January 7, 1943, at the age of 86.",
+        "Nikola Tesla died on January 7, 1943, at the age of 86.",
+        "Nikola Tesla died at the age of 86, on January 7, 1943.",
+        "Nikola Tesla died on January 7, 1943, at the age of 86."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.4329623153234399,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "572914441d04691400779029",
+      "question": "Who warned of the potential impact?",
+      "gold": [
+        "governments",
+        "of the United States, Britain, Germany and France",
+        "governments of the United States, Britain, Germany and France"
+      ],
+      "greedy": "I don't have enough information to provide a specific answer. Could you please provide more context or clarify who you are referring to?",
+      "samples": [
+        "I don't have enough context to provide a specific answer. Please provide more information so I can help you accurately.",
+        "I don't have enough information to answer the question. Could you please provide more context?",
+        "I'm not provided with a specific context. Could you please provide the full question or topic? I'll do my best to give a concise factual answer.",
+        "I'm sorry, I don't have enough information to determine who specifically you are referring to. Can you provide more context or details?",
+        "I don't have enough information to answer your question. Could you please provide more context or clarify what you are referring to?",
+        "I'm sorry, I don't have enough information to provide a specific answer. Could you provide more context?",
+        "It's not clear who you're referring to. Please provide more context or information.",
+        "Malthus warned of the potential impact of population growth on food resources in his 1798 book \"An Essay on the Principle of Population.\"",
+        "I don't have enough information to provide a specific answer. Can you please provide more context or clarify which impact you are referring to?",
+        "I don't have enough information to provide an accurate answer. Could you please provide more context or clarify who you are referring to?"
+      ],
+      "se_discrete": 1.6094379124341,
+      "se_logprob": 1.5977818974643512,
+      "C_SE_disc": -1.6094379124341,
+      "n_clusters": 6
+    },
+    {
+      "id": "56d7251d0d65d214001983cd",
+      "question": "What former MVP was shown in the locker room?",
+      "gold": [
+        "Peyton Manning",
+        "Manning"
+      ],
+      "greedy": "I'm not aware of a specific instance where a former MVP was shown in a locker room. Could you provide more context or clarify which former MVP you are referring to?",
+      "samples": [
+        "I'm not sure what specific person you are referring to. Could you provide more context or clarify which former MVP and sport?",
+        "I do not have enough information to provide a specific answer. Can you please provide more context about what event or player you're referring to?",
+        "I don't have any information about a specific former MVP being shown in a locker room. Can you provide more context or clarify what you are referring to?",
+        "I'm not aware of any notable information about a former MVP shown in a locker room. Can you provide more context or details?",
+        "I'm not given any context about the specific instance. Can you provide more information or clarify which player or sport you're referring to?",
+        "I don't have enough information to determine which player or league you are referring to. Could you provide more context or clarify which sport you are asking about?",
+        "I'm not aware of any specific instance of a former MVP being shown in a locker room. However, it's possible you're thinking of Tom Brady, who was shown taking a knee in the New England Patriots' locker room in 2016 to protest police brutality and racial inequality.",
+        "I do not have enough information to provide an answer to your question. Can you provide more context or clarify who the former MVP is?",
+        "I'm not aware of any specific information about a former MVP being shown in a locker room. Could you provide more context or details about the event you're referring to?",
+        "I don't have a specific answer to that question as it lacks context. Can you provide more information about the event or situation you're referring to?"
+      ],
+      "se_discrete": 0.8979457248567797,
+      "se_logprob": 0.8506332567892371,
+      "C_SE_disc": -0.8979457248567797,
+      "n_clusters": 3
+    },
+    {
+      "id": "5726d8bd708984140094d35d",
+      "question": "What did the Greek root pharmakos imply?",
+      "gold": [
+        "sorcery or even poison",
+        "sorcery"
+      ],
+      "greedy": "The Greek root \"pharmakos\" (φάρμακος) implied a scapegoat or a person who is blamed for the sins of others, often used in ancient Greek rituals to purify the community.",
+      "samples": [
+        "The Greek root pharmakos implies \"scapegoat\" or \"outcast\", referring to a person who is punished or blamed for the wrongdoings of others.",
+        "The Greek root \"pharmakos\" (φάρμακος) implies \"poison\", \"victim of medication\", or \"scapegoat\" in a ritual context, as seen in the biblical concept of the \"pharmakos\" being stoned to death as a scapegoat in Levitic",
+        "The Greek root \"pharmakos\" implied an outcast or scapegoat.",
+        "The Greek root \"pharmakos\" ( pháρμακός ) implied a scapegoat or a person accused of a heinous crime, often chosen to bear the punishment or penalty on behalf of the community.",
+        "The Greek root \"pharmakos\" implies someone deemed a scapegoat or an outcast.",
+        "The Greek root pharmakos (φαρμακός) implies 'patient', 'sufferer', or 'invalid', typically in a medical or spiritual context.",
+        "The Greek root \"pharmakos\" implies \" scapegoat\" or \"pharmaceutical\" (as in medicine).",
+        "In Greek, \"pharmakos\" (φάρμακος) implied a scapegoat or an outsider chosen to bear the blame and punishment for the community's sins.",
+        "The Greek root \"pharmakos\" implied \"outcast\" or \"accursed one\" and also had connotations of a scapegoat, referring to someone forced to bear the punishment of a community.",
+        "The Greek root pharmakos (φάρμακος) implied \"pharmacist\" or \"druggist.\""
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.4717780439837844,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "57274633dd62a815002e9a4f",
+      "question": "What year did the Financial Interest and Syndication rules result in ABC's decision to split ABC Films into two companies?",
+      "gold": [
+        "1972"
+      ],
+      "greedy": "I couldn't find any information on the \"Financial Interest and Syndication rules\" resulting in ABC's decision to split ABC Films into two companies.",
+      "samples": [
+        "I cannot verify in what year the Financial Interest and Syndication rules led to the decision of ABC's to split ABC Films into two companies.",
+        "I couldn't find any information on the \"Financial Interest and Syndication rules\" resulting in ABC's decision to split ABC Films into two companies.",
+        "I cannot verify what year the Financial Interest and Syndication rules resulted in the decision to split ABC Films into two companies.",
+        "I couldn't find any information on the \"Financial Interest and Syndication rules\" resulting in ABC's decision to split ABC Films into two companies.",
+        "I'm unable to identify the specific year the Financial Interest and Syndication rules resulted in ABC's decision to split ABC Films into two companies.",
+        "I couldn't find any information on the \"Financial Interest and Syndication rules\" resulting in ABC's decision to split ABC Films into two companies.",
+        "I couldn't find any information on the \"Financial Interest and Syndication rules\" and its relation to ABC's decision to split ABC Films into two companies.",
+        "I couldn't find any information about the Financial Interest and Syndication rules resulting in ABC's decision to split ABC Films into two companies.",
+        "I could not find any information about a set of 'Financial Interest and Syndication rules' causing ABC to split into two companies.",
+        "I couldn't find any information about the \"Financial Interest and Syndication rules\" causing a decision for ABC to split ABC Films into two companies."
+      ],
+      "se_discrete": 0.6108643020548935,
+      "se_logprob": 0.579382636408557,
+      "C_SE_disc": -0.6108643020548935,
+      "n_clusters": 2
+    },
+    {
+      "id": "56e10ddce3433e1400422b4c",
+      "question": "When did the accident occur?",
+      "gold": [
+        "fall of 1937",
+        "In the fall of 1937",
+        "the fall of 1937"
+      ],
+      "greedy": "I don't have enough information to provide a specific answer. Could you please provide more context or clarify which accident you are referring to?",
+      "samples": [
+        "I don't have enough information to provide a specific answer. Could you please provide more context or details about the accident you're referring to?",
+        "I need more context. You haven't specified what accident you're referring to. Could you provide more information or clarify which incident you're asking about?",
+        "I don't have any specific information about a particular accident. Could you provide more context or details about the accident you're referring to?",
+        "I don't have enough information to determine which accident you are referring to. Could you please provide more context or specify the accident you are asking about?",
+        "I don't have enough information to provide an accurate answer about an accident. Can you please provide more context or specify which accident you are referring to?",
+        "I don't have any information about an accident. Could you provide more context or details so I can assist you better?",
+        "I don't have enough information to determine the specific accident you're referring to. Can you provide more context or details?",
+        "I don't have enough information to provide a specific answer. Please provide more context or details about the accident you are referring to.",
+        "I don't have enough information to determine which accident you're referring to. Could you please provide more context or specify which accident you're asking about?",
+        "I don't have enough information to determine the specific accident you are referring to. Could you provide more context or details?"
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2941967253005809,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "56d99da8dc89441400fdb600",
+      "question": "What two Denver players ranked at 5 percent for sacks?",
+      "gold": [
+        "Derek Wolfe and Malik Jackson"
+      ],
+      "greedy": "I do not have information about Denver players who ranked at 5 percent for sacks.",
+      "samples": [
+        "I'm unable to verify two Denver players ranked at 5% for sacks.",
+        "I cannot confirm the Denver players that ranked at 5 percent for sacks.",
+        "I cannot verify Denver players who ranked 5 percent for sacks.",
+        "I cannot verify what two Denver Broncos players have recorded 5 sacks in a season.",
+        "I am unable to verify the two Denver Broncos players who ranked 5 percent for sacks.",
+        "I do not have enough information to answer your question about Denver players that ranked at 5% for sacks.",
+        "I'm unable to provide information on Denver players' sack percentages.",
+        "I cannot verify what two Denver Broncos players ranked 5 percent for sacks, I'll be happy to look that up for you though",
+        "I'm unable to verify what two Denver Broncos players ranked 5th for the number of sacks.",
+        "I don't have information about a recent season for the Denver players that you're referring to, could you please provide more context or clarify which season you are asking about?"
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.149838848203414,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "572646655951b619008f6ec2",
+      "question": "Which two groups have cells bound by inter-cell connections and membranes, muscles, a nervous system and sensory organs?",
+      "gold": [
+        "ctenophores and cnidarians"
+      ],
+      "greedy": "The two groups of cells that have cells bound by inter-cell connections and membranes, muscles, a nervous system, and sensory organs are:\n\n1. Nervous system cells (neurons)\n2. Epithelial cells",
+      "samples": [
+        "The two groups of cells that have cells bound by inter-cell connections and membranes, muscles, a nervous system, and sensory organs are:\n\n1. Nervous system\n2. Muscular system",
+        "The two groups of cells that have cells bound by inter-cell connections and membranes, muscles, a nervous system, and sensory organs are plants and animals.",
+        "Animal cells and plant cells have these features.",
+        "These two groups are: \n\n1. Nervous System\n2. Skeletal Muscles",
+        "Multicellular organisms consist of two main groups: \n\n1. Sponges \n2. Cnidarians (including jellyfish, corals, and sea anemones).",
+        "The two groups of organisms that have cells bound by inter-cell connections, membranes, muscles, a nervous system, and sensory organs are:\n\n1. Animals.\n2. Plants",
+        "These two groups are animals and plants.",
+        "The two groups of cells that have cells bound by inter-cell connections and membranes, muscles, a nervous system, and sensory organs are:\n\n1. Nervous system (neurons, glial cells, and neural sheath cells)\n2. Epithelial tissue.",
+        "The two groups of cells that have cells bound by inter-cell connections and membranes, muscles, a nervous system, and sensory organs are: \n\n1. Tissues\n2. Organs",
+        "Epithelium and Nervous Tissue."
+      ],
+      "se_discrete": 1.1682824501765625,
+      "se_logprob": 1.0825270688124775,
+      "C_SE_disc": -1.1682824501765625,
+      "n_clusters": 4
+    },
+    {
+      "id": "5729fb003f37b3190047862a",
+      "question": "Older people get less sun and produce less of what chemical via UVB radiation?",
+      "gold": [
+        "cholecalciferol"
+      ],
+      "greedy": "Older people produce less vitamin D via UVB radiation from the sun.",
+      "samples": [
+        "Older people tend to produce less vitamin D via UVB radiation from the sun.",
+        "Older people produce less vitamin D via UVB radiation.",
+        "Older people get less sun and produce less vitamin D via UVB radiation.",
+        "Older people produce less melanin, a pigment, via UVB radiation from the sun.",
+        "Older people produce less vitamin D via UVB radiation from sunlight.",
+        "Older people get less sun and produce less vitamin D.",
+        "Older people produce less vitamin D via UVB radiation.",
+        "Older people get less sun and produce less vitamin D via UVB radiation.",
+        "Older people produce less Vitamin D via UVB radiation.",
+        "Older people produce less Vitamin D via UVB radiation."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2841009010721592,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "56de49a8cffd8e1900b4b7a8",
+      "question": "Who bought the rights?",
+      "gold": [
+        "Enrique Pérez de Guzmán"
+      ],
+      "greedy": "I don't have enough information to provide an accurate answer. Can you provide more context or clarify who \"the rights\" refers to?",
+      "samples": [
+        "I don't have enough information to accurately answer your question. Could you please provide more context or specify which rights you're referring to?",
+        "I don't have enough context to provide a specific answer. Can you please provide more information or clarify which rights you are referring to?",
+        "I don't have enough information to provide a specific answer. Could you please provide more context or details about the event or situation you are referring to?",
+        "I don't have enough information to determine who bought the rights. Can you provide more context or clarify which rights you're referring to?",
+        "I don't have enough information to provide an answer. Could you please provide more context about what you are referring to?",
+        "I don't have enough information to provide an answer. Could you please provide more context or details about the topic you're referring to?",
+        "I don't have enough information to provide a specific answer. Can you please provide more context or details about the rights you are referring to?",
+        "I don't have enough information to answer your question. Could you provide more context?",
+        "I don't have enough information to provide a specific answer. Could you please provide more context or clarify who \"the rights\" refers to?",
+        "I don't have enough information to provide an accurate answer. Please provide more context so I can give you a correct and factual response."
+      ],
+      "se_discrete": 1.2206072645530173,
+      "se_logprob": 1.1682982447231376,
+      "C_SE_disc": -1.2206072645530173,
+      "n_clusters": 4
+    }
+  ]
+}

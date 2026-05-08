@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ipynb_checkpoints/
+
+# 학습 산출물 (큼)
+*.pt
+*.bin
+*.safetensors
+*.npz
+*.h5
+checkpoints/
+hidden/
+
+# 학습 raw 데이터 (큼)
+generations.jsonl
+se.jsonl
+
+# 로그 (noise)
+*.log
+*.out
+*.pid
+
+# OS
+.DS_Store
+Thumbs.db

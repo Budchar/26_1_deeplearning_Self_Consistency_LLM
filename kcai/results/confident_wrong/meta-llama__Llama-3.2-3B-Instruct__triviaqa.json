@@ -1,0 +1,981 @@
+{
+  "n_records": 1000,
+  "greedy_acc": 0.669,
+  "by_metric": {
+    "C_SE_disc": {
+      "ece": 0.27886831593450495,
+      "four_cell": {
+        "high_correct": 423,
+        "high_wrong": 79,
+        "low_correct": 246,
+        "low_wrong": 252,
+        "median_threshold": -1.4978661367769952,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 252,
+        "wrong_in_top_q": 20,
+        "rate": 0.07936507936507936
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.97,
+          "threshold": -0.0
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.925,
+          "threshold": -0.639031859650177
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.9133333333333333,
+          "threshold": -0.9404479886553263
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.88,
+          "threshold": -1.2275294114572126
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.844,
+          "threshold": -1.4978661367769952
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.805,
+          "threshold": -1.7480673485460891
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.7685714285714286,
+          "threshold": -1.9730014063936125
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.74375,
+          "threshold": -2.1639556568820564
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.7055555555555556,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.669,
+          "threshold": -2.3025850929940455
+        }
+      ]
+    },
+    "C_SE_logp": {
+      "ece": 0.25036655072298186,
+      "four_cell": {
+        "high_correct": 422,
+        "high_wrong": 78,
+        "low_correct": 247,
+        "low_wrong": 253,
+        "median_threshold": -1.4514655543310424,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 17,
+        "rate": 0.068
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.97,
+          "threshold": -0.0
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.925,
+          "threshold": -0.5628144316776306
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.91,
+          "threshold": -0.8820382033661273
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.8825,
+          "threshold": -1.1640224027183432
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.844,
+          "threshold": -1.4491093279437801
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.8066666666666666,
+          "threshold": -1.6904884977631685
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.7671428571428571,
+          "threshold": -1.9243105669714464
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.7275,
+          "threshold": -2.1076140000367714
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.7044444444444444,
+          "threshold": -2.2551732589416438
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.669,
+          "threshold": -2.298335903260249
+        }
+      ]
+    },
+    "C_logp": {
+      "ece": 0.11260117341015549,
+      "four_cell": {
+        "high_correct": 437,
+        "high_wrong": 63,
+        "low_correct": 232,
+        "low_wrong": 268,
+        "median_threshold": -0.42324256687064066,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 18,
+        "rate": 0.072
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.97,
+          "threshold": -0.14296183616107114
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.915,
+          "threshold": -0.2261776085509442
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.9266666666666666,
+          "threshold": -0.2919729028826614
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.9075,
+          "threshold": -0.358980872536402
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.874,
+          "threshold": -0.4230919839253303
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.8416666666666667,
+          "threshold": -0.483689429649573
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.8042857142857143,
+          "threshold": -0.5659915343578947
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.7625,
+          "threshold": -0.6618191459272719
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.7122222222222222,
+          "threshold": -0.7990067723461115
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.669,
+          "threshold": -2.0200314267730666
+        }
+      ]
+    }
+  },
+  "disagreement_counts": {
+    "C_SE_disc_high__C_SE_logp_low": 13,
+    "C_SE_disc_low__C_SE_logp_high": 11,
+    "C_SE_disc_high__C_logp_low": 115,
+    "C_SE_disc_low__C_logp_high": 113,
+    "C_SE_logp_high__C_logp_low": 116,
+    "C_SE_logp_low__C_logp_high": 116
+  },
+  "danger_examples": [
+    {
+      "id": "qw_12369",
+      "question": "\"What year did Jean-Francois Champollion publish the first correct translation of Egyptian hieroglyphs from the Rosetta Stone, the Roman Catholic Church take Galileo Galilei's \"\"Dialogue\"\" off their list of banned books, and Britain repeal the death penalty for over 100 crimes?\"",
+      "gold": [
+        "one thousand eight hundred and twenty two",
+        "1822",
+        "one thousand, eight hundred and twenty-two"
+      ],
+      "greedy": "Here are the answers to your questions:\n\n1. Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs from the Rosetta Stone in 1822.\n2. The Roman Catholic Church removed Galileo Galilei's \"Dialogue\" from their Index Librorum Prohibitor",
+      "samples": [
+        "Here are the answers to your questions:\n\n1. 1822: Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs.\n2. 1835: The Roman Catholic Church removed Galileo's \"\"Dialogue\"\" from their list of banned books.\n3. 1965:",
+        "Here are the answers to your questions:\n\n1. Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs in 1822, based on his work with the Rosetta Stone in 1820-1822.\n\n2. The Roman Catholic Church lifted the ban on Galileo's",
+        "The answers are:\n\n1. Jean-Francois Champollion published his correct translation of the Rosetta Stone in 1822.\n2. The Roman Catholic Church removed Galileo's \"\"Dialogue\"\" from its Index Librorum Prohibitorum in 1835.\n3. Britain repealed the death penalty for",
+        "Here are the answers to your questions:\n\n1. Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs from the Rosetta Stone in 1822.\n2. The Roman Catholic Church removed Galileo Galilei's \"Dialogue\" from their list of banned books in 183",
+        "Here are the answers:\n\n1. Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs from the Rosetta Stone in 1822.\n2. The Roman Catholic Church removed Galileo Galilei's \"Dialogue\" from its Index Librorum Prohibitorum, or",
+        "The answers are as follows:\n\n1. Jean-Francois Champollion published his correct translation of the Egyptian hieroglyphs from the Rosetta Stone in 1822.\n2. The Roman Catholic Church removed Galileo Galilei's \"Dialogue Concerning the Two Chief World Systems\" from their list of",
+        "The answers to your question are:\n\n1. Jean-Francois Champollion published his correct translation of Egyptian hieroglyphs in 1822.\n2. The Roman Catholic Church removed Galileo's \"\"Dialogue\"\" from its index of banned books in 1835.\n3. Britain repealed the death penalty for",
+        "Here are the answers:\n\n1. Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs from the Rosetta Stone in 1822.\n2. The Roman Catholic Church lifted its ban on Galileo's \"Dialogue\" in 1835.\n3. Britain repealed the death penalty",
+        "Here are the answers to your questions:\n\n1. Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs in 1822.\n2. The Roman Catholic Church removed Galileo's \"\"Dialogue\"\" from its Index Librorum Prohibitorum (list of banned books) in",
+        "The answers are:\n\n1. Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs from the Rosetta Stone in 1822.\n2. The Roman Catholic Church removed Galileo Galilei's \"Dialogue\" from their index of banned books in 1835.\n3."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "bt_2421",
+      "question": "What was the first name of the Kray twins' mother",
+      "gold": [
+        "Violet Single",
+        "Violet (disambiguation)",
+        "Violet LP",
+        "Violet (film)",
+        "violet single",
+        "Violet",
+        "Violets",
+        "violet character",
+        "violet",
+        "violet disambiguation",
+        "Violet (Character)",
+        "Violet (song)",
+        "violets",
+        "Violet (album)",
+        "violet album",
+        "violet film",
+        "Violet (character)",
+        "violet song",
+        "violet lp"
+      ],
+      "greedy": "I do not have information on the Kray twins' mother's first name.",
+      "samples": [
+        "I am unable to verify the first name of the Krays' mother.",
+        "I don't have information on the Kray twins' mother.",
+        "I cannot verify who the Kray twins mother's first name was.",
+        "I'm unable to verify the first name of the Kray twins' mother.",
+        "I do not have access to specific information regarding the mother's first name of the Kray twins.",
+        "I cannot verify what the first name of the Kray twins' mother was.",
+        "I am unable to verify the name of the Kray twins' mother.",
+        "I couldn't find any information on specific details about the Kray twins' mother, but I can tell you that Reginald and Ronald Kray's mother's name was Frances.",
+        "I do not have the required information about the Kray twins' mother.",
+        "I do not have enough information to accurately answer that question."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.553321616979427,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "sfq_22835",
+      "question": "Which popular dessert was invented at the Hungry Monk in Alfriston, Sussex?",
+      "gold": [
+        "SUSSEX POND",
+        "sussex pond"
+      ],
+      "greedy": "I couldn't find any information about a popular dessert being invented at the Hungry Monk in Alfriston, Sussex.",
+      "samples": [
+        "I do not have information on a dessert invented at the Hungry Monk in Alfriston, Sussex.",
+        "I'm not aware of a specific popular dessert being invented at The Hungry Monk in Alfriston, Sussex.",
+        "I do not have information on a specific popular dessert invented at \"The Hungry Monk\" in Alfriston, Sussex.",
+        "I couldn't find any information on a popular dessert specifically invented at the Hungry Monk in Alfriston, Sussex.",
+        "I couldn't find any information about a dessert being invented at the Hungry Monk in Alfriston, Sussex.",
+        "I don't have information on the origin of a specific popular dessert invented at The Hungry Monk in Alfriston, Sussex.",
+        "I couldn't find any information about a 'Hungry Monk' in Alfriston, Sussex that is particularly famous for inventing a popular dessert.",
+        "I'm not aware of any specific popular dessert that was invented at The Hungry Monk in Alfriston, Sussex.",
+        "I couldn't find any information about a specific popular dessert being invented at The Hungry Monk in Alfriston, Sussex.",
+        "The sticky toffee pudding was reportedly invented by the Hungry Monk in Alfriston, Sussex."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.27187823799216865,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "tc_106",
+      "question": "Which actress was voted Miss Greenwich Village in 1942?",
+      "gold": [
+        "Lauren Becal",
+        "lauren becal",
+        "Loren Bacall",
+        "Betty Joan Perske",
+        "lauren bacall",
+        "betty joan perske",
+        "betty j perske",
+        "betty joan perski",
+        "betty perske",
+        "Betty J. Perske",
+        "Bacall",
+        "Lauren Becall",
+        "Betty Joan Perski",
+        "Lauren Bacall",
+        "Betty Perske",
+        "lauren becall",
+        "bacall",
+        "loren bacall"
+      ],
+      "greedy": "I couldn't find any information on a title \"Miss Greenwich Village.\"",
+      "samples": [
+        "I cannot verify who was voted Miss Greenwich Village in 1942.",
+        "I couldn't find any information about someone being voted Miss Greenwich Village in 1942.",
+        "I'm unable to verify who was voted Miss Greenwich Village in 1942.",
+        "I do not have information on the specific Miss Greenwich Village title winner in 1942.",
+        "I do not have information on the actress voted Miss Greenwich Village in 1942.",
+        "I am unable to verify which actress was voted Miss Greenwich Village in 1942.",
+        "I do not have information on the winner of Miss Greenwich Village in 1942.",
+        "I couldn't find any information on a title of 'Miss Greenwich Village.'",
+        "I could not verify which actress was voted Miss Greenwich Village in 1942.",
+        "I don't have information on who was voted Miss Greenwich Village in 1942."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2830698147082791,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "sfq_5913",
+      "question": "In which Charles Dickens novel does the character Mr M Choakumchild appear?",
+      "gold": [
+        "Sissy Jupe",
+        "Stephen Blackpool",
+        "sissy jupe",
+        "josiah bounderby",
+        "Hard Times",
+        "stephen blackpool",
+        "Josiah Bounderby",
+        "hard times"
+      ],
+      "greedy": "I couldn't find any information on a character named Mr. M Choakumchild in any of Charles Dickens' novels.",
+      "samples": [
+        "I couldn't find any information on a character named Mr M Choakumchild in a Charles Dickens novel.",
+        "I couldn't find any information on a character named Mr. M Choakumchild in any of Charles Dickens' novels.",
+        "I couldn't find any information about a character named Mr. M Choakumchild in any of Charles Dickens' novels.",
+        "I couldn't find any information on a character named \"Mr. M Choakumchild\" in any Charles Dickens novel.",
+        "I'm not aware of a character named \"Mr M Choakumchild\" in any of Charles Dickens novels.",
+        "I couldn't find any information about a character named \"Mr. M Choakumchild\" in Charles Dickens' novels.",
+        "I couldn't find any information on a character named \"Mr M Choakumchild\" in any of Charles Dickens' novels.",
+        "I am unable to verify the novel that Mr. M. Choakumchild appears in, however I can suggest a search for further information about 'Choakumchild' which was a pen name used by Charles Dickens to publish a letter in 1839.",
+        "I am unable to verify which novel Charles Dickens wrote the character Mr M Choakumchild in.",
+        "I couldn't find any information on a character named Mr. M Choakumchild in Charles Dickens' novels."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.3932293629474035,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "qb_7327",
+      "question": "Who wrote the 1975 novel ‘The History Man’?",
+      "gold": [
+        "malcolm stanley bradbury",
+        "Sir Malcolm Bradbury",
+        "Bradbury, Malcolm",
+        "Malcolm Stanley Bradbury",
+        "malcolm bradbury",
+        "sir malcolm bradbury",
+        "Malcolm Bradbury",
+        "bradbury malcolm"
+      ],
+      "greedy": "The 1975 novel 'The History Man' was written by Alan Bennett.",
+      "samples": [
+        "The 1975 novel 'The History Man' was written by Alan Bennett.",
+        "The 1975 novel 'The History Man' was written by Alan Bennett.",
+        "The 1975 novel 'The History Man' was written by Alan Bleasdale.",
+        "The 1975 novel 'The History Man' was written by Alan Bennett.",
+        "The 1975 novel 'The History Man' was written by Alan Bennett.",
+        "The 1975 novel 'The History Man' was written by Alan Bennett.",
+        "The 1975 novel 'The History Man' was written by Alan Bleasdale.",
+        "The 1975 novel 'The History Man' was written by Alan Bleasdale.",
+        "The 1975 novel 'The History Man' was written by Alan Bennett.",
+        "The 1975 novel \"The History Man\" was written by Alan Bennett."
+      ],
+      "se_discrete": 0.6108643020548935,
+      "se_logprob": 0.5938870415966496,
+      "C_SE_disc": -0.6108643020548935,
+      "n_clusters": 2
+    },
+    {
+      "id": "sfq_4027",
+      "question": "What was the actor Richard Burton's real surname?",
+      "gold": [
+        "jenkins disambiguation",
+        "jenkins",
+        "Jenkins",
+        "Jenkins (disambiguation)"
+      ],
+      "greedy": "Richard Burton's real surname was Evans.",
+      "samples": [
+        "Richard Burton's real surname was Evans.",
+        "Richard Burton's real surname was Evans.",
+        "Richard Burton's real surname was Thomas.",
+        "Richard Burton's real surname was Evans.",
+        "Richard Burton's real surname was Evans.",
+        "Richard Burton's real surname was Evans.",
+        "Richard Burton's real surname was Evans.",
+        "Richard Burton's real surname was Evans.",
+        "Richard Burton's real surname was Powell.",
+        "Richard Burton's real surname was Evans."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.5571778184437888,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "jp_1164",
+      "question": "In what mountain range would you find the city of Tbilisi?",
+      "gold": [
+        "transcaucasia",
+        "Trans-Caucasus",
+        "south caucasia",
+        "southern caucasus",
+        "Transcaucasian",
+        "trans caucasus",
+        "transcaucasian",
+        "south caucasus",
+        "Transcaucasus",
+        "russian transcaucasia",
+        "transcaucasian republics",
+        "South Caucasia",
+        "Russian Transcaucasia",
+        "Transcaucasian Republics",
+        "South Caucasus",
+        "transcaucasian highland",
+        "Transcaucasian Highland",
+        "sub caucasus",
+        "transcaucasus",
+        "Transcaucasia",
+        "Sub-Caucasus",
+        "Southern Caucasus"
+      ],
+      "greedy": "The city of Tbilisi is located in the Caucasus mountain range.",
+      "samples": [
+        "The city of Tbilisi is located in the Caucasus mountain range.",
+        "The city of Tbilisi is located in the Caucasus mountain range.",
+        "The city of Tbilisi is located in the Caucasus Mountains.",
+        "The city of Tbilisi is located in the Caucasus mountain range.",
+        "Tbilisi, the capital of Georgia, is located in the Caucasus Mountains.",
+        "The city of Tbilisi is located in the Caucasus Mountains in Georgia.",
+        "Tbilisi is a city located in the Caucasus mountain range.",
+        "The city of Tbilisi is located in the Caucasus mountain range.",
+        "Tbilisi is a city located in the Caucasus Mountains.",
+        "Tbilisi, the capital of Georgia, is located in the Caucasus mountain range."
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.7813832114082452,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "qb_7496",
+      "question": "In 2012, Bradford City FC presented the Dalai Lama with a personalised club shirt with which number on the back?",
+      "gold": [
+        "fourteen",
+        "14"
+      ],
+      "greedy": "I am unable to verify the number on the shirt.",
+      "samples": [
+        "I was unable to find information on which number was on the Dalai Lama's Bradford City FC personalised club shirt in 2012.",
+        "I am unable to verify the number on the personalized club shirt given to the Dalai Lama by Bradford City FC.",
+        "I couldn't find any information confirming that Bradford City FC presented the Dalai Lama with a personalized club shirt in 2012.",
+        "I do not have any information regarding this.",
+        "I couldn't find the specific information about the Dalai Lama being presented with a personalised Bradford City FC shirt.",
+        "I'm unable to provide an answer to your question.",
+        "I am unable to verify the specifics, however, I can suggest some sources may state the Dalai Lama received a Bradford City FC jersey with the number 33.",
+        "I cannot verify which number on a club shirt was used.",
+        "I'm unable to provide information about a personal relationship or incident in 2012 regarding Bradford City FC presenting the Dalai Lama with a personalized club shirt.",
+        "I could not verify which number Bradford City FC presented the Dalai Lama with in 2012."
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.8024335237524571,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "sfq_22804",
+      "question": "Who was the winning owner of the Ascot Gold Cup in 2013?",
+      "gold": [
+        "THE QUEEN",
+        "Q.U.E.E.N. (Janelle Monáe song)",
+        "Q.U.E.E.N.",
+        "q u e e n",
+        "queen",
+        "q u e e n janelle monáe song"
+      ],
+      "greedy": "I do not have information on the winner of the Ascot Gold Cup in 2013.",
+      "samples": [
+        "I'm unable to verify who won the Ascot Gold Cup in 2013.",
+        "I'm unable to find information on the winner of the Ascot Gold Cup in 2013.",
+        "I cannot verify who the winning owner of the Ascot Gold Cup in 2013 was.",
+        "I am unable to identify the winner of the 2013 Ascot Gold Cup.",
+        "I do not have information on the winner of the 2013 Ascot Gold Cup.",
+        "I'm unable to verify the winning owner of the Ascot Gold Cup in 2013.",
+        "I couldn't verify the exact winning owner of the Ascot Gold Cup in 2013.",
+        "I do not have enough information to answer this question.",
+        "The winning owner of the 2013 Ascot Gold Cup was John Hackett.",
+        "I cannot verify the winning owner of the Ascot Gold Cup in 2013."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.27454247237451973,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "qw_10032",
+      "question": "What was the name of two tyrants who ruled Syracuse in the 2nd century BC?",
+      "gold": [
+        "Dionisios",
+        "Dionisis",
+        "Dionysius",
+        "dionysius",
+        "dionisis",
+        "Dionysius (disambiguation)",
+        "Dionysios",
+        "dionisios",
+        "dionysius disambiguation",
+        "dionysios"
+      ],
+      "greedy": "The two tyrants who ruled Syracuse in the 2nd century BC were:\n\n1. Hiero II (215-215 BC)\n2. Hiero III (215-215 BC)",
+      "samples": [
+        "The two tyrants who ruled Syracuse in the 2nd century BC were:\n\n1. Hiero II (216-215 BC)\n2. Achaean Hiero II's nephew, not Achaean, also ruled but, the most well known Syracuse tyrant of the 2nd century BC after Hiero",
+        "In the 2nd century BC, two tyrants who ruled Syracuse were:\n\n1. Gelon (c. 325-285 BC)\n2. Hiero II (c. 270-215 BC)",
+        "The two tyrants who ruled Syracuse in the 2nd century BC were:\n\n1. Achaeus (r. 209-206 BC)\n2. Hippo and Myrtis' relative  Aetulus",
+        "The two tyrants who ruled Syracuse in the 2nd century BC are:\n\n1. Hiero II (280-215 BC)\n2. Cleomenes of Syracuse",
+        "The two tyrants who ruled Syracuse in the 2nd century BC were:\n\n1. Hiero II (280-215 BC)\n2. Hiero III (215-207 BC)",
+        "The two tyrants who ruled Syracuse in the 2nd century BC are: \n\n1. Hiero II (275-215 BC)\n2. Hiero III (215-207 BC)",
+        "In the 2nd century BC, two notable tyrants who ruled Syracuse were:\n\n1. Hieronymus II of Syracuse \n2. Gelo II",
+        "The two tyrants of Syracuse in the 2nd century BC were:\n\n1. Hiero II (275-215 BC)\n2. Hiero III (218-215 BC and 214-207 BC)",
+        "The two tyrants who ruled Syracuse in the 2nd century BC were:\n\n1. Hiero II of Syracuse (280-272/271 BC)\n2. Pyrrhus of Epirus' brief attempt but a notable power vacuum (285 BC) however most power went to   \n  The  tyrant",
+        "The two tyrants who ruled Syracuse in the 2nd century BC were:\n\n1. Hieron II\n2. Hiero II"
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "odql_4564",
+      "question": "In Edwin Landseer's painting, 'Dignity and Impudence', what kind of creatures are depicted?",
+      "gold": [
+        "Dogs (song)",
+        "dog song",
+        "DOG",
+        "dogs",
+        "Dogs (band)",
+        "dogs disambiguation",
+        "dog disambiguation",
+        "dogs song",
+        "Dog (song)",
+        "Dog (disambiguation)",
+        "dogs band",
+        "dogs album",
+        "DOGS",
+        "Dogs (disambiguation)",
+        "dog",
+        "Dogs (album)"
+      ],
+      "greedy": "I couldn't find any information on an artist named Edwin Landseer or a painting called 'Dignity and Impudence'.",
+      "samples": [
+        "I couldn't find any information on an Edwin Landseer painting called \"Dignity and Impudence.\"",
+        "I couldn't find any information on Edwin Landseer's painting 'Dignity and Impudence'. However, I did find information on Edwin Landseer's painting 'Dignity and Daring'. It depicts a group of polar bears.",
+        "I couldn't find information on Edwin Landseer's painting 'Dignity and Impudence'.",
+        "I couldn't find any information about a painting by Edwin Landseer titled 'Dignity and Impudence'.",
+        "I couldn't find any information about a painting by Edwin Landseer called \"Dignity and Impudence\".",
+        "I couldn't find any information on an artwork by Edwin Landseer called 'Dignity and Impudence'.",
+        "I couldn't find any information on Edwin Landseer's painting 'Dignity and Impudence'.",
+        "I couldn't find any information about a painting by Edwin Landseer called 'Dignity and Impudence'.",
+        "I couldn't find any information on an artist named Edwin Landseer or a painting called 'Dignity and Impudence'.",
+        "I couldn't find any information on an Edwin Landseer painting called 'Dignity and Impudence'."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.27877805205526635,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "bb_6646",
+      "question": "Who was assassinated by Hugh de Merville, William de Tracy, Reginald Fitzhurse and Richard le Breton?",
+      "gold": [
+        "St. Thomas à Becket",
+        "st thomas becket",
+        "Archbishop Thomas Becket",
+        "saint thomas à becket",
+        "thomas of london",
+        "Thomas of Canterbury",
+        "st thomas of canterbury",
+        "st thomas à becket",
+        "St Thomas à Becket",
+        "St Thomas a Becket",
+        "Becket, Saint Thomas",
+        "Thomas á Becket",
+        "will no one rid me of this turbulent priest 3f",
+        "st thomas á becket",
+        "turbulent priest",
+        "St. Thomas Becket",
+        "Thomas À Becket",
+        "archbishop thomas becket",
+        "Thomas à Becket",
+        "archbishop thomas",
+        "St Thomas of Canterbury",
+        "Saint Thomas à Becket",
+        "St. Thomas á Becket",
+        "thomas á becket",
+        "thomas becket",
+        "Turbulent priest",
+        "Thomas Beckett",
+        "Thomas of London",
+        "Saint Thomas a Becket",
+        "thomas of canterbury",
+        "Who will rid me of this troublesome priest",
+        "Saint Thomas á Becket",
+        "Who will rid me of this troublesome priest%3F",
+        "Thomas Becket",
+        "who will rid me of this troublesome priest",
+        "thomas beckett",
+        "Will no one rid me of this turbulent priest%3F",
+        "saint thomas becket",
+        "St. Thomas a Becket",
+        "thomas à becket",
+        "Archbishop Thomas",
+        "Thomas a Becket",
+        "Saint Thomas Becket",
+        "Thomas A Becket",
+        "saint thomas á becket",
+        "who will rid me of this troublesome priest 3f",
+        "St. Thomas of Canterbury",
+        "Saint Thomas of Canterbury",
+        "St Thomas Becket",
+        "becket saint thomas",
+        "saint thomas of canterbury"
+      ],
+      "greedy": "I do not have information on who was assassinated by Hugh de Merville, William de Tracy, Reginald Fitzhurse, and Richard le Breton.",
+      "samples": [
+        "I could not verify who was assassinated by Hugh de Merville, William de Tracy, Reginald Fitzhurse, and Richard le Breton.",
+        "I cannot verify who was assassinated by Hugh de Merville, William de Tracy, Reginald Fitzhurse and Richard le Breton.",
+        "I couldn't find any historical record of four individuals named Hugh de Merville, William de Tracy, Reginald Fitzhurse, and Richard le Breton conspiring together to assassinate someone.",
+        "I do not have information on that specific event or person.",
+        "I'm unable to verify who Hugh de Merville, William de Tracy, Reginald Fitzhurse and Richard le Breton assassinated.",
+        "I'm unable to verify who was assassinated by Hugh de Merville, William de Tracy, Reginald Fitzhurse and Richard le Breton.",
+        "I cannot verify who was assassinated by Hugh de Merville, William de Tracy, Reginald Fitzhurse, and Richard le Breton.",
+        "I do not have any information on the assassination of a person by Hugh de Merville, William de Tracy, Reginald Fitzhurse and Richard le Breton.",
+        "I couldn't find any information about the person being assassinated by Hugh de Merville, William de Tracy, Reginald Fitzhurse, and Richard le Breton.",
+        "I couldn't find any information about a Hugh de Merville, William de Tracy, Reginald Fitzhurse, and Richard le Breton assassinating anyone in recorded history."
+      ],
+      "se_discrete": 0.5004024235381879,
+      "se_logprob": 0.4787876910071481,
+      "C_SE_disc": -0.5004024235381879,
+      "n_clusters": 2
+    },
+    {
+      "id": "tc_3129",
+      "question": "Proteus and Nereid are moons of which planet?",
+      "gold": [
+        "Neptune's atmosphere",
+        "Sol IIX",
+        "Neptune (planet)",
+        "neptuno planet",
+        "sol viii",
+        "atmosphere of neptune",
+        "Weather of Neptune",
+        "8th planet",
+        "Sol VIII",
+        "scooter neptune",
+        "The planet exterior to Uranus",
+        "eighth planet",
+        "Le Verrier's planet",
+        "neptune planet",
+        "Neptune's weather",
+        "planet neptune",
+        "Magnetosphere of Neptune",
+        "Sol-8",
+        "Sun i",
+        "Neptune (Planet)",
+        "Planet Neptune",
+        "neptune s atmosphere",
+        "neptune blue ocean planet",
+        "Neptune's Atmosphere",
+        "Neptune planet",
+        "Sol 8",
+        "magnetosphere of neptune",
+        "Neptune the blue ocean planet",
+        "le verrier s planet",
+        "neptune",
+        "Astronomy Neptune",
+        "weather of neptune",
+        "Neptuno (planet)",
+        "neptunus planet",
+        "Neptunus (planet)",
+        "Neptune's",
+        "planet exterior to uranus",
+        "neptune astronomy",
+        "Neptune (astronomy)",
+        "Atmosphere of Neptune",
+        "sol 8",
+        "sol iix",
+        "Neptune",
+        "Eighth planet",
+        "sun i",
+        "neptune s",
+        "♆",
+        "neptune s weather",
+        "The Scooter (Neptune)",
+        "astronomy neptune"
+      ],
+      "greedy": "Proteus and Nereid are moons of the planet Uranus.",
+      "samples": [
+        "Proteus and Nereid are moons of the planet Uranus.",
+        "Proteus and Nereid are moons of the planet Neptune.",
+        "Proteus and Nereid are moons of the planet Uranus.",
+        "Proteus and Nereid are moons of Uranus.",
+        "Proteus and Nereid are moons of Neptune.",
+        "Proteus and Nereid are moons of the planet Uranus.",
+        "Proteus and Nereid are moons of Uranus.",
+        "They are moons of Uranus.",
+        "They are moons of Saturn.",
+        "Proteus and Nereid are moons of the planet Uranus."
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.7106604425289724,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "sfq_20388",
+      "question": "Which Liverpool street was named as 'The Great Street 2013' in the National Urbanism Awards?",
+      "gold": [
+        "Hope St",
+        "hope street",
+        "hope st",
+        "Hope Street",
+        "Hope st"
+      ],
+      "greedy": "I am unable to verify which Liverpool street was named 'The Great Street 2013' in the National Urbanism Awards.",
+      "samples": [
+        "I do not have information about Liverpool street being named as 'The Great Street 2013' in the National Urbanism Awards.",
+        "I am unable to provide information on the 'National Urbanism Awards' or 'The Great Street 2013' awards.",
+        "I do not have information about a Liverpool street being named 'The Great Street 2013' in National Urbanism Awards",
+        "I'm unable to verify which Liverpool street was named 'The Great Street 2013' in the National Urbanism Awards.",
+        "I am unsure what the Liverpool street named 'The Great Street 2013' is.",
+        "I do not have information on a Liverpool street named as 'The Great Street 2013' in the National Urbanism Awards.",
+        "I couldn't find information about Liverpool street being named as 'The Great Street 2013 in National Urbanism Awards.",
+        "I do not have the information about the Liverpool street that was named 'The Great Street 2013' in the National Urbanism Awards.",
+        "I am unable to verify which Liverpool street was named 'The Great Street' in the National Urbanism Awards in 2013.",
+        "I cannot verify which street was named 'The Great Street 2013' in the National Urbanism Awards."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2605877996921908,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "qw_15086",
+      "question": "Quitline is a system of centres to help people to quit what?",
+      "gold": [
+        "tobacco or alcohol",
+        "Tobacco or alcohol"
+      ],
+      "greedy": "Quitline is a system of centres to help people quit smoking.",
+      "samples": [
+        "Quitline is a system of centers to help people quit smoking.",
+        "Quitline is a system of centers that helps people to quit smoking.",
+        "Quitline is a system of centres to help people quit smoking.",
+        "Quitline is a system of centres to help people quit smoking.",
+        "Quitline is a system of centres that helps people to quit smoking.",
+        "Quitline is a system of centres that helps people to quit smoking.",
+        "Quitline is a system of centres to help people quit smoking.",
+        "Quitline is a system of centers designed to help people quit smoking.",
+        "Quitline is a system of centers that helps people to quit smoking.",
+        "Quitline is a system of centers to help people to quit smoking."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "bb_7602",
+      "question": "American jazz musician Art Tatum excelled on which instrument?",
+      "gold": [
+        "parts of piano",
+        "pianofortes",
+        "Piano technique",
+        "keyboard hammers",
+        "piano hammer",
+        "Vertical pianoforte",
+        "Black key",
+        "Piano hammers",
+        "Piano keys",
+        "piano forte",
+        "concert grand",
+        "Grand pianoforte",
+        "Acoustic piano",
+        "piano construction",
+        "Piano",
+        "pianoforte",
+        "upright pianoforte",
+        "grand pianoforte",
+        "hammer piano",
+        "acoustic piano",
+        "vertical pianoforte",
+        "upright piano",
+        "Piano construction",
+        "Parts of a piano",
+        "Vertical piano",
+        "piano performance",
+        "Keyboard hammers",
+        "Upright piano",
+        "classical piano",
+        "pianos",
+        "Pianino",
+        "Upright pianoforte",
+        "Piano-forte",
+        "Pianie",
+        "black key",
+        "keyboard hammer",
+        "Piano music",
+        "Piano Keys",
+        "piano technique",
+        "Baby grand piano",
+        "vertical piano",
+        "piano music",
+        "Grand piano",
+        "pianino",
+        "Concert grand",
+        "Grand Piano",
+        "Piano hammer",
+        "Keyboard hammer",
+        "piano hammers",
+        "grand piano",
+        "baby grand piano",
+        "Piano Music",
+        "Piano performance",
+        "Pianoforte",
+        "Hammer (piano)",
+        "piano",
+        "Classical piano",
+        "Pianofortes",
+        "pianie",
+        "Piano forte",
+        "Pianos",
+        "piano keys"
+      ],
+      "greedy": "Art Tatum was a renowned American jazz pianist.",
+      "samples": [
+        "Art Tatum was a pianist.",
+        "Art Tatum excelled on the piano.",
+        "Art Tatum excelled on the piano.",
+        "Art Tatum was a renowned American jazz pianist.",
+        "Art Tatum excelled on the piano.",
+        "Art Tatum was an American jazz pianist.",
+        "Art Tatum was a pianist.",
+        "Art Tatum excelled as a pianist.",
+        "Art Tatum was a master pianist.",
+        "Art Tatum excelled on the piano."
+      ],
+      "se_discrete": 0.5004024235381879,
+      "se_logprob": 0.4713219836245015,
+      "C_SE_disc": -0.5004024235381879,
+      "n_clusters": 2
+    },
+    {
+      "id": "qw_12369",
+      "question": "\"What year did Jean-Francois Champollion publish the first correct translation of Egyptian hieroglyphs from the Rosetta Stone, the Roman Catholic Church take Galileo Galilei's \"\"Dialogue\"\" off their list of banned books, and Britain repeal the death penalty for over 100 crimes?\"",
+      "gold": [
+        "one thousand eight hundred and twenty two",
+        "1822",
+        "one thousand, eight hundred and twenty-two"
+      ],
+      "greedy": "Here are the answers to your questions:\n\n1. Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs from the Rosetta Stone in 1822.\n2. The Roman Catholic Church removed Galileo Galilei's \"Dialogue\" from their Index Librorum Prohibitor",
+      "samples": [
+        "Here are the answers:\n\n1. Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs from the Rosetta Stone in 1822.\n2. The Roman Catholic Church removed Galileo Galilei's 'Dialogue' from its Index of Prohibited Books in 1835,",
+        "Here are the dates for each event:\n\n1. Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs: 1842 \n2. The Roman Catholic Church removed Galileo's \"Dialogue\" from their list of banned books: 1835 \n3. Britain repealed the death",
+        "Here are the answers:\n\n1. Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs from the Rosetta Stone in 1822.\n2. The Roman Catholic Church removed Galileo Galilei's \"\"Dialogue\"\" from its index of banned books in 1835, not",
+        "Here are the answers to your questions:\n\n1. Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs from the Rosetta Stone in 1822.\n2. The Roman Catholic Church removed Galileo Galilei's \"Dialogue\" from its Index of forbidden books in 183",
+        "Here are the dates for the three events you mentioned:\n\n1. The correct translation of Egyptian hieroglyphs from the Rosetta Stone was published by Jean-François Champollion in 1822.\n2. The Roman Catholic Church removed Galileo Galilei's \"Dialogue\" from its index of banned books",
+        "Here are the answers:\n\n1. Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs in 1822 (from the Rosetta Stone in 1822).\n2. The Roman Catholic Church removed Galileo's book \"Dialogue\" from their Index of Prohibited Books in",
+        "Here are the answers to your questions:\n\n1. Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs from the Rosetta Stone in 1822.\n\n2. The Roman Catholic Church removed Galileo's \"Dialogue\" from its index of prohibited books in 1835.\n\n3",
+        "The answer is: \n1. 1822 (Champollion)\n2. 1835 (Dialogue)\n3. 1965 (abolition)",
+        "Here are the answers to the three questions in a short, factual manner:\n\n1. Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs in 1822.\n2. The Roman Catholic Church removed Galileo's \"Dialogue\" (Dialogue Concerning the Two Chief World Systems)",
+        "Here are the answers to your questions:\n\n1. 1822 - Jean-Francois Champollion published the first correct translation of Egyptian hieroglyphs from the Rosetta Stone.\n2. 1835 - The Roman Catholic Church removed Galileo Galilei's \"Dialogue Concerning the Two Chief World"
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.5509151514716017,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "qz_1834",
+      "question": "Which song begins with the line The taxman's taken all my dough?",
+      "gold": [
+        "sunny afternoon",
+        "Sunny Afternoon"
+      ],
+      "greedy": "The song is \"Taxman\" by The Beatles.",
+      "samples": [
+        "The song that begins with the line \"The taxman's taken all my dough\" is \"Taxman\" by The Beatles.",
+        "The song is \"Taxman\" by The Beatles.",
+        "The song that begins with the line \"The taxman's taken all my dough\" is \"Taxman\" by The Beatles.",
+        "The song is \"Taxman\" by The Beatles.",
+        "The song is \"Taxman\" by The Beatles, from their 1966 album \"Revolver\".",
+        "The song that begins with the line \"The taxman's taken all my dough\" is \"Taxman\" by The Beatles.",
+        "The song \"Taxman\" is by The Beatles, released in 1966 on their album \"Revolver\".",
+        "The song is \"Taxman\" by The Beatles.",
+        "The song is \"Taxman\" by The Beatles, released in 1966 on their album \"Revolver\".",
+        "The song is \"Taxman\" by The Beatles, from their 1966 album \"Revolver\"."
+      ],
+      "se_discrete": 0.6730116670092565,
+      "se_logprob": 0.6626930631774129,
+      "C_SE_disc": -0.6730116670092565,
+      "n_clusters": 2
+    },
+    {
+      "id": "qb_7327",
+      "question": "Who wrote the 1975 novel ‘The History Man’?",
+      "gold": [
+        "malcolm stanley bradbury",
+        "Sir Malcolm Bradbury",
+        "Bradbury, Malcolm",
+        "Malcolm Stanley Bradbury",
+        "malcolm bradbury",
+        "sir malcolm bradbury",
+        "Malcolm Bradbury",
+        "bradbury malcolm"
+      ],
+      "greedy": "The 1975 novel 'The History Man' was written by Alan Bennett.",
+      "samples": [
+        "The 1975 novel 'The History Man' was written by Alan Bennett.",
+        "The 1975 novel 'The History Man' was written by Alan Bennett.",
+        "The 1975 novel 'The History Man' was written by Alan Bennett.",
+        "The 1975 novel 'The History Man' was written by Alan Bennett.",
+        "The 1975 novel 'The History Man' was written by Alan Bennett.",
+        "The 1975 novel 'The History Man' was written by Alan Bennett.",
+        "The 1975 novel 'The History Man' was written by Alan Bennett.",
+        "The 1975 novel 'The History Man' was written by Alan Bennett.",
+        "The 1975 novel 'The History Man' was written by Alan Bennett.",
+        "The 1975 novel 'The History Man' was written by Alan Bleasdale."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.3051015382198585,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    }
+  ]
+}

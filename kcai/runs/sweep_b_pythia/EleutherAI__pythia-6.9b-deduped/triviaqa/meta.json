@@ -1,0 +1,36 @@
+{
+  "phase": "phase1_se_seps",
+  "model_id": "EleutherAI/pythia-6.9b-deduped",
+  "model_revision_hf_sha": "372b1c08d9b5b0fc18ce86bbf294930e26e66ed5",
+  "launch_args": {
+    "n_samples": 10,
+    "max_new_tokens": 64,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "four_bit": true,
+    "dtype": "fp16",
+    "save_hidden": true,
+    "limit": null,
+    "n_records_input": 1000
+  },
+  "prompt_template_sample": "",
+  "git_commit": "not_a_git_repo",
+  "library_versions": {
+    "python": "3.12.3",
+    "torch": "2.12.0.dev20260407+cu128",
+    "transformers": "5.7.0",
+    "numpy": "2.4.4",
+    "tokenizers": "0.22.2",
+    "bitsandbytes": "0.49.2",
+    "accelerate": "1.13.0"
+  },
+  "host": {
+    "hostname": "kcai-B650M-D3HP",
+    "os": "Linux 6.17.0-22-generic",
+    "cpu_count": "8",
+    "gpu": "NVIDIA GeForce RTX 5070",
+    "driver": "590.48.01"
+  },
+  "started_at": "2026-05-01T22:42:13.565204+00:00",
+  "self_logged": true
+}

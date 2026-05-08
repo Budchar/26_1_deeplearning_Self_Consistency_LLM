@@ -1,0 +1,1453 @@
+{
+  "n_records": 1000,
+  "greedy_acc": 0.181,
+  "by_metric": {
+    "C_SE_disc": {
+      "ece": 0.23906376496895249,
+      "four_cell": {
+        "high_correct": 142,
+        "high_wrong": 370,
+        "low_correct": 39,
+        "low_wrong": 449,
+        "median_threshold": -1.5047882836811908,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 251,
+        "wrong_in_top_q": 155,
+        "rate": 0.6175298804780877
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.46,
+          "threshold": -0.0
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.41,
+          "threshold": -0.639031859650177
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.36666666666666664,
+          "threshold": -0.9433483923290392
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.33,
+          "threshold": -1.2275294114572126
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.284,
+          "threshold": -1.5047882836811908
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.25333333333333335,
+          "threshold": -1.7480673485460891
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.22857142857142856,
+          "threshold": -1.9730014063936123
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.21,
+          "threshold": -2.1639556568820564
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.19666666666666666,
+          "threshold": -2.1639556568820564
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.181,
+          "threshold": -2.3025850929940455
+        }
+      ]
+    },
+    "C_SE_logp": {
+      "ece": 0.24936062306651055,
+      "four_cell": {
+        "high_correct": 142,
+        "high_wrong": 358,
+        "low_correct": 39,
+        "low_wrong": 461,
+        "median_threshold": -1.484320290953381,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 155,
+        "rate": 0.62
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.45,
+          "threshold": -0.0
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.415,
+          "threshold": -0.5986005092738237
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.36333333333333334,
+          "threshold": -0.9304536282297644
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.32,
+          "threshold": -1.1998893091562064
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.284,
+          "threshold": -1.4839125525854122
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.25166666666666665,
+          "threshold": -1.694109512738886
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.22857142857142856,
+          "threshold": -1.9024140395280376
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.21125,
+          "threshold": -2.0928635953946024
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.19666666666666666,
+          "threshold": -2.1702118030138835
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.181,
+          "threshold": -2.301853566730441
+        }
+      ]
+    },
+    "C_logp": {
+      "ece": 0.5958792859643895,
+      "four_cell": {
+        "high_correct": 148,
+        "high_wrong": 352,
+        "low_correct": 33,
+        "low_wrong": 467,
+        "median_threshold": -0.23592733306393568,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 146,
+        "rate": 0.584
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.45,
+          "threshold": -0.060775499731855656
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.425,
+          "threshold": -0.11675252328860683
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.3933333333333333,
+          "threshold": -0.15980518785460152
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.3525,
+          "threshold": -0.19772330524266404
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.296,
+          "threshold": -0.23567407254133316
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.25166666666666665,
+          "threshold": -0.27275641436774906
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.22714285714285715,
+          "threshold": -0.3052245697642322
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.20875,
+          "threshold": -0.35265452116977514
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.19555555555555557,
+          "threshold": -0.41599707710658845
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.181,
+          "threshold": -1.0782023339904845
+        }
+      ]
+    }
+  },
+  "disagreement_counts": {
+    "C_SE_disc_high__C_SE_logp_low": 14,
+    "C_SE_disc_low__C_SE_logp_high": 2,
+    "C_SE_disc_high__C_logp_low": 128,
+    "C_SE_disc_low__C_logp_high": 116,
+    "C_SE_logp_high__C_logp_low": 121,
+    "C_SE_logp_low__C_logp_high": 121
+  },
+  "danger_examples": [
+    {
+      "id": "572fda6fb2c2fd140056850e",
+      "question": "What set is a seat added to after being allocated?",
+      "gold": [
+        "second",
+        "constituency",
+        "constituency seats"
+      ],
+      "greedy": "A seat is added to the House of Representatives after being allocated.",
+      "samples": [
+        "A seat is added to the House after being allocated.",
+        "A seat is added to the House after being allocated.",
+        "House of Representatives",
+        "A seat is added to the House after being allocated.",
+        "A seat is added to the House after being allocated.",
+        "After being allocated, a seat is added to the House of Representatives.",
+        "A seat is added to the House of Representatives after being allocated.",
+        "A seat is added to the House of Representatives after being allocated.",
+        "House of Representatives",
+        "seat added to the House of Representatives after being allocated."
+      ],
+      "se_discrete": 0.6730116670092565,
+      "se_logprob": 0.6827913440506891,
+      "C_SE_disc": -0.6730116670092565,
+      "n_clusters": 2
+    },
+    {
+      "id": "5726509bdd62a815002e815b",
+      "question": "What did Shrewsbury note about the plague?",
+      "gold": [
+        "reported rates of mortality in rural areas during the 14th-century pandemic were inconsistent with the modern bubonic plague",
+        "the reported rates of mortality in rural areas during the 14th-century pandemic were inconsistent with the modern bubonic plague",
+        "rates of mortality in rural areas during the 14th-century pandemic were inconsistent with the modern bubonic plague"
+      ],
+      "greedy": "Shrewsbury noted that the plague caused significant mortality and social disruption.",
+      "samples": [
+        "Shrewsbury noted that the plague caused many deaths and social disruption.",
+        "Shrewsbury noted the arrival and impact of the Black Death in his writings, recording high mortality rates and social unrest it caused.",
+        "Shrewsbury noted that the plague caused a high mortality rate and disrupted social order.",
+        "Shrewsbury noted that the plague caused significant mortality and social disruption.",
+        "Shrewsbury noted that the plague caused significant mortality and social disruption.",
+        "Shrewsbury noted that the plague caused widespread mortality and social upheaval.",
+        "Shrewsbury noted that the plague caused significant mortality and social disruption.",
+        "Shrewsbury noted that the plague caused significant mortality and social disruption.",
+        "Shrewsbury noted that the plague caused significant mortality and social disruption.",
+        "Shrewsbury noted that the plague caused significant mortality and social disruption."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2746061953593372,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "56f8a6969e9bad19000a025f",
+      "question": "What should a Christian follow in his life?",
+      "gold": [
+        "Ten Commandments",
+        "his or her vocations on a daily basis"
+      ],
+      "greedy": "A Christian should follow the teachings of Jesus Christ as outlined in the Bible.",
+      "samples": [
+        "A Christian should follow the teachings of Jesus Christ as outlined in the Bible.",
+        "A Christian should follow the teachings of Jesus Christ as outlined in the Bible.",
+        "A Christian should follow the teachings of Jesus Christ as outlined in the Bible.",
+        "A Christian should follow the teachings of Jesus Christ as outlined in the Bible.",
+        "A Christian should follow the teachings of Jesus Christ as outlined in the Bible.",
+        "A Christian should follow the teachings of Jesus Christ as outlined in the Bible.",
+        "A Christian should follow the teachings of Jesus Christ as outlined in the Bible.",
+        "A Christian should follow the teachings of Jesus Christ as outlined in the Bible.",
+        "A Christian should follow the teachings of Jesus Christ as outlined in the Bible.",
+        "A Christian should follow the teachings of Jesus Christ as outlined in the Bible."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "5728f2e26aef051400154897",
+      "question": "What is the term for a hyperactive immune system that attacks normal tissues?",
+      "gold": [
+        "autoimmunity"
+      ],
+      "greedy": "Autoimmune disease",
+      "samples": [
+        "The term for a hyperactive immune system that attacks normal tissues is autoimmune disease.",
+        "Autoimmune disease",
+        "The term is autoimmune disease.",
+        "Autoimmune disorder",
+        "Autoimmune disease",
+        "The term is autoimmune disease.",
+        "Autoimmune disease",
+        "The term is autoimmunity or autoimmune disease.",
+        "Autoimmune disease",
+        "Autoimmune disease"
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.28365517519222944,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "572800b03acd2414000df1f4",
+      "question": "What is the name of a Time Lord that Doctor Who has fought?",
+      "gold": [
+        "The Master"
+      ],
+      "greedy": "Davros",
+      "samples": [
+        "Davros",
+        "Davros",
+        "Dalek Emperor Nero",
+        "Davros",
+        "Davros",
+        "Davros",
+        "Davros",
+        "Davros",
+        "Davros",
+        "Davros"
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.16039500187753164,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "5710e9f8a58dae1900cd6b34",
+      "question": "When was the colony destroyed?",
+      "gold": [
+        "1565"
+      ],
+      "greedy": "The question is too general as it doesn't specify which colony. Please provide more details.",
+      "samples": [
+        "The question is too general as it doesn't specify which colony is being referred to. Please provide more details.",
+        "The question is unclear about which specific colony is being referred to. Please provide more context or details.",
+        "The question is too general as it doesn't specify which colony. Different colonies had different fates and destruction dates. Please provide more context or specify the colony in question.",
+        "The question is too broad without context. Please specify which colony you are referring to.",
+        "The question is unclear about which colony is being referred to. Please provide more context or specify the colony in question.",
+        "The question is too broad as it doesn't specify which colony is being referred to. Please provide more details.",
+        "The question is too general as it does not specify which colony. Please provide more context or details about the specific colony you are referring to.",
+        "The question is too broad without context. Could you specify which colony you are referring to?",
+        "The question is too general without context. Please specify which colony you are referring to.",
+        "The question is too general; please specify which colony you are referring to."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.30552771223883507,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "5730b8ca8ab72b1400f9c705",
+      "question": "When was Isiah Bowman appointed to President Wilson's Inquiry?",
+      "gold": [
+        "1917"
+      ],
+      "greedy": "Isiah Bowman was appointed to President Wilson's Inquiry in 1918.",
+      "samples": [
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1918.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1918.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1918.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1918.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1918.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1918.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1918.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1918.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1918.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1918."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "572695285951b619008f774b",
+      "question": "Which TFEU article defines the ordinary legislative procedure that applies for majority of EU acts?",
+      "gold": [
+        "TFEU article 294"
+      ],
+      "greedy": "Article 294 of the Treaty on the Functioning of the European Union (TFEU) defines the ordinary legislative procedure.",
+      "samples": [
+        "Article 294 of the Treaty on the Functioning of the European Union (TFEU) defines the ordinary legislative procedure.",
+        "Article 294 of the Treaty on the Functioning of the European Union (TFEU) defines the ordinary legislative procedure.",
+        "Article 294 of the Treaty on the Functioning of the European Union (TFEU) defines the ordinary legislative procedure.",
+        "Article 294 of the Treaty on the Functioning of the European Union (TFEU) defines the ordinary legislative procedure.",
+        "Article 294 of the Treaty on the Functioning of the European Union (TFEU) defines the ordinary legislative procedure.",
+        "Article 294 of the Treaty on the Functioning of the European Union (TFEU) defines the ordinary legislative procedure.",
+        "Article 294 of the Treaty on the Functioning of the European Union (TFEU) defines the ordinary legislative procedure.",
+        "Article 294 of the Treaty on the Functioning of the European Union (TFEU) defines the ordinary legislative procedure.",
+        "Article 294 of the Treaty on the Functioning of the European Union (TFEU) defines the ordinary legislative procedure.",
+        "Article 294 of the Treaty on the Functioning of the European Union (TFEU) defines the ordinary legislative procedure."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "5710f4b8b654c5140001fa49",
+      "question": "In what year was the agreement to allow the Saarland settlement reached?",
+      "gold": [
+        "1604"
+      ],
+      "greedy": "1935",
+      "samples": [
+        "1935",
+        "1935",
+        "1935",
+        "1935",
+        "1935",
+        "The agreement to allow the Saarland settlement was reached in 1935.",
+        "1935",
+        "1935",
+        "1935",
+        "1935"
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "57274e975951b619008f87fb",
+      "question": "Many construction companies are now placing more emphasis on what?",
+      "gold": [
+        "establishing relationships with other necessary participants",
+        "establishing relationships with other necessary participants through the design-build process"
+      ],
+      "greedy": "Many construction companies are now placing more emphasis on sustainability and green building practices.",
+      "samples": [
+        "Many construction companies are now placing more emphasis on sustainability and green building practices.",
+        "Many construction companies are now placing more emphasis on sustainability and eco-friendly practices.",
+        "Many construction companies are now placing more emphasis on sustainability and green building practices.",
+        "Many construction companies are now placing more emphasis on sustainability and green building practices.",
+        "Many construction companies are now placing more emphasis on sustainability and eco-friendliness.",
+        "Many construction companies are now placing more emphasis on sustainability and green building practices.",
+        "Many construction companies are now placing more emphasis on sustainability and green building practices.",
+        "Many construction companies are now placing more emphasis on sustainability and green building practices.",
+        "Many construction companies are now placing more emphasis on sustainability and green building practices.",
+        "Many construction companies are now placing more emphasis on sustainability and green building practices."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2735256979003736,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "573408ef4776f41900661757",
+      "question": "When did the North American French and Indian War end?",
+      "gold": [
+        "10 February 1763",
+        "signing of the Treaty of Paris on 10 February 1763"
+      ],
+      "greedy": "The North American French and Indian War, also known as the Seven Years' War, ended in 1763.",
+      "samples": [
+        "The North American French and Indian War, also known as the Seven Years' War, ended in 1763.",
+        "The North American French and Indian War, which was part of the larger global Seven Years' War, ended in 1763.",
+        "The North American French and Indian War, part of the larger Seven Years' War, ended in 1763.",
+        "The North American theater of the Seven Years' War, also known as the French and Indian War, ended in 1763.",
+        "The North American French and Indian War, also known as the Seven Years' War, ended in 1763.",
+        "The North American French and Indian War, also known as the Seven Years' War, ended in 1763.",
+        "The North American French and Indian War, part of the Seven Years' War, ended in 1763.",
+        "The North American French and Indian War, which was part of the larger Seven Years' War, ended in 1763.",
+        "The North American theater of the French and Indian War ended in 1763.",
+        "The North American French and Indian War, also known as the Seven Years' War, ended in 1763."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.31673785208459837,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "5726c0c5dd62a815002e8f77",
+      "question": "Who ordered the attack on the caravan of traders Genghis Khan send to Khwarezmia?",
+      "gold": [
+        "Inalchuq"
+      ],
+      "greedy": "Genghis Khan ordered the attack on the caravan of traders sent by his son Chagatai to Khwarezmia.",
+      "samples": [
+        "Genghis Khan ordered the attack on the caravan of traders from Khwarezmia.",
+        "Genghis Khan ordered the attack on the caravan of traders from Khwarezmia.",
+        "Genghis Khan ordered the attack on the caravan of traders from Khwarezmia.",
+        "Genghis Khan ordered the attack on the caravan of traders sent by his son Ögedei to Khwarezmia.",
+        "Genghis Khan ordered the attack on the caravan of traders sent by himself to Khwarezmia.",
+        "Genghis Khan ordered the attack on the caravan of traders in Khwarezmia.",
+        "Genghis Khan ordered the attack on the caravan of traders from Khwarezmia.",
+        "Genghis Khan ordered the attack on the caravan of traders sent by his son Batu.",
+        "Genghis Khan ordered the attack on the caravan of traders sent to Khwarezmia.",
+        "Genghis Khan ordered the attack on the caravan of traders sent to Khwarezmia."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.581411956817751,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "5706149552bb891400689884",
+      "question": "When is the suspended team scheduled to return?",
+      "gold": [
+        "in 2018",
+        "2018"
+      ],
+      "greedy": "The question is unclear as it refers to an unspecified \"suspended team.\" Could you provide more context or specify which team is being referred to?",
+      "samples": [
+        "The question is not specific about which team is referred to, so I cannot provide a precise answer. Additional context about the team would be needed.",
+        "The question is unclear as it does not specify which team is being referred to. Please provide more details.",
+        "The question is unclear as no specific team or suspension date was mentioned. Please provide more details.",
+        "The question is unclear as it doesn't specify which team is suspended or when they were suspended. More context is needed for an accurate answer.",
+        "The question is not specific about which suspended team is being referred to. Additional context is needed to provide an accurate answer.",
+        "The question is not specific about which team is suspended or when they are scheduled to return. More context is needed to provide an accurate answer.",
+        "The question is unclear as it doesn't specify which team is suspended and when they were suspended. Could you provide more details?",
+        "The question is not specific about which team is referred to. More context is needed to provide an accurate answer.",
+        "The question is unclear as it doesn't specify which team is referred to. Please provide more context or details.",
+        "The question is incomplete and lacks context. Please provide more details about which team and suspension you're referring to."
+      ],
+      "se_discrete": 0.6108643020548935,
+      "se_logprob": 0.6236231517438726,
+      "C_SE_disc": -0.6108643020548935,
+      "n_clusters": 2
+    },
+    {
+      "id": "56f8a2969e9bad19000a022f",
+      "question": "What book did Luther write in response to Agricola and the antinomians?",
+      "gold": [
+        "On the Councils",
+        "On the Councils and the Church"
+      ],
+      "greedy": "Luther wrote \"On the Freedom of a Christian\" in response to Agricola and the antinomians.",
+      "samples": [
+        "Luther wrote \"On the Freedom of a Christian\" in response to Agricola and the antinomians.",
+        "Luther wrote \"On the Freedom of a Christian\" in response to Agricola and the antinomians.",
+        "Luther wrote \"On the Liberty of a Christian\" in response to Agricola and the antinomians.",
+        "Luther wrote \"On the Freedom of a Christian\" in response to Agricola and the antinomians.",
+        "Luther wrote \"On the Freedom of a Christian\" in response to Agricola and the antinomians.",
+        "Luther wrote \"On the Freedom of a Christian\" in response to Agricola and the antinomians.",
+        "Luther wrote \"On the Freedom of a Christian\" in response to Agricola and the antinomians.",
+        "Luther wrote \"On the Freedom of a Christian\" in response to Agricola and the antinomians.",
+        "Luther wrote \"On the Freedom of a Christian\" in response to Agricola and the antinomians.",
+        "Luther wrote \"On the Freedom of a Christian\" in response to Agricola and the antinomians."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "5727f05b4b864d190016406a",
+      "question": "What does less education lead to when working?",
+      "gold": [
+        "lower wages"
+      ],
+      "greedy": "Less education often leads to lower earning potential and fewer job opportunities.",
+      "samples": [
+        "Less education often leads to lower earning potential and fewer employment opportunities.",
+        "Less education often leads to lower job qualifications and potentially lower earnings.",
+        "Less education can lead to fewer job opportunities and lower earnings potential.",
+        "Less education often leads to lower income and fewer job opportunities.",
+        "Less education often leads to fewer job opportunities and lower earnings potential.",
+        "Less education can lead to lower earning potential and fewer career opportunities.",
+        "Less education often leads to lower earning potential and fewer job opportunities.",
+        "Less education often leads to lower earning potential and fewer career opportunities.",
+        "Less education is associated with lower income and narrower job opportunities.",
+        "Less education often leads to lower earning potential and fewer job opportunities."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2958566703768904,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "57377ec7c3c5551400e51f07",
+      "question": "What is more fundamental than force in quanton field theory?",
+      "gold": [
+        "conservation of momentum",
+        "the currently known fundamental forces"
+      ],
+      "greedy": "Fields are more fundamental than forces in quantum field theory.",
+      "samples": [
+        "Fields are more fundamental than forces in quantum field theory.",
+        "Fields.",
+        "Fields are more fundamental than forces in quantum field theory.",
+        "Fields.",
+        "Fields.",
+        "Fields are more fundamental than forces in quantum field theory.",
+        "Quantum fields are more fundamental than forces in quantum field theory.",
+        "Fields are more fundamental than forces in quantum field theory.",
+        "Fields are more fundamental than forces in quantum field theory.",
+        "Fields are more fundamental than forces in quantum field theory."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2834547215763367,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "572ff293947a6a140053ce56",
+      "question": "Which river joins the Rhine in Duisburg?",
+      "gold": [
+        "Ruhr",
+        "The Ruhr"
+      ],
+      "greedy": "The Elbe River joins the Rhine in Duisburg.",
+      "samples": [
+        "The Elbe River joins the Rhine in Duisburg.",
+        "The River Elbe joins the Rhine in Duisburg.",
+        "Duisburger Aa",
+        "The River Elbe joins the Rhine in Duisburg.",
+        "The Elbe River joins the Rhine in Duisburg.",
+        "The Elbe River joins the Rhine in Duisburg.",
+        "Duisburger Aa",
+        "The Elbe River joins the Rhine in Duisburg.",
+        "The River Elbe joins the Rhine in Duisburg.",
+        "The River Elbe joins the Rhine in Duisburg."
+      ],
+      "se_discrete": 0.5004024235381879,
+      "se_logprob": 0.39436970833207247,
+      "C_SE_disc": -0.5004024235381879,
+      "n_clusters": 2
+    },
+    {
+      "id": "5725b64d89a1e219009abd41",
+      "question": "What type of launch was happening during the Apollo 1 incident?",
+      "gold": [
+        "prelaunch",
+        "prelaunch test"
+      ],
+      "greedy": "Test launch",
+      "samples": [
+        "Test launch",
+        "Test launch",
+        "Test launch",
+        "Test launch",
+        "Planned launch rehearsal test (LT-1).",
+        "Test-launch",
+        "Test launch",
+        "Test launch",
+        "Test launch",
+        "The Apollo 1 incident was not a launch; it occurred during a ground test."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.587464512297345,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "56f8225ea6d7ea1400e173f3",
+      "question": "Of what was the Diet of Worms an assembly? ",
+      "gold": [
+        "estates of the Holy Roman Empire",
+        "general assembly of the estates of the Holy Roman Empire"
+      ],
+      "greedy": "The Diet of Worms was an assembly of the Holy Roman Empire.",
+      "samples": [
+        "The Diet of Worms was an assembly of the Holy Roman Empire.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire.",
+        "The Diet of Worms was an assembly of the Holy Roman Empire."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "572771a5f1498d1400e8f842",
+      "question": "The merger between ITT and ABC was suspended after a complaint was filed by whom in July 1967?",
+      "gold": [
+        "Department of Justice"
+      ],
+      "greedy": "The merger between ITT and ABC was suspended after a complaint was filed by the Federal Trade Commission (FTC) in July 1967.",
+      "samples": [
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Federal Trade Commission (FTC) in July 1967.",
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Justice Department in July 1967.",
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Department of Justice in July 1967.",
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Federal Trade Commission (FTC) in July 1967.",
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Department of Justice in July 1967.",
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Federal Trade Commission (FTC) in July 1967.",
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Federal Trade Commission (FTC) in July 1967.",
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Federal Trade Commission (FTC) in July 1967.",
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Federal Trade Commission (FTC) in July 1967.",
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Federal Trade Commission (FTC) in July 1967."
+      ],
+      "se_discrete": 0.6108643020548935,
+      "se_logprob": 0.5995729258552067,
+      "C_SE_disc": -0.6108643020548935,
+      "n_clusters": 2
+    },
+    {
+      "id": "57107d73b654c5140001f91e",
+      "question": "When was this edict declared?",
+      "gold": [
+        "1685"
+      ],
+      "greedy": "The question is too general as no specific edict was mentioned. Please provide the name or details of the edict for a precise answer.",
+      "samples": [
+        "The question is unclear as it doesn't specify which edict is being referred to. Please provide more context or specify the edict.",
+        "The question is too general as no specific edict was mentioned. Please provide the name or context of the edict for a precise answer.",
+        "The question is incomplete as it does not specify which edict is being referred to. Please provide more details.",
+        "I need more context to provide a specific date. Please specify which edict you're referring to.",
+        "I need more context about which edict you are referring to. Please provide additional details.",
+        "The question is incomplete as no specific edict is mentioned. Please provide the name of the edict for an accurate answer.",
+        "The question is too general; a specific edict needs to be identified for an accurate date.",
+        "I'm sorry, I need more context about which edict you're referring to. Please provide additional information.",
+        "The question is too general without context. Please provide the name of the edict for a specific answer.",
+        "The question is too general as no specific edict was mentioned. Please provide the name or details of the edict for a precise answer."
+      ],
+      "se_discrete": 0.5004024235381879,
+      "se_logprob": 0.46537640829312277,
+      "C_SE_disc": -0.5004024235381879,
+      "n_clusters": 2
+    },
+    {
+      "id": "5726241189a1e219009ac2e2",
+      "question": "How long does it take for new areas to have significant oil production?",
+      "gold": [
+        "five to ten years"
+      ],
+      "greedy": "New areas typically take 5-10 years from discovery to achieving significant oil production.",
+      "samples": [
+        "It typically takes 5-10 years from discovery to achieve significant oil production in new areas.",
+        "New areas typically take 5-10 years from discovery to achieving significant oil production.",
+        "New areas typically take 5-10 years to develop and start significant oil production after discovery.",
+        "New areas typically take 5-10 years from discovery to achieve significant oil production.",
+        "It typically takes 5-10 years from discovery to start significant oil production in new areas.",
+        "New areas typically take 3-5 years from discovery to start significant oil production, assuming favorable conditions.",
+        "New areas typically require 5-10 years from discovery to achieve significant oil production.",
+        "It can take 5-10 years from the discovery of new oil reserves to achieving significant production.",
+        "It typically takes 5-10 years from discovery to start significant oil production in new areas.",
+        "It typically takes 5-10 years from discovery to achieving significant oil production in new areas."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2900852768526617,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "5729fb003f37b31900478629",
+      "question": "The production of what signalling molecules is regulated by the immune system?",
+      "gold": [
+        "hormones"
+      ],
+      "greedy": "Cytokines and chemokines.",
+      "samples": [
+        "Cytokines and chemokines.",
+        "The production of cytokines is regulated by the immune system.",
+        "Cytokines and chemokines.",
+        "Cytokines and chemokines.",
+        "Cytokines and chemokines are signalling molecules whose production is regulated by the immune system.",
+        "The production of cytokines is regulated by the immune system.",
+        "Cytokines and chemokines are regulated by the immune system.",
+        "Cytokines and chemokines.",
+        "The production of cytokines and chemokines is regulated by the immune system.",
+        "The production of cytokines is regulated by the immune system."
+      ],
+      "se_discrete": 0.6108643020548935,
+      "se_logprob": 0.606546281426433,
+      "C_SE_disc": -0.6108643020548935,
+      "n_clusters": 2
+    },
+    {
+      "id": "5705f36452bb89140068971b",
+      "question": "Which mountain range influenced the split of the regions?",
+      "gold": [
+        "Tehachapis",
+        "the Tehachapis"
+      ],
+      "greedy": "Appalachian Mountains",
+      "samples": [
+        "Appalachian Mountains",
+        "Appalachian Mountains",
+        "Appalachian Mountains",
+        "Appalachian Mountains",
+        "Appalachian Mountains",
+        "Appalachian Mountains",
+        "Appalachian Mountains",
+        "Appalachian Mountains",
+        "Appalachian Mountains",
+        "Appalachian Mountains"
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "5733f309d058e614000b6649",
+      "question": "What were casualties of battle?",
+      "gold": [
+        "Canadians, including their commanding officer",
+        "killed many of the Canadians, including their commanding officer, Joseph Coulon de Jumonville",
+        "many of the Canadians, including their commanding officer, Joseph Coulon de Jumonville"
+      ],
+      "greedy": "Casualties of battle include deaths, injuries, and captures.",
+      "samples": [
+        "Casualties of battle include deaths, injuries, and captures.",
+        "Casualties of battle include deaths, injuries, and captives resulting from combat.",
+        "Casualties of battle include fatalities, wounded, and missing in action.",
+        "Casualties of battle include deaths, injuries, and captures.",
+        "Casualties of battle include deaths, injuries, and captures.",
+        "Casualties of battle include deaths, injuries, and captures.",
+        "Casualties of battle include deaths, injuries, and captures.",
+        "Casualties of battle include deaths, injuries, and captures.",
+        "Casualties of battle refer to the number of deaths, injuries, and captures among combatants and non-combatants during military engagements.",
+        "Casualties of battle include deaths, injuries, and captures."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.5546232600736172,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "572f609ca23a5019007fc5af",
+      "question": "After the Rhine emerges from Lake Constance, what direction does it flow?",
+      "gold": [
+        "westward"
+      ],
+      "greedy": "After emerging from Lake Constance, the Rhine flows northwest.",
+      "samples": [
+        "After emerging from Lake Constance, the Rhine flows north.",
+        "After emerging from Lake Constance, the Rhine flows northwest.",
+        "After emerging from Lake Constance, the Rhine flows northwest.",
+        "After emerging from Lake Constance, the Rhine flows northwest.",
+        "After emerging from Lake Constance, the Rhine flows northwest.",
+        "After emerging from Lake Constance, the Rhine flows northwest.",
+        "After emerging from Lake Constance, the Rhine flows north.",
+        "After emerging from Lake Constance, the Rhine flows northwest.",
+        "After emerging from Lake Constance, the Rhine flows northwest.",
+        "After emerging from Lake Constance, the Rhine flows northwest."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "5729fe5c3f37b31900478631",
+      "question": "Where are the specialized cells that eliminate cells that recognize self-antigens located?",
+      "gold": [
+        "thymus and bone marrow"
+      ],
+      "greedy": "Thymus",
+      "samples": [
+        "Thymus gland",
+        "Thymus gland",
+        "Thymus gland",
+        "Thymus",
+        "Thymus",
+        "Thymus gland",
+        "Thymus gland",
+        "Thymus.",
+        "Thymus",
+        "Thymus gland"
+      ],
+      "se_discrete": 0.6730116670092565,
+      "se_logprob": 0.6900638752165331,
+      "C_SE_disc": -0.6730116670092565,
+      "n_clusters": 2
+    },
+    {
+      "id": "571c83f3dd7acb1400e4c0d8",
+      "question": "How is dioxygen most simply described?",
+      "gold": [
+        "a covalent double bond",
+        "a covalent double bond that results from the filling of molecular orbitals formed from the atomic orbitals of the individual oxygen atoms",
+        "covalent double bond"
+      ],
+      "greedy": "Dioxygen is composed of two oxygen atoms bonded together.",
+      "samples": [
+        "Dioxygen is composed of two oxygen atoms bonded together.",
+        "Dioxygen is composed of two oxygen atoms.",
+        "Dioxygen is composed of two oxygen atoms bonded together.",
+        "Dioxygen is composed of two oxygen atoms bonded together.",
+        "Dioxygen is O2, a molecule consisting of two oxygen atoms bonded together.",
+        "Dioxygen is composed of two oxygen atoms.",
+        "Dioxygen is composed of two oxygen atoms bonded together.",
+        "Dioxygen is composed of two oxygen atoms bonded together.",
+        "Dioxygen is composed of two oxygen atoms bonded together.",
+        "Dioxygen is composed of two oxygen atoms bonded together."
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.7444041651825443,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "573081c2069b531400832137",
+      "question": "Most imperialism was carried out using which method of transport?",
+      "gold": [
+        "land",
+        "seaborne",
+        "sea and trade routes",
+        "sea"
+      ],
+      "greedy": "Most imperialism was carried out using ships.",
+      "samples": [
+        "Most imperialism was carried out using ships.",
+        "Most imperialism was carried out using ships.",
+        "Steamships and railroads.",
+        "Most imperialism was carried out using ships.",
+        "Most imperialism was carried out using ships.",
+        "Most imperialism was carried out using ships.",
+        "Most imperialism was carried out using ships.",
+        "Most imperialism was carried out using ships.",
+        "Most imperialism was carried out using ships.",
+        "ships"
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2568897776839887,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "572741aaf1498d1400e8f53f",
+      "question": "How much did Walt Disney want ABC to invest in Disneyland?",
+      "gold": [
+        "$500,000"
+      ],
+      "greedy": "Walt Disney wanted ABC to invest $5 million in Disneyland.",
+      "samples": [
+        "Walt Disney wanted ABC to invest $5 million in Disneyland.",
+        "Walt Disney wanted ABC to invest $5 million in Disneyland.",
+        "Walt Disney wanted ABC to invest $5 million in Disneyland.",
+        "Walt Disney wanted ABC to invest $5 million in Disneyland.",
+        "Walt Disney wanted ABC to invest $5 million in Disneyland.",
+        "Walt Disney wanted ABC to invest $5 million in Disneyland.",
+        "Walt Disney wanted ABC to invest $5 million in Disneyland.",
+        "Walt Disney wanted ABC to invest $5 million in Disneyland.",
+        "Walt Disney wanted ABC to invest $5 million in Disneyland.",
+        "Walt Disney wanted ABC to invest $5 million in Disneyland."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "56e77a8700c9c71400d7718e",
+      "question": "What website are teachers using to sell their lesson plans?",
+      "gold": [
+        "TeachersPayTeachers.com"
+      ],
+      "greedy": "TeachersPayTeachers",
+      "samples": [
+        "TeachersPayTeachers.com",
+        "TeachersPayTeachers",
+        "Teachers Pay Teachers",
+        "TeachersPayTeachers",
+        "TeachersPayTeachers",
+        "TeachersPayTeachers",
+        "TeachersPayTeachers.com",
+        "TeachersPayTeachers",
+        "TeachersPayTeachers.com",
+        "TeachersPayTeachers"
+      ],
+      "se_discrete": 0.6108643020548935,
+      "se_logprob": 0.5862442160012383,
+      "C_SE_disc": -0.6108643020548935,
+      "n_clusters": 2
+    },
+    {
+      "id": "57264fe65951b619008f6fa4",
+      "question": "When was the study on sequenced Y genomes published?",
+      "gold": [
+        "October 2011"
+      ],
+      "greedy": "The study on sequenced Y genomes was published in 2015.",
+      "samples": [
+        "The study on sequenced Y genomes was published in 2018.",
+        "The study on sequenced Y genomes was published in 2015.",
+        "The study on sequenced Y genomes was published in 2018.",
+        "The study on sequenced Y genomes was published in 2015.",
+        "The study on sequenced Y genomes was published in 2018.",
+        "The study on sequenced Y genomes was published in 2018.",
+        "The study on sequenced Y genomes was published in 2018.",
+        "The study on sequenced Y genomes was published in 2015.",
+        "The study on sequenced Y genomes was published in 2018.",
+        "The study on sequenced Y genomes was published in 2018."
+      ],
+      "se_discrete": 0.6108643020548935,
+      "se_logprob": 0.6082327490065778,
+      "C_SE_disc": -0.6108643020548935,
+      "n_clusters": 2
+    },
+    {
+      "id": "5727d9c43acd2414000dee17",
+      "question": "Starting in what year has Harvard topped the Academic Rankings of World Universities?",
+      "gold": [
+        "2003"
+      ],
+      "greedy": "Harvard has topped the Academic Rankings of World Universities starting in 2015.",
+      "samples": [
+        "Harvard has topped the Academic Rankings of World Universities starting in 2010.",
+        "Harvard has topped the Academic Rankings of World Universities starting in 2015.",
+        "Harvard has topped the Academic Rankings of World Universities starting in 2015.",
+        "Harvard has topped the Academic Rankings of World Universities starting in 2015.",
+        "Harvard has topped the Academic Rankings of World Universities starting in 2015.",
+        "Harvard has topped the Academic Ranking of World Universities (Shanghai Ranking) starting from 2004.",
+        "Harvard has topped the Academic Rankings of World Universities starting in 2015.",
+        "Harvard has topped the Academic Rankings of World Universities starting in 2010.",
+        "Harvard has topped the Academic Rankings of World Universities starting in 2015.",
+        "Harvard has topped the Academic Rankings of World Universities starting in 2015."
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.7665182498199183,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "5729e2b76aef0514001550d2",
+      "question": "What can result in creating a poverty trap?",
+      "gold": [
+        "gender inequality in education",
+        "continued gender inequality in education",
+        "low economic growth"
+      ],
+      "greedy": "Limited access to education and job opportunities can create a poverty trap.",
+      "samples": [
+        "Limited access to education and job opportunities can create a poverty trap.",
+        "Limited access to education and employment opportunities.",
+        "Limited access to education and employment opportunities.",
+        "Limited access to education and job opportunities can create a poverty trap.",
+        "Lack of education and job opportunities can result in creating a poverty trap.",
+        "Lack of education and limited job opportunities can create a poverty trap.",
+        "Limited access to education and job opportunities can create a poverty trap.",
+        "Lack of access to education and employment opportunities can create a poverty trap.",
+        "Limited access to education and employment opportunities can create a poverty trap.",
+        "Limited access to education and employment opportunities can create a poverty trap."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "572666d9dd62a815002e83b6",
+      "question": "How high was the stone wall built around Newcastle in the 13th century?",
+      "gold": [
+        "25-foot",
+        "25-foot (7.6 m) high"
+      ],
+      "greedy": "The stone wall built around Newcastle in the 13th century was approximately 20 feet (6 meters) high.",
+      "samples": [
+        "The stone wall built around Newcastle in the 13th century was approximately 20 feet (6 meters) high.",
+        "The stone wall built around Newcastle in the 13th century was approximately 20 feet (6 meters) high.",
+        "The stone wall built around Newcastle in the 13th century was approximately 20 feet high.",
+        "The stone wall built around Newcastle in the 13th century was approximately 20 feet high.",
+        "The stone wall built around Newcastle in the 13th century was approximately 20 feet (6 meters) high.",
+        "The stone wall built around Newcastle in the 13th century was approximately 20 feet (6 meters) high.",
+        "The stone wall built around Newcastle in the 13th century was approximately 20 feet (6 meters) high.",
+        "The stone wall built around Newcastle in the 13th century was approximately 20 feet (6 meters) high.",
+        "The stone wall built around Newcastle in the 13th century was approximately 20 feet (6 meters) high.",
+        "The stone wall built around Newcastle in the 13th century was approximately 20 feet high."
+      ],
+      "se_discrete": 0.6108643020548935,
+      "se_logprob": 0.6055624238250552,
+      "C_SE_disc": -0.6108643020548935,
+      "n_clusters": 2
+    },
+    {
+      "id": "57286d4f2ca10214002da329",
+      "question": "When did Kublai attack Xiangyang?",
+      "gold": [
+        "between 1268 and 1273"
+      ],
+      "greedy": "Kublai began his attack on Xiangyang in 1273.",
+      "samples": [
+        "Kublai began his attack on Xiangyang in 1273.",
+        "Kublai began his attack on Xiangyang in 1273.",
+        "Kublai began his attacks on Xiangyang in 1273.",
+        "Kublai began his attack on Xiangyang in 1273.",
+        "Kublai began his attack on Xiangyang in 1273.",
+        "Kublai launched his first major attack on Xiangyang in 1273.",
+        "Kublai began his attacks on Xiangyang in 1273.",
+        "Kublai first launched attacks on Xiangyang in 1273.",
+        "Kublai began his attacks on Xiangyang in 1273.",
+        "Kublai began his siege of Xiangyang in 1267."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.593400278597874,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "56dfaa047aa994140058dfbf",
+      "question": "Milutin Tesla died at what age?",
+      "gold": [
+        "60"
+      ],
+      "greedy": "Milutin Tesla died at the age of 86.",
+      "samples": [
+        "Milutin Tesla died at the age of 86.",
+        "Milutin Tesla died at the age of 86.",
+        "Milutin Tesla died at the age of 86.",
+        "Milutin Tesla died at the age of 86.",
+        "Milutin Tesla died at the age of 86.",
+        "Milutin Tesla died at the age of 86.",
+        "Milutin Tesla died at the age of 86.",
+        "Milutin Tesla died at the age of 86.",
+        "Milutin Tesla died at the age of 86.",
+        "Milutin Tesla died at the age of 86."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "5725f5b1271a42140099d375",
+      "question": "In which months does Fresno experience increased wind coming from the southeastern direction?",
+      "gold": [
+        "December, January and February"
+      ],
+      "greedy": "Fresno experiences increased southeasterly winds primarily in April and May.",
+      "samples": [
+        "Fresno experiences increased southeasterly winds primarily in March and April.",
+        "Fresno experiences increased southeastern winds primarily in April and May.",
+        "Fresno experiences increased wind from the southeastern direction primarily in April and May.",
+        "Fresno experiences increased southeasterly winds primarily in April and May.",
+        "Fresno experiences increased wind from the southeastern direction primarily during the winter months, specifically December through February.",
+        "Fresno experiences increased winds from the southeastern direction primarily in April and May.",
+        "Fresno experiences increased southeasterly winds primarily in April and May.",
+        "Fresno experiences increased southeasterly winds primarily in April and May.",
+        "Fresno experiences increased wind coming from the southeastern direction primarily in April and May.",
+        "Fresno experiences increased wind coming from the southeastern direction primarily in April and May."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.6097400251755238,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "572966ebaf94a219006aa393",
+      "question": "How many membranes does Durinskia's chloroplast have?",
+      "gold": [
+        "up to five",
+        "five"
+      ],
+      "greedy": "Durinskia's chloroplast has 4 membranes.",
+      "samples": [
+        "Durinskia's chloroplast has 4 membranes.",
+        "Durinskia's chloroplast has 4 membranes.",
+        "Durinskia's chloroplast has 4 membranes.",
+        "Durinskia's chloroplast has 4 membranes.",
+        "Durinskia's chloroplast has 4 membranes.",
+        "Durinskia's chloroplast has 4 membranes.",
+        "Durinskia's chloroplast has 4 membranes.",
+        "Durinskia's chloroplast has 4 membranes.",
+        "Durinskia's chloroplast has 4 membranes.",
+        "Durinskia's chloroplast has 4 membranes."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "56e10ddce3433e1400422b4c",
+      "question": "When did the accident occur?",
+      "gold": [
+        "fall of 1937",
+        "In the fall of 1937",
+        "the fall of 1937"
+      ],
+      "greedy": "The question is incomplete as no specific accident or event is mentioned. Please provide more details about the accident in question.",
+      "samples": [
+        "The question is missing a specific context or reference to an accident. Please provide more details about which accident you are referring to.",
+        "The question is incomplete as no specific accident or event is mentioned. Please provide more details about the accident in question.",
+        "The question is incomplete as it does not specify which accident. Please provide more details.",
+        "The question is incomplete as no specific accident is mentioned. Please provide more details about the accident in question.",
+        "I'm sorry, but you haven't provided any context or details about which accident you're referring to. Could you please specify?",
+        "The question is incomplete as no specific accident or event is mentioned. Please provide more details about the accident in question.",
+        "I need more context to provide an accurate answer. Please specify which accident you are referring to.",
+        "The question is incomplete as no specific accident is mentioned. Please provide more details about the accident for an accurate answer.",
+        "I need more context to provide an accurate answer. When and what specific accident are you referring to?",
+        "The question is incomplete and does not provide context about which accident is being referred to. Please specify the accident for a precise answer."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "5729fb003f37b3190047862a",
+      "question": "Older people get less sun and produce less of what chemical via UVB radiation?",
+      "gold": [
+        "cholecalciferol"
+      ],
+      "greedy": "Vitamin D",
+      "samples": [
+        "Vitamin D",
+        "Vitamin D",
+        "Vitamin D",
+        "Vitamin D",
+        "Vitamin D",
+        "Vitamin D",
+        "Vitamin D",
+        "Vitamin D",
+        "Vitamin D",
+        "Vitamin D"
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "572745c6708984140094db99",
+      "question": "Construction involves the translation of what?",
+      "gold": [
+        "designs into reality"
+      ],
+      "greedy": "Construction involves the translation of designs and plans into physical structures.",
+      "samples": [
+        "Construction involves the translation of designs and plans into physical structures.",
+        "Construction involves the translation of designs and plans into physical structures.",
+        "Construction involves the translation of designs and plans into physical structures.",
+        "Construction involves the translation of designs and plans into physical structures.",
+        "Construction involves the translation of designs and plans into physical structures.",
+        "Construction involves the translation of designs and blueprints into physical structures.",
+        "Construction involves the translation of designs and plans into physical structures.",
+        "Construction involves the translation of designs and plans into physical structures.",
+        "Construction involves the translation of designs and plans into physical structures.",
+        "Construction involves the translation of designs and plans into physical structures."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "570610b275f01819005e792a",
+      "question": "What is the second busiest airport in the United States?",
+      "gold": [
+        "Los Angeles International Airport"
+      ],
+      "greedy": "The second busiest airport in the United States is Hartsfield–Jackson Atlanta International Airport.",
+      "samples": [
+        "The second busiest airport in the United States is Hartsfield-Jackson Atlanta International Airport.",
+        "The second busiest airport in the United States is Hartsfield-Jackson Atlanta International Airport.",
+        "The second busiest airport in the United States is Hartsfield–Jackson Atlanta International Airport.",
+        "The second busiest airport in the United States is Hartsfield-Jackson Atlanta International Airport.",
+        "The second busiest airport in the United States is Hartsfield-Jackson Atlanta International Airport.",
+        "The second busiest airport in the United States is Hartsfield–Jackson Atlanta International Airport, although this can vary slightly depending on the specific metrics used and time period considered.",
+        "The second busiest airport in the United States is Hartsfield-Jackson Atlanta International Airport.",
+        "The second busiest airport in the United States is Hartsfield–Jackson Atlanta International Airport.",
+        "The second busiest airport in the United States is Hartsfield–Jackson Atlanta International Airport.",
+        "The second busiest airport in the United States is Hartsfield-Jackson Atlanta International Airport."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2785783473494274,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "5725bc0338643c19005acc11",
+      "question": "What gender are most species of Ctenophores?",
+      "gold": [
+        "hermaphrodites",
+        "Most species are hermaphrodites"
+      ],
+      "greedy": "Most species of Ctenophores are hermaphroditic.",
+      "samples": [
+        "Most species of Ctenophores are hermaphroditic.",
+        "Most species of Ctenophores are hermaphroditic.",
+        "Most ctenophore species are hermaphroditic.",
+        "Most species of Ctenophores are hermaphrodites.",
+        "Most species of Ctenophores are hermaphrodites.",
+        "Most species of Ctenophores are hermaphroditic.",
+        "Most species of Ctenophores are hermaphroditic.",
+        "Most ctenophore species are hermaphroditic.",
+        "Most species of Ctenophores are hermaphroditic.",
+        "Most ctenophore species are hermaphroditic."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "572940973f37b319004781a7",
+      "question": "What was the source of the mistake?",
+      "gold": [
+        "the IPCC from the WWF report",
+        "the WWF report"
+      ],
+      "greedy": "Insufficient information provided to determine the specific source of the mistake.",
+      "samples": [
+        "Insufficient data provided to determine the specific source of the mistake.",
+        "Insufficient information provided to determine the specific source of the mistake.",
+        "Insufficient information provided to identify the specific source of the mistake.",
+        "Insufficient information provided to determine the specific source of the mistake.",
+        "Insufficient information provided to determine the source of the mistake. Please specify the context or details of the mistake.",
+        "Insufficient data provided to determine the specific source of the mistake.",
+        "Insufficient information provided to determine the specific source of the mistake.",
+        "Insufficient information provided to determine the specific source of the mistake.",
+        "Insufficient information provided to identify the specific source of the mistake.",
+        "Insufficient information provided to identify a specific source of a mistake. Please provide context or details about the mistake in question."
+      ],
+      "se_discrete": 0.5004024235381879,
+      "se_logprob": 0.4808536291195058,
+      "C_SE_disc": -0.5004024235381879,
+      "n_clusters": 2
+    },
+    {
+      "id": "572fe288a23a5019007fcadb",
+      "question": "How was the Dutch name for the Rhine originally spelled? ",
+      "gold": [
+        "Rhijn"
+      ],
+      "greedy": "The Dutch name for the Rhine was originally spelled \"Rijn.\"",
+      "samples": [
+        "The Dutch name for the Rhine was originally spelled \"Rijn.\"",
+        "The Dutch name for the Rhine was originally spelled \"Rijn.\"",
+        "The original Dutch name for the Rhine was \"Rhijne\" or \"Rein.\"",
+        "The Dutch name for the Rhine was originally spelled \"Rijn.\"",
+        "The Dutch name for the Rhine was originally spelled \"Rijn.\"",
+        "The Dutch name for the Rhine was originally spelled \"Rijn\".",
+        "The Dutch name for the Rhine was originally spelled \"Rijn.\"",
+        "The Dutch name for the Rhine was originally spelled \"Rijn.\"",
+        "The Dutch name for the Rhine was originally spelled \"Rein\" or \"Rijn.\"",
+        "The Dutch name for the Rhine was originally spelled \"Rijna\" or \"Reina.\""
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.7184909604958513,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "56e16182e3433e1400422e29",
+      "question": "By what main attribute are computational problems classified utilizing computational complexity theory? ",
+      "gold": [
+        "inherent difficulty",
+        "their inherent difficulty"
+      ],
+      "greedy": "By the resources (time and space) required to solve them.",
+      "samples": [
+        "By the resources (time and space) required to solve them.",
+        "By the resources (time and space) required to solve them.",
+        "By the resources (time and space) required to solve them.",
+        "By the resources (time and space) required to solve them.",
+        "By the amount of computational resources (time and space) required to solve them.",
+        "By the resources (time and space) required to solve them.",
+        "By the amount of computational resources (time and space) required to solve them.",
+        "By the resources (time and space) required to solve them.",
+        "By the resources (time and space) required to solve them.",
+        "By the resources (time and space) required to solve them."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "56e75d5037bdd419002c3ef6",
+      "question": "What countries are used as an example of harsher discipline with successful education?",
+      "gold": [
+        "East Asia",
+        "countries—in East Asia"
+      ],
+      "greedy": "Singapore and South Korea are often cited as examples.",
+      "samples": [
+        "Singapore and South Korea are often cited as examples.",
+        "Singapore and South Korea are often cited as examples.",
+        "Singapore and South Korea are often cited as examples of countries with harsher discipline in schools and successful educational outcomes.",
+        "Singapore and South Korea are often cited as examples of countries with harsher discipline in schools that correlates with successful educational outcomes.",
+        "Singapore and South Korea are often cited as examples.",
+        "Singapore and South Korea are often cited as examples.",
+        "Singapore and South Korea are often cited as examples.",
+        "Singapore and South Korea are often cited as examples.",
+        "Singapore and South Korea are often cited as examples.",
+        "Singapore and South Korea are often cited as examples."
+      ],
+      "se_discrete": 0.5004024235381879,
+      "se_logprob": 0.4417513546830545,
+      "C_SE_disc": -0.5004024235381879,
+      "n_clusters": 2
+    },
+    {
+      "id": "5729281baf94a219006aa121",
+      "question": "Who dominates the world of long distance running?",
+      "gold": [
+        "Kenyan athletes",
+        "Kenyan athletes (particularly Kalenjin)",
+        "Kenya"
+      ],
+      "greedy": "Ethiopian athletes dominate the world of long-distance running.",
+      "samples": [
+        "Ethiopia and Kenya dominate the world of long-distance running.",
+        "Ethiopian runners dominate the world of long-distance running.",
+        "Ethiopia and Kenya dominate the world of long-distance running.",
+        "Ethiopian runners dominate the world of long-distance running.",
+        "Ethiopia and Kenya dominate the world of long-distance running.",
+        "Ethiopian athletes dominate the world of long-distance running.",
+        "Ethiopian runners dominate the world of long-distance running.",
+        "Ethiopian athletes dominate the world of long-distance running.",
+        "Ethiopia and Kenya dominate the world of long-distance running.",
+        "Ethiopian athletes dominate the world of long-distance running."
+      ],
+      "se_discrete": 0.6730116670092565,
+      "se_logprob": 0.6759163309560576,
+      "C_SE_disc": -0.6730116670092565,
+      "n_clusters": 2
+    },
+    {
+      "id": "56e751fb00c9c71400d76fa9",
+      "question": "What is a name for the different ways to instruct students?",
+      "gold": [
+        "pedagogy"
+      ],
+      "greedy": "Teaching methods",
+      "samples": [
+        "Teaching methodologies",
+        "Teaching methodologies",
+        "Teaching methodologies",
+        "Teaching methods",
+        "Teaching methodologies",
+        "Teaching methodologies",
+        "Teaching methods",
+        "Teaching methods",
+        "Teaching methodologies",
+        "Teaching methods"
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "n": 1000,
+  "greedy_acc": 0.0,
+  "sc_acc": 0.001,
+  "se_discrete": {
+    "auroc": NaN,
+    "ece": 0.49787686255033675,
+    "brier": 0.2929420174428163,
+    "aurc": 1.0
+  },
+  "se_logprob": {
+    "auroc": NaN,
+    "ece": 0.4972933170051338,
+    "brier": 0.29259056670940226,
+    "aurc": 1.0
+  },
+  "wilcoxon_sc_vs_greedy": {
+    "stat": 0.0,
+    "p": 0.31731050786291415,
+    "n": 1000
+  },
+  "stratified_acc": {
+    "Q1": {
+      "n": 380,
+      "greedy_acc": 0.0,
+      "sc_acc": 0.0,
+      "delta": 0.0
+    },
+    "Q2": {
+      "n": 207,
+      "greedy_acc": 0.0,
+      "sc_acc": 0.0,
+      "delta": 0.0
+    },
+    "Q3": {
+      "n": 167,
+      "greedy_acc": 0.0,
+      "sc_acc": 0.0,
+      "delta": 0.0
+    },
+    "Q4": {
+      "n": 246,
+      "greedy_acc": 0.0,
+      "sc_acc": 0.0040650406504065045,
+      "delta": 0.0040650406504065045
+    }
+  }
+}

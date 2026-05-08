@@ -1,0 +1,4 @@
+dataset,SE_AUROC_mean,SE_AUROC_std,SEPs_halluc_AUROC_mean,SEPs_halluc_AUROC_std
+nq_open,0.6793,0.0478,0.7334,0.0304
+squad,0.6413,0.0925,0.7378,0.0406
+triviaqa,0.7673,0.0441,0.8106,0.0212

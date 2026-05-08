@@ -1,0 +1,1439 @@
+{
+  "n_records": 1000,
+  "greedy_acc": 0.311,
+  "by_metric": {
+    "C_SE_disc": {
+      "ece": 0.13199089686882431,
+      "four_cell": {
+        "high_correct": 238,
+        "high_wrong": 262,
+        "low_correct": 73,
+        "low_wrong": 427,
+        "median_threshold": -1.6264278161136398,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 259,
+        "wrong_in_top_q": 107,
+        "rate": 0.41312741312741313
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.68,
+          "threshold": -0.0
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.605,
+          "threshold": -0.639031859650177
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.57,
+          "threshold": -0.9404479886553263
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.5225,
+          "threshold": -1.3592367006650063
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.476,
+          "threshold": -1.6094379124341003
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.435,
+          "threshold": -1.9730014063936123
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.3914285714285714,
+          "threshold": -2.1639556568820564
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.35875,
+          "threshold": -2.1639556568820564
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.33111111111111113,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.311,
+          "threshold": -2.3025850929940455
+        }
+      ]
+    },
+    "C_SE_logp": {
+      "ece": 0.13713255995657486,
+      "four_cell": {
+        "high_correct": 241,
+        "high_wrong": 259,
+        "low_correct": 70,
+        "low_wrong": 430,
+        "median_threshold": -1.6013232167858267,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 102,
+        "rate": 0.408
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.66,
+          "threshold": -0.0
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.61,
+          "threshold": -0.5841768304990813
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.5666666666666667,
+          "threshold": -0.9039468122814699
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.53,
+          "threshold": -1.2921424653578308
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.482,
+          "threshold": -1.6000931547003598
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.43666666666666665,
+          "threshold": -1.8893620019524904
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.39285714285714285,
+          "threshold": -2.111623767529416
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.35625,
+          "threshold": -2.156657128032977
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.3277777777777778,
+          "threshold": -2.293370019123134
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.311,
+          "threshold": -2.301301448393713
+        }
+      ]
+    },
+    "C_logp": {
+      "ece": 0.42969308808992185,
+      "four_cell": {
+        "high_correct": 232,
+        "high_wrong": 268,
+        "low_correct": 79,
+        "low_wrong": 421,
+        "median_threshold": -0.21598621578911298,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 116,
+        "rate": 0.464
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.63,
+          "threshold": -0.04904610653718313
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.585,
+          "threshold": -0.09064645788816862
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.5366666666666666,
+          "threshold": -0.1362459197941282
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.505,
+          "threshold": -0.17181409326358504
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.464,
+          "threshold": -0.21598609015415962
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.41333333333333333,
+          "threshold": -0.258745106326535
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.38571428571428573,
+          "threshold": -0.30440057051593833
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.36,
+          "threshold": -0.3569355607446432
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.33444444444444443,
+          "threshold": -0.4200860501996092
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.311,
+          "threshold": -0.8827408605084394
+        }
+      ]
+    }
+  },
+  "disagreement_counts": {
+    "C_SE_disc_high__C_SE_logp_low": 3,
+    "C_SE_disc_low__C_SE_logp_high": 3,
+    "C_SE_disc_high__C_logp_low": 78,
+    "C_SE_disc_low__C_logp_high": 78,
+    "C_SE_logp_high__C_logp_low": 78,
+    "C_SE_logp_low__C_logp_high": 78
+  },
+  "danger_examples": [
+    {
+      "id": "nq_3283",
+      "question": "who sold out jesus for 30 pieces of silver",
+      "gold": [
+        "Judas Iscariot"
+      ],
+      "greedy": "Judah Iscariot sold out Jesus for 30 pieces of silver.",
+      "samples": [
+        "Judas Iscariot sold out Jesus for 30 pieces of silver.",
+        "Judah Iscariot sold out Jesus for 30 pieces of silver.",
+        "Judah Iscariot sold out Jesus for 30 pieces of silver.",
+        "Judases Iscariot sold out Jesus for 30 pieces of silver.",
+        "Judases Iscariot sold out Jesus for 30 pieces of silver.",
+        "Judah Iscariot sold out Jesus for 30 pieces of silver.",
+        "Judah Iscariot sold out Jesus for 30 pieces of silver.",
+        "Judah Iscariot sold out Jesus for 30 pieces of silver.",
+        "Judassolded out Jesus for 30 pieces of silver.",
+        "Judah Iscariot sold out Jesus for 30 pieces of silver."
+      ],
+      "se_discrete": 0.6108643020548935,
+      "se_logprob": 0.6021673864916024,
+      "C_SE_disc": -0.6108643020548935,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_448",
+      "question": "all the motor neurons that control the skeletal muscles are",
+      "gold": [
+        "efferent nerves",
+        "Somatic",
+        "Somatic motor neurons"
+      ],
+      "greedy": "All the motor neurons that control skeletal muscles are located in the spinal cord and brain.",
+      "samples": [
+        "All the motor neurons that control skeletal muscles are located in the spinal cord and brainstem.",
+        "All the motor neurons that control skeletal muscles are located in the spinal cord and brainstem.",
+        "All the motor neurons that control skeletal muscles are located in the spinal cord and brainstem.",
+        "All the motor neurons that control skeletal muscles are located in the spinal cord and brainstem.",
+        "All motor neurons that control skeletal muscles are located in the spinal cord and brainstem.",
+        "All the motor neurons that control skeletal muscles are located in the spinal cord and brain.",
+        "All the motor neurons that control skeletal muscles are located in the spinal cord and brainstem.",
+        "All motor neurons that control skeletal muscles are located in the spinal cord and brain.",
+        "All motor neurons that control skeletal muscles are found in the spinal cord and brainstem.",
+        "All motor neurons that control skeletal muscles are located in the spinal cord and brainstem."
+      ],
+      "se_discrete": 0.5004024235381879,
+      "se_logprob": 0.49050067551785703,
+      "C_SE_disc": -0.5004024235381879,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_3106",
+      "question": "the art and science of making objects from clay is called",
+      "gold": [
+        "Ceramic art",
+        "Ceramic"
+      ],
+      "greedy": "Pottery",
+      "samples": [
+        "Pottery",
+        "Pottery",
+        "Pottery",
+        "Pottery",
+        "Pottery",
+        "Pottery",
+        "Pottery",
+        "Pottery",
+        "Pottery",
+        "Pottery"
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_1987",
+      "question": "when was the design period known as art deco",
+      "gold": [
+        "1910–1939"
+      ],
+      "greedy": "Art Deco design period was from the 1920s to the 1930s.",
+      "samples": [
+        "Art Deco design period lasted from the 1920s to the 1930s.",
+        "Art Deco design period spans from the 1920s to the 1930s.",
+        "Art Deco design period was from the 1920s to the 1930s.",
+        "Art Deco design period was from the 1920s to the 1930s.",
+        "Art Deco design period was from the 1920s to the 1930s.",
+        "Art Deco design period was from the 1920s to the 1930s.",
+        "Art Deco design period was from the 1920s to the 1930s.",
+        "Art Deco design period was from the 1920s to the 1930s.",
+        "Art Deco design period was from the 1920s to the 1930s.",
+        "Art Deco design period was from the 1920s to the 1930s."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_789",
+      "question": "what is the 180 degree line of longitude called",
+      "gold": [
+        "180th meridian or antimeridian",
+        "180th meridian",
+        "antimeridian"
+      ],
+      "greedy": "The 180-degree line of longitude is called the International Date Line.",
+      "samples": [
+        "The 180-degree line of longitude is called the International Date Line.",
+        "The 180-degree line of longitude is called the International Date Line.",
+        "The 180-degree line of longitude is called the International Date Line.",
+        "The 180 degree line of longitude is called the International Date Line.",
+        "The 180-degree line of longitude is called the International Date Line.",
+        "The 180-degree line of longitude is called the International Date Line.",
+        "The 180-degree line of longitude is called the International Date Line.",
+        "The 180-degree line of longitude is called the International Date Line.",
+        "The 180-degree line of longitude is called the International Date Line.",
+        "The 180-degree line of longitude is called the International Date Line."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_1147",
+      "question": "batman and robin episode only fools and horses",
+      "gold": [
+        "\"Heroes and Villains\""
+      ],
+      "greedy": "There is no Batman and Robin TV episode titled \"Only Fools and Horses.\" This appears to be a mix-up of show names.",
+      "samples": [
+        "There is no Batman and Robin TV episode called \"Only Fools and Horses.\" \"Only Fools and Horses\" is a separate British sitcom, not related to Batman or Robin.",
+        "There is no Batman and Robin episode titled \"Only Fools and Horses.\" This episode title refers to an episode of the British comedy show \"Only Fools and Horses,\" not a Batman-related show.",
+        "There is no Batman and Robin episode titled \"Only Fools and Horses.\" The show \"Only Fools and Horses\" is a British comedy television series, while Batman and Robin is a live-action comic book-inspired television series.",
+        "There is no Batman and Robin television episode titled \"Only Fools and Horses.\" This appears to be a mix-up of show titles.",
+        "There is no Batman and Robin episode titled \"Only Fools and Horses\" as \"Only Fools and Horses\" is a British sitcom, not a Batman and Robin TV episode.",
+        "There is no Batman and Robin TV episode titled \"Only Fools and Horses.\" This appears to be a misunderstanding or mix-up of show names.",
+        "There is no Batman and Robin episode titled \"Only Fools and Horses.\" This title refers to an unrelated British sitcom.",
+        "There is no Batman and Robin TV episode titled \"Only Fools and Horses.\" This appears to be a mismatch between show titles.",
+        "There is no Batman and Robin TV episode titled \"Only Fools and Horses.\" This seems to be a mix-up of show names.",
+        "There is no Batman and Robin TV episode called \"Only Fools and Horses.\" This title refers to an episode of the British comedy show \"Only Fools and Horses,\" not a Batman-themed episode."
+      ],
+      "se_discrete": 0.6730116670092565,
+      "se_logprob": 0.6806996929021596,
+      "C_SE_disc": -0.6730116670092565,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_2580",
+      "question": "if there is a line that lies parallel to the horizon it is said to be",
+      "gold": [
+        "A vanishing point"
+      ],
+      "greedy": "horizontal.",
+      "samples": [
+        "horizontal.",
+        "horizontal.",
+        "horizontal.",
+        "horizontal.",
+        "horizontal.",
+        "horizontal.",
+        "horizontal.",
+        "horizontal.",
+        "horizontal.",
+        "horizontal."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_3517",
+      "question": "nodding your head no is an example of",
+      "gold": [
+        "a gesture"
+      ],
+      "greedy": "non-verbal communication",
+      "samples": [
+        "non-verbal communication",
+        "non-verbal communication",
+        "non-verbal communication",
+        "Non-verbal communication",
+        "non-verbal communication",
+        "non-verbal communication",
+        "Nonverbal communication",
+        "non-verbal communication",
+        "Non-verbal communication",
+        "nonverbal communication"
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_1685",
+      "question": "when did clifford the big red dog first air on tv",
+      "gold": [
+        "September 4, 2000"
+      ],
+      "greedy": "Clifford the Big Red Dog first aired on TV in 1963.",
+      "samples": [
+        "Clifford the Big Red Dog first aired on TV in 1963.",
+        "Clifford the Big Red Dog first aired on TV in 1963.",
+        "Clifford the Big Red Dog first aired on TV in 1963.",
+        "Clifford the Big Red Dog first aired on TV in 1963.",
+        "Clifford the Big Red Dog first aired on TV in 1963.",
+        "Clifford the Big Red Dog first aired on TV in 1963.",
+        "Clifford the Big Red Dog first aired on TV in 1963.",
+        "Clifford the Big Red Dog first aired on TV on September 5, 1963.",
+        "Clifford the Big Red Dog first aired on TV in 1963.",
+        "Clifford the Big Red Dog first aired on TV in 1963."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.297092128978835,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_357",
+      "question": "name the four major layers of the earth in order",
+      "gold": [
+        "an outer silicate solid crust",
+        "a highly viscous mantle",
+        "a liquid outer core",
+        "a solid inner core"
+      ],
+      "greedy": "Crust, mantle, outer core, inner core.",
+      "samples": [
+        "Crust, Mantle, Outer Core, Inner Core",
+        "Crust, mantle, outer core, inner core.",
+        "Crust, mantle, outer core, inner core.",
+        "Crust, mantle, outer core, inner core.",
+        "Crust, mantle, outer core, inner core.",
+        "Crust, mantle, outer core, inner core.",
+        "Crust, Mantle, Outer Core, Inner Core",
+        "Crust, mantle, outer core, inner core.",
+        "Crust, Mantle, Outer Core, Inner Core",
+        "Core, Mantle, Mesosphere, Crust"
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.3003994234621057,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_2455",
+      "question": "where is wake forest located in north carolina",
+      "gold": [
+        "78.51889°W",
+        "in Franklin and Wake counties",
+        "35.97333°N"
+      ],
+      "greedy": "Wake Forest is located in Winston-Salem, North Carolina.",
+      "samples": [
+        "Wake Forest University is located in Winston-Salem, North Carolina.",
+        "Wake Forest is located in Winston-Salem, North Carolina.",
+        "Wake Forest University is located in Winston-Salem, North Carolina.",
+        "Wake Forest is located in Winston-Salem, North Carolina.",
+        "Wake Forest is located in Winston-Salem, North Carolina.",
+        "Wake Forest University is located in Winston-Salem, North Carolina.",
+        "Wake Forest University is located in Winston-Salem, North Carolina.",
+        "Wake Forest is located in Winston-Salem, North Carolina.",
+        "Wake Forest University is located in Winston-Salem, North Carolina.",
+        "Wake Forest University is located in Winston-Salem, North Carolina."
+      ],
+      "se_discrete": 0.6730116670092565,
+      "se_logprob": 0.6710215079561821,
+      "C_SE_disc": -0.6730116670092565,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_2557",
+      "question": "the first political society started under british rule in india was",
+      "gold": [
+        "The British Indian Association"
+      ],
+      "greedy": "The first political society started under British rule in India was the Indian National Congress, founded in 1885.",
+      "samples": [
+        "The first political society under British rule in India was the Indian National Congress, founded in 1885.",
+        "The first political society started under British rule in India was the East India Company in 1613.",
+        "The first political society started under British rule in India was the East India Association, founded by William Makepeace Thackeray in 1839.",
+        "The first political society started under British rule in India was the Indian National Congress, formed in 1885.",
+        "The first political society started under British rule in India was the Indian National Congress, founded in 1885.",
+        "The first political society under British rule in India was the Indian National Congress, formed in 1885.",
+        "The first political society started under British rule in India was the Indian National Congress, founded in 1885.",
+        "The first political society under British rule in India was the Indian National Congress, founded in 1885.",
+        "The first political society under British rule in India was the Indian National Congress, founded in 1885.",
+        "The first political society under British rule in India was the Indian National Congress, formed in 1885."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.5871769479486694,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_2845",
+      "question": "dogs name in the grinch who stole christmas",
+      "gold": [
+        "Max"
+      ],
+      "greedy": "The Grinch does not have a dog in \"The Grinch Who Stole Christmas.\"",
+      "samples": [
+        "The Grinch does not have a dog named in \"The Grinch Who Stole Christmas.\"",
+        "The Grinch does not have a dog in \"The Grinch Who Stole Christmas.\"",
+        "The Grinch does not have a dog named in \"The Grinch Who Stole Christmas.\"",
+        "The Grinch does not have a dog or any named animal companion in the original \"Grinch Who Stole Christmas\" story by Dr. Seuss.",
+        "The Grinch does not have a dog in \"The Grinch Who Stole Christmas.\"",
+        "The Grinch has no dog in \"The Grinch Who Stole Christmas.\"",
+        "The Grinch does not have a dog or any pet in the story \"The Grinch Who Stole Christmas.\"",
+        "The Grinch does not have a dog in \"The Grinch Who Stole Christmas.\"",
+        "The Grinch does not have a dog in the story \"The Grinch Who Stole Christmas.\"",
+        "The Grinch does not have a dog in \"The Grinch Who Stole Christmas.\""
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.597081640337157,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_2180",
+      "question": "where is iodine found in the periodic table",
+      "gold": [
+        "heaviest of the stable halogens"
+      ],
+      "greedy": "Iodine is found in group 17 (halogens) and period 5 of the periodic table.",
+      "samples": [
+        "Iodine is found in group 17 (halogens) and period 5 of the periodic table.",
+        "Iodine is found in group 17 (halogens) and period 5 of the periodic table.",
+        "Iodine is found in group 17 (halogens) and period 5 of the periodic table.",
+        "Iodine is found in group 17 (halogens) and period 5 of the periodic table.",
+        "Iodine is found in group 17 (halogens) and period 5 of the periodic table.",
+        "Iodine is found in group 17 (halogens) and period 5 of the periodic table.",
+        "Iodine is found in group 17 (halogens) and period 5 of the periodic table.",
+        "Iodine is found in group 17 (halogens) and period 5 of the periodic table.",
+        "Iodine is found in group 17 (halogens) and period 5 of the periodic table.",
+        "Iodine is found in group 17 (halogens) and period 5 of the periodic table."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_615",
+      "question": "which organelle is the site of atp production and storage",
+      "gold": [
+        "mitochondrion"
+      ],
+      "greedy": "Mitochondria",
+      "samples": [
+        "Mitochondria",
+        "Mitochondria",
+        "Mitochondria",
+        "Mitochondria",
+        "Mitochondria",
+        "Mitochondria",
+        "Mitochondrion",
+        "Mitochondria",
+        "Mitochondria",
+        "Mitochondria"
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2801592018071619,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_2452",
+      "question": "who is the actress that plays penny on the big bang theory",
+      "gold": [
+        "Kaley Christine Cuoco"
+      ],
+      "greedy": "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+      "samples": [
+        "The actress who plays Penny on The Big Bang Theory is Kara Jillian Noonan, better known as Kaley Cuoco.",
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress who plays Penny on The Big Bang Theory isKaley Cuoco.",
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress who plays Penny on The Big Bang Theory is Kirsten Mary Wahlberg.",
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.5005593571293759,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_639",
+      "question": "for complaints of sudden chest pain patients should take a",
+      "gold": [
+        "Aspirin"
+      ],
+      "greedy": "Emergency medical evaluation immediately.",
+      "samples": [
+        "Emergency medical care immediately.",
+        "Emergency medical evaluation immediately.",
+        "Immediate medical evaluation.",
+        "Patients with sudden chest pain should seek immediate medical attention.",
+        "Emergency medical evaluation immediately.",
+        "For complaints of sudden chest pain, patients should seek medical attention immediately.",
+        "For sudden chest pain, patients should seek immediate medical attention by calling emergency services or going to the hospital.",
+        "Immediate medical evaluation.",
+        "For sudden chest pain, patients should seek immediate medical attention.",
+        "For sudden chest pain, patients should immediately call emergency services or go to the hospital."
+      ],
+      "se_discrete": 0.5004024235381879,
+      "se_logprob": 0.52108572706967,
+      "C_SE_disc": -0.5004024235381879,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_1496",
+      "question": "what culture region is germany a part of",
+      "gold": [
+        "Central Germany"
+      ],
+      "greedy": "Germany is part of Western Europe.",
+      "samples": [
+        "Germany is part of Western Europe.",
+        "Germany is part of Western Europe.",
+        "Germany is part of Western Europe.",
+        "Germany is part of Western Europe.",
+        "Germany is part of Western Europe.",
+        "Germany is a part of the Western European cultural region.",
+        "Germany is part of Western Europe.",
+        "Germany is part of Western Europe.",
+        "Germany is part of Western Europe.",
+        "Germany is a part of Western Europe."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_520",
+      "question": "the most common form of megalithic architecture in europe is",
+      "gold": [
+        "the portal tomb",
+        "portal tomb"
+      ],
+      "greedy": "The most common form of megalithic architecture in Europe is the dolmen.",
+      "samples": [
+        "The most common form of megalithic architecture in Europe is the menhir.",
+        "The most common form of megalithic architecture in Europe is the dolmen.",
+        "The most common form of megalithic architecture in Europe is the dolmen.",
+        "The most common form of megalithic architecture in Europe is the menhир (menhir).",
+        "The most common form of megalithic architecture in Europe is the menhir, although dolmens and standing stones are also prevalent.",
+        "The most common form of megalithic architecture in Europe is the dolmen.",
+        "The most common form of megalithic architecture in Europe is the dolmen.",
+        "The most common form of megalithic architecture in Europe is the dolmen.",
+        "The most common form of megalithic architecture in Europe is the dolmen.",
+        "The most common form of megalithic architecture in Europe is the dolmen."
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.7422191482763038,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_3163",
+      "question": "when did the prr first begin its passenger service between pittsburgh and philadelphia",
+      "gold": [
+        "by 1854",
+        "1854"
+      ],
+      "greedy": "The Pennsylvania Railroad (PRR) began its passenger service between Pittsburgh and Philadelphia in 1852.",
+      "samples": [
+        "The Pennsylvania Railroad (PRR) began its passenger service between Pittsburgh and Philadelphia in 1852.",
+        "The Pennsylvania Railroad (PRR) began its passenger service between Pittsburgh and Philadelphia in 1852.",
+        "The Pennsylvania Railroad (PRR) first began its passenger service between Pittsburgh and Philadelphia in 1852.",
+        "The Pennsylvania Railroad (PRR) began its passenger service between Pittsburgh and Philadelphia in 1852.",
+        "The Pennsylvania Railroad (PRR) first began its passenger service between Pittsburgh and Philadelphia in 1852.",
+        "The Pennsylvania Railroad (PRR) began its passenger service between Pittsburgh and Philadelphia in 1852.",
+        "The Pennsylvania Railroad (PRR) began its passenger service between Pittsburgh and Philadelphia in 1852.",
+        "The Pennsylvania Railroad (PRR) began its passenger service between Pittsburgh and Philadelphia in 1852.",
+        "The Pennsylvania Railroad (PRR) first began its passenger service between Pittsburgh and Philadelphia in 1852.",
+        "The Pennsylvania Railroad (PRR) began its passenger service between Pittsburgh and Philadelphia in 1852."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_3365",
+      "question": "when was the last time arsenal win premier league",
+      "gold": [
+        "2003–04"
+      ],
+      "greedy": "Arsenal last won the Premier League in 2003-2004.",
+      "samples": [
+        "Arsenal last won the Premier League in 2003-2004.",
+        "Arsenal last won the Premier League in the 2003-2004 season.",
+        "Arsenal last won the Premier League in 2003-2004.",
+        "Arsenal last won the Premier League in 2003-2004.",
+        "Arsenal last won the Premier League in 2003-2004.",
+        "Arsenal last won the Premier League in the 2003-2004 season.",
+        "Arsenal last won the Premier League in the 2017-2018 season.",
+        "Arsenal last won the Premier League in 2003-2004.",
+        "Arsenal last won the Premier League in 2003-2004.",
+        "Arsenal last won the Premier League in the 2017-2018 season."
+      ],
+      "se_discrete": 0.5004024235381879,
+      "se_logprob": 0.4864675161985654,
+      "C_SE_disc": -0.5004024235381879,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_2764",
+      "question": "where are the winter olympic games being held this year",
+      "gold": [
+        "Pyeongchang County, South Korea"
+      ],
+      "greedy": "The Winter Olympics in 2022 were held in Beijing, China.",
+      "samples": [
+        "The Winter Olympics in 2022 were held in Beijing, China.",
+        "The Winter Olympics in 2023 were held in Beijing, China.",
+        "The Winter Olympic Games were held in Beijing, China in 2022.",
+        "The Winter Olympics in 2022 were held in Beijing, China.",
+        "The Winter Olympics in 2022 were held in Beijing, China.",
+        "The Winter Olympic Games were held in Beijing, China in 2022.",
+        "The Winter Olympics in 2022 were held in Beijing, China.",
+        "The Winter Olympic Games in 2022 were held in Beijing, China.",
+        "The Winter Olympics in 2022 were held in Beijing, China.",
+        "The Winter Olympics in 2022 were held in Beijing, China."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2966274562180433,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_478",
+      "question": "when does the cannes film festival take place",
+      "gold": [
+        "usually in May",
+        "Cannes, France"
+      ],
+      "greedy": "The Cannes Film Festival takes place in May each year.",
+      "samples": [
+        "The Cannes Film Festival takes place in May each year.",
+        "The Cannes Film Festival takes place in May each year.",
+        "The Cannes Film Festival takes place in May each year.",
+        "The Cannes Film Festival takes place in May each year.",
+        "The Cannes Film Festival takes place annually in May.",
+        "The Cannes Film Festival takes place in May each year.",
+        "The Cannes Film Festival takes place in May each year.",
+        "The Cannes Film Festival takes place in May each year.",
+        "The Cannes Film Festival takes place in May each year.",
+        "The Cannes Film Festival takes place annually in May."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_667",
+      "question": "who won women's singles us open 2017",
+      "gold": [
+        "Sloane Stephens"
+      ],
+      "greedy": "Na Li won the women's singles US Open in 2017.",
+      "samples": [
+        "Na Li won the women's singles US Open in 2017.",
+        "Na Li won the women's singles US Open in 2017.",
+        "Garbiñe Muguruza won the women's singles US Open in 2017.",
+        "Naolí Durán won the women's singles US Open in 2017.",
+        "Na Li won the women's singles US Open in 2017.",
+        "Na Li won the women's singles US Open in 2017.",
+        "Na Li won the women's singles US Open in 2017.",
+        "Na Li won the women's singles US Open in 2017.",
+        "Na Li won the women's singles US Open in 2017.",
+        "Na Li won the women's singles US Open in 2017."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.554355418066987,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_1707",
+      "question": "when was christmas first celebrated as a holiday",
+      "gold": [
+        "336"
+      ],
+      "greedy": "Christmas was first celebrated as a holiday around the 4th century AD.",
+      "samples": [
+        "Christmas was first celebrated as a holiday in the 4th century AD.",
+        "Christmas was first recognized as a holiday during the 4th century AD.",
+        "Christmas was first celebrated as a holiday around the 4th century AD.",
+        "Christmas was first celebrated as a holiday around the 4th century AD.",
+        "Christmas was first celebrated as a holiday around the 4th century AD.",
+        "Christmas was first celebrated as a holiday around 336 AD, during the time of the Roman Emperor Constantine.",
+        "Christmas was first celebrated as a holiday around the 4th century AD.",
+        "Christmas was first celebrated as a holiday around the 4th century AD.",
+        "Christmas was first celebrated as a holiday around the 4th century AD.",
+        "Christmas was first celebrated as a holiday around the 4th century AD."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.3020801848074119,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_993",
+      "question": "what is the female lion called in lion king",
+      "gold": [
+        "Nala"
+      ],
+      "greedy": "In The Lion King, the female lion is simply referred to as a lioness.",
+      "samples": [
+        "In The Lion King, the female lion is simply referred to as a lioness.",
+        "In The Lion King, the female lion is not given a specific title or name beyond just \"lioness.\"",
+        "In The Lion King, the female lion is simply referred to as a lioness. There is no specific title given to female lions in the film beyond \"lioness.\"",
+        "In The Lion King, the female lion is simply referred to as a lioness.",
+        "In The Lion King, the female lion is simply referred to as a lioness.",
+        "Female lion in The Lion King is called a lioness.",
+        "In The Lion King, the female lion is simply referred to as a lioness.",
+        "In The Lion King, the female lion is not given a specific title or name. She is simply referred to as a lioness.",
+        "In The Lion King, the female lion is simply referred to as a lioness.",
+        "In The Lion King, the female lion is simply referred to as a lioness. There's no specific title given to female lions in the movie."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_3557",
+      "question": "who did the dominican republic gain its independence from",
+      "gold": [
+        "Haiti"
+      ],
+      "greedy": "The Dominican Republic gained its independence from Spain in 1844.",
+      "samples": [
+        "The Dominican Republic gained its independence from Spain in 1844.",
+        "The Dominican Republic gained its independence from Spain in 1844.",
+        "The Dominican Republic gained its independence from Spain in 1844.",
+        "The Dominican Republic gained its independence from Spain in 1844.",
+        "The Dominican Republic gained its independence from Spain in 1844.",
+        "The Dominican Republic gained its independence from Spain in 1844.",
+        "The Dominican Republic gained its independence from Spain in 1844.",
+        "The Dominican Republic gained its independence from Spain in 1844.",
+        "The Dominican Republic gained its independence from Spain in 1844.",
+        "The Dominican Republic gained its independence from Spain in 1844."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_3177",
+      "question": "when did they stop putting lead in paint",
+      "gold": [
+        "1992"
+      ],
+      "greedy": "They stopped adding lead to house paints in the United States in 1978.",
+      "samples": [
+        "They stopped adding lead to residential paint in the United States in 1978.",
+        "They stopped adding lead to house paint in the United States in 1978.",
+        "Lead was largely phased out of residential paints in the United States by 1950, with a federal ban on its use in interior residential paints enacted in 1978 and exterior residential paints in 1990.",
+        "They stopped adding lead to housepaint in the United States in 1978.",
+        "They stopped adding lead to house paint in the United States in 1978.",
+        "They stopped adding lead to housepaint in the United States in 1978.",
+        "They stopped adding lead to house paints in the United States in 1978.",
+        "Lead was largely removed from household paints in the United States by 1978, with the federal ban on lead-based paints in residential and public buildings effective as of December 1978.",
+        "Lead was largely phased out of house paints in the United States by 1950, with its complete ban for interior uses occurring in 1978 and exterior uses by 1990.",
+        "They stopped adding lead to house paint in the United States in 1978."
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.7260382738450013,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_809",
+      "question": "when were the beatles inducted into the rock and roll hall of fame",
+      "gold": [
+        "1988"
+      ],
+      "greedy": "The Beatles were inducted into the Rock and Roll Hall of Fame in 1994.",
+      "samples": [
+        "The Beatles were inducted into the Rock and Roll Hall of Fame in 1988.",
+        "The Beatles were inducted into the Rock and Roll Hall of Fame in 1994.",
+        "The Beatles were inducted into the Rock and Roll Hall of Fame in 1994.",
+        "The Beatles were inducted into the Rock and Roll Hall of Fame in 1988.",
+        "The Beatles were inducted into the Rock and Roll Hall of Fame in 1988.",
+        "The Beatles were inducted into the Rock and Roll Hall of Fame in 1988.",
+        "The Beatles were inducted into the Rock and Roll Hall of Fame in 1988.",
+        "The Beatles were inducted into the Rock and Roll Hall of Fame in 1994.",
+        "The Beatles were inducted into the Rock and Roll Hall of Fame in 1994.",
+        "The Beatles were inducted into the Rock and Roll Hall of Fame in 1994."
+      ],
+      "se_discrete": 0.6931471805599453,
+      "se_logprob": 0.6930658411935987,
+      "C_SE_disc": -0.6931471805599453,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_628",
+      "question": "how many pennsylvania house of representatives are there",
+      "gold": [
+        "203",
+        "203 members"
+      ],
+      "greedy": "There are 103 members in the Pennsylvania House of Representatives.",
+      "samples": [
+        "There are 103 members in the Pennsylvania House of Representatives.",
+        "There are 203 members in the Pennsylvania House of Representatives.",
+        "There are 103 members in the Pennsylvania House of Representatives.",
+        "There are 103 members in the Pennsylvania House of Representatives.",
+        "There are 103 members in the Pennsylvania House of Representatives.",
+        "There are 103 members in the Pennsylvania House of Representatives.",
+        "There are 103 members in the Pennsylvania House of Representatives.",
+        "There are 103 members in the Pennsylvania House of Representatives.",
+        "There are 103 members in the Pennsylvania House of Representatives.",
+        "There are 103 members in the Pennsylvania House of Representatives."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2930237580974747,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_3600",
+      "question": "oklahoma's 10 geographic regions are defined by surface features called",
+      "gold": [
+        "ecological regions"
+      ],
+      "greedy": "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces.",
+      "samples": [
+        "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces.",
+        "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces.",
+        "oklahoma's 10 geographic regions are defined by surface features called physiographic provinces.",
+        "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces.",
+        "Okahoma's 10 geographic regions are defined by surface features called physiographic provinces.",
+        "Oklahoma's 10 geographic regions are defined by surface features called physiographic regions.",
+        "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces.",
+        "Okahoma's 10 geographic regions are defined by surface features called physiographic provinces.",
+        "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces.",
+        "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.312766631580933,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_1153",
+      "question": "how oxygenated blood returns to the heart from the lungs",
+      "gold": [
+        "pulmonary circulation"
+      ],
+      "greedy": "Oxygenated blood returns to the heart from the lungs through the pulmonary veins.",
+      "samples": [
+        "Oxygenated blood returns to the heart from the lungs through the pulmonary veins.",
+        "Oxygenated blood returns to the heart from the lungs through the pulmonary veins.",
+        "Oxygenated blood returns to the heart from the lungs via the pulmonary veins.",
+        "Oxygenated blood returns to the heart from the lungs through the pulmonary veins.",
+        "Oxygenated blood returns to the heart from the lungs through the pulmonary veins.",
+        "Oxygenated blood returns to the heart via the pulmonary veins.",
+        "Oxygenated blood returns to the heart from the lungs via the pulmonary veins.",
+        "Oxygenated blood returns to the heart from the lungs through the pulmonary veins.",
+        "Oxygenated blood returns to the heart from the lungs via the pulmonary veins.",
+        "Oxygenated blood returns to the heart from the lungs through the pulmonary veins."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_1868",
+      "question": "who is considered the father of modern behaviorism",
+      "gold": [
+        "John B. Watson"
+      ],
+      "greedy": "B.F. Skinner is considered the father of modern behaviorism.",
+      "samples": [
+        "B.F. Skinner is considered the father of modern behaviorism.",
+        "B.F. Skinner is considered the father of modern behaviorism.",
+        "B.F. Skinner is considered the father of modern behaviorism.",
+        "B.F. Skinner is considered the father of modern behaviorism.",
+        "B.F. Skinner is considered the father of modern behaviorism.",
+        "B.F. Skinner is considered the father of modern behaviorism.",
+        "B.F. Skinner is considered the father of modern behaviorism.",
+        "B.F. Skinner is considered the father of modern behaviorism.",
+        "B.F. Skinner is considered the father of modern behaviorism.",
+        "B.F. Skinner is considered the father of modern behaviorism."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_3084",
+      "question": "how many seasons of prison break are on netflix",
+      "gold": [
+        "five"
+      ],
+      "greedy": "There are 5 seasons of Prison Break on Netflix.",
+      "samples": [
+        "There are 4 seasons of Prison Break on Netflix.",
+        "There are 4 seasons of Prison Break on Netflix.",
+        "There are 5 seasons of Prison Break on Netflix.",
+        "There are 5 seasons of Prison Break on Netflix.",
+        "There are 5 seasons of Prison Break on Netflix.",
+        "There are 5 seasons of Prison Break on Netflix.",
+        "There are 5 seasons of Prison Break on Netflix.",
+        "There are 5 seasons of Prison Break on Netflix.",
+        "There are 5 seasons of Prison Break on Netflix.",
+        "There are 5 seasons of Prison Break on Netflix."
+      ],
+      "se_discrete": 0.5004024235381879,
+      "se_logprob": 0.44834804729670086,
+      "C_SE_disc": -0.5004024235381879,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_1371",
+      "question": "who has won the 2018 formula one australia grand prix tournament",
+      "gold": [
+        "Sebastian Vettel",
+        "Ferrari driver Sebastian Vettel"
+      ],
+      "greedy": "Max Verstappen won the 2018 Formula One Australian Grand Prix.",
+      "samples": [
+        "Max Verstappen won the 2018 Formula One Australian Grand Prix.",
+        "Max Verstappen won the 2018 Formula One Australian Grand Prix.",
+        "Max Verstappen won the 2018 Formula One Australian Grand Prix.",
+        "Max Verstappen won the 2018 Formula One Australian Grand Prix.",
+        "Max Verstappen won the 2018 Formula One Australian Grand Prix.",
+        "Max Verstappen won the 2018 Formula One Australian Grand Prix.",
+        "Max Verstappen won the 2018 Formula One Australian Grand Prix.",
+        "Max Verstappen won the 2018 Formula One Australian Grand Prix.",
+        "Max Verstappen won the 2018 Formula One Australian Grand Prix.",
+        "Max Verstappen won the 2018 Formula One Australian Grand Prix."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_2428",
+      "question": "the temperature of gas is proportional to the",
+      "gold": [
+        "volume"
+      ],
+      "greedy": "average kinetic energy of gas molecules.",
+      "samples": [
+        "kinetic energy of gas molecules.",
+        "temperature of gas is proportional to the average kinetic energy of its molecules.",
+        "average kinetic energy of gas molecules.",
+        "average kinetic energy of gas molecules.",
+        "average kinetic energy of its particles.",
+        "average kinetic energy of gas molecules.",
+        "average kinetic energy of gas molecules",
+        "average kinetic energy of its molecules.",
+        "the temperature of gas is proportional to the average kinetic energy of its molecules.",
+        "kinetic energy of its molecules."
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.7480089806472885,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_2510",
+      "question": "how many episodes in my name is earl season 4",
+      "gold": [
+        "27"
+      ],
+      "greedy": "There are 13 episodes in My Name is Earl Season 4.",
+      "samples": [
+        "There are 13 episodes in My Name Is Earl Season 4.",
+        "There are 13 episodes in My Name is Earl season 4.",
+        "There are 13 episodes in Season 4 of My Name Is Earl.",
+        "There are 13 episodes in My Name is Earl Season 4.",
+        "Season 4 of My Name Is Earl has 13 episodes.",
+        "There are 16 episodes in season 4 of My Name Is Earl.",
+        "There are 20 episodes in My Name is Earl Season 4.",
+        "Season 4 of My Name Is Earl has 13 episodes.",
+        "There are 13 episodes in My Name is Earl Season 4.",
+        "There are 13 episodes in My Name Is Earl Season 4."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.585381007754369,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_399",
+      "question": "when did the the regulatory reform (fire safety) order 2005 first come into effect",
+      "gold": [
+        "1 October 2006"
+      ],
+      "greedy": "The Regulatory Reform (Fire Safety) Order 2005 came into effect on January 1, 2006.",
+      "samples": [
+        "The Regulatory Reform (Fire Safety) Order 2005 came into effect on January 1, 2006.",
+        "The Regulatory Reform (Fire Safety) Order 2005 came into effect on October 1, 2006.",
+        "The Regulatory Reform (Fire Safety) Order 2005 came into effect on October 1, 2006.",
+        "The Regulatory Reform (Fire Safety) Order 2005 came into effect on October 1, 2006.",
+        "The Regulatory Reform (Fire Safety) Order 2005 came into effect on January 1, 2006.",
+        "The Regulatory Reform (Fire Safety) Order 2005 came into effect on January 1, 2006.",
+        "The Regulatory Reform (Fire Safety) Order 2005 came into force on January 1, 2006.",
+        "The Regulatory Reform (Fire Safety) Order 2005 came into effect on October 1, 2006.",
+        "The Regulatory Reform (Fire Safety) Order 2005 came into effect on January 1, 2006.",
+        "The Regulatory Reform (Fire Safety) Order 2005 came into effect on October 1, 2006."
+      ],
+      "se_discrete": 0.6931471805599453,
+      "se_logprob": 0.6931023264244706,
+      "C_SE_disc": -0.6931471805599453,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_2416",
+      "question": "what is a dropped pin on google maps for",
+      "gold": [
+        "marks locations in Google Maps",
+        "marks locations"
+      ],
+      "greedy": "A dropped pin on Google Maps marks a specific location or address.",
+      "samples": [
+        "A dropped pin on Google Maps indicates a specific location or marker.",
+        "A dropped pin on Google Maps marks a specific location or landmark on the map.",
+        "A dropped pin on Google Maps marks a specific location or address.",
+        "A dropped pin on Google Maps marks a specific location or coordinate.",
+        "A dropped pin on Google Maps indicates a specific location or marker.",
+        "A dropped pin on Google Maps is a marker that indicates a specific location or point of interest.",
+        "A dropped pin on Google Maps marks a specific location or address.",
+        "A dropped pin on Google Maps marks a specific location or landmark.",
+        "A dropped pin on Google Maps marks a specific location or point of interest.",
+        "A dropped pin on Google Maps indicates a specific location or marker."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_803",
+      "question": "theme of the song roar by katy perry",
+      "gold": [
+        "standing up for oneself",
+        "self-empowerment"
+      ],
+      "greedy": "The theme of Katy Perry's song \"Roar\" is about finding one's voice and self-confidence to stand up for oneself.",
+      "samples": [
+        "The theme of \"Roar\" by Katy Perry is about finding one's voice and confidence to stand up for oneself.",
+        "The theme of \"Roar\" by Katy Perry is empowerment and self-confidence.",
+        "The theme of \"Roar\" by Katy Perry is about finding self-confidence and empowering oneself to assert oneself.",
+        "The theme of Katy Perry's song \"Roar\" is empowerment and self-confidence.",
+        "The theme of Katy Perry's song \"Roar\" is empowerment and self-confidence.",
+        "The theme of Katy Perry's song \"Roar\" is about finding one's voice and self-confidence to stand up for oneself.",
+        "The theme of Katy Perry's song \"Roar\" is empowerment and self-confidence.",
+        "The theme of Katy Perry's song \"Roar\" is empowerment and self-confidence.",
+        "The theme of Katy Perry's song \"Roar\" is about finding confidence and feminine empowerment.",
+        "The theme of \"Roar\" by Katy Perry is empowerment and self-confidence."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2832132571447811,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_2638",
+      "question": "who plays the doc in back to the future",
+      "gold": [
+        "Christopher Allen Lloyd"
+      ],
+      "greedy": "Christopher Lloyd plays the Doc in Back to the Future.",
+      "samples": [
+        "Christopher Lloyd plays the Doc in Back to the Future.",
+        "Christopher Lloyd plays the Doc in Back to the Future.",
+        "Christopher Lloyd plays the character of Dr. Emmett Brown ( commonly referred to as \"Doc\") in Back to the Future.",
+        "The Doc (Dr. Emmett Brown) in Back to the Future is played by Christopher Lloyd.",
+        "Christopher Lloyd plays the Doc in Back to the Future.",
+        "Christopher Lloyd plays the role of Doc Brown in Back to the Future.",
+        "Christopher Lloyd plays the Doc in Back to the Future.",
+        "The Doc (also known as Dr. Emmett Brown) in Back to the Future is played by Christopher Lloyd.",
+        "Christopher Lloyd plays the character of Dr. Emmett Brown (aka \"The Doc\") in Back to the Future.",
+        "Christopher Lloyd plays the Doc in Back to the Future."
+      ],
+      "se_discrete": 0.6931471805599453,
+      "se_logprob": 0.6911538485546092,
+      "C_SE_disc": -0.6931471805599453,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_1017",
+      "question": "what are the four requirements to establish criminal liability for gross negligence manslaughter",
+      "gold": [
+        "the defendant breached this duty"
+      ],
+      "greedy": "The four requirements to establish criminal liability for gross negligence manslaughter are:\n1. The defendant must owe a duty of care to the victim.\n2. The defendant must breach that duty of care.\n3. The breach must be so grossly negligent as to amount to a criminal standard.\n4. The breach must cause the victim",
+      "samples": [
+        "Four requirements to establish criminal liability for gross negligence manslaughter are:\n1. The defendant must owe a duty of care to the victim.\n2. There must be a breach of that duty of care.\n3. The breach must cause the victim's death.\n4. There must be an element of gross or flagrant neglect.",
+        "The four requirements to establish criminal liability for gross negligence manslaughter are:\n1. The defendant must owe a duty of care to the deceased.\n2. There must be a breach of that duty of care.\n3. The breach must be so flagrantly negligent as to amount to a gross breach.\n4. There must be",
+        "Four requirements to establish criminal liability for gross negligence manslaughter are:\n1. The defendant owed a duty of care to the victim.\n2. The defendant breached that duty of care.\n3. The breach caused the victim's death.\n4. The defendant's breach was gross (highly) negligent.",
+        "The four requirements to establish criminal liability for gross negligence manslaughter are:\n1. The defendant owed a duty of care to the deceased.\n2. The defendant breached that duty of care.\n3. The breach of duty directly caused the death of the deceased.\n4. The breach was so grossly negligent that it amounted to a",
+        "The four requirements to establish criminal liability for gross negligence manslaughter are:\n1. The defendant must owe a duty of care to the victim.\n2. There must be a breach of that duty of care.\n3. The breach must be a gross breach, indicating reckless or callous disregard for human life.\n4. There must",
+        "The four requirements to establish criminal liability for gross negligence manslaughter are:\n1. Death of a person\n2. The defendant's actions were criminal (actus reus)\n3. The defendant was criminally negligent\n4. The criminal negligence was a cause of the death",
+        "The four requirements to establish criminal liability for gross negligence manslaughter are:\n1. The defendant owed a duty of care to the victim.\n2. The defendant breached that duty of care.\n3. The breach caused the victim's death.\n4. There was a sufficient element of gross or palpable negligence in the defendant's actions",
+        "The four requirements to establish criminal liability for gross negligence manslaughter are:\n1. Death of a person\n2. The defendant must owe a duty of care to the deceased\n3. The defendant breached that duty of care\n4. The breach caused the death",
+        "The four requirements to establish criminal liability for gross negligence manslaughter are:\n1. The defendant must owe a duty of care to the victim.\n2. The defendant must breach that duty of care.\n3. The breach must be so reckless or callous as to amount to a gross breach of duty.\n4. The breach must",
+        "The four requirements to establish criminal liability for gross negligence manslaughter are:\n1. Death of a person\n2. The defendant's actions were unlawful\n3. The defendant was in a special relationship or position of responsibility\n4. The defendant's actions amounted to gross negligence leading to the death"
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_729",
+      "question": "who started the state of the union address",
+      "gold": [
+        "Woodrow Wilson"
+      ],
+      "greedy": "The State of the Union address was first delivered by George Washington in 1790.",
+      "samples": [
+        "The first State of the Union address was given by George Washington in 1790.",
+        "The State of the Union address was first delivered by George Washington in 1790.",
+        "The State of the Union address was first given by George Washington in 1790.",
+        "The State of the Union address was first delivered by George Washington in 1790.",
+        "The State of the Union address was first delivered by George Washington in 1790.",
+        "The State of the Union address was first delivered by George Washington in 1790.",
+        "The first State of the Union address was given by President George Washington in 1790.",
+        "The State of the Union address was first delivered by George Washington in 1790.",
+        "The State of the Union address was first given by George Washington in 1790.",
+        "The State of the Union address was first delivered by George Washington in 1790."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.32461544901260336,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_1155",
+      "question": "how many games does a team have to win for the world series",
+      "gold": [
+        "best-of-seven"
+      ],
+      "greedy": "A team must win 4 games in total to win the World Series.",
+      "samples": [
+        "A team must win 4 games in total to win the World Series.",
+        "A team must win 4 games in total to win the World Series.",
+        "A team must win 4 games to win the World Series.",
+        "A team must win 4 games to win the World Series.",
+        "A team must win 4 games in total to win the World Series.",
+        "A team must win 4 games to win the World Series.",
+        "A team must win 4 games in total to win the World Series.",
+        "A team must win 4 games in total to win the World Series.",
+        "A team needs to win 4 games to win the World Series.",
+        "A team must win 4 games to win the World Series."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_781",
+      "question": "how many hoops are used in a game of croquet",
+      "gold": [
+        "eight",
+        "six"
+      ],
+      "greedy": "6 hoops are used in a game of croquet.",
+      "samples": [
+        "Six hoops are used in a game of croquet.",
+        "Six hoops are used in a game of croquet.",
+        "Six hoops are used in a game of croquet.",
+        "Six hoops are used in a game of croquet.",
+        "Six hoops are used in a standard game of croquet.",
+        "6 hoops are used in a standard game of croquet.",
+        "Six hoops are used in a game of croquet.",
+        "6 hoops are used in a game of croquet.",
+        "Six hoops are used in a game of croquet.",
+        "16 hoops are used in a game of croquet."
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.7433720153473452,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_3263",
+      "question": "when was the taj mahal built and completed",
+      "gold": [
+        "1632–53"
+      ],
+      "greedy": "The Taj Mahal was built between 1632 and completed in 1653.",
+      "samples": [
+        "The Taj Mahal was built between 1632 and completed in 1653.",
+        "The Taj Mahal was built from 1632 to 1653.",
+        "The Taj Mahal was built between 1632 and completed in 1653.",
+        "The Taj Mahal was built between 1632 and completed in 1653.",
+        "The Taj Mahal was built between 1632 and completed in 1653.",
+        "The Taj Mahal was built between 1632 and completed in 1653.",
+        "The Taj Mahal was built between 1632 and completed in 1653.",
+        "The Taj Mahal was built between 1632 and completed in 1653.",
+        "The Taj Mahal was built between 1632 and completed in 1653.",
+        "The Taj Mahal was built between 1632 and completed in 1653."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_2190",
+      "question": "how many world series wins does the dodgers have",
+      "gold": [
+        "6",
+        "six"
+      ],
+      "greedy": "The Los Angeles Dodgers have won 1 World Series championship.",
+      "samples": [
+        "The Dodgers have won 1 World Series championship.",
+        "The Dodgers have won 1 World Series championship.",
+        "The Dodgers have won 1 World Series championship.",
+        "The Dodgers have won 1 World Series.",
+        "The Los Angeles Dodgers have won 1 World Series championship.",
+        "The Los Angeles Dodgers have won 1 World Series championship.",
+        "The Dodgers have won 1 World Series.",
+        "The Dodgers have won 1 World Series championship.",
+        "The Los Angeles Dodgers have won 1 World Series title.",
+        "The Los Angeles Dodgers have won 1 World Series championship."
+      ],
+      "se_discrete": 0.6730116670092565,
+      "se_logprob": 0.6782198067899368,
+      "C_SE_disc": -0.6730116670092565,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_3018",
+      "question": "who sing say you won't let go",
+      "gold": [
+        "James Arthur"
+      ],
+      "greedy": "The song \"Say You Won't Let Go\" is sung by Ed Sheeran.",
+      "samples": [
+        "The song \"Say You Won't Let Go\" is performed by James Arthur.",
+        "The song \"Say You Won't Let Go\" is sung by Ed Sheeran.",
+        "The song \"Say You Won't Let Go\" is sung by James Arthur.",
+        "The song \"Say You Won't Let Go\" is sung by Ed Sheeran.",
+        "The song \"Say You Won't Let Go\" is sung by Ed Sheeran.",
+        "The song \"Say You Won't Let Go\" is sung by James Arthur.",
+        "The song \"Say You Won't Let Go\" is sung by Ed Sheeran.",
+        "Ed Sheeran sings \"Say You Won't Let Go.\"",
+        "The song \"Say You Won't Let Go\" is sung by Ed Sheeran.",
+        "Say You Won't Let Go is sung by James Arthur."
+      ],
+      "se_discrete": 0.6730116670092565,
+      "se_logprob": 0.6629894722910217,
+      "C_SE_disc": -0.6730116670092565,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_201",
+      "question": "who is president of india in present time",
+      "gold": [
+        "Ram Nath Kovind"
+      ],
+      "greedy": "The President of India in the present time is Droupadi Murmu.",
+      "samples": [
+        "The President of India in the present time is Droupadi Murmu.",
+        "The President of India in the present time is Droupadi Murmu.",
+        "The President of India in the present time is Droupadi Murmu.",
+        "The president of India in the present time is Droupadi Murmu.",
+        "The President of India in the present time is Droupadi Murmu.",
+        "The President of India in the present time is Droupadi Murmu.",
+        "The President of India in the present time is Droupadi Murmu.",
+        "The President of India in the present time is Droupadi Murmu.",
+        "Droupadi Murmu is the current President of India, sworn in on February 20, 2022.",
+        "The President of India in the present time is Droupadi Murmu."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.2812767451228831,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_861",
+      "question": "when did the first battle of ypres end",
+      "gold": [
+        "22 November 1914"
+      ],
+      "greedy": "The First Battle of Ypres ended in November 1914.",
+      "samples": [
+        "The First Battle of Ypres ended in November 1914.",
+        "The First Battle of Ypres ended in November 1914.",
+        "The First Battle of Ypres ended in November 1914.",
+        "The First Battle of Ypres ended in November 1914.",
+        "The first Battle of Ypres ended in November 1914.",
+        "The First Battle of Ypres ended in November 1914.",
+        "The First Battle of Ypres ended in November 1914.",
+        "The first Battle of Ypres ended in November 1914.",
+        "The first Battle of Ypres ended in November 1914.",
+        "The First Battle of Ypres ended in November 1914."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    }
+  ]
+}

@@ -1,0 +1,1455 @@
+{
+  "n_records": 1000,
+  "greedy_acc": 0.277,
+  "by_metric": {
+    "C_SE_disc": {
+      "ece": 0.14397518260831219,
+      "four_cell": {
+        "high_correct": 229,
+        "high_wrong": 414,
+        "low_correct": 48,
+        "low_wrong": 309,
+        "median_threshold": -2.1639556568820564,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 251,
+        "wrong_in_top_q": 128,
+        "rate": 0.5099601593625498
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.6,
+          "threshold": -0.6730116670092565
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.525,
+          "threshold": -1.3592367006650063
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.4666666666666667,
+          "threshold": -1.7480673485460891
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.415,
+          "threshold": -1.9730014063936123
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.386,
+          "threshold": -2.1639556568820564
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.36666666666666664,
+          "threshold": -2.1639556568820564
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.34,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.31375,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.29444444444444445,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.277,
+          "threshold": -2.3025850929940455
+        }
+      ]
+    },
+    "C_SE_logp": {
+      "ece": 0.14350534148465297,
+      "four_cell": {
+        "high_correct": 192,
+        "high_wrong": 308,
+        "low_correct": 85,
+        "low_wrong": 415,
+        "median_threshold": -2.119820271582462,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 127,
+        "rate": 0.508
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.62,
+          "threshold": -0.6670719911250484
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.53,
+          "threshold": -1.2969091653405704
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.4666666666666667,
+          "threshold": -1.6737125161327562
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.42,
+          "threshold": -1.933409322277577
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.384,
+          "threshold": -2.1196837067189986
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.35833333333333334,
+          "threshold": -2.1529851739577004
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.3357142857142857,
+          "threshold": -2.2837821810179397
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.31125,
+          "threshold": -2.2917092125700944
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.2922222222222222,
+          "threshold": -2.295570924135473
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.277,
+          "threshold": -2.3016238492846073
+        }
+      ]
+    },
+    "C_logp": {
+      "ece": 0.33660703567830835,
+      "four_cell": {
+        "high_correct": 192,
+        "high_wrong": 308,
+        "low_correct": 85,
+        "low_wrong": 415,
+        "median_threshold": -0.3904391949204075,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 128,
+        "rate": 0.512
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.59,
+          "threshold": -0.12920783088685156
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.53,
+          "threshold": -0.20604313907725103
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.45,
+          "threshold": -0.27586419733110207
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.425,
+          "threshold": -0.3340914132321376
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.384,
+          "threshold": -0.38987624619075223
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.365,
+          "threshold": -0.4409816920886177
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.33714285714285713,
+          "threshold": -0.48971123826077567
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.31375,
+          "threshold": -0.5587452717772776
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.29555555555555557,
+          "threshold": -0.6504064218336071
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.277,
+          "threshold": -1.0022726234968957
+        }
+      ]
+    }
+  },
+  "disagreement_counts": {
+    "C_SE_disc_high__C_SE_logp_low": 143,
+    "C_SE_disc_low__C_SE_logp_high": 0,
+    "C_SE_disc_high__C_logp_low": 194,
+    "C_SE_disc_low__C_logp_high": 51,
+    "C_SE_logp_high__C_logp_low": 120,
+    "C_SE_logp_low__C_logp_high": 120
+  },
+  "danger_examples": [
+    {
+      "id": "nq_2349",
+      "question": "when did avatar the last airbender first air",
+      "gold": [
+        "February 21, 2005",
+        "February 2005",
+        "February 21, 2005"
+      ],
+      "greedy": "Avatar: The Last Airbender first aired on October 1, 2005.",
+      "samples": [
+        "Avatar: The Last Airbender first aired on October 1, 2005.",
+        "Avatar: The Last Airbender first aired on October 1, 2005, on Nickelodeon.",
+        "Avatar: The Last Airbender first aired on October 1, 2005.",
+        "Avatar: The Last Airbender first aired on October 1, 2005.",
+        "Avatar: The Last Airbender first aired on October 1, 2005, on Nickelodeon in the United States.",
+        "Avatar: The Last Airbender first aired on October 1, 2005, on Nickelodeon.",
+        "Avatar: The Last Airbender first aired on October 1, 2005.",
+        "Avatar: The Last Airbender first aired on October 1, 2005, on Nickelodeon.",
+        "Avatar: The Last Airbender first aired on October 1, 2005, on Nickelodeon.",
+        "Avatar: The Last Airbender first aired on October 1, 2005, on Nickelodeon in the United States."
+      ],
+      "se_discrete": 1.0549201679861442,
+      "se_logprob": 1.0512991301173293,
+      "C_SE_disc": -1.0549201679861442,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_3106",
+      "question": "the art and science of making objects from clay is called",
+      "gold": [
+        "Ceramic art",
+        "Ceramic"
+      ],
+      "greedy": "Pottery.",
+      "samples": [
+        "The art and science of making objects from clay is called pottery.",
+        "The art and science of making objects from clay is called ceramics.",
+        "Pottery",
+        "Pottery.",
+        "Pottery.",
+        "The art and science of making objects from clay is called pottery.",
+        "The art and science of making objects from clay is called pottery.",
+        "The art and science of making objects from clay is called pottery.",
+        "Pottery",
+        "Pottery."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.33036627926978324,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_2776",
+      "question": "when did the usa join world war one",
+      "gold": [
+        "April 6, 1917",
+        "April 1917",
+        "in April 1917"
+      ],
+      "greedy": "The United States joined World War I in 1917.",
+      "samples": [
+        "The USA joined World War I in April 1917.",
+        "The United States joined World War I in 1917.",
+        "The United States joined World War I in 1917.",
+        "The USA joined World War One in 1917.",
+        "The USA joined World War One in 1917.",
+        "The United States officially joined World War I in April 1917.",
+        "The United States joined World War One in April 1917.",
+        "The United States joined World War I in April 1917.",
+        "The United States joined World War I in 1917.",
+        "The United States joined World War I in 1917."
+      ],
+      "se_discrete": 0.6730116670092565,
+      "se_logprob": 0.6616626357899735,
+      "C_SE_disc": -0.6730116670092565,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_1987",
+      "question": "when was the design period known as art deco",
+      "gold": [
+        "1910–1939"
+      ],
+      "greedy": "The Art Deco design period is generally considered to have lasted from the 1920s to the late 1940s.",
+      "samples": [
+        "The Art Deco design period is generally considered to have started around the 1920s and continued through the 1930s.",
+        "The Art Deco design period is generally considered to have spanned from approximately 1925 to 1939.",
+        "The Art Deco design period is generally considered to have lasted from the 1920s to the late 1940s.",
+        "The Art Deco design period peaked in popularity from approximately 1925 to 1930.",
+        "The Art Deco design period flourished primarily between the 1920s and the late 1930s.",
+        "The Art Deco design period typically began in the 1920s and continued into the 1930s.",
+        "The Art Deco design period typically lasted from approximately 1925 to the late 1930s.",
+        "The Art Deco design period flourished primarily between the 1920s and the 1940s.",
+        "The Art Deco design period is generally considered to have originated around 1925 and continued into the late 1930s.",
+        "The Art Deco design period is generally considered to have spanned from the 1920s to the late 1940s."
+      ],
+      "se_discrete": 1.1682824501765625,
+      "se_logprob": 1.1552573865570264,
+      "C_SE_disc": -1.1682824501765625,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_2051",
+      "question": "when were the first general elections held in independent india",
+      "gold": [
+        "1951–52"
+      ],
+      "greedy": "The first general elections in independent India were held from 1951 to 1952.",
+      "samples": [
+        "The first general elections in independent India took place in 1952.",
+        "The first general elections in independent India were held on January 25 to March 28, 1952.",
+        "The first general elections in independent India were held from January to August 1952.",
+        "The first general elections in independent India were held from January to February 1952.",
+        "The first general elections in independent India took place in 1952.",
+        "The first general elections in independent India were held from January to August 1952.",
+        "The first general elections in independent India took place in 1951-52.",
+        "The first general elections in independent India took place in 1952.",
+        "The first general elections in independent India took place on January 25 to February 2, 1952.",
+        "The first general elections in independent India took place in 1951-52."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.3455772710268812,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_2985",
+      "question": "a request to the supreme court that it review a case that was already decided is made via a(n)",
+      "gold": [
+        "writ of certiorari",
+        "a writ of certiorari"
+      ],
+      "greedy": "a petition for certiorari",
+      "samples": [
+        "a petition for certiorari",
+        "a petition for certiorari",
+        "a petition for certiorari",
+        "a petition for certiorari",
+        "a petition for a writ of certiorari",
+        "a petition for certiorari",
+        "a petition for certiorari",
+        "a petition for certiorari",
+        "a petition for writ of certiorari",
+        "a petition for a writ of certiorari"
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_2493",
+      "question": "how many episodes are in season 7 of pretty little liars",
+      "gold": [
+        "20"
+      ],
+      "greedy": "Season 7 of Pretty Little Liars consists of 13 episodes.",
+      "samples": [
+        "Season 7 of Pretty Little Liars has 13 episodes.",
+        "Season 7 of Pretty Little Liars consists of 13 episodes.",
+        "Season 7 of Pretty Little Liars has 13 episodes.",
+        "Season 7 of Pretty Little Liars has 13 episodes.",
+        "Season 7 of Pretty Little Liars consists of 13 episodes.",
+        "Season 7 of Pretty Little Liars consists of 13 episodes.",
+        "Season 7 of Pretty Little Liars has 13 episodes.",
+        "Season 7 of Pretty Little Liars consists of 14 episodes.",
+        "Season 7 of Pretty Little Liars has 13 episodes.",
+        "Season 7 of Pretty Little Liars consists of 15 episodes."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.5750406909611344,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_789",
+      "question": "what is the 180 degree line of longitude called",
+      "gold": [
+        "180th meridian or antimeridian",
+        "180th meridian",
+        "antimeridian"
+      ],
+      "greedy": "The 180-degree line of longitude is called the International Date Line.",
+      "samples": [
+        "The 180-degree line of longitude is called the Antimeridian.",
+        "The 180-degree line of longitude is called the International Date Line.",
+        "The 180-degree line of longitude is called the International Date Line.",
+        "The 180-degree line of longitude is called the International Date Line.",
+        "The 180-degree line of longitude is called the Antimeridian.",
+        "The 180-degree line of longitude is called the Antimeridian.",
+        "The 180-degree line of longitude is called the International Date Line.",
+        "The 180-degree line of longitude is called the International Date Line.",
+        "The 180-degree line of longitude is commonly referred to as the Antimeridian or the International Date Line, depending on context.",
+        "The 180-degree line of longitude is called the International Date Line."
+      ],
+      "se_discrete": 0.8979457248567797,
+      "se_logprob": 0.8481011272925704,
+      "C_SE_disc": -0.8979457248567797,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_2721",
+      "question": "which site of an enzyme is called allosteric site",
+      "gold": [
+        "regulatory site"
+      ],
+      "greedy": "The allosteric site of an enzyme is the site where allosteric modulators (such as inhibitors or activators) bind, affecting the enzyme's activity without altering its primary structure.",
+      "samples": [
+        "The allosteric site of an enzyme is the site other than the active site where effector molecules (usually ligands) bind, causing a conformational change in the enzyme's structure.",
+        "The allosteric site of an enzyme is the site where allosteric modulators bind, usually affecting enzyme activity.",
+        "The allosteric site of an enzyme is the site where allosteric regulators bind to modulate enzyme activity.",
+        "The allosteric site of an enzyme is where allosteric modulators (such as inhibitors or activators) bind, affecting the enzyme's activity.",
+        "The allosteric site of an enzyme is the site other than the active site where a regulatory molecule can bind to modulate the enzyme's activity.",
+        "The allosteric site of an enzyme is the binding site for molecules that regulate enzyme activity without being converted into products by the enzyme.",
+        "The allosteric site of an enzyme is the site where allosteric modulators interact with the enzyme to regulate its activity.",
+        "The allosteric site of an enzyme is the site other than the active site where a regulator molecule can bind and alter the enzyme's activity.",
+        "The allosteric site of an enzyme is the site other than the active site where allosteric modulators bind to regulate enzyme activity.",
+        "The allosteric site of an enzyme is the site where allosteric modulators (such as activators or inhibitors) bind to regulate enzyme activity."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.3568907183705918,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_2580",
+      "question": "if there is a line that lies parallel to the horizon it is said to be",
+      "gold": [
+        "A vanishing point"
+      ],
+      "greedy": "horizontal.",
+      "samples": [
+        "horizontal.",
+        "perpendicular.",
+        "if there is a line that lies parallel to the horizon, it is said to be parallel to the ground or horizontal.",
+        "if there is a line that lies parallel to the horizon it is said to be horizontal.",
+        "horizon-level or level with the horizon.",
+        "horizontal.",
+        "horizontal.",
+        "horizontal.",
+        "horizontal.",
+        "horizon line."
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.072206203821869,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_3517",
+      "question": "nodding your head no is an example of",
+      "gold": [
+        "a gesture"
+      ],
+      "greedy": "nodding your head no is an example of negative body language.",
+      "samples": [
+        "nodding your head no is an example of negative body language.",
+        "nodding your head no is an example of negative body language.",
+        "head shaking to indicate no.",
+        "nodding your head no is an example of negative communication using body language.",
+        "nodding your head no is an example of negative head signaling or head shaking in many cultures.",
+        "negative head movement.",
+        "nodding your head no is an example of negative head movement or signaling \"no\" without using words.",
+        "Nodding your head no is an example of negative body language.",
+        "nodding your head no is an example of negative head movement, often used to indicate disagreement or refusal in many cultures.",
+        "negative head signal"
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.1965762323748272,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_1547",
+      "question": "what is the meaning of auv in cars",
+      "gold": [
+        "action utility vehicles"
+      ],
+      "greedy": "AUV stands for All-Wheel Drive in the context of cars.",
+      "samples": [
+        "AUV stands for All-Wheel Drive in the context of cars.",
+        "AUV stands for All-Wheel Drive in the automotive context.",
+        "AUV stands for All-Wheel Drive in the context of cars.",
+        "AUV stands for All Wheel Drive in the automotive context.",
+        "AUV typically stands for All-Wheel Drive in cars, though it can sometimes refer to Autonomous Underwater Vehicle, particularly in contexts related to technology or robotics. In automotive context, it refers to a drivetrain configuration where all four wheels receive power.",
+        "AUV stands for All Wheel Drive in the automotive context, referring to vehicles equipped with all four wheels capable of driving independently.",
+        "AUV is not typically used in cars. It could be a typographical error or misunderstanding, but in automotive context, such an abbreviation is not commonly used. If you meant \"AWD\" (All-Wheel Drive) or any other specific term, please provide more details for a precise answer.",
+        "AUV is not typically used in the context of cars. It can sometimes be an acronym for \"Air Vehicle Unit\" in military or aviation contexts, but it's not commonly associated with automotive technology or design.",
+        "AUV in cars typically stands for All Wheel Drive or All-Wheel Drive, which refers to a vehicle design where all wheels are powered and can spin at different speeds.",
+        "AUV is an acronym that doesn't have a standard meaning in the automotive industry, so its meaning can vary depending on context. It might stand for Autonomous Vehicle (self-driving car), although this usage is not common. In some cases, it could be a manufacturer's or brand-specific term for a particular model. Without"
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.0661507966531132,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_1447",
+      "question": "when is the last time wisconsin missed the ncaa tournament",
+      "gold": [
+        "1997–98"
+      ],
+      "greedy": "Wisconsin last missed the NCAA Tournament in 2017.",
+      "samples": [
+        "The last time Wisconsin missed the NCAA Tournament was in 2018.",
+        "Wisconsin last missed the NCAA Tournament in 2018.",
+        "Wisconsin last missed the NCAA Tournament in 2017.",
+        "Wisconsin last missed the NCAA Tournament in 2019.",
+        "Wisconsin last missed the NCAA Tournament in 2017.",
+        "The last time Wisconsin missed the NCAA Tournament was 2021.",
+        "Wisconsin last missed the NCAA tournament in 2017.",
+        "Wisconsin missed the NCAA Tournament in 2021.",
+        "The last time Wisconsin missed the NCAA Tournament was 2018.",
+        "Wisconsin last missed the NCAA Tournament in 2018."
+      ],
+      "se_discrete": 1.2798542258336676,
+      "se_logprob": 1.2767242576920328,
+      "C_SE_disc": -1.2798542258336676,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_1685",
+      "question": "when did clifford the big red dog first air on tv",
+      "gold": [
+        "September 4, 2000"
+      ],
+      "greedy": "Clifford the Big Red Dog first aired on television in 1963.",
+      "samples": [
+        "Clifford the Big Red Dog first aired on television in 1963.",
+        "Clifford the Big Red Dog first aired on television in 1963.",
+        "Clifford the Big Red Dog first aired on television in 1963.",
+        "Clifford the Big Red Dog first aired on TV in 1963.",
+        "Clifford the Big Red Dog first aired on television in 1963.",
+        "Clifford the Big Red Dog first aired on television in 1963.",
+        "Clifford the Big Red Dog first aired on television in 1963.",
+        "Clifford the Big Red Dog first aired on television in 1979.",
+        "Clifford the Big Red Dog first aired on television in 1963.",
+        "Clifford the Big Red Dog first aired on television on September 1, 1963."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.5841240731291061,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_2147",
+      "question": "actress who plays penelope garcia on criminal minds",
+      "gold": [
+        "Kirsten Simone Vangsness"
+      ],
+      "greedy": "The actress who plays Penelope Garcia on Criminal Minds is Jennifer Love Hewitt.",
+      "samples": [
+        "The actress who plays Penelope Garcia on Criminal Minds is Amanda Tapping.",
+        "The actress who plays Penelope Garcia on Criminal Minds is Jennifer Love Hewitt.",
+        "The actress who plays Penelope Garcia on Criminal Minds is Jennifer Love Hewitt.",
+        "The actress who plays Penelope Garcia on Criminal Minds is Jennifer Love Hewitt.",
+        "The actress who plays Penelope Garcia on Criminal Minds is Jennifer Esposito.",
+        "The actress who plays Penelope Garcia on Criminal Minds is Jennifer Love Hewitt.",
+        "The actress who plays Penelope Garcia on Criminal Minds is Kirsten Vangsness.",
+        "Actress Sarah Wayne Callies plays the role of Penelope Garcia on Criminal Minds.",
+        "The actress who plays Penelope Garcia on Criminal Minds is Jennifer Esposito.",
+        "The actress who plays Penelope Garcia on Criminal Minds is Jennifer Love Hewitt."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.2651145935147174,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_357",
+      "question": "name the four major layers of the earth in order",
+      "gold": [
+        "an outer silicate solid crust",
+        "a highly viscous mantle",
+        "a liquid outer core",
+        "a solid inner core"
+      ],
+      "greedy": "The four major layers of the Earth, in order from outermost to innermost, are:\n1. Crust\n2. Mantle\n3. Core (which itself is divided into a mantle-like Outer Core and a solid Inner Core)",
+      "samples": [
+        "The four major layers of the Earth, in order from outermost to innermost, are:\n1. Crust\n2. Mantle\n3. Core (which itself is divided into a solid inner core and a liquid outer core)",
+        "The four major layers of the Earth, in order from surface to core, are the crust, mantle, outer core, and inner core.",
+        "The four major layers of the Earth, in order from the center outward, are the core, mantle, crust, and lithosphere (which is part of the crust).",
+        "The four major layers of the Earth, in order from surface to core, are the crust, mantle, outer core, and inner core.",
+        "The four major layers of the Earth, in order from outermost to innermost, are the crust, mantle, core, and inner core.",
+        "The four major layers of the Earth, in order from surface to core, are:\n1. Crust\n2. Mantle\n3. Outer Core\n4. Inner Core",
+        "The four major layers of the Earth, in order from outermost to innermost, are:\n1. Crust\n2. Mantle\n3. Outer Core\n4. Inner Core",
+        "The four major layers of the Earth, in order from outside to inside, are the crust, mantle, outer core, and inner core.",
+        "The four major layers of the Earth, in order from the center to the surface, are:\n1. Core\n2. Mantle\n3. Crust\n4. Atmosphere (though not universally considered a layer within the Earth)",
+        "The four major layers of the Earth, in order from surface to core, are:\n1. Crust\n2. Mantle\n3. Outer Core\n4. Inner Core"
+      ],
+      "se_discrete": 1.193549604098133,
+      "se_logprob": 1.1738540326760647,
+      "C_SE_disc": -1.193549604098133,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_2455",
+      "question": "where is wake forest located in north carolina",
+      "gold": [
+        "78.51889°W",
+        "in Franklin and Wake counties",
+        "35.97333°N"
+      ],
+      "greedy": "Wake Forest is located in Wake County, North Carolina.",
+      "samples": [
+        "Wake Forest is located in Wake County, North Carolina.",
+        "Wake Forest, North Carolina is located in Wake County.",
+        "Wake Forest is located in Wake County, North Carolina.",
+        "Wake Forest is located in Wake County, North Carolina.",
+        "Wake Forest is located in Wake County, North Carolina.",
+        "Wake Forest, North Carolina is located in Wake County.",
+        "Wake Forest is located in Wake County, North Carolina.",
+        "Wake Forest, North Carolina is located in the state's Wake County.",
+        "Wake Forest is located in Wake County, North Carolina.",
+        "Wake Forest is located in Wake County, North Carolina."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_2345",
+      "question": "when did the eagles win the super bowl",
+      "gold": [
+        "2017"
+      ],
+      "greedy": "The Philadelphia Eagles won the Super Bowl in 2018.",
+      "samples": [
+        "The Philadelphia Eagles won the Super Bowl in 2018.",
+        "The Philadelphia Eagles won the Super Bowl in 2018.",
+        "The Philadelphia Eagles won Super Bowl LII (52) on February 4, 2018.",
+        "The Philadelphia Eagles won Super Bowl LII on February 4, 2018, defeating the New England Patriots.",
+        "The Philadelphia Eagles last won the Super Bowl in 2018.",
+        "The Philadelphia Eagles won the Super Bowl in 2018.",
+        "The Philadelphia Eagles won the Super Bowl in 2018.",
+        "The Philadelphia Eagles won the Super Bowl in 2018.",
+        "The Philadelphia Eagles won the Super Bowl in 2018.",
+        "The Philadelphia Eagles won the Super Bowl in 2018."
+      ],
+      "se_discrete": 0.9404479886553263,
+      "se_logprob": 0.8869193615210123,
+      "C_SE_disc": -0.9404479886553263,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_0",
+      "question": "when was the last time anyone was on the moon",
+      "gold": [
+        "December 1972",
+        "14 December 1972 UTC"
+      ],
+      "greedy": "The last person to walk on the Moon was Eugene Cernan in 1972, as part of the Apollo 17 mission.",
+      "samples": [
+        "The last person to walk on the Moon was Eugene Cernan in 1972 with the Apollo 17 mission.",
+        "The last person to walk on the Moon was Eugene Cernan in 1972, as part of the Apollo 17 mission.",
+        "The last time anyone was on the Moon was during the Apollo 17 mission in December 1972.",
+        "The last person to walk on the Moon was Eugene Cernan, who departed from the Moon's surface on December 11, 1972, as part of the Apollo 17 mission.",
+        "The last person to walk on the Moon was Eugene Cernan, who left in 1972.",
+        "The last person to walk on the Moon was Eugene Cernan in December 1972, as part of the Apollo 17 mission.",
+        "The last person to walk on the Moon was Eugene Cernan in 1972 with the Apollo 17 mission.",
+        "The last person to walk on the Moon was Eugene Cernan in December 1972 during the Apollo 17 mission.",
+        "The last person to walk on the Moon was Eugene Cernan in 1972, when he departed from the Apollo 17 mission.",
+        "The last person to walk on the Moon was Eugene Cernan in December 1972 during the Apollo 17 mission."
+      ],
+      "se_discrete": 1.4184836619456564,
+      "se_logprob": 1.3966038282471864,
+      "C_SE_disc": -1.4184836619456564,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_990",
+      "question": "another name for the torso is the blank region of the body",
+      "gold": [
+        "trunk"
+      ],
+      "greedy": "The abdomen is another name for the torso's central region.",
+      "samples": [
+        "The trunk",
+        "The thorax is another name for the torso.",
+        "midsection",
+        "The chest is another name for the torso.",
+        "The chest is another name for the torso.",
+        "The thoracic region.",
+        "The torso can also be referred to as the trunk region of the body.",
+        "chest region of the body",
+        "The abdomen is another name for the torso.",
+        "midsection"
+      ],
+      "se_discrete": 1.313834033192747,
+      "se_logprob": 1.2795330221818335,
+      "C_SE_disc": -1.313834033192747,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_2180",
+      "question": "where is iodine found in the periodic table",
+      "gold": [
+        "heaviest of the stable halogens"
+      ],
+      "greedy": "Iodine is found in Group 17 (also known as the halogen group) and Period 5 of the periodic table.",
+      "samples": [
+        "Iodine is found in Group 17 (halogen group) and Period 4 of the periodic table.",
+        "Iodine is found in Group 17 (halogens) and Period 5 of the periodic table.",
+        "Iodine is found in Group 17 (formerly known as Group VIIA) and Period 5 of the periodic table.",
+        "Iodine is found in Group 17 (halogens) and Period 5 of the periodic table.",
+        "Iodine is found in Group 17 (formerly Group VIIA) and Period 5 of the periodic table.",
+        "Iodine is found in Group 17 (also known as the halogen group) and Period 5 of the periodic table.",
+        "Iodine is found in Group 17 (also known as the halogen group) and Period 5 of the periodic table.",
+        "Iodine is found in Group 17 (also known as the halogen group) and Period 5 of the periodic table.",
+        "Iodine is found in Group 17 (halogen group) and Period 5 of the periodic table.",
+        "Iodine is found in Group 17 (halogen group) and Period 5 of the periodic table."
+      ],
+      "se_discrete": 0.8018185525433373,
+      "se_logprob": 0.7708887784441321,
+      "C_SE_disc": -0.8018185525433373,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_730",
+      "question": "when was the last time clemson won the national championship",
+      "gold": [
+        "2016"
+      ],
+      "greedy": "The last time Clemson won the National Championship was in 2019.",
+      "samples": [
+        "Clemson won the national championship in 2019.",
+        "Clemson last won the National Championship in 2019.",
+        "The last time Clemson won the National Championship was in 2019.",
+        "Clemson won the National Championship in 2019.",
+        "Clemson last won the national championship in 2019.",
+        "Clemson won the National Championship in 2019.",
+        "The last time Clemson won the National Championship was in 2019.",
+        "Clemson last won the National Championship in 2019.",
+        "The last time Clemson won the national championship was in 2019.",
+        "The last time Clemson won the national championship was in 2019."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_1406",
+      "question": "china in chinese is called zhongguo which means",
+      "gold": [
+        "Central States"
+      ],
+      "greedy": "China",
+      "samples": [
+        "\"China\"",
+        "China",
+        "China",
+        "\"Middle Kingdom\" or \"Central Nation\"",
+        "\"Middle Kingdom\" or \"Central State\"",
+        "central state/orient",
+        "\"Central Kingdom\"",
+        "China",
+        "China",
+        "China"
+      ],
+      "se_discrete": 0.8979457248567797,
+      "se_logprob": 0.7422652631242908,
+      "C_SE_disc": -0.8979457248567797,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_2452",
+      "question": "who is the actress that plays penny on the big bang theory",
+      "gold": [
+        "Kaley Christine Cuoco"
+      ],
+      "greedy": "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+      "samples": [
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress that plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress that plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress that plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_1101",
+      "question": "when did canada sign the un declaration of indigenous rights",
+      "gold": [
+        "12 November 2010",
+        "May 2016"
+      ],
+      "greedy": "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2016.",
+      "samples": [
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2016.",
+        "Canada signed onto the United Nations Declaration on the Rights of Indigenous Peoples (UNDRIP) in 2016.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2016.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2016.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2016.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2016.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples (UNDRIP) in 2016.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2016.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2016.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2016."
+      ],
+      "se_discrete": 0.3250829733914482,
+      "se_logprob": 0.3160972783526314,
+      "C_SE_disc": -0.3250829733914482,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_639",
+      "question": "for complaints of sudden chest pain patients should take a",
+      "gold": [
+        "Aspirin"
+      ],
+      "greedy": "patients should seek immediate medical attention for complaints of sudden chest pain.",
+      "samples": [
+        "patients should take a trip to the emergency room immediately if experiencing sudden chest pain.",
+        "patients should seek immediate medical attention for sudden chest pain.",
+        "For complaints of sudden chest pain, patients should seek immediate medical attention.",
+        "patients should take a cardiogram and seek medical evaluation immediately.",
+        "short medical assessment before seeking further treatment.",
+        "short, factual answer would be:\nimmediate medical attention.",
+        "Short factual answer: immediate medical attention.",
+        "patients should seek immediate medical attention for complaints of sudden chest pain.",
+        "patients should seek immediate medical attention for complaints of sudden chest pain.",
+        "patients should take immediate medical attention for complaints of sudden chest pain."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.2935297456110408,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "nq_270",
+      "question": "when was the last year the eagles went to the superbowl",
+      "gold": [
+        "2017",
+        "following the 2017 season"
+      ],
+      "greedy": "The last year the Philadelphia Eagles went to the Super Bowl was Super Bowl LII in 2018.",
+      "samples": [
+        "The last year the Philadelphia Eagles went to the Super Bowl was Super Bowl LII in 2018.",
+        "The last year the Philadelphia Eagles went to the Super Bowl was Super Bowl LII in 2018.",
+        "The Eagles' last Super Bowl appearance was in 2018.",
+        "The last year the Philadelphia Eagles went to the Super Bowl was 2018.",
+        "The Philadelphia Eagles last appeared in the Super Bowl in 2018.",
+        "The Philadelphia Eagles last reached the Super Bowl in 2018.",
+        "The last year the Philadelphia Eagles went to the Super Bowl was Super Bowl LII in 2018.",
+        "The Eagles last went to the Super Bowl in 2018.",
+        "The last year the Philadelphia Eagles went to the Super Bowl was 2018.",
+        "The last year the Philadelphia Eagles went to the Super Bowl was Super Bowl LII in 2018."
+      ],
+      "se_discrete": 0.6730116670092565,
+      "se_logprob": 0.6849166609958097,
+      "C_SE_disc": -0.6730116670092565,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_174",
+      "question": "when did the movie napoleon dynamite come out",
+      "gold": [
+        "2004",
+        "June 11, 2004"
+      ],
+      "greedy": "The movie Napoleon Dynamite came out in 2008.",
+      "samples": [
+        "The movie Napoleon Dynamite was released on November 22, 2008.",
+        "The movie \"Napoleon Dynamite\" came out in 2008.",
+        "The movie \"Napoleon Dynamite\" came out in 2008.",
+        "The movie \"Napoleon Dynamite\" came out in 2008.",
+        "The movie Napoleon Dynamite was released on November 22, 2008.",
+        "The movie Napoleon Dynamite premiered in theaters on November 22, 2008.",
+        "The movie \"Napoleon Dynamite\" came out in 2008.",
+        "The movie \"Napoleon Dynamite\" came out in theaters on November 21, 2004.",
+        "The movie Napoleon Dynamite was released on September 8, 2008.",
+        "The movie \"Napoleon Dynamite\" came out in 2008."
+      ],
+      "se_discrete": 1.1682824501765625,
+      "se_logprob": 1.1215747028660428,
+      "C_SE_disc": -1.1682824501765625,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_1496",
+      "question": "what culture region is germany a part of",
+      "gold": [
+        "Central Germany"
+      ],
+      "greedy": "Germany is a part of Central Europe.",
+      "samples": [
+        "Germany is a part of the Central Europe cultural region.",
+        "Germany is a part of Central Europe culturally.",
+        "Germany is a part of Central Europe.",
+        "Germany is a part of Central Europe.",
+        "Germany is a part of Central Europe.",
+        "Germany is a part of Central Europe and has cultural ties to both Eastern Europe and Western Europe.",
+        "Germany is primarily associated with the Central European culture region.",
+        "Germany is a part of the Central Europe cultural region.",
+        "Germany is a part of the Central European cultural region.",
+        "Germany is a part of Central Europe culturally."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.48878889827295047,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_3163",
+      "question": "when did the prr first begin its passenger service between pittsburgh and philadelphia",
+      "gold": [
+        "by 1854",
+        "1854"
+      ],
+      "greedy": "The PRR (Pennsylvania Railroad) began its passenger service between Pittsburgh and Philadelphia in 1847.",
+      "samples": [
+        "The PRR (Pennsylvania Railroad) first began its passenger service between Pittsburgh and Philadelphia in 1847.",
+        "The PRR (Philadelphia, Pittsburgh & Western Railroad) began its passenger service between Pittsburgh and Philadelphia in 1852.",
+        "The PRR (Philadelphia, Reading & Piermont Railroad) first began its passenger service between Pittsburgh and Philadelphia in 1847.",
+        "The PRR (Pennsylvania Railroad) first began its passenger service between Pittsburgh and Philadelphia in 1839.",
+        "The PRR (Pennsylvania Railroad) began its passenger service between Pittsburgh and Philadelphia in 1847.",
+        "The PRR (Pennsylvania Railroad) first began its passenger service between Pittsburgh and Philadelphia in 1838.",
+        "The PRR (Pennsylvania Railroad) began its passenger service between Pittsburgh and Philadelphia in 1838.",
+        "The PRR (Pennsylvania Railroad) first began its passenger service between Pittsburgh and Philadelphia in 1847.",
+        "The PRR (Pennsylvania Railroad) first began its passenger service between Pittsburgh and Philadelphia in 1838.",
+        "The PRR (Pennsylvania Railroad) began its passenger service between Pittsburgh and Philadelphia in 1838."
+      ],
+      "se_discrete": 1.4184836619456562,
+      "se_logprob": 1.3654696553960555,
+      "C_SE_disc": -1.4184836619456562,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_2540",
+      "question": "how many jimmy johns are there in the us",
+      "gold": [
+        "2,630 (December 2016)",
+        "almost 3,000 stores",
+        "2,630",
+        "more than 2,500 locations",
+        "more than 2,500"
+      ],
+      "greedy": "There are approximately 14,000 Jimmy John's locations in the United States.",
+      "samples": [
+        "There are approximately 15,000 Jimmy John's locations in the United States.",
+        "There are approximately 14,000 Jimmy John's restaurants in the United States as of recent estimates.",
+        "There are approximately 14,000 Jimmy John's locations in the US.",
+        "There are approximately 13,500 Jimmy John's restaurants in the United States.",
+        "There are approximately 14,000 Jimmy John's locations in the US as of recent data.",
+        "There are over 14,000 Jimmy John's locations in the US.",
+        "There are approximately 14,000 Jimmy John's locations in the U.S. as of recent information.",
+        "There are approximately 14,000 Jimmy John's locations in the US as of recent data.",
+        "There are approximately 14,000 Jimmy John's locations in the United States.",
+        "There are approximately 13,500 Jimmy John's restaurants in the US."
+      ],
+      "se_discrete": 1.313834033192747,
+      "se_logprob": 1.3090660159458136,
+      "C_SE_disc": -1.313834033192747,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_2330",
+      "question": "blood alcohol concentration means the parts of alcohol in the blood in relation to what",
+      "gold": [
+        "volume of blood",
+        "ethanol"
+      ],
+      "greedy": "blood alcohol concentration means the parts of alcohol in the blood in relation to one hundred parts of blood.",
+      "samples": [
+        "blood alcohol concentration refers to the amount of alcohol in the blood in relation to the volume of blood.",
+        "blood alcohol concentration (BAC) refers to the parts of alcohol in the blood in relation to one fluid ounce of blood.",
+        "Blood alcohol concentration (BAC) refers to the parts of alcohol in the blood in relation to one fluid ounce of blood.",
+        "Blood alcohol concentration (BAC) refers to the parts of alcohol in the blood in relation to one fluid ounce of blood.",
+        "blood alcohol concentration (BAC) means the amount of alcohol in one's blood in relation to one fluid ounce of ethanol for an average adult.",
+        "Blood alcohol concentration (BAC) means the percentage by volume of ethanol in the blood in relation to the total volume of blood.",
+        "blood alcohol concentration (BAC) refers to the parts of alcohol in the blood in relation to one fluid ounce of blood.",
+        "blood alcohol concentration means the parts of alcohol in the blood in relation to one fluid ounce of blood.",
+        "Blood alcohol concentration (BAC) refers to the parts of alcohol in the blood in relation to one fluid ounce of blood.",
+        "blood alcohol concentration (BAC) measures the amount of alcohol in one's blood in relation to the volume of blood."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.427032499010215,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "nq_659",
+      "question": "when will the 2018 oscar nominations be announced",
+      "gold": [
+        "January 23, 2018"
+      ],
+      "greedy": "The 2018 Oscar nominations were announced on January 25, 2018.",
+      "samples": [
+        "The 2018 Oscar nominations were announced on January 25, 2018.",
+        "The 2018 Oscar nominations were announced on January 25, 2018.",
+        "The 2018 Oscar nominations were announced on January 25, 2018.",
+        "The 2018 Oscar nominations were announced on January 25, 2018.",
+        "The 2018 Oscar nominations were announced on January 26, 2018.",
+        "The 2018 Oscar nominations were announced on January 25, 2018.",
+        "The 2018 Oscar nominations were announced on January 25, 2018.",
+        "The 2018 Oscar nominations were announced on January 25, 2018.",
+        "The 2018 Oscar nominations were announced on January 26, 2018.",
+        "The 2018 Oscar nominations were announced on January 26, 2018."
+      ],
+      "se_discrete": 0.6108643020548935,
+      "se_logprob": 0.6064716962262915,
+      "C_SE_disc": -0.6108643020548935,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_2128",
+      "question": "what class of ship is the carnival glory",
+      "gold": [
+        "Conquest-class cruise ship",
+        "Conquest"
+      ],
+      "greedy": "The Carnival Glory is a cruise ship.",
+      "samples": [
+        "The Carnival Glory is a cruise ship.",
+        "The Carnival Glory is a cruise ship, which falls under the category of passenger ship.",
+        "The Carnival Glory is a cruise ship, specifically classified as a passenger ship or cruise liner.",
+        "The Carnival Glory is a cruise ship, specifically categorized as a cruise liner.",
+        "The Carnival Glory is a cruise ship.",
+        "The Carnival Glory is a cruise ship, specifically classified as a passenger-carrying vessel.",
+        "The Carnival Glory is a cruise ship, specifically a large passenger liner.",
+        "The Carnival Glory is a cruise ship, specifically classified as a passenger vessel or cruise liner.",
+        "The Carnival Glory is a cruise ship.",
+        "The Carnival Glory is a cruise ship."
+      ],
+      "se_discrete": 1.4708084763221112,
+      "se_logprob": 1.3863914451171726,
+      "C_SE_disc": -1.4708084763221112,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_3365",
+      "question": "when was the last time arsenal win premier league",
+      "gold": [
+        "2003–04"
+      ],
+      "greedy": "The last time Arsenal won the Premier League was in the 2017–18 season.",
+      "samples": [
+        "The last time Arsenal won the Premier League was in the 2019-20 season.",
+        "The last time Arsenal won the Premier League was in the 2017-2018 season.",
+        "The last time Arsenal won the Premier League was in the 2017–18 season.",
+        "The last time Arsenal won the Premier League was in the 2003–04 season.",
+        "The last time Arsenal won the Premier League was in the 2019–20 season.",
+        "The last time Arsenal won the Premier League was in the 2019-20 season.",
+        "The last time Arsenal won the Premier League was in the 2019–20 season.",
+        "The last time Arsenal won the Premier League was in the 2019-20 season.",
+        "The last time Arsenal won the Premier League was in the 2017-2018 season.",
+        "The last time Arsenal won the Premier League was in the 2019–20 season."
+      ],
+      "se_discrete": 0.8979457248567797,
+      "se_logprob": 0.9018102049753888,
+      "C_SE_disc": -0.8979457248567797,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_478",
+      "question": "when does the cannes film festival take place",
+      "gold": [
+        "usually in May",
+        "Cannes, France"
+      ],
+      "greedy": "The Cannes Film Festival typically takes place in May each year.",
+      "samples": [
+        "The Cannes Film Festival takes place annually in May.",
+        "The Cannes Film Festival typically takes place in May each year.",
+        "The Cannes Film Festival takes place in May each year.",
+        "The Cannes Film Festival typically takes place in May each year.",
+        "The Cannes Film Festival takes place annually in May.",
+        "The Cannes Film Festival typically takes place in May each year.",
+        "The Cannes Film Festival typically takes place in May each year.",
+        "The Cannes Film Festival typically takes place in May each year.",
+        "The Cannes Film Festival typically takes place in May each year.",
+        "The Cannes Film Festival typically takes place in May every year."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "nq_885",
+      "question": "where was the movie silver linings playbook filmed",
+      "gold": [
+        "Upper Darby",
+        "Ridley Park",
+        "just outside Philadelphia, Pennsylvania",
+        "Lansdowne"
+      ],
+      "greedy": "The movie Silver Linings Playbook was primarily filmed in and around Philadelphia, Pennsylvania.",
+      "samples": [
+        "The movie Silver Linings Playbook was primarily filmed in and around Philadelphia, Pennsylvania.",
+        "The movie \"Silver Linings Playbook\" was primarily filmed in and around Philadelphia, Pennsylvania.",
+        "The movie Silver Linings Playbook was primarily filmed in and around Philadelphia, Pennsylvania.",
+        "The movie Silver Linings Playbook was primarily filmed in and around Philadelphia, Pennsylvania.",
+        "The movie Silver Linings Playbook was filmed primarily in and around Pennsylvania, with locations including Ardmore and nearby Lansdale, Pennsylvania.",
+        "The movie \"Silver Linings Playbook\" was primarily filmed in and around Philadelphia, Pennsylvania.",
+        "The movie Silver Linings Playbook was primarily filmed in Pennsylvania, with notable locations including Philadelphia and its suburbs.",
+        "The movie \"Silver Linings Playbook\" was primarily filmed in and around Pennsylvania, particularly in Lancaster and nearby communities.",
+        "The movie \"Silver Linings Playbook\" was primarily filmed in and around Philadelphia, Pennsylvania.",
+        "The movie Silver Linings Playbook was mainly filmed in and around Philadelphia, Pennsylvania."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.5125100874290206,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_3408",
+      "question": "how many students does monarch high school have",
+      "gold": [
+        "2,406"
+      ],
+      "greedy": "I don't have access to real-time or specific data for the number of students at Monarch High School, as student numbers can vary annually. For accurate and up-to-date information, you should check the official website or contact the school directly.",
+      "samples": [
+        "I don't have access to real-time or updated student enrollment numbers for specific schools like Monarch High School. For accurate information, you should check the official website of Monarch High School or contact their administrative office directly.",
+        "I don't have access to the exact number of students at Monarch High School as it can vary from year to year. For the most accurate and up-to-date information, you should check the school's official website or contact them directly.",
+        "I don't have access to real-time or specific data for the number of students at Monarch High School, as such information can vary yearly and is typically not publicly disclosed. For an accurate count, you should check the official website or contact the school directly.",
+        "I don't have access to real-time or updated student population data for specific schools like Monarch High School. For accurate and current information, you should check the school's official website or contact their administrative office directly.",
+        "I don't have access to real-time or updated enrollment numbers for specific schools like Monarch High School. For accurate and current information, you should check the official website of Monarch High School or contact their administration directly.",
+        "I don't have access to real-time or specific student population data for individual schools like Monarch High School. You would need to check the most recent school census report for an accurate number.",
+        "I don't have access to real-time or specific data for the number of students at Monarch High School, as this information can vary annually and isn't typically publicly disclosed. For accurate and up-to-date information, you may want to check the official website of Monarch High School or contact their administration directly.",
+        "I don't have access to real-time or specific data for the number of students at Monarch High School. For accurate and up-to-date information, you should visit the school's official website or contact them directly.",
+        "I don't have access to the exact number of students at Monarch High School as it can vary from year to year. For an accurate and up-to-date figure, you should check the school's official website or contact their administration directly.",
+        "I don't have access to real-time or specific enrollment numbers for individual high schools like Monarch High School. You would need to check the latest reports from the school directly or its official website for an accurate count of current student enrollment."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.3406886542158503,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_3557",
+      "question": "who did the dominican republic gain its independence from",
+      "gold": [
+        "Haiti"
+      ],
+      "greedy": "The Dominican Republic gained its independence from Spain in 1822.",
+      "samples": [
+        "The Dominican Republic gained its independence from Spain in 1822.",
+        "The Dominican Republic gained its independence from Spain in 1821.",
+        "The Dominican Republic gained its independence from Spain in 1822.",
+        "The Dominican Republic gained its independence from Spain in 1822.",
+        "The Dominican Republic gained its independence from Spain in 1822.",
+        "The Dominican Republic gained its independence from Spain in 1821.",
+        "The Dominican Republic gained its independence from Spain in 1822.",
+        "The Dominican Republic gained its independence from Spain in 1822.",
+        "The Dominican Republic gained its independence from Spain in 1822.",
+        "The Dominican Republic gained its independence from Spain in 1822."
+      ],
+      "se_discrete": 0.5004024235381879,
+      "se_logprob": 0.47718528309688785,
+      "C_SE_disc": -0.5004024235381879,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_257",
+      "question": "what was the real name of saudi arabia",
+      "gold": [
+        "the Saudi Arab kingdom"
+      ],
+      "greedy": "The real name of Saudi Arabia is Kingdom of Saudi Arabia.",
+      "samples": [
+        "The real name of Saudi Arabia is Kingdom of Saudi Arabia.",
+        "The real name of Saudi Arabia is Saudi Arabian.",
+        "The real name of Saudi Arabia is Saudi Arabia; there is no other official name for the country.",
+        "The real name of Saudi Arabia is Saudi Arabia. There is no other official name for the country.",
+        "The real name of Saudi Arabia is Al-Sharqiya (which means \"Eastern\" in Arabic). However, it is commonly referred to as Saudi Arabia.",
+        "The real name of Saudi Arabia is Kingdom of Saudi Arabia.",
+        "The real name of Saudi Arabia is Kingdom of Saudi Arabia.",
+        "The real name of Saudi Arabia is Kingdom of Saudi Arabia.",
+        "The real name of Saudi Arabia is Kingdom of Saudi Arabia.",
+        "The real name of Saudi Arabia is Kingdom of Saudi Arabia."
+      ],
+      "se_discrete": 1.0888999753452235,
+      "se_logprob": 0.9541031471693173,
+      "C_SE_disc": -1.0888999753452235,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_36",
+      "question": "where does no game no life anime end",
+      "gold": [
+        "the Elkia Federation",
+        "the sixth volume"
+      ],
+      "greedy": "The anime series \"No Game No Life\" ends with 13 episodes.",
+      "samples": [
+        "The anime series \"No Game No Life\" ends with 13 episodes.",
+        "The anime \"No Game No Life\" ends with 12 episodes.",
+        "The anime \"No Game No Life\" ends with 12 episodes.",
+        "The anime series \"No Game No Life\" ends with the 13-episode run.",
+        "The anime series \"No Game No Life\" ends with 13 episodes in its original Japanese version, and it is completed as one season without any additional episodes.",
+        "The anime series \"No Game No Life\" ends with 13 episodes.",
+        "The anime series \"No Game No Life\" ends with the final episode titled \"Final\" or \"The Final Episode\", which aired in Japan on December 26, 2018.",
+        "The anime series \"No Game No Life\" ends with 13 episodes.",
+        "The anime series \"No Game No Life\" ends with the second season, consisting of 13 episodes.",
+        "The anime \"No Game No Life\" ends with 12 episodes."
+      ],
+      "se_discrete": 1.4184836619456564,
+      "se_logprob": 1.3156146902025543,
+      "C_SE_disc": -1.4184836619456564,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_710",
+      "question": "how long is a whale shark in meters",
+      "gold": [
+        "9.7 m",
+        "estimated at 9.7 m",
+        "12.65 m"
+      ],
+      "greedy": "A whale shark can grow to be up to 18 meters in length.",
+      "samples": [
+        "A whale shark can grow up to about 18 meters in length.",
+        "A whale shark can grow to be about 18 meters (or about 60 feet) in length.",
+        "A whale shark can grow to be around 18 meters in length.",
+        "A whale shark can grow up to 18 meters in length.",
+        "A whale shark can grow to be up to 18 meters in length.",
+        "A typical adult whale shark can grow up to 18 meters in length.",
+        "A whale shark can grow up to 18 meters in length.",
+        "The average length of a whale shark ranges from 9 to 12 meters (30 to 40 feet).",
+        "A typical adult whale shark can grow to be around 12-18 meters in length.",
+        "A whale shark can measure up to about 12 meters in length."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.33421479180442,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_3600",
+      "question": "oklahoma's 10 geographic regions are defined by surface features called",
+      "gold": [
+        "ecological regions"
+      ],
+      "greedy": "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces.",
+      "samples": [
+        "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces.",
+        "Oklahoma's 10 geographic regions are defined by surface features called sections or subsections, but specifically they are delineated into natural divisions such as the Ouachita Mountains, Ozark Plateau, High Plains, and Grand Prairie.",
+        "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces.",
+        "Oklahoma's 10 geographic regions are defined by surface features called divisions.",
+        "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces or divisions.",
+        "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces.",
+        "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces or physiographic divisions.",
+        "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces.",
+        "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces.",
+        "Oklahoma's 10 geographic regions are defined by surface features called physiographic provinces or sections."
+      ],
+      "se_discrete": 1.1682824501765625,
+      "se_logprob": 1.0938892729128435,
+      "C_SE_disc": -1.1682824501765625,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_1153",
+      "question": "how oxygenated blood returns to the heart from the lungs",
+      "gold": [
+        "pulmonary circulation"
+      ],
+      "greedy": "Oxygenated blood from the lungs returns to the heart through the pulmonary veins, which connect directly to the left side of the heart.",
+      "samples": [
+        "Oxygenated blood from the lungs returns to the heart through the pulmonary veins and joins the left side of the heart.",
+        "Oxygenated blood from the lungs returns to the heart via the pulmonary veins, which connect directly to the left side of the heart.",
+        "Oxygenated blood from the lungs returns to the heart through the pulmonary veins and enters the left side of the heart, specifically the left atrium and then the left ventricle.",
+        "Oxygenated blood from the lungs returns to the heart through the pulmonary veins, which connect directly to the left atrium.",
+        "Oxygenated blood returns to the heart from the lungs through the pulmonary veins, which directly connect to the left side of the heart.",
+        "Oxygenated blood from the lungs returns to the heart through the pulmonary veins and enters the left side of the heart, specifically the left atrium, before passing to the left ventricle.",
+        "Oxygenated blood from the lungs returns to the heart through the pulmonary veins and empties into the left atrium, then proceeds to the left ventricle.",
+        "Oxygenated blood returns to the heart from the lungs through the pulmonary veins, which connect directly to the left side of the heart.",
+        "Oxygenated blood returns to the heart from the lungs through the pulmonary veins, which connect directly to the left atrium of the heart.",
+        "Oxygenated blood from the lungs returns to the heart through the pulmonary veins, which connect directly to the left side of the heart, specifically the left atrium and then to the left ventricle."
+      ],
+      "se_discrete": 1.2798542258336674,
+      "se_logprob": 1.2828931345174421,
+      "C_SE_disc": -1.2798542258336674,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_3084",
+      "question": "how many seasons of prison break are on netflix",
+      "gold": [
+        "five"
+      ],
+      "greedy": "There are 4 seasons of Prison Break available on Netflix.",
+      "samples": [
+        "There are 4 seasons of Prison Break available on Netflix.",
+        "There are 4 seasons of Prison Break available on Netflix.",
+        "There are 6 seasons of Prison Break available on Netflix.",
+        "There are currently 4 seasons of Prison Break available on Netflix.",
+        "There are 5 seasons of Prison Break available on Netflix.",
+        "There are 4 seasons of Prison Break available on Netflix.",
+        "As of 2023, there are 5 seasons of Prison Break available on Netflix.",
+        "There are 5 seasons of Prison Break available on Netflix.",
+        "As of my last update in October 2023, there are 4 seasons of \"Prison Break\" available on Netflix.",
+        "There are 4 seasons of Prison Break available on Netflix."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.3445225791052622,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_852",
+      "question": "when did the apple iphone se come out",
+      "gold": [
+        "March 31, 2016",
+        "March 21, 2016"
+      ],
+      "greedy": "The Apple iPhone SE was released in 2016.",
+      "samples": [
+        "The iPhone SE was released on April 14, 2016.",
+        "The Apple iPhone SE was released in 2016.",
+        "The iPhone SE was released in April 2016.",
+        "The iPhone SE was released on April 14, 2016.",
+        "The Apple iPhone SE was released in 2016.",
+        "The Apple iPhone SE first came out in 2016.",
+        "The Apple iPhone SE was released in April 2016.",
+        "The iPhone SE was first released in September 2016.",
+        "The iPhone SE was released in April 2016.",
+        "The Apple iPhone SE was released on April 14, 2016."
+      ],
+      "se_discrete": 1.313834033192747,
+      "se_logprob": 1.2931758408829706,
+      "C_SE_disc": -1.313834033192747,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_1371",
+      "question": "who has won the 2018 formula one australia grand prix tournament",
+      "gold": [
+        "Sebastian Vettel",
+        "Ferrari driver Sebastian Vettel"
+      ],
+      "greedy": "The 2018 Formula One Australia Grand Prix was won by Lewis Hamilton from Great Britain driving for Mercedes.",
+      "samples": [
+        "The 2018 Formula One Australia Grand Prix was won by Max Verstappen from Red Bull Racing.",
+        "The 2018 Australian Grand Prix was won by Lewis Hamilton from Mercedes.",
+        "The 2018 Formula One Australia Grand Prix was won by Lewis Hamilton from Great Britain driving for Mercedes.",
+        "The winner of the 2018 Formula One Australia Grand Prix was Daniel Ricciardo, driving for Red Bull Racing.",
+        "The 2018 Formula One Australian Grand Prix was won by Lewis Hamilton of Mercedes.",
+        "The 2018 Formula One Australia Grand Prix was won by Max Verstappen from Red Bull Racing.",
+        "The 2018 Formula One Australia Grand Prix was won by Lewis Hamilton from Great Britain driving for Mercedes.",
+        "The 2018 Formula One Australia Grand Prix was won by Mercedes driver Lewis Hamilton.",
+        "The 2018 Formula One Australia Grand Prix was won by Max Verstappen from Red Bull Racing.",
+        "The winner of the 2018 Formula One Australia Grand Prix was Mercedes driver Lewis Hamilton."
+      ],
+      "se_discrete": 1.2798542258336674,
+      "se_logprob": 1.2969091653405704,
+      "C_SE_disc": -1.2798542258336674,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_2510",
+      "question": "how many episodes in my name is earl season 4",
+      "gold": [
+        "27"
+      ],
+      "greedy": "Season 4 of \"My Name Is Earl\" consists of 10 episodes.",
+      "samples": [
+        "Season 4 of \"My Name Is Earl\" consists of 10 episodes.",
+        "Season 4 of \"My Name Is Earl\" has 13 episodes.",
+        "Season 4 of My Name Is Earl has 13 episodes.",
+        "Season 4 of \"My Name Is Earl\" consists of 10 episodes.",
+        "Season 4 of \"My Name Is Earl\" consisted of 13 episodes.",
+        "Season 4 of \"My Name Is Earl\" consists of 10 episodes.",
+        "Season 4 of \"My Name Is Earl\" consists of 10 episodes.",
+        "Season 4 of \"My Name Is Earl\" has 10 episodes.",
+        "Season 4 of \"My Name Is Earl\" consists of 10 episodes.",
+        "There are 8 episodes in My Name Is Earl Season 4."
+      ],
+      "se_discrete": 0.8979457248567797,
+      "se_logprob": 0.8409020175254838,
+      "C_SE_disc": -0.8979457248567797,
+      "n_clusters": 3
+    },
+    {
+      "id": "nq_3445",
+      "question": "what year did return of the mack come out",
+      "gold": [
+        "March 1996",
+        "1996",
+        "18 March 1996"
+      ],
+      "greedy": "Return of the Mack was released in 1992.",
+      "samples": [
+        "Return of the Mack was released in 1989.",
+        "Return of the Mack came out in 2003.",
+        "Return of the Macks came out in 1989.",
+        "Return of the Mack was released in 1992.",
+        "Return of the Mack came out in 2013.",
+        "Return of the Macks, a 1980 Canadian comedy film, came out in 1980.",
+        "Return of the Mack came out in 2005.",
+        "Return of the Macks (1989) is the year it came out.",
+        "Return of the Mack was released in 1989.",
+        "Return of the Mack was released in 1989."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.4995038037987791,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "nq_3516",
+      "question": "who's the original singer of help me make it through the night",
+      "gold": [
+        "Kris Kristofferson"
+      ],
+      "greedy": "The original singer of \"Help Me Make It Through the Night\" was Nina Simone.",
+      "samples": [
+        "The original singer of \"Help Me Make It Through the Night\" was Nina Simone.",
+        "The original singer of \"Help Me Make It Through The Night\" was Etta James.",
+        "The original singer of \"Help Me Make It Through the Night\" was Johnny Mathis.",
+        "The original singer of \"Help Me Make It Through The Night\" was Nina Simone.",
+        "The original singer of \"Help Me Make It Through The Night\" is Etta James.",
+        "The original singer of \"Help Me Make It Through The Night\" is Brenda Lee.",
+        "The original version of \"Help Me Make It Through the Night\" was sung by Otis Renard (also known as Otis Redding).",
+        "The original singer of \"Help Me Make It Through the Night\" was Nina Simone.",
+        "The original version of \"Help Me Make It Through the Night\" was sung by Nina Simone.",
+        "The original singer of \"Help Me Make It Through the Night\" is Nina Simone."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.270194285108166,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    }
+  ]
+}

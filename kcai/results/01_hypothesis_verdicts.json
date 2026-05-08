@@ -1,0 +1,37 @@
+{
+  "H1": {
+    "pass": "PASS",
+    "delta_q1": -0.0007768240054727482,
+    "delta_q4": -0.012050036407553314,
+    "cells_with_high_SC_useless": 13,
+    "p_values_min_max": [
+      0.0001389646501936866,
+      0.590013887163346
+    ]
+  },
+  "H2": {
+    "mean_gap_per_size": {
+      "1.0": 0.1223,
+      "1.5": 0.0613,
+      "3.0": 0.0255,
+      "3.2": 0.1244,
+      "7.0": -0.0103
+    },
+    "pearson_r": -0.5318488939115916,
+    "pearson_p": 0.04129167215502621,
+    "pass": "PASS",
+    "mean_gap_overall": 0.06464322815374526
+  },
+  "H3": {
+    "peak_rel_depth_mean": 0.6801587301587302,
+    "peak_rel_depth_std": 0.11948721275737269,
+    "pass": "PASS"
+  },
+  "H4": {
+    "mean_cost_save_frac": 0.18846666666666667,
+    "mean_auroc_delta": -0.00776369776599212,
+    "worst_auroc_delta": -0.02778643328410979,
+    "n_cells_meeting_target": 1,
+    "pass": "PARTIAL"
+  }
+}

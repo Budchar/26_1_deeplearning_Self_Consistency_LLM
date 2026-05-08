@@ -1,0 +1,1449 @@
+{
+  "n_records": 1000,
+  "greedy_acc": 0.225,
+  "by_metric": {
+    "C_SE_disc": {
+      "ece": 0.1518816394041344,
+      "four_cell": {
+        "high_correct": 225,
+        "high_wrong": 775,
+        "low_correct": 0,
+        "low_wrong": 0,
+        "median_threshold": -2.3025850929940455,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 383,
+        "wrong_in_top_q": 246,
+        "rate": 0.6422976501305483
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.53,
+          "threshold": -1.4978661367769952
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.45,
+          "threshold": -2.0253262207700673
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.38666666666666666,
+          "threshold": -2.1639556568820564
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.35,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.316,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.2916666666666667,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.27285714285714285,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.25375,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.2388888888888889,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.225,
+          "threshold": -2.3025850929940455
+        }
+      ]
+    },
+    "C_SE_logp": {
+      "ece": 0.13367643467185156,
+      "four_cell": {
+        "high_correct": 153,
+        "high_wrong": 347,
+        "low_correct": 72,
+        "low_wrong": 428,
+        "median_threshold": -2.268219958383533,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 146,
+        "rate": 0.584
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.52,
+          "threshold": -1.4307334921279589
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.455,
+          "threshold": -1.9535370017418705
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.4,
+          "threshold": -2.1149526156065948
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.345,
+          "threshold": -2.244020812577502
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.306,
+          "threshold": -2.2679046827246556
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.2833333333333333,
+          "threshold": -2.276822954159478
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.26285714285714284,
+          "threshold": -2.2821665026815605
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.2475,
+          "threshold": -2.2866692125521393
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.23444444444444446,
+          "threshold": -2.291728686476973
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.225,
+          "threshold": -2.3012787778749804
+        }
+      ]
+    },
+    "C_logp": {
+      "ece": 0.330005971695636,
+      "four_cell": {
+        "high_correct": 146,
+        "high_wrong": 354,
+        "low_correct": 79,
+        "low_wrong": 421,
+        "median_threshold": -0.6743837517062219,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 157,
+        "rate": 0.628
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.52,
+          "threshold": -0.37947918245209317
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.415,
+          "threshold": -0.4770788046200242
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.35333333333333333,
+          "threshold": -0.5483955778811452
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.3175,
+          "threshold": -0.6112047501572658
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.292,
+          "threshold": -0.674307327848069
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.2833333333333333,
+          "threshold": -0.7417295513978179
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.26,
+          "threshold": -0.808061773253173
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.25125,
+          "threshold": -0.872700616512696
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.24222222222222223,
+          "threshold": -0.9623415593429074
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.225,
+          "threshold": -1.4346532577781805
+        }
+      ]
+    }
+  },
+  "disagreement_counts": {
+    "C_SE_disc_high__C_SE_logp_low": 500,
+    "C_SE_disc_low__C_SE_logp_high": 0,
+    "C_SE_disc_high__C_logp_low": 500,
+    "C_SE_disc_low__C_logp_high": 0,
+    "C_SE_logp_high__C_logp_low": 205,
+    "C_SE_logp_low__C_logp_high": 205
+  },
+  "danger_examples": [
+    {
+      "id": "nq_946",
+      "question": "who does the voice of cruz on cars 3",
+      "gold": [
+        "Cristela Alonzo"
+      ],
+      "greedy": "The voice of Cruz in Cars 3 is provided by John C. Reilly.",
+      "samples": [
+        "The voice of Cruz in \"Cars 3\" is provided by Nick Kroll.",
+        "voiced by Carlos Alazraqui.",
+        "The voice of Cruz, from Cars 3, is provided by John C. Reilly.",
+        "Ratchet from Grand Theft Auto series, actor Rik Van Der Vieren.",
+        "The voice of Cruz in Cars 3 is provided by Nick Kroll.",
+        "voiced Cruz in Cars 3 is Carlos Ponce.",
+        "The voice of Cruz from Cars 3 is provided by Paul Blomfield.",
+        "The voice of Cruz in Cars 3 is provided by Owen Wilson.",
+        "Cruise is voiced by Steve Carell in \"Cars 3\".",
+        "The voice of Cruz in Cars 3 was provided by Justin Bartha."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.057936622188218,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_448",
+      "question": "all the motor neurons that control the skeletal muscles are",
+      "gold": [
+        "efferent nerves",
+        "Somatic",
+        "Somatic motor neurons"
+      ],
+      "greedy": "All the motor neurons that control the skeletal muscles originate in the spinal cord and brainstem, specifically from the anterior horn cells of the spinal gray matter.",
+      "samples": [
+        "The anterior horn of the spinal cord.",
+        "All the motor neurons that control the skeletal muscles are part of the central nervous system (the brain and spinal cord).",
+        "All the motor neurons that control the skeletal muscles are found within the spinal cord and brainstem.",
+        "All motor neurons that control skeletal muscles originate in the lower brainstem, pons, midbrain, and medulla oblongata regions of the brain and extend to various spinal segments (S1-S5).",
+        "All the motor neurons that control the skeletal muscles are located in the spinal cord and brain, specifically within the central nervous system (CNS).",
+        "All the motor neurons that control the skeletal muscles originate from the lower brainstem and spinal cord, known as cranial nerves I-XII and thoracic and lumbar spinal roots. These motor axons project to various parts of the body, targeting specific muscle groups and patterns of movement.",
+        "All the motor neurons that control the skeletal muscles originate from the anterior horn of the spinal cord and travel to various parts of the body innervating different muscle groups.",
+        "All the motor neurons that control the skeletal muscles are in the spinal cord and brainstem regions of the central nervous system.",
+        "All the motor neurons that control skeletal muscles originate in the spinal cord and brain stem.",
+        "All the motor neurons that control the skeletal muscles are part of the central nervous system, specifically within the spinal cord and brainstem regions."
+      ],
+      "se_discrete": 1.6094379124341003,
+      "se_logprob": 1.504220385045411,
+      "C_SE_disc": -1.6094379124341003,
+      "n_clusters": 6
+    },
+    {
+      "id": "nq_2000",
+      "question": "the region that stretches between the black and caspian seas",
+      "gold": [
+        "The Caucasus Mountains",
+        "Caucasus Mountains"
+      ],
+      "greedy": "The Caspian Sea-Black Sea Region is an important geographical area, but it's not a single defined region as such. It includes parts of several countries including Russia, Kazakhstan, Azerbaijan, Georgia, Iran, and Turkey. The Black Sea borders Romania, Bulgaria, Moldova, Ukraine, and Russia; while the",
+      "samples": [
+        "The Caspian-Black Sea Region.",
+        "The Caspian Sea-Black Sea Region is a significant geographical area in Eurasia, encompassing countries bordering both bodies of water such as Kazakhstan, Azerbaijan, Georgia, Russia, Ukraine, Moldova, and Turkey. It's rich with cultural and economic connections but also faces environmental challenges due to its unique position near",
+        "The Black Sea and Caspian Sea regions are geographically distinct areas in different parts of Eurasia, with no significant overlap.",
+        "The Caspian Sea-Black Sea Region, also known as Eurasia or Central Asia, is a geographical zone extending from the Black Sea on one side to the Caspian Sea on the other, including countries like Russia, Kazakhstan, Azerbaijan, and Iran. It's important for international shipping routes connecting Europe with Asia",
+        "The Caspian Sea-Baku Region is an exclave of Azerbaijan, geographically distinct but legally considered part of Iran due to its position between these two bodies of water.",
+        "The Black Sea and Caspian Sea divide into a central lowland known as the Caucasus Mountains, separating Asia from Europe. This region includes countries such as Georgia, Armenia, Azerbaijan, and parts of Turkey and Iran. The area is characterized by its diverse geography, including mountains, plateaus, forests, and plains",
+        "The Caspian-Black Sea Region, also known as the Transcaucasus or the Caucasus, is a geopolitically significant area bounded by Turkey to the west, Iran to the south, Armenia, Azerbaijan, and Georgia to the east, and Russia in the north. This region includes countries such as Armenia",
+        "The Caspian Sea-Black Sea Corridor is the region that stretches between the Black Sea and Caspian Sea.",
+        "The Caspian–Arabian Peninsula is the region stretching between the Black Sea and the Caspian Sea, also known as the Eurasian landmass.",
+        "The Caspian-Aral Sea Region"
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.119154139686783,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_3106",
+      "question": "the art and science of making objects from clay is called",
+      "gold": [
+        "Ceramic art",
+        "Ceramic"
+      ],
+      "greedy": "The art and science of making objects from clay is called pottery or potter's craft.",
+      "samples": [
+        "Pottery or pottery making.",
+        "Pottery or pottery-making.",
+        "Pottery or pottery-making, which involves creating vessels and functional pieces primarily from earthenware, stoneware, and porcelain materials through processes like hand-building, wheel-throwing, bisque firing, glazing, and subsequent firing in an oven at high temperatures.",
+        "Pottery or ceramic-making.",
+        "The craft of creating objects from clay using both artistic and scientific principles is called pottery.",
+        "Pottery.",
+        "The art and science of making objects from clay is called pottery or potters' craft.",
+        "Pottery or pottery-making.",
+        "The art and science of making objects from clay is called pottery or potter's craft.",
+        "Pottery or ceramics."
+      ],
+      "se_discrete": 1.0888999753452235,
+      "se_logprob": 0.9655867022755963,
+      "C_SE_disc": -1.0888999753452235,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_1337",
+      "question": "what was the united states foreign policy after ww1 started",
+      "gold": [
+        "neutrality"
+      ],
+      "greedy": "After World War I, the United States pursued isolationist policies and sought to avoid entanglement in European conflicts.",
+      "samples": [
+        "The United States foreign policy following WWI aimed at maintaining neutrality, engaging in arms control efforts with Germany and Russia to prevent future conflicts, and promoting international cooperation through the League of Nations to maintain peace around the world.",
+        "After WWI, the United States pursued an isolationist foreign policy during the 1920s. This involved reducing US involvement in international affairs and limiting its military commitments abroad. The \"return to normalcy\" of European powers following World War I also influenced American foreign policy decisions at the time.",
+        "After World War I, the United States adopted an isolationist stance regarding foreign affairs.",
+        "After World War I, the United States foreign policy primarily focused on isolationism and neutrality until 1941 when the attack on Pearl Harbor prompted the U.S. to enter World War II as part of the Allied forces against Japan, Germany, and Italy.",
+        "The United States followed a policy of isolationism following World War I, avoiding involvement in European conflicts until the late 1930s and early 1940s when U.S. entry into World War II was triggered by Japanese aggression in Asia and Germany's invasion of Poland.",
+        "After World War I, the United States adopted an isolationist approach to foreign affairs, largely focused on domestic issues and avoiding further entanglements in European conflicts.",
+        "After World War I, the United States generally supported European peace efforts and neutrality in international conflicts, reflecting isolationist principles at the time.",
+        "The United States adopted isolationism as its primary foreign policy during World War I, believing it would be better off not getting involved in European conflicts.",
+        "After WWI, the United States pursued isolationist and non-interventionist policies until the Great Depression began in 1929. However, this stance changed during WWII as America entered into World War II and took up significant responsibilities on the world stage, including dropping atomic bombs on Japan. Following WWII, it became",
+        "After World War I, U.S. foreign policy focused on maintaining neutrality and focusing on domestic affairs such as the development of new technologies, economic recovery, and political reforms. The United States also sought to rebuild its military strength in response to threats posed by imperial nations like Germany and Japan. In 1920,"
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.10874701444323,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_3107",
+      "question": "when did i ain't mad at cha come out",
+      "gold": [
+        "September 15, 1996"
+      ],
+      "greedy": "I Ain't Mad at Cha came out in 1986.",
+      "samples": [
+        "\"I Ain't Mad at Cha\" came out in 1984.",
+        "\"I Ain't Mad at Cha\" was released in 2019.",
+        "I Ain't Mad at Cha is an album by Sade released in 1987.",
+        "\"I Ain't Mad at Cha\" was released in 1987.",
+        "\"I Ain't Mad at Cha\" came out in 2019.",
+        "I AIN'T MAD AT CHA came out in 1987.",
+        "\"I Ain't Mad at Cha\" by The Meters was released in 1967.",
+        "\"I Ain't Mad at Cha\" came out in 2014.",
+        "\"I Ain't Mad at Cha\" was released on August 19, 2017.",
+        "\"I Ain't Mad at Cha\" was released in 1978."
+      ],
+      "se_discrete": 2.0253262207700673,
+      "se_logprob": 2.0211119960224995,
+      "C_SE_disc": -2.0253262207700673,
+      "n_clusters": 8
+    },
+    {
+      "id": "nq_1987",
+      "question": "when was the design period known as art deco",
+      "gold": [
+        "1910–1939"
+      ],
+      "greedy": "Art Deco design period is generally considered to have begun in the 1920s and lasted through the 1930s.",
+      "samples": [
+        "Art Deco design period lasted from about 1925 to 1940, often coinciding with the economic boom of the Roaring Twenties.",
+        "The Art Deco design period is generally considered to have begun in 1925 and lasted until about 1940, although it had early roots stretching back into the preceding decade.",
+        "Art Deco had its heyday from 1925 to 1940, though there were influences earlier and post-war elements into the next decades.",
+        "The Art Deco design period lasted from approximately 1925 to 1940, primarily in the visual arts and architecture but also influencing fashion and other industries.",
+        "Art Deco design period occurred from approximately 1925 to 1940.",
+        "Art Deco's design period is generally considered to be from approximately 1925 to 1940.",
+        "The Art Deco design period is generally considered to have lasted from approximately 1925 to 1940, though some scholars extend it slightly beyond the end of World War II in the mid-1940s.",
+        "Art Deco design emerged in the 1920s and became prominent through most of the 1930s.",
+        "The Art Deco design period is generally considered to have begun in 1925 and lasted until 1940, although some scholars place it slightly later in the 1930s.",
+        "The Art Deco design period lasted from approximately 1925 to 1940, spanning both World Wars and reflecting modernist ideas while maintaining elegance in decoration."
+      ],
+      "se_discrete": 2.0253262207700677,
+      "se_logprob": 1.9739865258054574,
+      "C_SE_disc": -2.0253262207700677,
+      "n_clusters": 8
+    },
+    {
+      "id": "nq_2051",
+      "question": "when were the first general elections held in independent india",
+      "gold": [
+        "1951–52"
+      ],
+      "greedy": "The first general elections to Independent India were held on January 22, 1951.",
+      "samples": [
+        "The first general elections in Independent India were held on April 7, 1951.",
+        "The first general elections to India were held on December 16, 1951.",
+        "The first general elections in Independent India were held on January 22, 1951.",
+        "The first general elections to Independent India were held on November 12, 1951.",
+        "The first general elections in India took place on May 12, 1951.",
+        "The first General Elections of Independent India were held on November 12, 1951.",
+        "The first general elections held in Independent India took place on 19 August 1951, as part of its independence from British rule.",
+        "The first general elections to Independent India were held on October 7, 1951.",
+        "The first General Elections in Independent India were held on May 19, 1951.",
+        "The first general elections to Independent India were held on April 7, 1952."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.1502751540083413,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_2985",
+      "question": "a request to the supreme court that it review a case that was already decided is made via a(n)",
+      "gold": [
+        "writ of certiorari",
+        "a writ of certiorari"
+      ],
+      "greedy": "Petition",
+      "samples": [
+        "petition",
+        "Petition",
+        "Petition for Reconsideration",
+        "Petition",
+        "Petition",
+        "Petition for rehearing or writ of certiorari.",
+        "Petition.",
+        "Petition",
+        "Petition",
+        "petition for certiorari"
+      ],
+      "se_discrete": 0.9404479886553263,
+      "se_logprob": 0.9505093170571237,
+      "C_SE_disc": -0.9404479886553263,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_377",
+      "question": "when did the first ice age come out",
+      "gold": [
+        "2002",
+        "March 15, 2002"
+      ],
+      "greedy": "The first Ice Age, also known as the Pleistocene epoch, began approximately 2.6 million years ago and lasted until about 10,000 years ago.",
+      "samples": [
+        "\"First Ice Age\" is a documentary series, not a book. It premiered on PBS in 2019.",
+        "The movie \"The Great Train Robbery\" (1903) is often considered to be one of the earliest examples of an animated film, though it predates many other features by several years. It features stop-motion animation and was created by Walter Forster's kinetoscope company.",
+        "The first Ice Age, also known as the Pleistocene epoch or last glacial period, occurred during geological time, specifically from about 2 million to 10,000 years ago.",
+        "The first Ice Age, often referred to as Pleistocene Epoch or the last Ice Age, is estimated to have started approximately 2.6 million years ago and ended about 10,000 years ago.",
+        "The film \"The First Ice Age\" was released in 1984.",
+        "The movie \"Ice Age\" series began with the film \"Ice Age,\" which came out in 2002. The rest of the franchise follows over time, with subsequent installments released in later years, including animated films, direct-to-video releases, and merchandise such as books and action figures.",
+        "The first Ice Age is often discussed in scientific circles, but it can be challenging to pinpoint an exact release date due to varying definitions and interpretations among experts. However, many sources suggest that the concept of \"the first Ice Age\" has been used to refer to the Holocene Glacial Maximum event approximately 950",
+        "The first Ice Age movie, titled \"Ice Age: Impact,\" was released in 2009.",
+        "The movie \"The Ice Age\" film series came out in 2012 and 2016, following a 2002 book of the same name by Brian Froud and Deron Brubaker. These movies were based on concepts and imagery from paleontologist Ronan Allot's",
+        "The movie \"Dawn of the Planet of the Apes\" (2014) featured an Ice Age-style apocalypse. The film came out in 2014."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.113601954474256,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_2493",
+      "question": "how many episodes are in season 7 of pretty little liars",
+      "gold": [
+        "20"
+      ],
+      "greedy": "Season 7 of Pretty Little Liars has 16 episodes.",
+      "samples": [
+        "Season 7 of Pretty Little Liars has 13 episodes.",
+        "Season 7 of Pretty Little Liars consists of 13 episodes.",
+        "Season 7 of Pretty Little Liars has 16 episodes.",
+        "Season 7 of Pretty Little Liars has 20 episodes.",
+        "Season 7 of Pretty Little Liars had 10 episodes.",
+        "Season 7 of Pretty Little Liars has 10 episodes.",
+        "There are 15 episodes in Season 7 of Pretty Little Liars.",
+        "Season 7 of Pretty Little Liars has 15 episodes.",
+        "Season 7 of Pretty Little Liars has 13 episodes.",
+        "Season 7 of Pretty Little Liars had 13 episodes."
+      ],
+      "se_discrete": 1.4708084763221114,
+      "se_logprob": 1.4736317491441582,
+      "C_SE_disc": -1.4708084763221114,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_2721",
+      "question": "which site of an enzyme is called allosteric site",
+      "gold": [
+        "regulatory site"
+      ],
+      "greedy": "The allosteric site refers to the binding site on an enzyme where regulatory molecules can bind and alter the enzyme's activity without changing its primary structure.",
+      "samples": [
+        "The term \"allosteric site\" refers to any binding site on an enzyme where the binding of a second molecule (the allosteric effector) can alter the enzyme's activity by modifying its structure or interaction with substrate molecules, rather than directly affecting the active site itself.",
+        "The allosteric site on an enzyme refers to the region on the enzyme molecule where regulatory molecules like substrates, inhibitors, or cofactors bind and can change the conformation of the enzyme, thus affecting its active site and activity.",
+        "The allosteric site refers to the binding site on an enzyme where molecules other than substrate (such as hormones, co-factors, or ligands) can bind and influence enzyme activity.",
+        "An allosteric site on an enzyme is where a molecule can bind and cause conformational changes in the active site, thereby affecting its function indirectly.",
+        "The site on an enzyme where binding of an effector molecule can alter the conformation and activity of the protein and activate or inhibit it is called an allosteric site.",
+        "An allosteric site, also known as an allosteric regulatory binding site, is located on the enzyme where ligands or other molecules bind to alter the enzyme's activity independently of its active site.",
+        "An allosteric site on an enzyme refers to a region on the protein that acts as a second-site for binding effectors and can cause conformational changes in the active site, modulating the enzyme's activity.",
+        "The allosteric site refers to a specific region on an enzyme molecule where binding of a regulatory molecule can alter the enzyme's shape and activity, thus modulating its catalytic function without directly changing the active-site structure.",
+        "The allosteric site of an enzyme refers to the binding site on the enzyme's inactive or lower active conformation for effector molecules. This allows regulation of enzyme activity independent of substrate binding, enabling control over metabolic pathways and cellular processes.",
+        "The allosteric site of an enzyme refers to the part of the enzyme that binds to regulatory molecules like coenzymes or small organic molecules, and induces a conformational change in the active site that alters the enzyme's activity."
+      ],
+      "se_discrete": 1.5047882836811908,
+      "se_logprob": 1.481705876167089,
+      "C_SE_disc": -1.5047882836811908,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_1147",
+      "question": "batman and robin episode only fools and horses",
+      "gold": [
+        "\"Heroes and Villains\""
+      ],
+      "greedy": "The Batman and Robin episode \"Only Fools and Horses\" was part of the 1987 Batman TV series, which aired in the United States. The show featured Adam West reprising his role as Batman alongside Robin (played by Tim Curry), with additional guest stars from the comedy series.",
+      "samples": [
+        "\"Only Fools and Horses\" is a BBC sitcom first broadcast from 1981 to 1995, not involving Batman or Robin. It features Peter Bennett-Jones as the title character Terry Hardye and his wife Millie in the fictional village of Dentford.",
+        "\"Only Fools and Horses\" is an ITV sitcom, not related to Batman or Robin character arcs.",
+        "In the DC Extended Universe, Batman & Robin had an appearance in \"Only Fools and Horses\" (1981–1982), starring David Jason as the Robin character.",
+        "The Batman-And-Robin episode \"Only Fools and Horses\" is part of the animated series \"Batman And Robin: The Animated Series.\"",
+        "It appears there might be an error in the question, as \"Only Fools and Horses\" is not associated with Batman or Robin characters. However, if you're looking for information about a specific episode involving these team-ups from various DC/Vertigo properties, it would depend on which specific episodes and titles you're",
+        "\"Only Fools and Horses\" is an ITV sitcom from the 1980s, while Batman and Robin (American superhero team) was first depicted in comic books in the early to mid-20th century. There is no direct connection between these two shows, as one does not depict characters from",
+        "Batman & Robin - Only Fools and Horses (1990-1993).",
+        "The \"Only Fools and Horses\" episode featuring Batman and Robin was part of the Christmas episode titled \"Christmas in London\". This crossover episode featured the Bat Family's first appearance as Robin (Tim Bevan) and the Rivingtons' version of Robin, alongside other characters from both series to celebrate Christmas together at",
+        "\"Only Fools and Horses\" (1981-2005) was the tenth Batman cartoon series produced by DC Television, featuring Robin as Batgirl in addition to Batman. The show aired from 1984 to 1995 and was directed by Bruce Timm and written",
+        "\"Only Fools and Horses\" was the name of Batman's first live-action TV series. It aired from 1966 to 1972, featuring Bob Keeshan as Robin (later known as Commissioner Dick Grayson) and Adam West as Batman."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.1299734216011905,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_1500",
+      "question": "where do kidneys for kidney transplant come from",
+      "gold": [
+        "living-donor"
+      ],
+      "greedy": "Kidneys for kidney transplants can come from deceased donors, living related donors, or living unrelated donors.",
+      "samples": [
+        "Kidneys used in kidney transplants can be donated by living donors or deceased donors.",
+        "The kidneys for a living-donor transplant typically come from an unrelated donor who has agreed to donate one of their healthy kidneys in exchange for financial compensation or other considerations, provided by the transplant center. For deceased donor transplants, organs may be sourced through a regional or national organ procurement organization (OPO).",
+        "Kidneys for kidney transplants can come from several sources including:\n\n1. **Living Donors** - Healthy individuals who donate one of their kidneys.\n2. **Deceased Organ Donors** - People whose organs, typically both kidneys, have been harvested posthumously.\n\nThe choice between living and deceased donors depends on",
+        "Kidneys for kidney transplants can be provided by various sources, including deceased donors who have passed away and need them (donation after cardiac death), living donors who volunteer to provide one or both kidneys (usually family members), or even synthetic or donated organs in cases of failure.",
+        "Kidneys for transplants can be donated by living donors or deceased donors. Deceased donation is the most common, as it typically results in immediate availability of organs for transplant patients on waiting lists. In this case, kidneys are sourced from individuals who have recently passed away and are deemed suitable for transplantation based on medical criteria.",
+        "Kidneys for transplantation can come from several sources, including:\n\n1. Deceased donors (after death) who have consented to donation\n2. Living donors (usually family members or friends)\n3. Donated by deceased donors' families through an organization like Organ Procurement Organizations in some countries\n\nThe most common source",
+        "Kidneys for kidney transplants typically come from either a living donor, such as a close family member or friend who is healthy and willing to donate their kidney, or from an organ donor after death (cadaveric donation).",
+        "Kidneys for organ transplantation can be sourced from deceased donors, living donor transplants (where the donor is related or unrelated), or in rare cases, they may become available through donation after cardiac death.",
+        "Kidneys for kidney transplants can come from several sources, including living donors (family members or friends) who have fully recovered from kidney failure and then donate one of their healthy kidneys to the recipient after recovery, or deceased-donor organs donated by individuals whose hearts stop but whose kidneys were still viable at the time of death",
+        "Kidneys for kidney transplants primarily come from living donors (living donors) who undergo surgery to donate their healthy, functioning kidneys to another person in need of a transplant. In some cases, deceased donor organs also may be used; however, the majority of organ transplants still rely on donated living kidney donations."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.1415200261522567,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_2571",
+      "question": "when did the movie peter pan come out",
+      "gold": [
+        "25 December 2003",
+        "2003"
+      ],
+      "greedy": "Peter Pan was released in 1953.",
+      "samples": [
+        "The movie Peter Pan was released on March 25, 1953.",
+        "Peter Pan was released on May 29, 1953.",
+        "Peter Pan came out in 1953 as part of the \"British Empire and Commonwealth\" collection on television. The original story was first published by J.M. Barrie in 1904.",
+        "Peter Pan was released in 1953.",
+        "Peter Pan was released in 1953 as part of Walt Disney's \"A Treasury of Children’s Stories\".",
+        "Peter Pan came out in 1953.",
+        "\"Peter Pan\" was first released in 1953.",
+        "Peter Pan was released on July 26, 1953.",
+        "Peter Pan was released in 1953.",
+        "Peter Pan came out in 1953."
+      ],
+      "se_discrete": 1.4978661367769954,
+      "se_logprob": 1.3572983703638557,
+      "C_SE_disc": -1.4978661367769954,
+      "n_clusters": 6
+    },
+    {
+      "id": "nq_2580",
+      "question": "if there is a line that lies parallel to the horizon it is said to be",
+      "gold": [
+        "A vanishing point"
+      ],
+      "greedy": "If a line lies parallel to the horizon, it is said to be horizontal.",
+      "samples": [
+        "horizontal",
+        "parallel to the horizon.",
+        "horizontal",
+        "parallel to the ground or horizontal plane.",
+        "horizontal.",
+        "parallel to the horizon.",
+        "If a line lies parallel to the horizon, it is considered vertical or upright.",
+        "parallel to the horizon it is said to be horizontal.",
+        "parallel to the horizon.",
+        "if there is a line that lies parallel to the horizon, it is said to be horizontal."
+      ],
+      "se_discrete": 1.1682824501765625,
+      "se_logprob": 1.2119442048789097,
+      "C_SE_disc": -1.1682824501765625,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_1127",
+      "question": "who sings i can't take my eyes off of you",
+      "gold": [
+        "Frankie Valli"
+      ],
+      "greedy": "The song \"I Can't Take My Eyes Off You\" was originally performed by Billie Holiday in 1935.",
+      "samples": [
+        "The song \"I Can't Take My Eyes Off You\" was sung by Billie Holiday.",
+        "The song \"I Can't Take My Eyes Off of You\" is sung by Billie Holiday.",
+        "The song \"I Can't Take My Eyes Off You\" is sung by Frank Sinatra and Billie Holiday.",
+        "I Can't Take My Eyes Off of You is a song performed by the American pop artist James Brown.",
+        "The song \"I Can't Take My Eyes Off You\" was originally recorded by Bill Haley & the Comets in 1954 and later popularized by The Tokens in 1962 with their version.",
+        "The song \"I Can't Take My Eyes Off You\" was originally performed by American singer-songwriter Nat King Cole in 1945.",
+        "The song \"I Can't Take My Eyes Off You\" was originally performed by the American R&B and soul singer Ray Charles. However, it is more widely known for being covered and recorded by The Righteous Brothers in 1964.",
+        "The song \"I Can't Take My Eyes Off of You\" was sung by Nat King Cole.",
+        "The song \"I Can't Take My Eyes Off You\" was originally sung by Big Bopper (Richard Berry) in 1958. It later became famous when it was covered and released by The Beatles as the second single from their album, Rubber Soul.",
+        "I'm sorry, I do not know the current artist performing this song. There have been numerous artists covering or performing a version of \"Can't Take My Eyes Off You\" throughout its long history. Please provide me with the exact name of the particular version you're asking about so I may accurately answer your question."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.09831042151544,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_1547",
+      "question": "what is the meaning of auv in cars",
+      "gold": [
+        "action utility vehicles"
+      ],
+      "greedy": "An AUV (Automated Underwater Vehicle) refers to an unmanned vehicle designed for underwater operations, often used in marine research or military applications. In automotive context, it could refer to a self-driving car or autonomous vehicle technology.",
+      "samples": [
+        "An AUV (Automated Underwater Vehicle) can refer to:\n1. An autonomous vehicle used for marine applications, such as surveying or underwater exploration.\n2. Also, some car manufacturers have designated vehicles using advanced technology and systems akin to those on submarines or other underwater vehicles. However, these do not necessarily qualify",
+        "AUV stands for Autonomous Underwater Vehicle, an autonomous vehicle designed to operate underwater, typically used for scientific research or military purposes.",
+        "AUV stands for Autonomous Underwater Vehicle, used for underwater exploration and research purposes.",
+        "AUV stands for Autonomous Underwater Vehicle, which refers to unmanned underwater vehicles used primarily for scientific research or military purposes.",
+        "An AUV, also known as an autonomous vehicle or self-driving car, refers to a type of vehicle that operates without human driver control and uses sensors and algorithms for navigation and decision-making.",
+        "An AUV (Automated Underwater Vehicle) can be installed on a car to operate underwater, often used for purposes like mapping or environmental monitoring.",
+        "AUV stands for Autonomous Underwater Vehicle, which refers to self-navigating vehicles used primarily underwater. In vehicle design, AUV could also mean an all-weather utility vehicle or an all-terrain unit, depending on context.",
+        "An AUV (Automated Underwater Vehicle) can be used as an underwater navigation aid or robot for various marine activities such as search and rescue, surveying, or scientific research.",
+        "AUV stands for Autonomous Underwater Vehicle, which refers to a type of vehicle designed to navigate and operate underwater without human intervention.",
+        "An AUV is an acronym for Autonomous Underwater Vehicle, referring to a vehicle designed and operated underwater with little or no human control. These vehicles can be used for various purposes such as surveying marine environments, oceanographic research, military operations, etc."
+      ],
+      "se_discrete": 2.0253262207700673,
+      "se_logprob": 1.9815885841738583,
+      "C_SE_disc": -2.0253262207700673,
+      "n_clusters": 8
+    },
+    {
+      "id": "nq_1447",
+      "question": "when is the last time wisconsin missed the ncaa tournament",
+      "gold": [
+        "1997–98"
+      ],
+      "greedy": "Wisconsin has never missed the NCAA Tournament. They have always been in the field of play since its inception.",
+      "samples": [
+        "Wisconsin last missed the NCAA Tournament in March 2017, following their elimination by Marquette in the first round of the NCAA basketball tournament.",
+        "The most recent year Wisconsin missed the NCAA Tournament was 2018.",
+        "The last time Wisconsin missed the NCAA Tournament was in 2019-20 season.",
+        "The most recent year Wisconsin missed the NCAA Tournament was 2019-2020.",
+        "Wisconsin has never missed the NCAA Tournament in basketball history. They have been consistently successful and regularly participate in March Madness.",
+        "Wisconsin has never missed the NCAA Tournament.",
+        "Wisconsin last missed the NCAA Tournament in 2014-15 season.",
+        "Wisconsin has never missed the NCAA Tournament, as they have won consecutive bids to March Madness every year since its inception in 1985.",
+        "The most recent year Wisconsin missed the NCAA Tournament was 2015-2016.",
+        "The latest year Wisconsin has missed the NCAA Tournament was 1976."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.1287923123017203,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_2969",
+      "question": "where does the synthesis of new dna from existing dna occurs",
+      "gold": [
+        "origins of replication"
+      ],
+      "greedy": "The synthesis of new DNA from existing DNA occurs at the replication fork, specifically in the leading strand during DNA replication.",
+      "samples": [
+        "Synthesis of new DNA from existing DNA occurs during DNA replication in the cell nucleus.",
+        "In eukaryotes, DNA replication primarily occurs in the nucleus, while prokaryotic cells replicate their entire genome in the nucleoid region of the cytoplasm. Both involve elongation and Okazaki fragment ligation. For more detailed information, refer to specific scientific articles or books on molecular biology.",
+        "The process of DNA replication, which involves the synthesis of new strands of DNA from each existing strand, occurs during cell division and is catalyzed by enzymes such as DNA polymerase in living cells. This is essential for growth, repair, and reproduction by providing complete genetic material for each daughter cell or organism.",
+        "The synthesis of new DNA from an existing template strand occurs during replication in the nucleus, specifically within the cell's machinery.",
+        "The synthesis of new DNA from existing DNA typically occurs in the nucleus, specifically in a structure called the nucleolus during transcription and translation processes.",
+        "The synthesis of new DNA from an existing strand occurs at specific sites in the cell nucleus, where it is catalyzed by enzymes such as DNA polymerase. This process forms complementary strands that maintain genetic continuity and stability within cells.",
+        "The synthesis of new DNA from existing DNA primarily occurs in the cell nucleus, though some processes can happen in other areas such as mitochondria or lysosomes under certain conditions. The main site for this process is the DNA replication machinery within eukaryotic cells and prokaryotes.",
+        "The synthesis of new DNA from existing DNA occurs at the sites of replication, specifically in the region called the replication fork, where one parental strand is used as a template to synthesize a complementary new strand.",
+        "In the nucleus of eukaryotic cells, DNA replication occurs during the S phase of interphase.",
+        "The synthesis of new DNA from existing DNA occurs during replication, which happens primarily in the nucleus of cells."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.120706146250723,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_1546",
+      "question": "who produced the movie i can only imagine",
+      "gold": [
+        "Joe Knopp",
+        "Pete Shilaimon",
+        "Raymond Harris",
+        "Mickey Liddell",
+        "Daryl Lefever",
+        "Cindy Bond",
+        "Kevin Downes"
+      ],
+      "greedy": "I can only Imagine was produced by Michael Bay.",
+      "samples": [
+        "The movie \"I Can Only Imagine\" was directed by Peter Bogdanovich and starred John Travolta, Anjelica Huston, and Tom Skerrit.",
+        "The movie \"I Can Only Imagine\" was produced by John Milius and James Horner, with direction credited to Martin Campbell.",
+        "I can only Imagine was primarily co-produced by David Cronenberg and Mark Romanek. The film also starred John Travolta and Kiefer Sutherland as lead roles. The production was later managed by Scott Rudin.",
+        "I apologize, but there is no widely known film titled \"I Can Only Imagine\" as of my last update. The title you've provided seems to be incorrect or fictional. If you have more context about this movie or would like information on a different film, I'd be happy to help with that instead.",
+        "I apologize, but I'm not aware of any specific movie called \"I Can Only Imagine.\" If you're looking for information about this particular film or have additional details to provide, please let me know so I can give you more accurate assistance.",
+        "I'm sorry, but I don't have enough information to determine which film you're referring to without context. Could you please provide more details or clarify which movie \"I Can Only Imagine\" refers to? If it's not one of my known productions, I apologize and would need additional information to assist further.",
+        "The movie \"I Can Only Imagine\" was produced by Paramount Pictures.",
+        "David Sproxton produced the film I Can Only Imagine.",
+        "I'm sorry, but I don't have enough information to determine who produced \"I Can Only Imagine.\" It's possible it was directed by someone else without that person being involved in producing. To find out who exactly produced this film would require searching for its official credits or production history.",
+        "I can only Imagine was produced by Kevin Smith and Mark Bell."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.1036384372887915,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_1772",
+      "question": "only player to play for manchester united manchester city liverpool and everton",
+      "gold": [
+        "Peter Andrew Beardsley MBE",
+        "Peter Andrew Beardsley"
+      ],
+      "greedy": "The only player to have played for Manchester United, Manchester City, Liverpool, and Everton is Bobby Charlton.",
+      "samples": [
+        "Only player to play for Manchester United, Liverpool, Everton, and Inter Milan is Gary Neville.",
+        "Wayne Rooney played for Manchester United, Manchester City, Liverpool, and Everton in his career.",
+        "Phil Neville played for Manchester United, Liverpool, Man City, and Everton in his illustrious career as a professional footballer.",
+        "Wayne Rooney is the only player who has played for Manchester United, Manchester City, Liverpool, and Everton during his career.",
+        "Gary Lineker played for Manchester United, Manchester City, Liverpool, and Everton.",
+        "Wayne Rooney is the only player to have played for Manchester United, Liverpool, Everton, and Aston Villa in his career.",
+        "The only player to have played for Manchester United, Liverpool, Everton, and West Ham is Dennis Bergkamp.",
+        "Eric Cantona is the only player to have played for Manchester United, Man City, Liverpool, and Everton in his career.",
+        "George Best played for Manchester United, Liverpool, Everton, and Manchester City during his professional career.",
+        "The only player to have played for Manchester United, Manchester City, Liverpool, and Everton is David Beckham. He played from 1996 to 2007."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.132625930268301,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_573",
+      "question": "where in the constitution is the executive branch referenced",
+      "gold": [
+        "Article Two"
+      ],
+      "greedy": "The Executive Branch of the United States government is primarily referenced in Article II of the U.S. Constitution, which outlines the powers and duties of the President.",
+      "samples": [
+        "The U.S. Constitution references the executive branch primarily through Article II, which outlines the powers and responsibilities of the president and how presidential elections are conducted. It also includes provisions for the vice presidency and the cabinet system.",
+        "The Executive Branch of the United States government is referenced in Article Two of the Constitution of the United States, which outlines powers and duties specifically assigned to the President.",
+        "The Executive Branch is mentioned throughout Article II of the U.S. Constitution, establishing its powers and responsibilities.",
+        "The President of the United States, who serves as the head of state and government, is described in Article II of the U.S. Constitution. The Constitution also outlines the responsibilities and powers of the presidency.",
+        "The Constitution of the United States references the executive branch primarily through its Article 2 which details the powers, duties, and responsibilities of the President of the United States.",
+        "The U.S. Constitution references and defines the executive branch throughout, with key sections including Article II (which outlines the powers of the President) and Article I, Section 8 (which lists the legislative functions the President must carry out).",
+        "The U.S. Constitution does not specifically refer to any \"executive\" branch; it mentions three branches instead - Legislative, Executive and Judicial. The executive power is delegated to the President of the United States under Article II.",
+        "The U.S. Constitution references the Executive Branch in Article II, which outlines the powers and duties of the President, including the role as the head of state and government.",
+        "The Executive Branch of the United States is referred to in Article II, Section 1 of the Constitution.",
+        "The powers of the executive branch are primarily established in Article II of the U.S. Constitution."
+      ],
+      "se_discrete": 2.0253262207700673,
+      "se_logprob": 2.008746980327814,
+      "C_SE_disc": -2.0253262207700673,
+      "n_clusters": 8
+    },
+    {
+      "id": "nq_2147",
+      "question": "actress who plays penelope garcia on criminal minds",
+      "gold": [
+        "Kirsten Simone Vangsness"
+      ],
+      "greedy": "Chase Yandell Baldwin, better known as Emily Prentiss, plays Penelope Garcia on Criminal Minds.",
+      "samples": [
+        "Emily Kinney serves as the actress portraying Penelope Garcia on Criminal Minds.",
+        "Peyton Sawyer is the actress who plays Penelope Garcia on Criminal Minds.",
+        "Emily VanCamp",
+        "Penelope Garcia is portrayed by Grissom's former field agent, Jennifer Mendoza, in the CBS series Criminal Minds.",
+        "Piper Kerman plays Penelope Garcia on Criminal Minds.",
+        "Emily Kinney plays Penelope Garcia on Criminal Minds.",
+        "Julianna Margulies plays Penelope Garcia on Criminal Minds.",
+        "Emily Valdes plays Penelope Garcia on Criminal Minds.",
+        "Jessica Calayad is the actress who plays Penelope Garcia on Criminal Minds.",
+        "Chase Yerxa plays Penelope Garcia on Criminal Minds."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.103477211088255,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_357",
+      "question": "name the four major layers of the earth in order",
+      "gold": [
+        "an outer silicate solid crust",
+        "a highly viscous mantle",
+        "a liquid outer core",
+        "a solid inner core"
+      ],
+      "greedy": "The four major layers of the Earth, from the outside inward, are:\n\n1. Crust (outermost layer)\n2. Mantle\n3. Outer Core\n4. Inner Core",
+      "samples": [
+        "1. Crust\n2. Mantle\n3. Outer core\n4. Inner core",
+        "The Earth's layers, from the center outward, are the Inner Core, Outer Core, Mantle, and Crust.",
+        "The four major layers of the Earth, listed from the inner core outward, are:\n1. Inner Core\n2. Outer Core\n3. Mantle\n4. Lithosphere",
+        "The four main layers of Earth, from the outside to inside, are the Crust, Mantle, Outer Core, and Inner Core.",
+        "1. Crust  \n2. Mantle  \n3. Outer Core  \n4. Inner Core",
+        "1. Crust \n2. Mantle  \n3. Outer core \n4. Inner core",
+        "The four major layers of the Earth, from the outside inward, are:\n\n1. Crust (the outermost layer)\n2. Mantle\n3. Outer Core (liquid metal iron outer core)\n4. Inner Core (solid rock inner core)",
+        "The four major layers of the Earth, from the center outward, are the core, mantle, outer core, and crust.",
+        "1. Crust  \n2. Mantle  \n3. Core  \n4. Outer core",
+        "The four main layers of the Earth from inside out are the core, mantle, outer core, and crust."
+      ],
+      "se_discrete": 1.193549604098133,
+      "se_logprob": 1.1829498105572998,
+      "C_SE_disc": -1.193549604098133,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_551",
+      "question": "how many episodes in adventure time season 1",
+      "gold": [
+        "26"
+      ],
+      "greedy": "Adventure Time has 8 episodes in its first season.",
+      "samples": [
+        "Adventure Time had 6 episodes in its first season.",
+        "Adventure Time has 8 episodes in its first season.",
+        "Adventure Time has 8 seasons, and each season typically contains 10-20 episodes. The first season consists of 9 episodes.",
+        "Adventure Time has 20 episodes in its first season.",
+        "Adventure Time Season 1 has 4 episodes.",
+        "Adventure Time has 20 episodes in its first season.",
+        "Adventure Time has 8 seasons, with each season containing about 9-10 episodes.",
+        "Adventure Time, Season 1 had 12 episodes.",
+        "Adventure Time, Season 1 has 4 episodes.",
+        "Season 1 of \"Adventure Time\" had 9 episodes."
+      ],
+      "se_discrete": 2.0253262207700677,
+      "se_logprob": 1.9860740235624137,
+      "C_SE_disc": -2.0253262207700677,
+      "n_clusters": 8
+    },
+    {
+      "id": "nq_2455",
+      "question": "where is wake forest located in north carolina",
+      "gold": [
+        "78.51889°W",
+        "in Franklin and Wake counties",
+        "35.97333°N"
+      ],
+      "greedy": "Wake Forest is located in Wake County, North Carolina.",
+      "samples": [
+        "Wake Forest University is located in Winston-Salem, North Carolina. It sits on the banks of Johnston Creek along the middle and eastern edge of the city. The university campus extends into the western end of Wake Forest Village on the west side of town.",
+        "Wake Forest, North Carolina, USA, is located along the coast of North Carolina, specifically in Wake County. It is situated near the Piedmont Plateau and the Coastal Plain regions. The city serves as one of the principal urban centers along U.S. Highway 412.",
+        "Wake Forest University is located in Winston-Salem, North Carolina.",
+        "Wake Forest, North Carolina is located in Forsyth County, approximately 40 miles northwest of Raleigh in the Piedmont region of North Carolina.",
+        "Wake Forest University is located in Winston-Salem, North Carolina. It is situated on the east side of town and lies near the Wake Forest Expressway.",
+        "Wake Forest is located in Wake County, North Carolina.",
+        "Wake Forest University is located in Winston-Salem, North Carolina.",
+        "Wake Forest is located in the northeastern part of Wake County, North Carolina.",
+        "Wake Forest University is located in Winston-Salem, North Carolina.",
+        "Wake Forest University is located in Winston-Salem, North Carolina."
+      ],
+      "se_discrete": 1.7480673485460891,
+      "se_logprob": 1.5123444117115226,
+      "C_SE_disc": -1.7480673485460891,
+      "n_clusters": 7
+    },
+    {
+      "id": "nq_3260",
+      "question": "who used the word physiology for the first time",
+      "gold": [
+        "Jean Fernel"
+      ],
+      "greedy": "The term \"physiology\" was first used by William Harvey in his 1628 work \"De Motu Cordis.\"",
+      "samples": [
+        "The Latin term \"physiologia\" was first used by William Harvey in his book on血液循环 (circulation). Harvey is widely recognized as one of the key figures in establishing the field of physiology as an independent branch of natural science.",
+        "The term \"physiology\" was first used in 1678 by René Laennec, a French physician and surgeon.",
+        "The Greek physician Hippocrates is credited with being the first to use the word \"physiology\" in 460 BC, as translated from his Greek original Φυσιολογία (\"Phusiológía\"), meaning \"study of nature\".",
+        "The Greek physician Galen is credited with being one of the earliest to use the term \"physiology\" when he referred to an investigation into the functions and operations of living organisms, although it was not specifically defined as we understand it today.",
+        "The term \"physiology\" was first coined by William Withering, an English physician, in 1785 when he published his work \"A Description of the Foxglove (Digitalis lanata)\" which contains physiological and therapeutic applications of Digitalis purpurea.",
+        "The term \"physiology\" was first used by William Bayly in 1679, although it originally referred to the science of plants (phisiologia plamaria).",
+        "The word \"physiology\" was first coined by the French physician Gabriel William Ménard in 1739.",
+        "The term \"physiology\" was first used by William Harvey in his 1628 work \"De Motu Cordis.\"",
+        "The term \"physiology\" was first used by Scottish anatomist Robert Liston in 1790 to describe the study of living organisms and their functions.",
+        "The term \"physiology\" was first used by William Harvey in his 1628 publication \"De motu cordis.\""
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.0755344077319613,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_363",
+      "question": "what season does bart bass die in gossip girl",
+      "gold": [
+        ")"
+      ],
+      "greedy": "Bart Bass dies in the 10th season of Gossip Girl.",
+      "samples": [
+        "Bart Bass dies on the island during the seventh and final season of Gossip Girl.",
+        "Bart Bass dies in the 12th season of Gossip Girl, which premiered in July 2015.",
+        "Bart Bass dies during the 7th season of Gossip Girl.",
+        "Bart Bass dies in the 5th season of Gossip Girl.",
+        "Bart Bass dies at the end of the 4th season of Gossip Girl.",
+        "Bart Bass dies during the fifth season of Gossip Girl, specifically in \"Dead End\".",
+        "Bart Bass dies in the third season of Gossip Girl.",
+        "Bart Bass dies in the third season of \"Gossip Girl.\"",
+        "Bart Bass dies at the end of the second season of Gossip Girl.",
+        "Bart Bass dies in the 13th and final season of Gossip Girl."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.1357831564448784,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_0",
+      "question": "when was the last time anyone was on the moon",
+      "gold": [
+        "December 1972",
+        "14 December 1972 UTC"
+      ],
+      "greedy": "The last person to walk on the Moon was American astronaut Neil Armstrong, who stepped off the Lunar Module Eagle and onto the surface of the Moon on July 20, 1969.",
+      "samples": [
+        "The last human beings to walk on the Moon were Apollo 17 astronauts Eugene Cernan and Harrison Schmitt on December 14, 1972.",
+        "The last person to walk on the Moon was astronaut Eugene Cernan during the Apollo 17 mission in December 1972.",
+        "The last person to walk on the Moon was Eugene Cernan, who was part of the Apollo 17 mission in December 1972.",
+        "The last person to walk on the Moon was American astronaut Eugene Cernan, during the Apollo 17 mission in December 1972.",
+        "The last time anyone walked on the Moon was on July 20, 1969, during Apollo 11.",
+        "The last time someone walked on the Moon was during the Apollo 17 mission in December 1972.",
+        "The last person to walk on the Moon, American astronaut Neil Armstrong, walked there on July 20, 1969, during the Apollo 11 mission.",
+        "The last human being to set foot on the Moon was American astronaut Neil Armstrong, who landed on the lunar surface during the Apollo 11 mission in July 1969.",
+        "The most recent person to walk on the Moon was American航天员Scott Kelly, who spent 340 days in space and logged 520 cumulative days aboard the International Space Station from March 2015 to March 2016. However, no human has walked on the lunar surface since",
+        "The last person to walk on the Moon was American astronaut Eugene Cernan, who completed his final lunar walk during the Apollo 17 mission in December 1972."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.1440322533374685,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_990",
+      "question": "another name for the torso is the blank region of the body",
+      "gold": [
+        "trunk"
+      ],
+      "greedy": "The other name for the torso is the central or midsection of the body.",
+      "samples": [
+        "The abdomen.",
+        "The abdomen is another name for the torso region of the body.",
+        "Another name for the torso is the central or midsection of the body.",
+        "Chest or midsection.",
+        "The blank region of the body where other names for the torso include abdomen, thorax, and chest.",
+        "The other name for the torso is the abdominal region of the body.",
+        "The chest or upper body section of the human body.",
+        "The thorax.",
+        "Chest",
+        "Another name for the torso is the trunk."
+      ],
+      "se_discrete": 1.4708084763221112,
+      "se_logprob": 1.3505656117201872,
+      "C_SE_disc": -1.4708084763221112,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_414",
+      "question": "who was in charge of the revolutionary war",
+      "gold": [
+        "the king",
+        "General George Washington"
+      ],
+      "greedy": "George Washington was in charge of the Revolutionary War.",
+      "samples": [
+        "George Washington served as Commander-in-Chief of the Continental Army during the American Revolutionary War from 1775 to 1783. He led the colonial forces against British authority and played a crucial role in securing independence for the United States.",
+        "George Washington served as Commander-in-Chief during the American Revolutionary War from 1775 to 1783.",
+        "George Washington was primarily in charge of the American Revolutionary War from 1775 to 1783. He served as commander-in-chief of the Continental Army during this period.",
+        "The Continental Army generals led the Revolutionary War, including George Washington as commander-in-chief.",
+        "George Washington served as the Commander-in-Chief during the American Revolutionary War.",
+        "The Continental Army and Congress were under charge at different times during the Revolutionary War, but generally George Washington was the overall commander-in-chief until his resignation in 1783. However, other generals like Nathanael Greene were also important during critical periods. The Congress (also known as the Continental Congress) held formal",
+        "George Washington was the commander-in-chief of the Continental Army during the Revolutionary War.",
+        "King George III",
+        "George Washington was in charge of the Revolutionary War, serving as Commander-in-Chief of the Continental Army from 1775 to 1783.",
+        "The leadership and direction of the American Revolutionary War were mostly taken by the Continental Congress, although George Washington later became one of its primary commanders under their guidance."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.0461761976545345,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_2180",
+      "question": "where is iodine found in the periodic table",
+      "gold": [
+        "heaviest of the stable halogens"
+      ],
+      "greedy": "Iodine is located in Group 17 (or VIIA) of the periodic table, specifically at Atomic Number 53.",
+      "samples": [
+        "Iodine can be found in group 17 of the periodic table and within period 4, specifically as the element with atomic number 53.",
+        "Iodine is located in Group 17 (also known as the halogens) and Period 5 of the periodic table.",
+        "Iodine is located in Group 17 (or VIIA) of the periodic table, under Fluorine and Chlorine on the left side.",
+        "Iodine is located in group 17 (halogens) and period 5 of the periodic table.",
+        "Iodine is located in Group 17 (the halogens) of the periodic table, specifically in period 5.",
+        "Iodine is found in Group 17 (卤族元素) of the periodic table, specifically in Period 5 with atomic number 53.",
+        "Iodine is located in Group 17 (also called the halogens) of the periodic table, specifically at period 5 and group 17 on the periodic chart.",
+        "Iodine is located in Group 17 (the halogens) and Period 5 of the periodic table.",
+        "Iodine is located in period 5, group 17 of the periodic table.",
+        "Iodine is located in period 5, group VIA of the periodic table."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.4176469540378553,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "nq_615",
+      "question": "which organelle is the site of atp production and storage",
+      "gold": [
+        "mitochondrion"
+      ],
+      "greedy": "The mitochondria is the site of ATP (adenosine triphosphate) production and storage in eukaryotic cells.",
+      "samples": [
+        "The organelle where ATP (adenosine triphosphate) is produced and stored is the mitochondria.",
+        "The organelle where ATP (adenosine triphosphate) production and storage occur in cells is the mitochondrion.",
+        "The mitochondria is the site of ATP (adenosine triphosphate) production and storage in cells.",
+        "The mitochondria is the site of ATP (adenosine triphosphate) production and storage in eukaryotic cells.",
+        "Mitochondria",
+        "The mitochondria are the organelles where ATP (adenosine triphosphate) is produced and stored in most eukaryotic cells.",
+        "The organelle where ATP (adenosine triphosphate) is produced and stored is the mitochondrion.",
+        "The mitochondria.",
+        "The mitochondria is the site of ATP production and storage.",
+        "The site of ATP production and storage in eukaryotic cells is the mitochondrion."
+      ],
+      "se_discrete": 1.0888999753452235,
+      "se_logprob": 1.1354881343996381,
+      "C_SE_disc": -1.0888999753452235,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_730",
+      "question": "when was the last time clemson won the national championship",
+      "gold": [
+        "2016"
+      ],
+      "greedy": "The last time Clemson won the National Championship was in 2015, defeating Alabama in the BCS National Championship Game.",
+      "samples": [
+        "The last time Clemson won the national championship was in 2015, defeating Florida State University in the College Football Playoff National Championship Game.",
+        "The last time Clemson University won the NCAA Division I College Football Championship (now known as the National Championship Game) was in 2017, when they defeated Alabama 31-14 at Ford Field in Detroit, Michigan.",
+        "The last time Clemson won the NCAA Division I football National Championship was in 2015, under head coach Dabo Swinney and quarterback Trevor Lawrence leading their team to victory over Notre Dame in the final.",
+        "The last time Clemson won the national championship was in 2015, led by head coach Dabo Swinney and featuring quarterback Trevor Lawrence.",
+        "Clemson University's most recent National Championship win is in 2019, during the College Football Playoff season under head coach Dabo Swinney.",
+        "The last time Clemson won the National Championship was in 2015.",
+        "The last time Clemson won the NCAA Division I Football Bowl Subdivision (FBS) championship was in 2019, defeating the Alabama Crimson Tide.",
+        "The last time Clemson won the national championship was in 2017, led by Dabo Swinney as head coach.",
+        "The last time Clemson won the National Championship in 2015.",
+        "The most recent (2021) National Championship win for Clemson occurred in 2019."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.1405225142588025,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_3138",
+      "question": "what disney cartoon character's middle name is fauntleroy",
+      "gold": [
+        "Donald Fauntleroy Duck",
+        "Donald Duck"
+      ],
+      "greedy": "Peter Pan's middle name is Fauntleroy.",
+      "samples": [
+        "The Disney cartoon character whose middle name is Fauntleroy is Peter Pan.",
+        "Peter Pan's middle name is Faunteroy.",
+        "The Disney cartoon character with the middle name \"Fauntleroy\" is Boy Duke from the animated series \"Duke & Boy\". However, I believe there was an error in the initial question because Boy Duke doesn't actually have a middle name of Fauntleroy. Instead, his last name is Brown and he",
+        "The main character of the Disney cartoon \"Peter and the Star-Crossed Princess\" is named Peter Faunterroyd, though his real first name is never mentioned in the movie.",
+        "Pocahontas",
+        "The Flying Dutchman.",
+        "The fictional prince in Disney's \"Peter Pan\" (1953) movie and TV series has the middle name Fauntleroy, which also appears to be his given first name.",
+        "Mr. Musgrave's Christmas Carol",
+        "Peter Pan.",
+        "Peter Pan's middle name is Peter."
+      ],
+      "se_discrete": 1.9730014063936123,
+      "se_logprob": 1.7991376717112895,
+      "C_SE_disc": -1.9730014063936123,
+      "n_clusters": 8
+    },
+    {
+      "id": "nq_1406",
+      "question": "china in chinese is called zhongguo which means",
+      "gold": [
+        "Central States"
+      ],
+      "greedy": "China in Chinese is called \"Zhōng Guó,\" which translates to \"Middle Kingdom.\"",
+      "samples": [
+        "China in Chinese is called \"Zhōng Guó,\" which means \"Middle Kingdom\" in English.",
+        "China in Chinese is called 中华 (Zhōnghuá) which literally translates to \"middle of the world\" or \"central kingdom\".",
+        "China is called Zhong Guo, which translates to \"Middle Country\" or \"Central Empire\" in Chinese.",
+        "China is called \"Zhōng Guó\" in Chinese, which translates to \"Central Country.\"",
+        "China, written in Chinese characters, is officially known as Zhōng guó, meaning \"Middle Kingdom.\"",
+        "China in Chinese, zhōngguó, translates to \"middle of the world\" or literally \"central country\".",
+        "China in Chinese is called Zhōng Guó, which literally translates to \"Central Land.\"",
+        "China in Chinese is called Zhongguo, which means \"Middle Kingdom\" or \"Central Kingdom\".",
+        "\"Zhōngxué Kǒu\" translates to \"Middle Kingdom\".",
+        "China is commonly known as \"Zhōng Guó\" in Chinese, and it literally translates to \"Middle Kingdom.\""
+      ],
+      "se_discrete": 1.5047882836811908,
+      "se_logprob": 1.4497529865839625,
+      "C_SE_disc": -1.5047882836811908,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_2423",
+      "question": "who played buffy the vampire slayer in the movie",
+      "gold": [
+        "Kristy Swanson"
+      ],
+      "greedy": "Sarah Michelle Gellar played Buffy the Vampire Slayer in the 1992 film adaptation of the series.",
+      "samples": [
+        "Buffy the Vampire Slayer was portrayed by Sarah Michelle Gellar in the 1992 film adaptation of the television series.",
+        "Jeri Taylor, also known as Sarah Michelle Gellar, played Buffy Summers in the \"Buffy the Vampire Slayer\" movies.",
+        "Rose McGowan played Buffy the Vampire Slayer in the original film.",
+        "Alyson Stoner played Buffy Summers in the 1992 film \"Buffy the Vampire Slayer.\"",
+        "Actress Emily Hampshire, known for playing Buffy Summers in the film Buffy the Vampire Slayer (1997), plays Willow Rosenberg in the live-action TV series \"Buffy the Vampire Slayer\" as well. However, she did not play Buffy directly in any of the films or on-screen appearances in Buffy the Vampire Slayer",
+        "Sarah Michelle Gellar starred as Buffy The Vampire Slayer in both the television series and the film adaptations.",
+        "Buffy the Vampire Slayer was not originally conceived as a film, but the characters and premise have been explored through several iterations across different media. The television show \"Buffy the Vampire Slayer\" starred Sarah Michelle Gellar, though she portrayed a younger incarnation of Buffy called Willow Rosenberg. For the movie adaptation, Angel (J",
+        "Clara钟女士在电影《暮光之城》中扮演贝丝·蒂芙尼（Buffy Summers）。",
+        "Sarah Michelle Gellar portrayed Buffy the Vampire Slayer in the film adaptation of the television series.",
+        "Sarah Michelle Gellar starred as Buffy The Vampire Slayer in the 1992 film adaptation."
+      ],
+      "se_discrete": 2.0253262207700673,
+      "se_logprob": 1.9166377431940094,
+      "C_SE_disc": -2.0253262207700673,
+      "n_clusters": 8
+    },
+    {
+      "id": "nq_2452",
+      "question": "who is the actress that plays penny on the big bang theory",
+      "gold": [
+        "Kaley Christine Cuoco"
+      ],
+      "greedy": "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+      "samples": [
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "Kaley Cuoco plays Penny in The Big Bang Theory.",
+        "The actress who plays Penny on The Big Bang Theory is Kaley Cuoco.",
+        "The actress who plays Penny in The Big Bang Theory is Kaley Cuoco.",
+        "Kaley Cuoco plays Penny on The Big Bang Theory.",
+        "Kristin Cavallari plays Penny on The Big Bang Theory.",
+        "Kaley Cuoco is the actress who portrays Penny on The Big Bang Theory.",
+        "Kristin Chenoweth plays Penny in The Big Bang Theory.",
+        "Kari Wahlgren plays Penny on The Big Bang Theory."
+      ],
+      "se_discrete": 0.9404479886553263,
+      "se_logprob": 0.8283008290408849,
+      "C_SE_disc": -0.9404479886553263,
+      "n_clusters": 4
+    },
+    {
+      "id": "nq_2851",
+      "question": "who gets the golden boot if its a tie",
+      "gold": [
+        "shared"
+      ],
+      "greedy": "In soccer, if there is a tie for the Golden Boot (the top goal scorer), the player with the most assists among those tied for first place receives the award.",
+      "samples": [
+        "In cases where a soccer player(s) share the highest number of goals throughout an entire season, there is no definitive \"winner\" in terms of the Golden Boot as it's not possible for ties to be awarded. This situation may occur after a tournament like World Cup where multiple players might have the same goal count leading into",
+        "If it's a tie for the Golden Boot, all tied players receive equal credit and awards. There is no specific rule to determine one of them as \"the\" winner in such circumstances.",
+        "If there is a tie for the Golden Boot in a soccer season, the players tied at the top place share the award.",
+        "If a team wins two or more games of the European Champions League, Europa League and UEFA Cup finals in the same season without breaking a tie for top goalscorer (Golden Boot), all three winners receive it.",
+        "In soccer, if a league has ties after the Golden Boot is awarded (for best goalscorer), it's decided by a coin toss or random selection among tied players as needed to break the tie and determine the winner of the award for the top goal scorer that year.",
+        "If there is a tie for the lead in goals, then each tied player receives one of the Golden Boot awards based on their other achievements or performances during the tournament.",
+        "In football (soccer), if multiple players share the top goal-scoring position in a season, they all receive an equal number of Golden Boot awards rather than just one.",
+        "In football (soccer), if there is a tie in goals scored by players for their respective teams, then no player(s) receive the Golden Boot prize. The award typically goes to the top scorer of all competitions, including domestic and international tournaments.",
+        "If it's a tie for the most goals scored in a single season by an individual, typically a trophy other than the Golden Boot is awarded to recognize both winners. However, some competitions do not follow this rule and may share the award.",
+        "If there's a tie in goals scored, then no one is awarded the Golden Boot. The player with the most points (considering other competition factors) among tied players wins this honor instead."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.126245178794779,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_3530",
+      "question": "when was the us department of homeland security created",
+      "gold": [
+        "November 25, 2002",
+        "November 25, 2002"
+      ],
+      "greedy": "The United States Department of Homeland Security was created on August 26, 2002.",
+      "samples": [
+        "The Department of Homeland Security (DHS) was established on August 26, 2002, by combining several existing agencies within the United States government.",
+        "The U.S. Department of Homeland Security was created on August 26, 2002.",
+        "The U.S. Department of Homeland Security was created on August 26, 2002.",
+        "The United States Department of Homeland Security (DHS) was created on November 25, 2002, following the USA PATRIOT Act.",
+        "The Department of Homeland Security (DHS) was created on Oct 2, 2002.",
+        "The US Department of Homeland Security was created on August 26, 2002.",
+        "The U.S. Department of Homeland Security was created on January 23, 2002.",
+        "The US Department of Homeland Security was created on August 26, 2002.",
+        "The US Department of Homeland Security was created on August 26, 2002.",
+        "The US Department of Homeland Security was created on January 23, 2002."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.2844880647211783,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_1101",
+      "question": "when did canada sign the un declaration of indigenous rights",
+      "gold": [
+        "12 November 2010",
+        "May 2016"
+      ],
+      "greedy": "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2016.",
+      "samples": [
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2016.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2010.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2016.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples (UNDRIP) in 2016.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples (UNDRIP) in 2016.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2010.",
+        "Canada did not sign the United Nations Declaration on the Rights of Indigenous Peoples (UNDRIP) until January 18, 2019, as part of the Charlottetown Accord.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2019, following years of discussions and consultations with First Nations, Inuit, and Métis communities.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2016.",
+        "Canada signed the United Nations Declaration on the Rights of Indigenous Peoples in 2016."
+      ],
+      "se_discrete": 1.4708084763221112,
+      "se_logprob": 1.398997467741623,
+      "C_SE_disc": -1.4708084763221112,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_639",
+      "question": "for complaints of sudden chest pain patients should take a",
+      "gold": [
+        "Aspirin"
+      ],
+      "greedy": "For complaints of sudden chest pain, patients should call emergency services immediately.",
+      "samples": [
+        "For complaints of sudden chest pain, the patient should immediately call emergency services (such as 911 in the US) or go to their nearest emergency department. This is an urgent medical situation requiring prompt intervention.",
+        "Patients with sudden chest pain should call emergency services immediately.",
+        "For complaints of sudden chest pain, patients should call emergency services immediately.",
+        "for complaints of sudden chest pain, patients should take the TIKI flow (talk, identify yourself, imaging if needed, information).",
+        "Patients with complaints of sudden chest pain should first consider the possibility of heart attack and possibly call emergency services immediately if symptoms persist or worsen. In many regions, there is a dedicated phone line for this purpose known as \"911.\" Prompt medical attention can help determine an appropriate course of action.",
+        "For complaints of sudden chest pain, patients should call emergency services immediately.",
+        "For complaints of sudden chest pain, patients should call emergency services immediately.",
+        "For complaints of sudden chest pain, patients should seek immediate medical attention to determine the cause and appropriate treatment.",
+        "Patients with sudden chest pain should call emergency services immediately.",
+        "For sudden chest pain, patients should immediately call emergency services or seek medical attention."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.1711847751831583,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_1496",
+      "question": "what culture region is germany a part of",
+      "gold": [
+        "Central Germany"
+      ],
+      "greedy": "Germany is part of the Central European cultural region.",
+      "samples": [
+        "Germany is located in the Central European Culture Region.",
+        "Germany is primarily part of the Central European Culture Region.",
+        "Germany belongs to the Central European cultural area.",
+        "Germany is part of the Central European cultural region.",
+        "Germany belongs to the Central European cultural region.",
+        "Germany belongs to the Western European Culture Region.",
+        "Germany is part of the Central European cultural region.",
+        "Germany is in the Western European region of Europe.",
+        "Germany belongs to the West European cultural region, although it also has influences from other cultures such as Eastern and Southern Europe due to its history and geography.",
+        "Germany is located in the Central European culture region."
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.088550069260785,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "nq_520",
+      "question": "the most common form of megalithic architecture in europe is",
+      "gold": [
+        "the portal tomb",
+        "portal tomb"
+      ],
+      "greedy": "The most common form of megalithic architecture in Europe is stone circles and dolmens.",
+      "samples": [
+        "The most common form of megalithic architecture in Europe is Stonehenge, built primarily from massive sarsen stones.",
+        "The most common form of megalithic architecture in Europe was the stone circle or dolmen, which typically consists of large stones arranged in circles with raised floors or slabs above them.",
+        "The most common form of megalithic architecture in Europe was stone circles, particularly those found at sites like Stonehenge in England and Carnac in France.",
+        "The most common form of megalithic architecture in Europe is dolmens and menhirs.",
+        "The most common form of megalithic architecture in Europe is dolmens and passage graves.",
+        "The most common form of megalithic architecture in Europe is Stonehenge and similar structures along the Atlantic coast, such as Carnac stones in France.",
+        "The most common form of megalithic architecture in Europe is Stonehenge, with other notable examples including Carnac stones and Newgrange in Ireland.",
+        "The most common form of megalithic architecture in Europe is stone circles.",
+        "The most common form of megalithic architecture in Europe was stone circles, primarily found throughout Britain and Ireland, dating back to around 3000 BCE.",
+        "The most common form of megalithic architecture in Europe is passage graves and dolmens."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.136032874839889,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_2377",
+      "question": "how many countries are a part of opec",
+      "gold": [
+        "14"
+      ],
+      "greedy": "OPEC currently has 13 member countries.",
+      "samples": [
+        "OPEC currently consists of 16 countries: Algeria, Angola, Equatorial Guinea, Iran, Iraq, Kuwait, Libya, Malaysia, Nigeria, Qatar, Saudi Arabia, Sudan, the United Arab Emirates (UAE), Venezuela, and Nigeria.",
+        "There are currently 13 member countries in OPEC (the Organization of Petroleum Exporting Countries).",
+        "OPEC (Organization of the Petroleum Exporting Countries) has 16 member countries as of my last update in October 2023.",
+        "OPEC currently has 15 members: Algeria, Angola, Ecuador, Equatorial Guinea, Iran, Iraq, Kuwait, Libya, Nigeria, Qatar, Saudi Arabia, United Arab Emirates, Venezuela and Oman.",
+        "There are 14 countries that are members of OPEC (Organization of the Petroleum Exporting Countries).",
+        "OPEC (Organization of Petroleum Exporting Countries) currently consists of 12 countries.",
+        "There are currently 14 members of OPEC (Organization of the Petroleum Exporting Countries).",
+        "OPEC currently consists of 14 countries.",
+        "OPEC, or the Organization of Petroleum Exporting Countries, currently comprises 13 member states from across six continents. These countries collectively produce about two-thirds of the world's oil and account for around half of total global proven crude reserves.",
+        "There are 16 countries in OPEC (Organization of Petroleum Exporting Countries)."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.1245141734143327,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_3163",
+      "question": "when did the prr first begin its passenger service between pittsburgh and philadelphia",
+      "gold": [
+        "by 1854",
+        "1854"
+      ],
+      "greedy": "The Pennsylvania Railroad (PRR) began offering passenger service between Pittsburgh and Philadelphia in 1852.",
+      "samples": [
+        "The PRR began its regular passenger service between Pittsburgh and Philadelphia on May 27, 1859.",
+        "The Pennsylvania Railroad (PRR) began offering passenger service between Pittsburgh and Philadelphia in 1876.",
+        "The PRR first began providing passenger service between Pittsburgh and Philadelphia in 1859.",
+        "The Pennsylvania Railroad (PRR) began operating passenger trains between Pittsburgh and Philadelphia in 1859.",
+        "The Pennsylvania Railroad (PRR) first began providing passenger service between Pittsburgh and Philadelphia on September 6, 1852.",
+        "The Pennsylvania Railroad (PRR) first began passenger service between Pittsburgh and Philadelphia on October 17, 1852.",
+        "The Pennsylvania Railroad (PRR) began offering passenger service between Pittsburgh and Philadelphia in 1857.",
+        "The Pennsylvania Railroad (PRR) began offering passenger service between Pittsburgh and Philadelphia in 1850, though steam-powered trains were already running between the cities during the American Civil War.",
+        "The Pennsylvania Railroad (PRR) began providing regular passenger service between Pittsburgh and Philadelphia in 1865.",
+        "The Pennsylvania Railroad (PRR) began providing passenger service between Pittsburgh and Philadelphia in 1852."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.1535457566726697,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    },
+    {
+      "id": "nq_1243",
+      "question": "the first element on the periodic table is",
+      "gold": [
+        "hydrogen",
+        "Hydro­gen"
+      ],
+      "greedy": "Fluorine",
+      "samples": [
+        "Fluorine.",
+        "Fluorine",
+        "hydrogen",
+        "Fluorine",
+        "Fluorine",
+        "The first element on the periodic table is Hydrogen.",
+        "hydrogen",
+        "Fluorine is the first element on the periodic table.",
+        "hydrogen",
+        "hydrogen"
+      ],
+      "se_discrete": 0.6931471805599453,
+      "se_logprob": 0.6783889284124518,
+      "C_SE_disc": -0.6931471805599453,
+      "n_clusters": 2
+    },
+    {
+      "id": "nq_2330",
+      "question": "blood alcohol concentration means the parts of alcohol in the blood in relation to what",
+      "gold": [
+        "volume of blood",
+        "ethanol"
+      ],
+      "greedy": "Blood Alcohol Concentration (BAC) refers to the amount of alcohol present in one's bloodstream, typically expressed as milligrams of alcohol per 100 milliliters of blood or grams of alcohol per 100 milliliters of blood.",
+      "samples": [
+        "Blood Alcohol Concentration (BAC) refers to the grams of alcohol per 100 milliliters of blood, not to any reference amount such as \"in relation to.\" The BAC level is measured to determine if someone has consumed an excessive amount of alcohol that could impair their judgment or health.",
+        "Blood alcohol concentration (BAC) refers to the amount of alcohol present in a person's blood relative to their body weight or volume, expressed as milligrams per 100 milliliters or grams per liter of blood.",
+        "Blood Alcohol Concentration (BAC) is the percentage by volume of alcohol in a person's bloodstream, typically expressed as milligrams per 100 milliliters of blood or grams per 100 milliliters of blood.",
+        "Blood Alcohol Concentration (BAC) is the ratio of alcohol weight to blood weight.",
+        "Blood alcohol concentration refers to the amount of ethanol (alcohol) present in milliliters of blood relative to 1000 milliliters of blood, or expressed as a percentage.",
+        "Blood Alcohol Concentration (BAC) is measured by parts of alcohol per 100 milliliters of blood.",
+        "Blood Alcohol Concentration (BAC) refers to the amount of alcohol present in the bloodstream, usually expressed as milligrams of pure alcohol per deciliter of blood or grams per 100 mL of blood.",
+        "Blood Alcohol Concentration (BAC) refers to the parts per million (ppm) or grams per liter (g/L) of alcohol in the bloodstream.",
+        "parts per million (ppm)",
+        "Blood Alcohol Concentration (BAC) refers to the amount of ethanol in your blood relative to 100 milliliters of blood or one liter of blood, expressed as a percentage."
+      ],
+      "se_discrete": 2.0253262207700673,
+      "se_logprob": 1.9606797135754217,
+      "C_SE_disc": -2.0253262207700673,
+      "n_clusters": 8
+    },
+    {
+      "id": "nq_2128",
+      "question": "what class of ship is the carnival glory",
+      "gold": [
+        "Conquest-class cruise ship",
+        "Conquest"
+      ],
+      "greedy": "Carnival Glory is a cruise ship, specifically a large ocean liner.",
+      "samples": [
+        "Carnival Glory is classified as an ocean liner.",
+        "Carnival Glory is a cruise liner, specifically a mid-size luxury cruise ship in the category of \"Queen-class\".",
+        "Carnival Glory is an Oasis-class cruise liner.",
+        "The Carnival Glory is a cruise ship, specifically a large passenger liner.",
+        "The Carnival Glory is a cruise liner, specifically a Category C-class passenger ship.",
+        "The Carnival Glory is a river cruise ship, specifically a class known as an All-Rounder.",
+        "Carnival Glory is a cruise liner, specifically classified as an ocean liner in its class.",
+        "Carnival Glory is an American cruise liner classified as a large ocean liner or superliner.",
+        "Carnival Glory is a cruise ship, classified as a Category A passenger ship.",
+        "Carnival Glory is a cruise liner classified as an ocean liner."
+      ],
+      "se_discrete": 2.1639556568820564,
+      "se_logprob": 2.114561498159988,
+      "C_SE_disc": -2.1639556568820564,
+      "n_clusters": 9
+    }
+  ]
+}

@@ -1,0 +1,1458 @@
+{
+  "n_records": 1000,
+  "greedy_acc": 0.165,
+  "by_metric": {
+    "C_SE_disc": {
+      "ece": 0.11452591006719456,
+      "four_cell": {
+        "high_correct": 121,
+        "high_wrong": 418,
+        "low_correct": 44,
+        "low_wrong": 417,
+        "median_threshold": -2.0253262207700673,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 263,
+        "wrong_in_top_q": 175,
+        "rate": 0.6653992395437263
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.46,
+          "threshold": -0.8979457248567797
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.375,
+          "threshold": -1.4184836619456564
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.31333333333333335,
+          "threshold": -1.6957425341696346
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.27,
+          "threshold": -1.8866967846580784
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.234,
+          "threshold": -2.0253262207700673
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.21333333333333335,
+          "threshold": -2.1639556568820564
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.1957142857142857,
+          "threshold": -2.1639556568820564
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.185,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.17555555555555555,
+          "threshold": -2.3025850929940455
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.165,
+          "threshold": -2.3025850929940455
+        }
+      ]
+    },
+    "C_SE_logp": {
+      "ece": 0.12163303575419328,
+      "four_cell": {
+        "high_correct": 116,
+        "high_wrong": 384,
+        "low_correct": 49,
+        "low_wrong": 451,
+        "median_threshold": -1.9943234710940896,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 163,
+        "rate": 0.652
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.46,
+          "threshold": -0.8356847802556175
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.39,
+          "threshold": -1.38017027701143
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.31333333333333335,
+          "threshold": -1.6189248692502436
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.2675,
+          "threshold": -1.8449884397440215
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.232,
+          "threshold": -1.9940872914417809
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.20833333333333334,
+          "threshold": -2.131715848047353
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.2,
+          "threshold": -2.1645955317881778
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.1825,
+          "threshold": -2.287753248261017
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.17333333333333334,
+          "threshold": -2.2942174269995266
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.165,
+          "threshold": -2.301583182166263
+        }
+      ]
+    },
+    "C_logp": {
+      "ece": 0.4161579886662299,
+      "four_cell": {
+        "high_correct": 126,
+        "high_wrong": 374,
+        "low_correct": 39,
+        "low_wrong": 461,
+        "median_threshold": -0.42759483662145487,
+        "n": 1000
+      },
+      "top_quartile_wrong": {
+        "n_top_q": 250,
+        "wrong_in_top_q": 166,
+        "rate": 0.664
+      },
+      "risk_coverage": [
+        {
+          "coverage": 0.1,
+          "acc_on_kept": 0.47,
+          "threshold": -0.14615669962131617
+        },
+        {
+          "coverage": 0.2,
+          "acc_on_kept": 0.395,
+          "threshold": -0.24941111415144865
+        },
+        {
+          "coverage": 0.3,
+          "acc_on_kept": 0.32,
+          "threshold": -0.30678747423494246
+        },
+        {
+          "coverage": 0.4,
+          "acc_on_kept": 0.2825,
+          "threshold": -0.3728191191312923
+        },
+        {
+          "coverage": 0.5,
+          "acc_on_kept": 0.252,
+          "threshold": -0.42734279932403796
+        },
+        {
+          "coverage": 0.6,
+          "acc_on_kept": 0.22833333333333333,
+          "threshold": -0.4765347065330485
+        },
+        {
+          "coverage": 0.7,
+          "acc_on_kept": 0.20714285714285716,
+          "threshold": -0.5278962317197466
+        },
+        {
+          "coverage": 0.8,
+          "acc_on_kept": 0.1925,
+          "threshold": -0.589424370165571
+        },
+        {
+          "coverage": 0.9,
+          "acc_on_kept": 0.17666666666666667,
+          "threshold": -0.6758068452710588
+        },
+        {
+          "coverage": 1.0,
+          "acc_on_kept": 0.165,
+          "threshold": -1.002762793345998
+        }
+      ]
+    }
+  },
+  "disagreement_counts": {
+    "C_SE_disc_high__C_SE_logp_low": 42,
+    "C_SE_disc_low__C_SE_logp_high": 3,
+    "C_SE_disc_high__C_logp_low": 133,
+    "C_SE_disc_low__C_logp_high": 94,
+    "C_SE_logp_high__C_logp_low": 112,
+    "C_SE_logp_low__C_logp_high": 112
+  },
+  "danger_examples": [
+    {
+      "id": "56bebb293aeaaa14008c9305",
+      "question": "In what city's Marriott did the Panthers stay?",
+      "gold": [
+        "San Jose"
+      ],
+      "greedy": "The answer isn't specific to one city as the question doesn't mention which team (Panthers) or year, but generally, NFL teams like the Carolina Panthers often stay at various Marriott hotels in cities where they play games, such as Charlotte, NC, where the Panthers are based, or other cities depending on the game",
+      "samples": [
+        "To provide a short, factual answer: The Panthers stayed at various Marriott properties during their stays, and without specifying which game or event, it's impossible to pinpoint an exact city. Please provide more context.",
+        "The question lacks specific details about which Panthers team or game you're referring to, as different teams and games might have stayed in different cities' Marriott hotels. Could you please provide more context or clarify your question?",
+        "I'm sorry, but without more specific information about which Panthers team or season you're referring to, I can't provide a precise answer regarding which Marriott hotel they stayed in. Panthers teams typically change hotels during their trips, so there isn't a consistent Marriott hotel for every game they play. Could you please provide additional details",
+        "The short factual answer is that it is not specified which Marriott hotel the Carolina Panthers stayed in, and I don't have enough information to provide the specific city or name of the hotel.",
+        "To accurately answer your question, I would need specific details about which Panthers game or trip you are referring to, as teams and their stays can vary based on circumstances such as travel plans or accommodations. If you have additional context, please provide it so I can give a more precise response.",
+        "The short factual answer is not provided in the question. The Panther NFL team (likely referring to Carolina Panthers) has stayed at various Marriott properties, but without more context it's impossible to specify which one or which city.",
+        "To provide a short, factual answer about where the Panthers stayed, I need to know which game or event you're referring to, as different games might involve stays in different cities. Without additional context, I can't specify a particular city for sure.",
+        "To accurately state which Marriott the Panthers stayed at, I would need specific details about the particular trip or event in question. The team has stayed in multiple cities and often uses different hotels. Without additional context, I can't provide a precise answer.",
+        "The short factual answer is that I don't have enough information to specify which Marriott in which city the Panthers stayed, as no city is mentioned in your question. For an accurate answer, we would need more context about the particular game or event you're referring to.",
+        "The answer isn't specific to one city as multiple Marriott hotels across various cities host teams from different NFL teams, including the Carolina Panthers. To give you an exact location, more context or details would be necessary."
+      ],
+      "se_discrete": 1.0888999753452235,
+      "se_logprob": 1.1206531887531055,
+      "C_SE_disc": -1.0888999753452235,
+      "n_clusters": 4
+    },
+    {
+      "id": "5726da89dd62a815002e92b6",
+      "question": "What types of responsibilities might a pharmacy technician have?",
+      "gold": [
+        "manage the pharmacy department",
+        "manage the pharmacy department and specialised areas in pharmacy practice",
+        "manage the pharmacy department and specialised areas"
+      ],
+      "greedy": "A pharmacy technician may handle responsibilities such as preparing medications, counting pills, labeling prescriptions, interacting with patients, and maintaining inventory. They also assist pharmacists in managing the pharmacy's daily operations.",
+      "samples": [
+        "A pharmacy technician typically assists pharmacists by filling prescriptions, handling payments, maintaining drug inventories, and providing patient counseling on medications.",
+        "A pharmacy technician typically handles responsibilities such as counting and packaging medications, operating pharmacy equipment, checking prescriptions for accuracy, maintaining the stock, and sometimes interacting with patients regarding medication inquiries.",
+        "A pharmacy technician may handle tasks such as filling prescriptions, organizing inventory, interacting with patients, maintaining records, and ensuring medication safety.",
+        "A pharmacy technician may handle tasks such as filling prescriptions, processing payments, restocking shelves, verifying patient information, and maintaining medication records.",
+        "A pharmacy technician might handle responsibilities such as preparing prescriptions, counting medications, maintaining inventory, and assisting patients with their medication needs.",
+        "A pharmacy technician's responsibilities typically include filling prescriptions, maintaining inventory, processing insurance claims, and interacting with patients to ensure they understand their medications.",
+        "A pharmacy technician's responsibilities typically include filling prescriptions, interacting with customers, maintaining inventory, ensuring accuracy of medications, and assisting in other administrative tasks as needed.",
+        "A pharmacy technician may handle various responsibilities such as preparing medications, processing prescriptions, maintaining inventory, and interacting with patients to ensure they receive the correct medication.",
+        "A pharmacy technician may have responsibilities such as preparing prescriptions, interacting with patients, checking inventory, processing insurance claims, and maintaining records.",
+        "A pharmacy technician may be responsible for tasks such as stocking shelves, preparing prescriptions, processing prescription refills, interacting with customers, and maintaining accurate records."
+      ],
+      "se_discrete": 1.4184836619456564,
+      "se_logprob": 1.4477931105713604,
+      "C_SE_disc": -1.4184836619456564,
+      "n_clusters": 5
+    },
+    {
+      "id": "56beaf5e3aeaaa14008c9200",
+      "question": "What halftime performer previously headlined Super Bowl XLVIII?",
+      "gold": [
+        "Bruno Mars",
+        "Mars"
+      ],
+      "greedy": "The halftime performer at Super Bowl XLVIII was Lady Gaga.",
+      "samples": [
+        "The halftime performer at Super Bowl XLVIII was Justin Timberlake.",
+        "The halftime performer at Super Bowl XLVIII was Lady Gaga.",
+        "The halftime performer at Super Bowl XLVIII was Bruno Mars.",
+        "The halftime performer at Super Bowl XLVIII was Lady Gaga.",
+        "Michael Bublé headlined the halftime show of Super Bowl XLVIII in 2013.",
+        "The halftime performer at Super Bowl XLVIII was Michael Jackson.",
+        "The halftime performer at Super Bowl XLVIII was Michael Jackson.",
+        "The halftime performer at Super Bowl XLVIII was Lady Gaga.",
+        "The halftime performer at Super Bowl XLVIII was Lady Gaga.",
+        "The halftime performer at Super Bowl XLVIII was Lady Gaga."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.3129364303295046,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "57269698dd62a815002e8a6c",
+      "question": "How many universities does Newcastle have?",
+      "gold": [
+        "two"
+      ],
+      "greedy": "Newcastle has several universities, including Newcastle University and Northumbria University.",
+      "samples": [
+        "Newcastle University is the main university in Newcastle, though there are also other higher education institutions in the area.",
+        "Newcastle upon Tyne has several universities including Newcastle University and Royal Northern College of Music.",
+        "Newcastle upon Tyne has several universities, including the University of Newcastle and Northumbria University.",
+        "Newcastle has several universities, including the University of Newcastle and Newcastle University.",
+        "Newcastle upon Tyne hosts several universities, including Newcastle University and Northumbria University.",
+        "Newcastle has several universities, including Newcastle University and the Newcastle Law School.",
+        "Newcastle upon Tyne has several universities, including Newcastle University and Northumbria University.",
+        "Newcastle upon Tyne has several universities, the main ones being Newcastle University and Northumbria University.",
+        "Newcastle has several universities including the University of Newcastle and Newcastle University.",
+        "Newcastle has multiple universities, including the University of Newcastle and Newcastle University."
+      ],
+      "se_discrete": 0.9404479886553263,
+      "se_logprob": 0.8058542406525829,
+      "C_SE_disc": -0.9404479886553263,
+      "n_clusters": 4
+    },
+    {
+      "id": "573010fab2c2fd14005687da",
+      "question": "Where did a bloody civil war break out?",
+      "gold": [
+        "Algeria"
+      ],
+      "greedy": "The American Civil War broke out in the United States.",
+      "samples": [
+        "A bloody civil war broke out in the United States between 1861 and 1865, primarily centered in the Southern states opposed to the abolition of slavery.",
+        "The American Civil War broke out in multiple states, primarily centered around four key regions: Virginia, Pennsylvania, Tennessee, and Missouri.",
+        "A bloody civil war broke out in the United States, primarily in the southern states during the years 1861-1865.",
+        "The American Civil War broke out in the United States.",
+        "The American Civil War broke out in the United States.",
+        "The American Civil War broke out in the United States.",
+        "A bloody civil war broke out in the Confederate States of America (mainly present-day United States) during the American Civil War, which lasted from 1861 to 1865.",
+        "The American Civil War broke out in the United States.",
+        "A bloody civil war broke out in the United States between 1861 and 1865.",
+        "The American Civil War broke out in several locations, but it initially began in the Southern state of South Carolina in 1861."
+      ],
+      "se_discrete": 1.6094379124341,
+      "se_logprob": 1.5316534550745613,
+      "C_SE_disc": -1.6094379124341,
+      "n_clusters": 6
+    },
+    {
+      "id": "572764855951b619008f8953",
+      "question": "Between what times does Good Morning America air on ABC?",
+      "gold": [
+        "7:00 to 9:00 a.m",
+        "7:00 to 9:00 a.m. weekdays",
+        "7:00 to 9:00 a.m."
+      ],
+      "greedy": "Good Morning America airs on ABC from 7:00 AM to 10:00 AM Eastern Time, Monday through Friday.",
+      "samples": [
+        "Good Morning America airs on ABC from Monday to Friday, typically beginning around 7:00 AM Eastern Time (ET) and ending around 11:00 AM ET. The exact time can vary slightly depending on the day of the week and any midday reruns or repeats.",
+        "Good Morning America airs on ABC from 7:00 AM to 10:00 AM Eastern Time, typically Monday through Friday.",
+        "Good Morning America airs weekdays from 7:00 AM to 11:00 AM Eastern Time on ABC.",
+        "Good Morning America airs weekday mornings from 7:00 to 11:00 AM Eastern Time on ABC.",
+        "Good Morning America airs on ABC from 7:00 AM to 11:00 AM Eastern Time. The show's time can vary slightly depending on the day of the week and any special scheduling events.",
+        "Good Morning America airs daily on ABC from 7:00 to 10:00 AM Eastern Time.",
+        "Good Morning America airs on ABC weekdays from 7:00 AM to 11:00 AM Eastern Time.",
+        "Good Morning America airs daily on ABC from 7:00 AM to 11:00 AM Eastern Time. The show's schedule may vary slightly depending on the day and any special programming.",
+        "Good Morning America airs Monday through Friday from 7:00 to 10:00 AM Eastern Time on ABC.",
+        "Good Morning America airs weekdays from 7:00 AM to 11:00 AM EST on ABC."
+      ],
+      "se_discrete": 1.4708084763221112,
+      "se_logprob": 1.438578858498632,
+      "C_SE_disc": -1.4708084763221112,
+      "n_clusters": 5
+    },
+    {
+      "id": "57264a8cdd62a815002e808e",
+      "question": "Which authority figure is designated to schedule and set the work of the EU?",
+      "gold": [
+        "The Commission's President (",
+        "The Commission's President"
+      ],
+      "greedy": "The European Council is designated to schedule and set the work of the EU.",
+      "samples": [
+        "The authority figure designated to schedule and set the work of the European Union (EU) is the European Council.",
+        "The European Council is designated to schedule and set the work of the European Union, including setting the agenda for meetings of the European Commission, Council of the European Union, and European Parliament.",
+        "The authority figure designated to schedule and set the work of the European Union (EU) is the European Council, followed by the European Commission in coordinating policies.",
+        "The European Council is designated to schedule and set the work of the EU.",
+        "The European Council, comprising the heads of state or government of the EU member states, is responsible for scheduling and setting the work of the European Union (EU). However, the European Commission implements this decision.",
+        "The authority figure designated to schedule and set the work of the EU is the European Commission, which acts as the executive branch and advises the Council of the European Union and the European Parliament.",
+        "The European Council is designated to schedule and set the work of the European Union.",
+        "The European Council is designated to schedule and set the work of the European Union (EU).",
+        "The authority figure designated to schedule and set the work of the EU is the European Commission.",
+        "The authority figure designated to schedule and set the work of the European Union (EU) is the European Council."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.4106809080558946,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "572970c11d04691400779467",
+      "question": "When was the prime number theorem proven?",
+      "gold": [
+        "end of the 19th century",
+        "at the end of the 19th century"
+      ],
+      "greedy": "The prime number theorem was proven independently by Jacques Hadamard and Charles Jean de la Vallée Poussin in 1896.",
+      "samples": [
+        "The prime number theorem was first proven independently by Jacques Hadamard and Charles Jean de la Vallée Poussin in 1896.",
+        "The prime number theorem was first proven independently by Jacques Hadamard and Charles Jean de la Vallée Poussin in 1896.",
+        "The prime number theorem was proven in two different ways by Jacques Hadamard and Charles Jean de la Vallée Poussin independently in 1896.",
+        "The prime number theorem was first proven independently by Jacques Hadamard and Charles Jean de la Vallée Poussin in 1896.",
+        "The prime number theorem was proven in two forms by Jacques Hadamard and Charles Jean de la Vallée Poussin independently in 1896.",
+        "The prime number theorem was proven independently by Jacques Hadamard and Charles Jean de la Vallée Poussin in 1896.",
+        "The prime number theorem was first proved by Jacques Hadamard and Charles de la Vallée-Poussin independently in 1896.",
+        "The prime number theorem was first proved independently by Jacques Hadamard and Charles Jean de la Vallée Poussin in 1896.",
+        "The prime number theorem was proven independently by Jacques Hadamard and Charles Jean de la Vallée Poussin in 1896.",
+        "The prime number theorem was first conjectured in 1896 and was eventually proven independently by Jacques Hadamard and Charles Jean de la Vallée-Poussin in 1896."
+      ],
+      "se_discrete": 1.0888999753452235,
+      "se_logprob": 1.0394394424989386,
+      "C_SE_disc": -1.0888999753452235,
+      "n_clusters": 4
+    },
+    {
+      "id": "5728f2e26aef051400154897",
+      "question": "What is the term for a hyperactive immune system that attacks normal tissues?",
+      "gold": [
+        "autoimmunity"
+      ],
+      "greedy": "The term for a hyperactive immune system that attacks normal tissues is autoimmune disease.",
+      "samples": [
+        "The term for a hyperactive immune system that attacks normal tissues is autoimmunity.",
+        "The term for a hyperactive immune system that attacks normal tissues is autoimmunity.",
+        "The term for a hyperactive immune system that attacks normal tissues is autoimmunity.",
+        "The term for a hyperactive immune system that attacks normal tissues is Autoimmunity.",
+        "The term for a hyperactive immune system that attacks normal tissues is autoimmunity.",
+        "The term for a hyperactive immune system that attacks normal tissues is autoimmune disease.",
+        "The term for a hyperactive immune system that attacks normal tissues is autoimmune disease.",
+        "The term for a hyperactive immune system that attacks normal tissues is autoimmune disease.",
+        "The term for a hyperactive immune system that attacks normal tissues is autoimmune disease.",
+        "The term for a hyperactive immune system that attacks normal tissues is autoimmune disease."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "57267b755951b619008f7433",
+      "question": "What company owns the American Broadcasting Company?",
+      "gold": [
+        "The Walt Disney Company",
+        "Disney–ABC Television Group"
+      ],
+      "greedy": "The American Broadcasting-Company (ABC) is not owned by any other company; it is an independent entity. However, it is owned and operated by Disney as of 2023.",
+      "samples": [
+        "The parent company of American Broadcasting-Paramount Network (now known as iHeartMedia) owns the American Broadcasting Company (ABC).",
+        "The company that owns American Broadcasting-Company (ABC) is Disney.",
+        "The company that owns American Broadcasting Company (ABC) is Disney.",
+        "The company that owns the American Broadcasting-Company (ABC) is Disney.",
+        "The current owner of American Broadcasting Company (ABC) is Disney.",
+        "The parent company of American Broadcasting-Paramount Network (now known as iHeartMedia) owns the American Broadcasting Company (ABC).",
+        "The American Broadcasting-Company (ABC) is now owned by Disney.",
+        "The American Broadcasting-Company (ABC) is owned by Disney.",
+        "The company that owns American Broadcasting-Company (ABC) is Disney.",
+        "The current owner of American Broadcasting Company (ABC) is The Walt Disney Company."
+      ],
+      "se_discrete": 0.5004024235381879,
+      "se_logprob": 0.5064436803083395,
+      "C_SE_disc": -0.5004024235381879,
+      "n_clusters": 2
+    },
+    {
+      "id": "5710e9f8a58dae1900cd6b34",
+      "question": "When was the colony destroyed?",
+      "gold": [
+        "1565"
+      ],
+      "greedy": "The question is too vague to provide a specific date without more context about which colony you are referring to. Please specify the colony in question.",
+      "samples": [
+        "The specific date when the colony was destroyed varies depending on which colony is being referred to. Could you please specify the name of the colony?",
+        "The question does not specify which colony it is referring to, so I cannot provide a specific date without additional context.",
+        "The question is quite vague about which specific colony is being referred to. Without that context, it's impossible to provide an accurate date for the destruction of a particular colony. Could you please specify which colony you're asking about?",
+        "The specific date of destruction for a particular colony is not provided in your question without additional context. Could you please specify which colony you are asking about?",
+        "The question is somewhat vague without specifying which colony is being referred to. Could you please provide more details or context?",
+        "The specific date of destruction for colonies varies depending on which one is being referred to. For example, the French colonies in Algeria were gradually dismantled over several decades starting from the 1950s with independence in 1962. Please provide the name of the specific colony you are referring to for an",
+        "I'm sorry, I don't have enough context to determine which specific colony you are asking about. Could you please provide more information or specify the name of the colony?",
+        "The question is too vague to provide a specific date, as multiple colonies have been destroyed at different times in history. Could you please specify which colony you are referring to?",
+        "The question lacks context; could you please specify which colony you are referring to?",
+        "The question is quite broad and doesn't specify which colonial entity is being referred to. Could you please provide more context or specify the colony you're asking about?"
+      ],
+      "se_discrete": 1.6094379124341,
+      "se_logprob": 1.6020643617124115,
+      "C_SE_disc": -1.6094379124341,
+      "n_clusters": 6
+    },
+    {
+      "id": "5730b8ca8ab72b1400f9c705",
+      "question": "When was Isiah Bowman appointed to President Wilson's Inquiry?",
+      "gold": [
+        "1917"
+      ],
+      "greedy": "Isiah Bowman was appointed to President Wilson's Inquiry in 1915.",
+      "samples": [
+        "Isiah Bowman was appointed to President Woodrow Wilson's Inquiry in 1915.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1914.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1917.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1918.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1915.",
+        "Isiah Bowman was appointed to President Woodrow Wilson's Inquiry in 1915.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1917.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1915.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1915.",
+        "Isiah Bowman was appointed to President Wilson's Inquiry in 1915."
+      ],
+      "se_discrete": 1.4708084763221114,
+      "se_logprob": 1.454743939272736,
+      "C_SE_disc": -1.4708084763221114,
+      "n_clusters": 5
+    },
+    {
+      "id": "57339eb9d058e614000b5efa",
+      "question": "What does the Museum of the Polish Army portray the history of?",
+      "gold": [
+        "history of arms",
+        "arms"
+      ],
+      "greedy": "The Museum of the Polish Army portrays the history of the Polish armed forces from the Middle Ages to the present day.",
+      "samples": [
+        "The Museum of the Polish Army portrays the history of the Polish Armed Forces from 1795 to the present.",
+        "The Museum of the Polish Army portrays the military and historical heritage of Poland, focusing on its armed forces from ancient times to the present day.",
+        "The Museum of the Polish Army portrays the history of the Polish armed forces from the Middle Ages to the present day.",
+        "The Museum of the Polish Army portrays the military history of Poland, both before and after the country gained independence in 1918.",
+        "The Museum of the Polish Army portrays the history of Poland's military, from ancient times to the present.",
+        "The Museum of the Polish Army portrays the history of the Polish armed forces, including its formation, significant battles, and contributions to Poland's independence movements throughout history.",
+        "The Museum of the Polish Army portrays the history of the Polish armed forces from the medieval period to the present day.",
+        "The Museum of the Polish Army portrays the history of the Polish military from the 18th century to the present day.",
+        "The Museum of the Polish Army portrays the history of Poland's military history from the late 18th century to the present day.",
+        "The Museum of the Polish Army portrays the history of the Polish Armed Forces from their origins to the present day."
+      ],
+      "se_discrete": 1.5047882836811908,
+      "se_logprob": 1.4693946070377317,
+      "C_SE_disc": -1.5047882836811908,
+      "n_clusters": 5
+    },
+    {
+      "id": "57274e975951b619008f87fb",
+      "question": "Many construction companies are now placing more emphasis on what?",
+      "gold": [
+        "establishing relationships with other necessary participants",
+        "establishing relationships with other necessary participants through the design-build process"
+      ],
+      "greedy": "sustainability practices",
+      "samples": [
+        "Safety措施",
+        "sustainability and eco-friendliness in their projects.",
+        "sustainability in construction practices.",
+        "Safety measures in construction.",
+        "Sustainability and eco-friendliness.",
+        "Safety measures and worker welfare.",
+        "Many construction companies are now placing more emphasis on sustainability and green building practices.",
+        "Safety measures and compliance with health and safety regulations.",
+        "Many construction companies are now placing more emphasis on sustainability and green building practices.",
+        "Many construction companies are now placing more emphasis on sustainability and green building practices."
+      ],
+      "se_discrete": 1.6094379124341,
+      "se_logprob": 1.398449220100171,
+      "C_SE_disc": -1.6094379124341,
+      "n_clusters": 6
+    },
+    {
+      "id": "573408ef4776f41900661757",
+      "question": "When did the North American French and Indian War end?",
+      "gold": [
+        "10 February 1763",
+        "signing of the Treaty of Paris on 10 February 1763"
+      ],
+      "greedy": "The North American phase of the French and Indian War, which was part of the larger Seven Years' War in Europe, ended with the signing of the Treaty of Paris in 1763.",
+      "samples": [
+        "The North American phase of the French and Indian War ended with the signing of the Treaty of Paris in 1763.",
+        "The North American phase of the French and Indian War, which was part of the global Seven Years' War, ended with the signing of the Treaty of Paris in 1763.",
+        "The North American phase of the French and Indian War, also known as the Seven Years' War, ended with the signing of the Treaty of Paris in 1763.",
+        "The North American phase of the French and Indian War, which was part of the larger Seven Years' War, ended with the signing of the Treaty of Paris in 1763.",
+        "The North American French and Indian War ended with the signing of the Treaty of Paris in 1763.",
+        "The North American phase of the French and Indian War, also known as the Seven Years' War, ended with the signing of the Treaty of Paris in 1763.",
+        "The North American phase of the French and Indian War ended with the signing of the Treaty of Paris in 1763.",
+        "The North American phase of the French and Indian War ended with the Treaty of Paris in 1763.",
+        "The North American phase of the French and Indian War ended with the signing of the Treaty of Paris in 1763.",
+        "The North American phase of the French and Indian War ended with the signing of the Treaty of Paris in 1763."
+      ],
+      "se_discrete": 0.6730116670092565,
+      "se_logprob": 0.669318524301488,
+      "C_SE_disc": -0.6730116670092565,
+      "n_clusters": 2
+    },
+    {
+      "id": "5706149552bb891400689884",
+      "question": "When is the suspended team scheduled to return?",
+      "gold": [
+        "in 2018",
+        "2018"
+      ],
+      "greedy": "I'm sorry, but I don't have enough information to give a specific date. Could you please provide details about which suspended team and from what context this question arises?",
+      "samples": [
+        "I'm unable to provide a specific date as I don't have enough context about which suspended team you are referring to. Could you please specify the team in question?",
+        "I'm sorry, but I don't have enough information to give a specific date. Could you please provide details about which team and what caused their suspension?",
+        "I'm sorry, but I don't have enough information to give a specific date. Could you please provide details about which suspended team and from what context this question refers?",
+        "I'm sorry, but I don't have enough information to give a specific date. Could you please provide details about which suspended team and from what event or competition?",
+        "I'm sorry, but I don't have enough context to give a specific answer. Could you provide more details about which team and what situation is being referred to?",
+        "I'm sorry, but I don't have enough information to give a specific date. Could you please provide the name of the team and where this suspension is taking place?",
+        "I'm sorry, but I don't have enough information to give a specific date. Could you please provide the name of the team in question?",
+        "I'm sorry, but I don't have enough information to determine when a specific suspended team is scheduled to return. Could you please provide more context or details about which team you're referring to?",
+        "I'm sorry, but I don't have enough information to give a specific answer. The suspension of a team can happen for various reasons and durations, so without knowing which team and what circumstances led to the suspension, I can't determine when they are scheduled to return. Could you please provide more details?",
+        "I'm sorry, but I don't have enough information to provide a specific date or time. Could you please provide more details about which team and what suspension they're referring to?"
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.345601203148072,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "5710f4b8b654c5140001fa46",
+      "question": "Which Count did the Prince strike an arrangement with?",
+      "gold": [
+        "Count Ludwig von Nassau-Saarbrücken",
+        "Ludwig von Nassau-Saarbrücken"
+      ],
+      "greedy": "I'm sorry, but without additional context about which specific Prince and Count you are referring to, I cannot provide a short factual answer. Could you please provide more details or specify the names involved?",
+      "samples": [
+        "I apologize, but without additional context about which Prince and Count you are referring to, I cannot provide a specific answer. Could you please provide more details or clarify your question?",
+        "The question is incomplete and does not specify which Prince or which Count is being referred to. Please provide the specific names for a factual answer.",
+        "I'm sorry, but without additional context or information about which specific Prince and Count you are referring to, I cannot provide a short, factual answer to your question. Could you please provide more details?",
+        "I'm afraid without additional context, it's impossible to determine which specific Count the Prince struck an arrangement with. Could you please provide more details or the source of this question?",
+        "The question is incomplete and lacks context to provide a specific count or arrangement. Could you please provide more details?",
+        "I'm sorry, but to provide a short factual answer, I need more context about which specific Prince and Count you are referring to. This information is not clear in your question.",
+        "I'm sorry, but without additional context about which Prince and which Count you're referring to, I cannot provide a specific short factual answer. Could you please provide more details or the names involved?",
+        "Without additional context, it is impossible to determine which specific Count the Prince struck an arrangement with. This could refer to various historical figures depending on the timeline and region.",
+        "I'm unable to provide a specific factual answer without more context or information about which Prince and Count you are referring to. Could you please provide additional details?",
+        "I'm sorry, but without additional context about which Prince and which Count you are referring to, I cannot provide a specific answer. Could you please provide more details?"
+      ],
+      "se_discrete": 1.6094379124341,
+      "se_logprob": 1.583130692228974,
+      "C_SE_disc": -1.6094379124341,
+      "n_clusters": 6
+    },
+    {
+      "id": "57265a58dd62a815002e8270",
+      "question": "Name a type of Toyota compact trucks?",
+      "gold": [
+        "Toyota Hilux",
+        "Hilux"
+      ],
+      "greedy": "A Tacoma is a type of Toyota compact truck.",
+      "samples": [
+        "A type of Toyota compact truck is the Tacoma.",
+        "A Toyota Tacoma is a type of compact truck.",
+        "One type of Toyota compact truck is the Toyota Hilux (also known as the LandCruiser in some regions).",
+        "A Tacoma is a type of Toyota compact truck.",
+        "A Tacoma is a type of Toyota compact truck.",
+        "A type of Toyota compact truck is the Toyota Tacoma.",
+        "Toyota offers the Tacoma as a type of compact truck.",
+        "A type of Toyota compact truck is the丰田RAV4 (Toyota RAV4).",
+        "A Tacoma is a type of Toyota compact truck.",
+        "A Tacoma is a type of Toyota compact truck."
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.5997716714023893,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "5727e6cbff5b5019007d97ef",
+      "question": "According to Oxfam, the 85 richest people have wealth equal to how many average people?",
+      "gold": [
+        "50%",
+        "3.5 billion",
+        "about 3.5 billion people"
+      ],
+      "greedy": "According to Oxfam, the 85 richest people in the world have as much wealth as the poorest half of the global population.",
+      "samples": [
+        "According to Oxfam, the wealth of the 85 richest people is equivalent to that of around 450 million average people.",
+        "According to Oxfam, the 85 richest people in the world have a combined wealth equivalent to that of the bottom half of the global population.",
+        "According to Oxfam, the wealth of the 85 richest people is equal to that of the 3. 4 billion poorest people globally.",
+        "According to Oxfam, the wealth of the 85 richest people is equal to that of the 3.5 poorest people worldwide.",
+        "According to Oxfam, the wealth of the 85 richest people is equivalent to that of the poorest 3.6 billion people combined.",
+        "According to Oxfam, the wealth of the 85 richest people is equivalent to that of the world's poorest half (3.6 billion people).",
+        "According to Oxfam, the 85 richest people have as much wealth as the bottom half of the global population.",
+        "According to Oxfam, the 85 richest people in the world have as much wealth as the poorest 3.6 billion people combined.",
+        "According to Oxfam, the 85 wealthiest people in the world have as much wealth as the poorest half of the global population.",
+        "According to Oxfam, the 85 richest people in the world have an equivalent net worth to that of the bottom half of the global population."
+      ],
+      "se_discrete": 1.4184836619456564,
+      "se_logprob": 1.4101799581320926,
+      "C_SE_disc": -1.4184836619456564,
+      "n_clusters": 5
+    },
+    {
+      "id": "57309921396df919000961f6",
+      "question": "When did the movement that would become The United Methodist Church begin?",
+      "gold": [
+        "mid-18th century",
+        "began in the mid-18th century within the Church of England."
+      ],
+      "greedy": "The movement that would become The United Methodist Church began in 1968 when the Methodist Church and the Evangelical United Brethren Church merged.",
+      "samples": [
+        "The movement that would become The United Methodist Church began in 1784 with the founding of the New Lights, an early Methodist group in England. It evolved over time to form various denominations, including the Methodist Episcopal Church, the Methodist Protestant Church, and finally the United Methodist Church in 1968",
+        "The movement that would become The United Methodist Church began in 1968 when it was formed through the merger of several denominations, including the Methodist Church and the Evangelical United Brethren Church. However, the roots of Methodist influence date back to the early 18th century with its founder John Wesley.",
+        "The movement that would become The United Methodist Church began in 1968 when the Methodist Church and the Evangelical United Brethren Church merged.",
+        "The movement that would become The United Methodist Church began in 1968 with the merger of the Methodist church and the Evangelical United Brethren Church.",
+        "The movement that would become The United Methodist Church began in 1968 when it was formed through the union of the Methodist Church and the Evangelical United Brethren Church.",
+        "The movement that would become The United Methodist Church began in 1784 when a group of Methodist congregations met to address differences within the movement.",
+        "The movement that would become The United Methodist Church began in 1784 with the formation of the New Light movement within the Anglican Church.",
+        "The movement that would become The United Methodist Church began in 1968 when the Evangelical United Brethren and the Methodist Church merged.",
+        "The movement that would become The United Methodist Church began in 1968 through the merger of the Methodist Church and the Evangelical United Brethren Church.",
+        "The movement that would become The United Methodist Church began in 1968 when it was formed by the merger of the Methodist Church and the Evangelical United Brethren Church."
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.0578554484354796,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "5729ef266aef05140015511c",
+      "question": "What type of soil is considered a product of soil management by indigenous peoples in the Amazon Forest?",
+      "gold": [
+        "Terra preta",
+        "black earth",
+        "Terra preta (black earth)"
+      ],
+      "greedy": "Terraced soils are considered a product of soil management by indigenous peoples in the Amazon Forest.",
+      "samples": [
+        "Terraced soils are considered a product of soil management by indigenous peoples in the Amazon Forest.",
+        "Organic soils formed through the accumulation of plant material and traditional land use practices by indigenous peoples in the Amazon Forest are often referred to as \"Amazonian Dark Earths\" or \"Terra Preta de Indio\".",
+        "Soil managed through traditional practices by indigenous peoples in the Amazon Forest, such as slash-and-burn agriculture (swidden), can result in fertile forest gardens and soil that has been enriched with organic matter. This form of soil management is often referred to as terra preta (black earth) in some regions.",
+        "Organic soil known as \"terra preta\" or \"black earth\", which is created through intentional soil management by indigenous peoples in the Amazon Forest.",
+        "Terraced soils are considered a product of soil management by indigenous peoples in the Amazon Forest.",
+        "Peat soil is often considered a product of soil management by indigenous peoples in the Amazon Forest. Indigenous peoples traditionally managed and manipulated their ecosystems, including practices that could lead to the formation of peatlands through controlled forest use and fire management.",
+        "Terraced soil is considered a product of soil management by indigenous peoples in the Amazon Forest.",
+        "Terraced soils are considered a product of soil management by indigenous peoples in the Amazon Forest.",
+        "Indigenous peoples in the Amazon Forest have traditionally managed soils through techniques such as shifting agriculture (slash-and-burn), resulting in nutrient-rich, highly organic soils due to continuous composting and leaching. These soils are often referred to as \"terra preta\" or \"black earth,\" which are anthropogenic and highly fertile",
+        "Terraced soil is considered a product of soil management by indigenous peoples in the Amazon Forest."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.2304612937524226,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "56e756bc37bdd419002c3e99",
+      "question": "What type of support does co-teaching provide?",
+      "gold": [
+        "social networking support",
+        "social networking"
+      ],
+      "greedy": "Co-teaching provides collaborative instructional support where two teachers work together to teach a class, often sharing responsibilities and strategies to meet the diverse needs of students.",
+      "samples": [
+        "Co-teaching provides collaborative instructional support where two teachers work together to teach the same group of students, often in a blended role or by dividing tasks, to enhance student learning and address diverse learning needs.",
+        "Co-teaching provides collaborative support between two educators in the same classroom to better meet diverse student learning needs.",
+        "Co-teaching provides collaborative support for students by combining the teaching expertise of two teachers in a single classroom. This model can include various teaching strategies, such as parallel teaching, station teaching, and cooperative teaching, to meet diverse student needs effectively.",
+        "Co-teaching provides integrated instruction where two educators collaborate to teach the same class, supporting both students and lesson delivery.",
+        "Co-teaching provides dual instructional support by combining the expertise and strategies of two educators in the same classroom for students.",
+        "Co-teaching provides collaborative instructional support between two teachers, allowing for differentiated instruction and shared responsibility in managing the classroom.",
+        "Co-teaching provides joint instructional support where two teachers work together to instruct students, dividing classroom responsibilities or blending their teaching methods to meet diverse student needs.",
+        "Co-teaching provides shared responsibility and collaboration between general education teachers and special education teachers to support students with diverse needs in the same classroom.",
+        "Co-teaching provides collaborative teaching between two educators, offering diverse instructional approaches and resources for students.",
+        "Co-teaching provides collaborative teaching support, where two or more qualified teachers instruct a single class together, sharing responsibilities and enhancing student learning through combined expertise."
+      ],
+      "se_discrete": 1.6094379124341,
+      "se_logprob": 1.6231023349705354,
+      "C_SE_disc": -1.6094379124341,
+      "n_clusters": 6
+    },
+    {
+      "id": "572908c13f37b31900477fbf",
+      "question": "Innate cells can act as mediators in the activation of what branch of the immune system?",
+      "gold": [
+        "adaptive immune system",
+        "adaptive immune system.",
+        "adaptive"
+      ],
+      "greedy": "Innate cells can act as mediators in the activation of the innate branch of the immune system.",
+      "samples": [
+        "Innate cells can act as mediators in the activation of the innate immune system.",
+        "Innate cells can act as mediators in the activation of both the innate and adaptive branches of the immune system. However, their primary role is more closely associated with innate immunity, where they provide rapid defense responses without prior sensitization.",
+        "Innate cells can act as mediators in the activation of the innate immune system.",
+        "Innate cells can act as mediators in the activation of the innate immune system.",
+        "Innate cells can act as mediators in the activation of the innate branch of the immune system.",
+        "Innate cells can act as mediators in activating the innate branch of the immune system.",
+        "Innate cells can act as mediators in the activation of the innate branch of the immune system.",
+        "Innate cells can act as mediators in the activation of the innate immune system.",
+        "Innate cells can act as mediators in the activation of both the cellular and humoral branches of the immune system.",
+        "Innate cells can act as mediators in the activation of the immune response through various branches, but primarily they play a role in activating the innate immune system itself. However, some of their cytokines or mediators can indirectly influence other branches such as the adaptive immune system."
+      ],
+      "se_discrete": 0.9404479886553263,
+      "se_logprob": 0.8065828345173511,
+      "C_SE_disc": -0.9404479886553263,
+      "n_clusters": 4
+    },
+    {
+      "id": "5727f05b4b864d190016406a",
+      "question": "What does less education lead to when working?",
+      "gold": [
+        "lower wages"
+      ],
+      "greedy": "Less education often correlates with lower earnings and fewer job opportunities in many sectors.",
+      "samples": [
+        "Less education often correlates with lower earning potential and may lead to fewer job opportunities in higher-skilled sectors.",
+        "Less education often correlates with lower wages and fewer job opportunities in many industries.",
+        "Less education typically correlates with lower earning potential and fewer employment opportunities in many sectors.",
+        "Less education typically correlates with lower job satisfaction, higher unemployment rates, and potentially lower earnings.",
+        "Less education typically correlates with lower earnings and fewer job opportunities in many sectors.",
+        "Less education may lead to lower earning potential and potentially fewer employment opportunities compared to those with higher education levels.",
+        "Less education often leads to lower earnings and increased job difficulty in many sectors.",
+        "Less education typically leads to lower job qualifications, potential wage disadvantages, and possibly higher unemployment rates in most occupations.",
+        "Less education may correlate with lower earnings and less access to higher-paying jobs when working.",
+        "Less education typically leads to lower earning potential and potentially fewer employment opportunities when working."
+      ],
+      "se_discrete": 1.6094379124341,
+      "se_logprob": 1.5503116158753736,
+      "C_SE_disc": -1.6094379124341,
+      "n_clusters": 6
+    },
+    {
+      "id": "572957ad1d046914007792d9",
+      "question": "What kind of cell did cynaobacteria enter long ago?",
+      "gold": [
+        "eukaryotic",
+        "an early eukaryotic cell"
+      ],
+      "greedy": "Cynaobacteria entered into a symbiotic relationship with other cells long ago, leading to the development of chloroplasts in plant and algal cells.",
+      "samples": [
+        "Cynaobacteria entered into a symbiotic relationship with other cells, most likely eukaryotic cells, long ago, leading to the development of chloroplasts in plant and algal cells.",
+        "Cynaobacteria entered into共生 (symbiotic) relationships with other cells long ago, leading to the development of plastids in plant cells and chloroplasts in algae.",
+        "Cynaobacteria entered into a symbiotic relationship with other cells, forming plastids in plant cells and chloroplasts in algae.",
+        "Cynaobacteria entered into a mutually beneficial relationship with other cells, forming plastids in eukaryotic cells, most notably chloroplasts in plants.",
+        "Cynobacteria (now known as cyanobacteria) entered into a symbiotic relationship with early eukaryotic cells, leading to the development of chloroplasts in plant cells and the ancestors of modern algae.",
+        "Cynaobacteria entered into共生 (symbiotic) relationships long ago, leading to the integration of some of their cell structures into other types of cells, forming chloroplasts in plant and algal cells.",
+        "Cynaobacteria entered into an endosymbiotic relationship with other cells long ago, resulting in the development of chloroplasts in plant and algal cells.",
+        "Cynaobacteria entered into a symbiotic relationship with other cells long ago, leading to the evolution of plastids in plant and algal cells.",
+        "Cynaobacteria entered into a symbiotic relationship with other cells, leading to the development of plastids in plant cells and chloroplasts in algae.",
+        "Cynaobacteria entered into a symbiotic relationship with other cells long ago, leading to the development of plastids in eukaryotic cells."
+      ],
+      "se_discrete": 1.2275294114572126,
+      "se_logprob": 1.2510892717812312,
+      "C_SE_disc": -1.2275294114572126,
+      "n_clusters": 5
+    },
+    {
+      "id": "56bf3e803aeaaa14008c9589",
+      "question": "What position does Brandon Marshall currently play? ",
+      "gold": [
+        "Linebacker"
+      ],
+      "greedy": "Brandon Marshall currently plays as a wide receiver.",
+      "samples": [
+        "Brandon Marshall currently plays as a wide receiver.",
+        "Brandon Marshall currently plays as a wide receiver.",
+        "Brandon Marshall currently plays the position of wide receiver.",
+        "Brandon Marshall currently plays wide receiver.",
+        "Brandon Marshall currently plays as a wide receiver.",
+        "Brandon Marshall currently plays as a wide receiver.",
+        "Brandon Marshall currently plays the position of wide receiver.",
+        "Brandon Marshall currently plays as a wide receiver.",
+        "Brandon Marshall currently plays as a wide receiver.",
+        "Brandon Marshall currently plays as a wide receiver."
+      ],
+      "se_discrete": 0.0,
+      "se_logprob": 0.0,
+      "C_SE_disc": -0.0,
+      "n_clusters": 1
+    },
+    {
+      "id": "573796edc3c5551400e51f37",
+      "question": "What is the term for the lack of obsevable free quarks?",
+      "gold": [
+        "color confinement"
+      ],
+      "greedy": "The term for the lack of observable free quarks is \"quark confinement. \"",
+      "samples": [
+        "The term for the lack of observable free quarks is quark confinement.",
+        "The term for the lack of observable free quarks is \"quark confinement. \"",
+        "The term for the lack of observable free quarks is hadronization. In hadronization, quarks are confined within hadrons such as protons and neutrons.",
+        "The term for the lack of observable free quarks is \"quark confinement. \"",
+        "The term for the lack of observable free quarks is \"quark confinement. \"",
+        "The term for the lack of observable free quarks is \"quark confinement. \"",
+        "The term for the lack of observable free quarks is \"quark confinement. \"",
+        "The term for the lack of observable free quarks is confinement.",
+        "The term for the lack of observable free quarks is Quark Confinement.",
+        "The term for the lack of observable free quarks is \"quark confinement. \""
+      ],
+      "se_discrete": 0.639031859650177,
+      "se_logprob": 0.580253668741747,
+      "C_SE_disc": -0.639031859650177,
+      "n_clusters": 3
+    },
+    {
+      "id": "572771a5f1498d1400e8f842",
+      "question": "The merger between ITT and ABC was suspended after a complaint was filed by whom in July 1967?",
+      "gold": [
+        "Department of Justice"
+      ],
+      "greedy": "The merger between ITT and ABC was suspended after a complaint was filed by the Federal Trade Commission (FTC) in July 1967.",
+      "samples": [
+        "The merger between ITT (International Telephone and Telegraph) and ABC (Associated Boston Companies) was suspended after a complaint was filed by the Department of Justice in July 1967.",
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Federal Trade Commission (FTC) in July 1967.",
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Department of Justice (DOJ) in July 1967.",
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Federal Trade Commission (FTC) in July 1967.",
+        "A short factual answer is not available in widely accessible sources for this specific detail about the suspension of the merger between ITT and ABC in 1967, as it could depend on regional regulatory context or lesser-known details. For precise information, consulting official records from regulatory bodies like the FTC or FCC may be necessary",
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Department of Justice.",
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Department of Justice (DOJ) in July 1967.",
+        "The merger between ITT (International Telephone and Telegraph) and ABC (American Broadcasting Company) was suspended after a complaint was filed by the Federal Trade Commission (FTC) in July 1967.",
+        "A short factual answer to your question is:\n\nThe complaint was filed by AT&T (American Telephone and Telegraph Company).\n\nThis resulted in the suspension of the merger talks between ITT (International Telephone and Telegraph Corporation) and ABC (American Broadcasting Company) in July 1967, due to antitrust concerns.",
+        "The merger between ITT and ABC was suspended after a complaint was filed by the Department of Justice (DOJ) in July 1967."
+      ],
+      "se_discrete": 1.5047882836811908,
+      "se_logprob": 1.404912272401867,
+      "C_SE_disc": -1.5047882836811908,
+      "n_clusters": 5
+    },
+    {
+      "id": "5729fb003f37b31900478629",
+      "question": "The production of what signalling molecules is regulated by the immune system?",
+      "gold": [
+        "hormones"
+      ],
+      "greedy": "The production of cytokines and chemokines is primarily regulated by the immune system.",
+      "samples": [
+        "The production of cytokines is regulated by the immune system.",
+        "The production of cytokines is primarily regulated by the immune system.",
+        "The production of cytokines and chemokines is primarily regulated by the immune system.",
+        "The production of cytokines is regulated by the immune system.",
+        "The production of cytokines is regulated by the immune system.",
+        "The production of cytokines and chemokines is regulated by the immune system.",
+        "The production of cytokines is primarily regulated by the immune system.",
+        "The production of cytokines and chemokines is primarily regulated by the immune system.",
+        "The production of cytokines and chemokines is regulated by the immune system.",
+        "The production of cytokines and chemokines is regulated by the immune system."
+      ],
+      "se_discrete": 1.366158847569202,
+      "se_logprob": 1.3670934784848199,
+      "C_SE_disc": -1.366158847569202,
+      "n_clusters": 4
+    },
+    {
+      "id": "5705f36452bb89140068971b",
+      "question": "Which mountain range influenced the split of the regions?",
+      "gold": [
+        "Tehachapis",
+        "the Tehachapis"
+      ],
+      "greedy": "The Rocky Mountains, for example, influenced the split of the western United States from Canada.",
+      "samples": [
+        "The Rocky Mountains, for example, influenced the split of North America into eastern and western regions.",
+        "Without specific geographical context, it's impossible to determine which mountain range is being referred to. Please provide more details or specify the location in question.",
+        "Without specific context, it's impossible to determine which mountain range is being referred to. Different mountain ranges have influenced splits in various regions around the world, such as the Himalayas splitting Asia from India, or the Andes splitting South America from North America.",
+        "Without specific geographic context, it's impossible to determine which mountain range influenced the split of the regions. Could you provide more details about the regions and locations in question?",
+        "To provide a short, factual answer, I need to know which specific mountain range you're referring to. Different mountain ranges have played significant roles in splitting regions at various times and places around the world. Could you please specify the mountain range in question?",
+        "The Rocky Mountains, for example, influenced the geographical and political divisions between Canada and the United States in North America.",
+        "The Rocky Mountains, for example, influenced the split of North America into eastern and western regions.",
+        "The Rocky Mountains, for example, influenced the split of North America into its western and eastern regions.",
+        "Without specific geographical context, it's impossible to determine which mountain range influenced a particular split of regions. Could you please provide more information or a specific location?",
+        "The Rocky Mountains, for example, influenced the division between the western and eastern parts of North America."
+      ],
+      "se_discrete": 1.6094379124341,
+      "se_logprob": 1.5569174667480938,
+      "C_SE_disc": -1.6094379124341,
+      "n_clusters": 6
+    },
+    {
+      "id": "5733f309d058e614000b6649",
+      "question": "What were casualties of battle?",
+      "gold": [
+        "Canadians, including their commanding officer",
+        "killed many of the Canadians, including their commanding officer, Joseph Coulon de Jumonville",
+        "many of the Canadians, including their commanding officer, Joseph Coulon de Jumonville"
+      ],
+      "greedy": "Casualties of a battle refer to the number of soldiers killed, wounded, or missing in action during the conflict.",
+      "samples": [
+        "Casualties of a battle refer to the number of soldiers who are killed, wounded, or missing as a result of military action.",
+        "Casualties of a battle refer to the number of individuals who are injured, killed, or missing as a result of that battle.",
+        "Casualties of a battle refer to the number of soldiers killed, wounded, or missing in action during the conflict.",
+        "Casualties of a battle refer to the number of soldiers or other participants who were killed, wounded, captured, or missing in action during the conflict.",
+        "Casualties of a battle refer to the number of soldiers or combatants who are killed, wounded, captured, or missing as a result of military engagement.",
+        "Casualties of a battle refer to the number of soldiers killed, wounded, or missing in action during the conflict.",
+        "Casualties of a battle refer to the number of military personnel who are killed, wounded, or missing in action during the conflict.",
+        "Casualties in a battle refer to the number of people who are killed, wounded, or missing as a result of combat or associated events during the battle.",
+        "Casualties of a battle refer to the number of military personnel killed, wounded, or missing in action during the conflict.",
+        "Casualties in a battle refer to the number of military personnel who were killed, wounded, or missing as a result of combat or injuries sustained during the conflict."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.2893699318223872,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "572f609ca23a5019007fc5af",
+      "question": "After the Rhine emerges from Lake Constance, what direction does it flow?",
+      "gold": [
+        "westward"
+      ],
+      "greedy": "After emerging from Lake Constance, the Rhine flows eastward.",
+      "samples": [
+        "After emerging from Lake Constance, the Rhine flows generally westward.",
+        "After emerging from Lake Constance, the Rhine flows in a general westward direction towards the North Sea.",
+        "After emerging from Lake Constance, the Rhine flows in an eastward direction.",
+        "After emerging from Lake Constance, the Rhine flows in an eastward direction.",
+        "After emerging from Lake Constance, the Rhine flows eastwards.",
+        "After emerging from Lake Constance, the Rhine flows generally eastward into Germany.",
+        "After emerging from Lake Constance, the Rhine flows westward.",
+        "After emerging from Lake Constance, the Rhine flows in an eastward direction.",
+        "The Rhine flows east after emerging from Lake Constance.",
+        "After emerging from Lake Constance, the Rhine flows westward."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.336482280545151,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "57281d494b864d19001644c0",
+      "question": "What political group began to gain support following the corruption scandal?",
+      "gold": [
+        "Jacksonville Consolidation"
+      ],
+      "greedy": "The question does not specify which corruption scandal or political group is being referred to, so I cannot provide a precise answer without additional context.",
+      "samples": [
+        "Without specific context, it's impossible to name a particular political group that started gaining support following a corruption scandal, as this can vary greatly depending on the country and the details of the scandal. Examples could include opposition parties, new anti-corruption movements, or previously unrecognized factions within an existing party system.",
+        "Without specifying the country or time period, it's impossible to pinpoint a particular political group, but in many cases, following a corruption scandal, opposition parties or new political movements often gain support. Examples include various European Union countries post-Enron scandal or Latin American nations after the \"Bolivia gas conflict\" of",
+        "Without specifying which corruption scandal and country, it's impossible to name a particular political group. Many countries have had significant corruption scandals that led to changes in voter support for various groups.",
+        "The question does not specify which country or corruption scandal is being referenced, so I cannot provide a specific political group without additional context. Without those details, I can't offer a precise answer.",
+        "Without additional context, it's impossible to specify which political group began to gain support following a particular corruption scandal. The specific party would depend on the location and timing of the scandal.",
+        "Without specific context, it's impossible to name a particular political group that began to gain support following a corruption scandal. Many countries have seen such groups emerge in response to public outcry about political and government misconduct.",
+        "The political group that gained support following a corruption scandal varies depending on the specific scandal and context. Without more details, it's impossible to provide a specific name.",
+        "The political group that gained support following a corruption scandal can vary depending on the specific scandal and country. To provide a precise answer, the name of the group and the context (such as country and scandal) would be necessary.",
+        "Without specific context, it's difficult to pinpoint which political group began to gain support following a particular corruption scandal. This could vary depending on the country and the specific scandal. Examples might include Factions within opposition parties in countries like Venezuela or Brazil following major corruption cases.",
+        "The answer is not specific to a particular scandal or political group without additional context. Many political groups worldwide have experienced increased support due to various corruption scandals. For precise information, please specify the country and the specific scandal in question."
+      ],
+      "se_discrete": 1.6094379124341,
+      "se_logprob": 1.5539498247007826,
+      "C_SE_disc": -1.6094379124341,
+      "n_clusters": 6
+    },
+    {
+      "id": "57280f974b864d1900164370",
+      "question": "If the head of government refuses to enforce a decision of the highest court what terminology could be used?",
+      "gold": [
+        "her or his capacity as public official",
+        "capacity as public official",
+        "constitutional impasse"
+      ],
+      "greedy": "The head of government refusing to enforce a decision of the highest court could be termed as \"executive non-enforcement\" or \"non-compliance with judicial ruling. \"",
+      "samples": [
+        "The situation could be described as judicial override. However, it is important to note that in many democratic systems, such an action would likely be unconstitutional or illegal for the head of government to refuse to enforce a lawful and valid court decision.",
+        "The term that could be used in this scenario is \"refusal to comply\" with the ruling of the highest court.",
+        "The head of government refusing to enforce a decision of the highest court could be described as \"vetoing judicial rulings\" or \"challenging the judiciary's authority. \"",
+        "The head of government refusing to enforce a decision of the highest court could be described as \"overriding judicial decisions\" or \"constitutional resistance. \"",
+        "The situation where the head of government refuses to enforce a decision of the highest court could be termed as \"nullification\" or \"non-enforcement. \"",
+        "The head of government refusing to enforce a decision from the highest court could be described as \"executive non-enforcement\" or \"non-compliance with judicial decisions. \"",
+        "This situation could be termed as \"judicial defiance\" or \"refusal to comply with a Supreme Court ruling. \"",
+        "This scenario could be termed as \"judicial non-enforcement\" or \"refusal to comply with judicial decisions. \"",
+        "The head of government refusing to enforce a decision by the highest court is often referred to as judicial activism or judicial non-enforcement, depending on the context and perspective. However, the more neutral term might be \"non-enforcement of a court decision\" or \"refusal to implement a court ruling. \"",
+        "The head of government refusing to enforce a decision of the highest court could be termed as \"constitutional defiance\" or \"refusal to implement judicial rulings. \""
+      ],
+      "se_discrete": 1.4184836619456564,
+      "se_logprob": 1.3933768535798012,
+      "C_SE_disc": -1.4184836619456564,
+      "n_clusters": 5
+    },
+    {
+      "id": "57268a37f1498d1400e8e33d",
+      "question": "What is the oncorhynchus also called?",
+      "gold": [
+        "chum salmon"
+      ],
+      "greedy": "Oncorhynchus is also commonly known as the Pacific salmon.",
+      "samples": [
+        "Oncorhynchus is also commonly known as the salmon family.",
+        "Oncorhynchus is also commonly known as the Salmon genus.",
+        "Oncorhynchus is also commonly called the Pacific salmon.",
+        "Oncorhynchus is also commonly known as the salmon species.",
+        "Oncorhynchus is also commonly known as the Salmon genus.",
+        "Oncorhynchus is also known as the salmon species.",
+        "The Oncorhynchus is also commonly known as the Salmon genus.",
+        "Oncorhynchus is also commonly known as the Pacific salmon.",
+        "Oncorhynchus is also commonly known as the Pacific salmon.",
+        "Oncorhynchus is also known as the Pacific salmon."
+      ],
+      "se_discrete": 0.6730116670092565,
+      "se_logprob": 0.6775750550174389,
+      "C_SE_disc": -0.6730116670092565,
+      "n_clusters": 2
+    },
+    {
+      "id": "56e0f6aa231d4119001ac4f0",
+      "question": "Where are longitudinal waves found?",
+      "gold": [
+        "waves in plasmas",
+        "force-free magnetic fields",
+        "in force-free magnetic fields"
+      ],
+      "greedy": "Longitudinal waves are found in both solids, liquids, and gases.",
+      "samples": [
+        "Longitudinal waves are found in both solids, liquids, and gases.",
+        "Longitudinal waves are found in both solids, liquids, and gases. They are characterized by particles of the medium vibrating parallel to the direction of wave propagation.",
+        "Longitudinal waves are found in both liquids and gases, as well as in solids. They can also occur in the Earth's interior to help seismologists detect seismic events.",
+        "Longitudinal waves are found in both transverse media (like water or air) and in solid materials. In solids, they can travel through the entire structure from one end to another without breaking it.",
+        "Longitudinal waves are found in both solids, liquids, and gases. They are characterized by particles of the medium oscillating parallel to the direction of wave travel.",
+        "Longitudinal waves are found in both solids, liquids, and gases. They involve particles of the medium displaced parallel to the direction of the wave's travel.",
+        "Longitudinal waves are found in both solids, liquids, and gases.",
+        "Longitudinal waves are found in both solids, liquids, and gases. They are characterized by particles of the medium vibrating parallel to the direction of wave propagation.",
+        "Longitudinal waves are found in both solids, liquids, and gases.",
+        "Longitudinal waves are found in both solids, liquids, and gases."
+      ],
+      "se_discrete": 1.193549604098133,
+      "se_logprob": 1.0811664237464298,
+      "C_SE_disc": -1.193549604098133,
+      "n_clusters": 4
+    },
+    {
+      "id": "57263ea0271a42140099d7c5",
+      "question": "DEC originally had 3 layers but evolved into how many layers ",
+      "gold": [
+        "Initially built with three layers, it later (1982) evolved into a seven-layer OSI-compliant networking protocol",
+        "seven"
+      ],
+      "greedy": "DEC originally had 3 layers but evolved into 7 layers, similar to the Open Systems Interconnection (OSI) model.",
+      "samples": [
+        "DEC originally had 3 layers but evolved into 5 layers, becoming the Open Systems Interconnection (OSI) model.",
+        "DEC originally had 3 layers but evolved into the 7-layer Open Systems Interconnection (OSI) model.",
+        "DEC originally had 3 layers but evolved into seven layers, similar to the Open Systems Interconnection (OSI) model.",
+        "DEC originally had 3 layers, but it evolved into 7 layers, similar to the Open Systems Interconnection (OSI) model.",
+        "DEC originally had 3 layers but evolved into seven layers, similar to the Open System Interconnection (OSI) model.",
+        "DEC originally had 3 layers but evolved into 7 layers, similar to the Open Systems Interconnection (OSI) model.",
+        "DEC (Digital Equipment Corporation) originally had 3 layers for its model of the OSI reference model, and it evolved to include a fourth layer as part of the ISO/OSI standard.",
+        "DEC originally had 3 layers but evolved into 7 layers, following the Open Systems Interconnection (OSI) model.",
+        "DEC originally had 3 layers but evolved into 7 layers, developing the Open Systems Interconnection (OSI) model.",
+        "DEC originally had 3 layers but evolved into 5 layers, becoming the Open Systems Interconnection (OSI) model."
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.7335214816953065,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "56e77a8700c9c71400d7718e",
+      "question": "What website are teachers using to sell their lesson plans?",
+      "gold": [
+        "TeachersPayTeachers.com"
+      ],
+      "greedy": "There is no widely known or regulated website specifically for teachers to sell their lesson plans. Such activities are typically conducted through personal websites, social media platforms, or freelance marketplaces.",
+      "samples": [
+        "Teachers do not typically use a single centralized website for selling lesson plans; options can vary widely, including personal websites, online marketplaces, or social media platforms. There is no widely recognized and standardized platform for this purpose.",
+        "There is no widely-known or officially-recognized website specifically designed for teachers to sell their lesson plans. Individual platforms and marketplaces might exist, but they are not standardized or mainstream. Teachers might consider creating their own websites or using social media groups to share and sell lesson plans.",
+        "There is no widely-known or regulated website where teachers typically sell lesson plans directly. Many educators share and exchange materials through platforms like Teachers Pay Teachers, but selling them for monetary gain is not standard practice on such sites.",
+        "There is no widely known or common website where teachers sell their lesson plans on a large scale. Individual teachers may occasionally list their materials on personal websites or social media platforms, but there isn't a centralized marketplace for this purpose.",
+        "There is no major, widely-used public website specifically for teachers to sell their lesson plans; however, individual teachers may list them on personal websites or teacher-focused marketplaces like TeachersPayTeachers.",
+        "There is no widely known or regulated website specifically for teachers to sell their lesson plans on a large scale. Individual platforms or marketplaces might exist, but they are not mainstream or standardized.",
+        "There is no widely known or officially recognized website specifically for teachers to sell their lesson plans on a large scale. Teachers may use personal websites, social media platforms, or school districts' internal marketplaces to share and sell materials.",
+        "Teachers do not typically use mainstream websites specifically for selling their lesson plans on a regular basis. Instead, they often rely on personal networks, local community boards, social media groups, or specialized online marketplaces such as Teachers Pay Teachers for sharing and purchasing educational materials.",
+        "There isn't a single widely-used website where all teachers sell their lesson plans, as such platforms can vary by location and type of content. Popular options might include individual teacher websites or community-based educational forums. For official, curated resources, one could look to school district websites or education resource banks.",
+        "There is no widely recognized or regulated website where teachers can legally and easily sell their lesson plans. Teachers might occasionally use personal websites or platforms like Etsy, but such practices are not as formalized or sanctioned. Many educational institutions have policies against selling copyrighted lesson plans created for educational purposes."
+      ],
+      "se_discrete": 1.6094379124341,
+      "se_logprob": 1.5254880966711888,
+      "C_SE_disc": -1.6094379124341,
+      "n_clusters": 6
+    },
+    {
+      "id": "57264fe65951b619008f6fa4",
+      "question": "When was the study on sequenced Y genomes published?",
+      "gold": [
+        "October 2011"
+      ],
+      "greedy": "The study on sequenced Y chromosome genomes was published in 2013.",
+      "samples": [
+        "The study on sequenced Y chromosomes was published in 2003.",
+        "The study on sequenced Y chromosomes was published in 2003.",
+        "The first comprehensive study of sequenced Y chromosomes was published in 2000.",
+        "The study on sequenced Y chromosomes was published in 2014.",
+        "The study on sequenced Y chromosome genomes was published in 2013.",
+        "The study on sequenced Y chromosome genomes was published in 2014.",
+        "The first study on sequenced Y chromosome genomes was published in 2003.",
+        "The study on sequenced Y chromosomes was published in 2003.",
+        "The study on sequenced Y chromosomes was published in 2003.",
+        "The study on sequenced Y chromosomes was published in 2014."
+      ],
+      "se_discrete": 1.4184836619456564,
+      "se_logprob": 1.3710502957651793,
+      "C_SE_disc": -1.4184836619456564,
+      "n_clusters": 5
+    },
+    {
+      "id": "5733f5f24776f419006615c3",
+      "question": "How many casualties did British get?",
+      "gold": [
+        "Approximately 1,000 British soldiers were killed or injured.",
+        "1,000 British soldiers",
+        "Approximately 1,000",
+        "1,000"
+      ],
+      "greedy": "The number of British casualties during specific conflicts varies greatly and depends on the particular war or battle being referred to. Without specifying which conflict, it's not possible to provide an accurate number.",
+      "samples": [
+        "I'm unable to provide a specific number without additional context, as the question is too broad and could refer to different battles or campaigns.",
+        "I'm unable to provide a specific number without additional context, as the question lacks details about which battle or conflict is being referenced. The casualty figures for British forces can vary greatly depending on the situation.",
+        "The number of British casualties is not specified without more context about a particular conflict or event. Could you please specify the conflict or time period?",
+        "The number of British casualties during specific conflicts varies greatly and depends on the particular conflict in question. For instance, in World War I, approximately 700,000 British military personnel died. Please specify which conflict you are referring to for an accurate number.",
+        "The number of British casualties during a specific conflict or event varies greatly and needs to be specified for an accurate answer.",
+        "The number of British casualties during specific conflicts varies greatly depending on the war or battle in question, and without more context, I can't provide an exact number.",
+        "The number of British casualties during specific conflicts can vary widely and depends on the particular conflict being referred to. Without specifying a war or conflict, it's not possible to give an exact number. For a precise answer, please provide the name of the conflict or war in question.",
+        "The number of British casualties during specific conflicts varies significantly and depends on which particular conflict is being referred to. For accurate information, please specify the conflict in question.",
+        "The number of British casualties during specific conflicts varies greatly and is difficult to provide a single number without context. For precise figures, please specify which conflict you are referring to.",
+        "To accurately state the number of British casualties, I would need to know the specific conflict or battle you're referring to. Casualty figures can vary greatly depending on the context."
+      ],
+      "se_discrete": 0.9404479886553263,
+      "se_logprob": 0.9220053875520926,
+      "C_SE_disc": -0.9404479886553263,
+      "n_clusters": 4
+    },
+    {
+      "id": "5729efab3f37b319004785d1",
+      "question": "What are one of the key cell types of the adaptive immune system?",
+      "gold": [
+        "T cells"
+      ],
+      "greedy": "One of the key cell types of the adaptive immune system is the T cell.",
+      "samples": [
+        "One of the key cell types of the adaptive immune system is the T cell and B cell.",
+        "One of the key cell types of the adaptive immune system is the T cell and B cell.",
+        "One of the key cell types of the adaptive immune system are T cells and B cells.",
+        "One of the key cell types of the adaptive immune system are T cells and B cells.",
+        "One of the key cell types of the adaptive immune system is the T cell.",
+        "One of the key cell types of the adaptive immune system is the T cell.",
+        "One of the key cell types of the adaptive immune system is the T cell and B cell.",
+        "One of the key cell types of the adaptive immune system is the T cell.",
+        "One of the key cell types of the adaptive immune system is the T cell.",
+        "One of the key cell types of the adaptive immune system is the T cell and B cell."
+      ],
+      "se_discrete": 0.6730116670092565,
+      "se_logprob": 0.672830751787362,
+      "C_SE_disc": -0.6730116670092565,
+      "n_clusters": 2
+    },
+    {
+      "id": "56dfaa047aa994140058dfbf",
+      "question": "Milutin Tesla died at what age?",
+      "gold": [
+        "60"
+      ],
+      "greedy": "Milutin Tesla died at the age of 78.",
+      "samples": [
+        "Milutin Tesla died at the age of 77.",
+        "Milutin Tesla died at the age of 78.",
+        "Milutin Tesla died at the age of 78.",
+        "Milutin Tesla, the father of alternating current electricity, died at the age of 77.",
+        "Milutin Tesla died at the age of 78.",
+        "Milutin Tesla died at the age of 78.",
+        "Milutin Tesla died at the age of 78.",
+        "Milutin Tesla died at the age of 77.",
+        "Milutin Tesla died at the age of 77.",
+        "Milutin Tesla died at the age of 78."
+      ],
+      "se_discrete": 0.8979457248567797,
+      "se_logprob": 0.8714776579239717,
+      "C_SE_disc": -0.8979457248567797,
+      "n_clusters": 3
+    },
+    {
+      "id": "5728f2e26aef051400154899",
+      "question": "What acquired condition results in immunodeficiency in humans?",
+      "gold": [
+        "HIV/AIDS"
+      ],
+      "greedy": "Acquired immunodeficiency syndrome (AIDS) is the condition that results in immunodeficiency in humans.",
+      "samples": [
+        "Acquired immunodeficiency syndrome (AIDS) is the acquired condition that results in immunodeficiency in humans.",
+        "Acquired Immunodeficiency Syndrome (AIDS) is the condition that results in immunodeficiency in humans.",
+        "Acquired immunodeficiency syndrome (AIDS) is the condition that results in immunodeficiency in humans.",
+        "Acquired Immunodeficiency Syndrome (AIDS) is the acquired condition that results in immunodeficiency in humans.",
+        "Acquired immunodeficiency syndrome (AIDS) is the acquired condition that results in immunodeficiency in humans.",
+        "Acquired Immunodeficiency Syndrome (AIDS) is the acquired condition that results in immunodeficiency in humans. It is caused by the Human Immunodeficiency Virus (HIV).",
+        "Acquired immunodeficiency syndrome (AIDS) is the acquired condition that results in immunodeficiency in humans, caused by the human immunodeficiency virus (HIV).",
+        "Acquired immunodeficiency syndrome (AIDS) is the condition that results in immunodeficiency in humans.",
+        "Acquired immunodeficiency syndrome (AIDS) is the condition that results in immunodeficiency in humans.",
+        "Chronic HIV infection is a common acquired condition that results in immunodeficiency in humans."
+      ],
+      "se_discrete": 0.8018185525433372,
+      "se_logprob": 0.7677580287802199,
+      "C_SE_disc": -0.8018185525433372,
+      "n_clusters": 3
+    },
+    {
+      "id": "5726660d5951b619008f71b2",
+      "question": "What river was there originally a bridge across in Roman times?",
+      "gold": [
+        "Tyne",
+        "the River Tyne"
+      ],
+      "greedy": "The original bridge across which there was a Roman bridge in Roman times was the Tiber River.",
+      "samples": [
+        "The River Tiber was originally a bridge across in Roman times.",
+        "The river that originally had a bridge across in Roman times was the Tiber.",
+        "The original river that had a bridge across in Roman times was the Tiber River in Rome.",
+        "The original Roman bridge across a river was the Pont du Gard, located in modern-day France.",
+        "The river that originally had a bridge across in Roman times is the Tiber River.",
+        "The river that was originally a bridge across in Roman times is the Tiber River in Rome.",
+        "The river that originally had a bridge across in Roman times is the Tiber in Rome.",
+        "The original river that had a bridge across in Roman times was the Tiber River in Rome.",
+        "The original bridge across which there was likely a Roman structure is the river Tiber in Rome.",
+        "The original Roman bridge across which there is archaeological evidence is the Milvian Bridge, which spans the Tiber River near modern-day Rome."
+      ],
+      "se_discrete": 1.1682824501765625,
+      "se_logprob": 1.13543874490826,
+      "C_SE_disc": -1.1682824501765625,
+      "n_clusters": 4
+    },
+    {
+      "id": "57108198b654c5140001f93a",
+      "question": "What is the southern region where protestants are concentrated?",
+      "gold": [
+        "Cévennes",
+        "Cévennes mountain region"
+      ],
+      "greedy": "The southern region of the United States is where Protestants are most concentrated.",
+      "samples": [
+        "The southern region of the United States is where Protestants are most concentrated.",
+        "The southern region of the United States has historically been concentrated with Protestant concentrations.",
+        "The Southern region of the United States is where Protestants are most concentrated.",
+        "The southern United States is where Protestants are particularly concentrated.",
+        "The southern region in the United States where Protestants are concentrated includes states like Texas, Georgia, Alabama, Mississippi, and Louisiana.",
+        "The southern United States traditionally has a higher concentration of Protestant residents.",
+        "The southern region of the United States is where Protestants are heavily concentrated.",
+        "The southern United States has historically seen a concentration of Protestant populations.",
+        "The southern region of the United States is where Protestants are most concentrated.",
+        "The southern region of the United States has historically been where Protestants are most concentrated."
+      ],
+      "se_discrete": 0.8979457248567797,
+      "se_logprob": 0.877465969761354,
+      "C_SE_disc": -0.8979457248567797,
+      "n_clusters": 3
+    },
+    {
+      "id": "5725f5b1271a42140099d375",
+      "question": "In which months does Fresno experience increased wind coming from the southeastern direction?",
+      "gold": [
+        "December, January and February"
+      ],
+      "greedy": "Fresno experiences increased winds coming from the southeastern direction primarily during the summer months, typically June through August.",
+      "samples": [
+        "Fresno experiences increased wind coming from the southeastern direction predominantly during the summer months, typically June through August.",
+        "Fresno experiences increased winds coming from the southeastern direction primarily during the fall season, typically from September through November.",
+        "Fresno experiences increased wind coming from the southeastern direction mainly during the summer months, particularly June, July, and August.",
+        "Fresno experiences increased wind coming from the southeastern direction primarily in the spring, specifically during March and April.",
+        "Fresno experiences increased winds coming from the southeastern direction during the spring (March, April) and fall (September, October) seasons.",
+        "Fresno experiences increased winds coming from the southeastern direction most prominently during the summer months, particularly June through August.",
+        "Fresno typically experiences increased winds coming from the southeastern direction in the fall and winter months, specifically October through February.",
+        "Fresno experiences increased wind coming from the southeastern direction primarily during the summer months, typically June through August.",
+        "Fresno experiences increased wind coming from the southeastern direction primarily in the summer months, typically June, July, and August.",
+        "Fresno typically experiences increased wind from the southeastern direction during the spring (March, April, May) and fall (September, October, November)."
+      ],
+      "se_discrete": 1.4978661367769952,
+      "se_logprob": 1.468089141022953,
+      "C_SE_disc": -1.4978661367769952,
+      "n_clusters": 6
+    },
+    {
+      "id": "5728f9cf4b864d1900165169",
+      "question": "When does the annual animal migration occur?",
+      "gold": [
+        "June and September",
+        "between June and September"
+      ],
+      "greedy": "The timing of annual animal migrations varies greatly depending on the species and their specific habitat, but it typically occurs to coincide with seasonal changes in food availability or climate.",
+      "samples": [
+        "The timing of annual animal migrations varies greatly depending on the species and their specific habitats, but it typically occurs to take advantage of seasonal changes in food availability and climate.",
+        "The timing of annual animal migrations varies greatly depending on the species and geographical location, typically occurring to coincide with seasonal changes in food availability or weather conditions. Some well-known examples include wildebeest crossing the Mara River in Tanzania between January and February, or Monarch butterflies migrating from Canada and the United States to Mexico in",
+        "The timing of annual animal migrations varies greatly depending on the species and location, but it typically occurs to take advantage of seasonal changes in food availability or climate.",
+        "The timing of annual animal migrations can vary greatly depending on the species and their geographical location, but generally occurs to coincide with changing seasons for food availability or breeding grounds.",
+        "The timing of annual animal migrations varies widely depending on the species and location, but typically occurs when seasons change to take advantage of different resources like food or breeding grounds.",
+        "The timing of annual animal migrations varies greatly depending on the species and location, but typically occurs in response to changing seasons for food availability or breeding grounds.",
+        "The timing of annual animal migrations varies greatly depending on the species and geographic location, but it typically occurs to coincide with seasonal changes in food availability, weather, or breeding conditions.",
+        "The timing of annual animal migrations varies greatly depending on the species and their specific habitat, but generally occurs when conditions such as food availability or breeding opportunities change seasonally.",
+        "The timing of annual animal migrations varies greatly depending on the species and geographical location, but it generally occurs in response to seasonal changes in food availability, weather, or climate. Some common examples include wildebeest migration in East Africa during the annual rains, and monarch butterfly migrations to Mexico in late summer/early autumn.",
+        "The timing of annual animal migrations varies greatly depending on the species and can occur at any time of year, typically driven by factors like changes in food availability, climate, and breeding seasons. Without specifying a particular species, it's impossible to give a precise date for all migrations."
+      ],
+      "se_discrete": 1.6094379124341,
+      "se_logprob": 1.5728962474639385,
+      "C_SE_disc": -1.6094379124341,
+      "n_clusters": 6
+    },
+    {
+      "id": "572a10cd6aef051400155226",
+      "question": "What is the field of studying immunogenicity through bioinformatics known as?",
+      "gold": [
+        "immunoinformatics"
+      ],
+      "greedy": "The field of studying immunogenicity through bioinformatics is known as bioinformatics immunology or computational immunology.",
+      "samples": [
+        "The field of studying immunogenicity through bioinformatics is known as computational immunology.",
+        "The field of studying immunogenicity through bioinformatics is known as bioinformatics immunology or computational immunomics.",
+        "The field of studying immunogenicity through bioinformatics is known as bioinformatics immunology or computational immunology.",
+        "The field of studying immunogenicity through bioinformatics is known as immunoinformatics.",
+        "The field of studying immunogenicity through bioinformatics is known as computational immunology.",
+        "The field of studying immunogenicity through bioinformatics is known as bioimmunoinformatics or computational immunology.",
+        "The field of studying immunogenicity through bioinformatics is known as bioinformatics immunology or computational immunology.",
+        "The field of studying immunogenicity through bioinformatics is known as bioinformatics immunology or computational immunology.",
+        "The field of studying immunogenicity through bioinformatics is known as bioimmunoinformatics.",
+        "The field of studying immunogenicity through bioinformatics is known as immunoinformatics."
+      ],
+      "se_discrete": 1.2206072645530173,
+      "se_logprob": 1.220981185392658,
+      "C_SE_disc": -1.2206072645530173,
+      "n_clusters": 4
+    },
+    {
+      "id": "572966ebaf94a219006aa393",
+      "question": "How many membranes does Durinskia's chloroplast have?",
+      "gold": [
+        "up to five",
+        "five"
+      ],
+      "greedy": "Durinskia has a double membrane around its chloroplast.",
+      "samples": [
+        "Durinskia has two chloroplast membranes.",
+        "Durinskia has a single membrane around its chloroplast.",
+        "Durinskia has two chloroplast membranes.",
+        "Durinskia, being a chlorophyte green alga, has two chloroplast membranes: an outer membrane and an inner membrane.",
+        "Durinskia has two membranes in its chloroplast.",
+        "Durinskia, a species of green algae, has two chloroplast membranes.",
+        "Durinskia's chloroplast has two lipid membranes.",
+        "Durinskia has a double membrane in its chloroplast.",
+        "Durinskia has a single membrane around its chloroplast.",
+        "Durinskia has two membranes in its chloroplast."
+      ],
+      "se_discrete": 1.3592367006650063,
+      "se_logprob": 1.3044455076036447,
+      "C_SE_disc": -1.3592367006650063,
+      "n_clusters": 5
+    },
+    {
+      "id": "5729fb003f37b3190047862a",
+      "question": "Older people get less sun and produce less of what chemical via UVB radiation?",
+      "gold": [
+        "cholecalciferol"
+      ],
+      "greedy": "Older people get less sun and produce less vitamin D via UVB radiation.",
+      "samples": [
+        "Older people tend to produce less vitamin D via UVB radiation because their skin becomes less efficient at producing it as they age.",
+        "Older people tend to produce less Vitamin D via UVB radiation due to reduced skin sensitivity.",
+        "Older people may produce less vitamin D via UVB radiation due to reduced effectiveness of UVB rays reaching deeper skin layers as they age.",
+        "Older people get less sun and produce less vitamin D via UVB radiation.",
+        "Older people get less sun and produce less vitamin D via UVB radiation.",
+        "Older people may produce less vitamin D via UVB radiation due to reduced sun exposure and possibly decreased efficiency in producing vitamin D as they age.",
+        "Older people may produce less vitamin D via UVB radiation due to reduced sun exposure and potentially lower skin sensitivity.",
+        "Older people tend to produce less vitamin D via UVB radiation due to decreased skin sensitivity with age.",
+        "Older people produce less vitamin D via UVB radiation.",
+        "Vitamin D"
+      ],
+      "se_discrete": 1.4708084763221114,
+      "se_logprob": 1.4275115028046157,
+      "C_SE_disc": -1.4708084763221114,
+      "n_clusters": 5
+    }
+  ]
+}
