@@ -1,0 +1,38 @@
+[
+  {
+    "model_key": "qwen_0_5b",
+    "model_name": "Qwen2.5-0.5B-Instruct",
+    "param_billions": 0.5,
+    "family": "qwen",
+    "n_samples": 200,
+    "accuracy": 0.275,
+    "mean_entropy_correct": 0.9926040154459823,
+    "mean_entropy_wrong": 1.3117206400427022,
+    "entropy_gap": 0.31911662459671986,
+    "semantic_entropy_correct": 0.21730704292035677,
+    "semantic_entropy_wrong": 0.17675977843876714,
+    "n_clusters_correct": 3.2,
+    "n_clusters_wrong": 3.924137931034483,
+    "auroc_mean_entropy": 0.6741065830721003,
+    "auroc_semantic_entropy": 0.5299686520376176,
+    "auroc_n_clusters": 0.645141065830721
+  },
+  {
+    "model_key": "qwen_14b",
+    "model_name": "Qwen2.5-14B-Instruct",
+    "param_billions": 14.0,
+    "family": "qwen",
+    "n_samples": 200,
+    "accuracy": 0.825,
+    "mean_entropy_correct": 0.12564685268472855,
+    "mean_entropy_wrong": 0.23396872276619923,
+    "entropy_gap": 0.10832187008147068,
+    "semantic_entropy_correct": 0.09066246016271683,
+    "semantic_entropy_wrong": 0.1270909740142491,
+    "n_clusters_correct": 1.3272727272727274,
+    "n_clusters_wrong": 2.142857142857143,
+    "auroc_mean_entropy": 0.7286580086580087,
+    "auroc_semantic_entropy": 0.6139393939393939,
+    "auroc_n_clusters": 0.6542857142857142
+  }
+]

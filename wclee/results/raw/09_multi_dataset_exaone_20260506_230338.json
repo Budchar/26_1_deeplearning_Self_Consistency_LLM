@@ -1,0 +1,44 @@
+[
+  {
+    "model": "exaone",
+    "dataset": "triviaqa",
+    "n_samples": 200,
+    "accuracy": 0.61,
+    "auroc_entropy": 0.7866,
+    "auroc_n_clusters": 0.7746,
+    "auroc_semantic_entropy": 0.6758,
+    "entropy_gap": 0.3738,
+    "entropy_correct": 0.3017,
+    "entropy_wrong": 0.6754,
+    "n_correct": 122,
+    "n_wrong": 78
+  },
+  {
+    "model": "exaone",
+    "dataset": "mmlu",
+    "n_samples": 200,
+    "accuracy": 0.975,
+    "auroc_entropy": 0.3108,
+    "auroc_n_clusters": 0.3872,
+    "auroc_semantic_entropy": 0.4103,
+    "entropy_gap": -0.1432,
+    "entropy_correct": 0.2879,
+    "entropy_wrong": 0.1447,
+    "n_correct": 195,
+    "n_wrong": 5
+  },
+  {
+    "model": "exaone",
+    "dataset": "naturalquestions",
+    "n_samples": 200,
+    "accuracy": 0.295,
+    "auroc_entropy": 0.6704,
+    "auroc_n_clusters": 0.6111,
+    "auroc_semantic_entropy": 0.574,
+    "entropy_gap": 0.1808,
+    "entropy_correct": 0.3659,
+    "entropy_wrong": 0.5467,
+    "n_correct": 59,
+    "n_wrong": 141
+  }
+]

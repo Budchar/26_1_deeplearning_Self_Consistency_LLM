@@ -1,0 +1,41 @@
+[
+  {
+    "model": "EXAONE-3.5-7.8B",
+    "params": 7.8,
+    "accuracy": 0.61,
+    "auroc_entropy": 0.7865699873896596,
+    "auroc_se": 0.7450084068936527,
+    "auroc_nc": 0.796658259773014,
+    "entropy_gap": 0.37378384402500586,
+    "entropy_correct": 0.30165958952084926,
+    "entropy_wrong": 0.6754434335458551,
+    "clusters_correct": 1.7868852459016393,
+    "clusters_wrong": 3.282051282051282
+  },
+  {
+    "model": "Qwen2.5-7B-Instruct",
+    "params": 7.0,
+    "accuracy": 0.675,
+    "auroc_entropy": 0.7650142450142451,
+    "auroc_se": 0.727122507122507,
+    "auroc_nc": 0.7747008547008546,
+    "entropy_gap": 0.2610182649629034,
+    "entropy_correct": 0.2018119073797342,
+    "entropy_wrong": 0.4628301723426376,
+    "clusters_correct": 1.4296296296296296,
+    "clusters_wrong": 2.5846153846153848
+  },
+  {
+    "model": "Mistral-7B-Instruct-v0.3",
+    "params": 7.0,
+    "accuracy": 0.82,
+    "auroc_entropy": 0.5936653116531165,
+    "auroc_se": 0.5654640921409215,
+    "auroc_nc": 0.6387195121951219,
+    "entropy_gap": 0.08658201686063854,
+    "entropy_correct": 0.4302665762493097,
+    "entropy_wrong": 0.5168485931099482,
+    "clusters_correct": 1.3902439024390243,
+    "clusters_wrong": 1.9722222222222223
+  }
+]

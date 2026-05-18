@@ -1,0 +1,702 @@
+{
+  "model": "exaone",
+  "threshold": 0.6,
+  "max_retries": 3,
+  "best_layer": 15,
+  "probe_auroc": 0.76,
+  "n_train": 75,
+  "n_test": 75,
+  "baseline": {
+    "accuracy": 0.56,
+    "auroc": 0.6652236652236652,
+    "n_samples": 75,
+    "n_intervened": 0
+  },
+  "intervention": {
+    "accuracy": 0.56,
+    "auroc": 0.6652236652236652,
+    "n_samples": 75,
+    "n_intervened": 31
+  },
+  "acc_gain": 0.0,
+  "auroc_gain": 0.0,
+  "n_intervened": 31,
+  "intervention_rate": 0.4133,
+  "sample_results": [
+    {
+      "question": "In 1883 which Indonesian volcano erupted and was believed to be the largest single explosion in recorded human history?",
+      "generated": "Krakatoa",
+      "is_correct": true,
+      "hall_prob": 0.04588720113458267,
+      "hall_prob_initial": 0.04588720113458267,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Which Canadian born  actress was the star in the movie Barb Wire?",
+      "generated": "Lyndsy Fonseca",
+      "is_correct": false,
+      "hall_prob": 0.20116143291296307,
+      "hall_prob_initial": 0.20116143291296307,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "What is the name of the line separating the numerator and denominator of a fraction if it is written as a diagonal line?",
+      "generated": "The name of the diagonal line separating the numerator and denominator in a fraction is called a \"fraction bar\" or sometimes referred to as a \"diagonal fraction bar.\" However, it's commonly just described as the \"line\" in casual contexts.",
+      "is_correct": false,
+      "hall_prob": 0.3577027718330442,
+      "hall_prob_initial": 0.3577027718330442,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "In which opera do the characters 'Ned Keene' and 'Bob Boles' appear?",
+      "generated": "\"Oklahoma!\" by Richard Rodgers and Oscar Hammerstein II.",
+      "is_correct": false,
+      "hall_prob": 0.9980828598104959,
+      "hall_prob_initial": 0.9980828598104959,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "Which planet did Gustav Holst describe as the ‘Winged Messenger’?",
+      "generated": "Mercury",
+      "is_correct": true,
+      "hall_prob": 0.7969664540153676,
+      "hall_prob_initial": 0.7969664540153676,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "Who is the current presenter of BBC Radio 4 programme Desert Island Discs?",
+      "generated": "The current presenter of BBC Radio 4's Desert Island Discs is Kirsty Young.",
+      "is_correct": true,
+      "hall_prob": 0.6846206343796122,
+      "hall_prob_initial": 0.6846206343796122,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "Which notorious murderer lived at 10 Rillington Place?",
+      "generated": "John Christie lived at 10 Rillington Place, where he committed numerous murders, though it's important to note that his wife, Barbara Hodgkinson, was initially convicted for some of the crimes before Christie's full crimes were uncovered. However, it was primarily Christie who was responsible for the series of murders associated with that address.",
+      "is_correct": true,
+      "hall_prob": 0.993070548923004,
+      "hall_prob_initial": 0.993070548923004,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "The top American fiction bestseller in both 1936 and 1937 was the only novel published during the lifetime of its author. Who was she?",
+      "generated": "Nella Larsen",
+      "is_correct": false,
+      "hall_prob": 0.8296037123105139,
+      "hall_prob_initial": 0.8296037123105139,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "Which singer's real name is Elaine Bookbinder?",
+      "generated": "Barbra Streisand",
+      "is_correct": false,
+      "hall_prob": 0.9958716912441609,
+      "hall_prob_initial": 0.9958716912441609,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "\"Which pair of films starred Uma Thurman as \"\"the bride\"\", Daryl Hannah as her arch-nemesis and Lucy Liu as \"\"Cottonmouth\"\"?\"",
+      "generated": "\"Kill Bill: Volume 1\" and \"Kill Bill: Volume 2\" (though note that while Uma Thurman stars as \"The Bride\" in both, Daryl Hannah does not appear, nor does Lucy Liu play \"Cottonmouth\" in the first film; Lucy Liu's character, Cottonmouth, appears in \"Kill Bill: Volume 2\". The arch-nemesis role isn't directly matched with Daryl Hannah in these films as described.) \n\nFor the exact description given, there might be a slight misalignment since Daryl Hannah does not play an arch-nemesis to Uma Thurman's character across these films. However, Lucy Liu does play Cottonmouth in both volumes of \"Kill Bill.\"",
+      "is_correct": true,
+      "hall_prob": 0.9837267510221511,
+      "hall_prob_initial": 0.9837267510221511,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "In the cartoon series, what kind of dog is Scooby Doo?",
+      "generated": "Scooby-Doo is depicted as a Great Dane in the cartoon series.",
+      "is_correct": true,
+      "hall_prob": 0.6086809068092136,
+      "hall_prob_initial": 0.6086809068092136,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "\"What was the Scopes \"\"monkey trial\"\" really about?\"",
+      "generated": "The Scopes \"Monkey Trial,\" formally known as *State v. Scopes*, was about a Tennessee law prohibiting the teaching of evolution in public schools. John Scopes, a high school teacher, was prosecuted for violating this law by teaching evolution, sparking a national debate on religious fundamentalism versus modern science education.",
+      "is_correct": true,
+      "hall_prob": 0.9921024292999737,
+      "hall_prob_initial": 0.9921024292999737,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "Who was the landlady of the Rovers Return when Coronation Street was first broadcast in 1960?",
+      "generated": "The landlady of the Rovers Return when Coronation Street first aired in 1960 was Mrs. Liz McDonald, though it's important to note that Liz McDonald became a prominent character later. Initially, the character occupying this role was Mrs. Nora Grimshaw.",
+      "is_correct": false,
+      "hall_prob": 0.9957352376522544,
+      "hall_prob_initial": 0.9957352376522544,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "What dish has romaine lettuce and croutons dressed with parmesan cheese, lemon juice, olive oil, egg, Worcestershire sauce, and black pepper?",
+      "generated": "That sounds like a **Caesar Salad**.",
+      "is_correct": true,
+      "hall_prob": 0.8585382236479231,
+      "hall_prob_initial": 0.8585382236479231,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "In which city, one of the hosts for the 2003 Cricket World Cup, is the Buffalo Park Ground?",
+      "generated": "Buffalo Park Ground is located in **Christchurch**, New Zealand.",
+      "is_correct": false,
+      "hall_prob": 0.3259330639610377,
+      "hall_prob_initial": 0.3259330639610377,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "What media mogul, known as The Mouth of the South, started the first dedicated 24-hour cable news channel, owns the Atlanta braves, founded the Goodwill Games, and married Hanoi Jane?",
+      "generated": "Ted Turner fits this description. Known as \"The Mouth of the South,\" he founded CNN, owns the Atlanta Braves (now known as the Atlanta Falcons due to a name change), initiated the Goodwill Games, and was married to Jane Fonda, often referred to as \"Hanoi Jane\" due to her activism during the Vietnam War era. However, it's important to note that while Ted Turner fits many of these criteria, the direct connection to \"Hanoi Jane\" through marriage is accurate, but the Atlanta Braves ownership note requires clarification as the team's name changed from Braves to Falcons in 1991 due to a separate ownership change unrelated to Turner's direct involvement post-1991.",
+      "is_correct": true,
+      "hall_prob": 0.4701871409383954,
+      "hall_prob_initial": 0.4701871409383954,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "In 1985 who became the first man to run the 1500 metres in less than 3 mins 30 secs?",
+      "generated": "Hasmil Farah",
+      "is_correct": false,
+      "hall_prob": 0.151235346485026,
+      "hall_prob_initial": 0.151235346485026,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "My bologna has a first name. What is it?",
+      "generated": "The question seems whimsical since bologna, being a food item, doesn't have a first name. If you're playing a game or using figurative language, could you provide more context? Otherwise, traditionally, bologna doesn't have a personal name.",
+      "is_correct": false,
+      "hall_prob": 0.989898747890495,
+      "hall_prob_initial": 0.989898747890495,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "After sporadic visits by European explorers and merchants from the 17th century onwards, the eastern half of which continent was claimed by the British in 1770, and officially settled as a penal colony on 26 January 1788?",
+      "generated": "Australia",
+      "is_correct": true,
+      "hall_prob": 8.939004898955716e-06,
+      "hall_prob_initial": 8.939004898955716e-06,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "With which song did Lulu represent the UK in the 1969 Eurovision Song Contest?",
+      "generated": "\"Tiger in My Soul\"",
+      "is_correct": false,
+      "hall_prob": 0.9871266430033238,
+      "hall_prob_initial": 0.9871266430033238,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "To which family of birds do Linnets belong?",
+      "generated": "Finches (Familia Fringillidae)",
+      "is_correct": true,
+      "hall_prob": 0.006257979813728998,
+      "hall_prob_initial": 0.006257979813728998,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "What novel was published by Bob Dylan in 1971?",
+      "generated": "\"Isaac Woodstock\"",
+      "is_correct": false,
+      "hall_prob": 0.9413833501048658,
+      "hall_prob_initial": 0.9413833501048658,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "Known as the 'Phoenix Park Murders', the assassination of Lord Frederick Cavendish and Thomas Henry Burke in 1882 occurred in which city?",
+      "generated": "Dublin",
+      "is_correct": true,
+      "hall_prob": 0.0005694797882034308,
+      "hall_prob_initial": 0.0005694797882034308,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Which art gallery is in Trafalgar Square?",
+      "generated": "National Gallery",
+      "is_correct": true,
+      "hall_prob": 0.9910794402062767,
+      "hall_prob_initial": 0.9910794402062767,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "Hircine refers to being like or related to what creature?",
+      "generated": "Hircine refers to being like or related to a boar, often associated with hunting deities in Roman mythology.",
+      "is_correct": false,
+      "hall_prob": 0.46559277234570273,
+      "hall_prob_initial": 0.46559277234570273,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "What is the name of the life-size plastic dummies in the television series Doctor Who, the first of which arrived on Earth in hollow plastic meteorites with deadly weapons concealed in their hands?",
+      "generated": "The name of these life-size plastic dummies is \"Daleks.\" However, it's important to note that while Daleks are indeed iconic enemies in Doctor Who known for their distinctive shapes and deadly nature, the specific detail about arriving via hollow plastic meteorites with concealed weapons more accurately describes the concept introduced in \"Torchwood\" rather than directly in the main \"Doctor Who\" series. In the broader context of Doctor Who lore, similar alien concepts involving plastic-like forms exist but are not precisely matched to the exact description provided without referencing \"Torchwood.\"",
+      "is_correct": false,
+      "hall_prob": 0.6346834663542111,
+      "hall_prob_initial": 0.6346834663542111,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "In which US state are the Catskill Mountains?",
+      "generated": "New York",
+      "is_correct": true,
+      "hall_prob": 5.121096827020999e-05,
+      "hall_prob_initial": 5.121096827020999e-05,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "In what mountain range would you find the homeland of the Sherpa people?",
+      "generated": "The Himalayas",
+      "is_correct": true,
+      "hall_prob": 0.011251282221267922,
+      "hall_prob_initial": 0.011251282221267922,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "According to Colossians, Ch 4 v 14, what profession was followed by St Luke?",
+      "generated": "The passage does not explicitly state Luke's profession before becoming associated with Paul's ministry. However, tradition holds that Luke was a physician, though this specific detail is not found within the text of Colossians 4:14 alone.",
+      "is_correct": true,
+      "hall_prob": 0.07511116082087188,
+      "hall_prob_initial": 0.07511116082087188,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "What name is given to the supercontinent thought to exist 300 million years ago?",
+      "generated": "Pangaea",
+      "is_correct": true,
+      "hall_prob": 0.054222512337800066,
+      "hall_prob_initial": 0.054222512337800066,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "In October 2015, which city was named by VisitEngland as the ‘Home of English Sport’?",
+      "generated": "London",
+      "is_correct": false,
+      "hall_prob": 0.14023178052761076,
+      "hall_prob_initial": 0.14023178052761076,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Who wrote the books Les Miserables and The Hunchback of Notre-Dame?",
+      "generated": "Victor Hugo wrote both \"Les Misérables\" and \"The Hunchback of Notre-Dame.\"",
+      "is_correct": true,
+      "hall_prob": 0.004423274453035919,
+      "hall_prob_initial": 0.004423274453035919,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Bedrock is the home city of which eponymous 1960s cartoon show/family, the most successful adult TV franchise for three decades prior to The Simpsons?",
+      "generated": "Flintstones",
+      "is_correct": true,
+      "hall_prob": 0.0007694486974337833,
+      "hall_prob_initial": 0.0007694486974337833,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Which English monarch was the last to be born in France?",
+      "generated": "Queen Victoria was the last English monarch born in France, though it's important to note she was born in Kensington Palace, which was part of the British royal residences after the Hanoverian succession, having been born after the Treaty of Paris (1763) which ended the Seven Years' War and solidified British control over territories previously held by France in North America. However, strictly considering monarchs who were born in France before becoming part of the British monarchy, none fits perfectly due to historical transitions, but a relevant figure in context might be seen as misleading without specifying post-annexation births within British territories. For clarity, no English monarch post-1707 (the unification of England and Scotland into Great Britain) was born in continental France.",
+      "is_correct": false,
+      "hall_prob": 0.8806748573084198,
+      "hall_prob_initial": 0.8806748573084198,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "In Greek mythology which son of Telamon fought Hector in single combat",
+      "generated": "Ajax the Lesser fought Hector in single combat, though historically notable battles involving Ajax often refer to Ajax the Greater. However, specifically regarding a combat scenario with Hector, it's Ajax the Lesser who is traditionally noted. Please clarify if you need information on a specific mythological account.",
+      "is_correct": true,
+      "hall_prob": 0.02047853658762122,
+      "hall_prob_initial": 0.02047853658762122,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "What is the capital of the US state of Georgia?",
+      "generated": "Atlanta",
+      "is_correct": true,
+      "hall_prob": 0.0006468684277266545,
+      "hall_prob_initial": 0.0006468684277266545,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Which Scottish newspaper features the Broons and Oor Wullie?",
+      "generated": "The Scottish newspaper that features the Broons and Oor Wullie is the **Sunday Post**.",
+      "is_correct": true,
+      "hall_prob": 0.9987713294425086,
+      "hall_prob_initial": 0.9987713294425086,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "What is the capital of the province of Manitoba, Canada?",
+      "generated": "Winnipeg",
+      "is_correct": true,
+      "hall_prob": 0.018378743009648035,
+      "hall_prob_initial": 0.018378743009648035,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "December 23, 1923 was the birthday of Vice Admiral James Stockdale, one of the most highly decorated officers in the history of the US Navy. He was also the running mate of what 1992 presidential candidate?",
+      "generated": "Ross Perot",
+      "is_correct": true,
+      "hall_prob": 0.00035948354725190423,
+      "hall_prob_initial": 0.00035948354725190423,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Which artist painted the 'Seagram Murals' which were originally commissioned by the Four Seasons Hotel in New York in 1958?",
+      "generated": "Mark Rothko painted the 'Seagram Murals'.",
+      "is_correct": true,
+      "hall_prob": 0.33372156486489024,
+      "hall_prob_initial": 0.33372156486489024,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "How many ‘Triangles’ are there on the logo of car manufacturer BMW?",
+      "generated": "There are four 'Triangles' prominently featured in the BMW logo, often referred to as the \"Bavarian Shield\" or \"Blue and White Roundel.\"",
+      "is_correct": true,
+      "hall_prob": 0.9986739918425911,
+      "hall_prob_initial": 0.9986739918425911,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "What was the first airship to cross the Atlantic, in 1919?",
+      "generated": "The first airship to cross the Atlantic in 1919 was the **Hindenburg**.",
+      "is_correct": false,
+      "hall_prob": 0.6614743750133552,
+      "hall_prob_initial": 0.6614743750133552,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "March 30, 1853 saw the birth of one of the most influential painters of all time, Vincent van Gogh, in what European country?",
+      "generated": "Netherlands",
+      "is_correct": true,
+      "hall_prob": 8.454425959758538e-06,
+      "hall_prob_initial": 8.454425959758538e-06,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Which island is connected to Brooklyn by the Verrazano Narrows bridge?",
+      "generated": "Staten Island",
+      "is_correct": true,
+      "hall_prob": 0.02361066282802593,
+      "hall_prob_initial": 0.02361066282802593,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "100.4 Smooth Radio, and 105.4 Century FM, etc, are based where?",
+      "generated": "These radio stations, such as Smooth Radio (100.4) and Century FM (105.4), are typically based in specific cities or regions, but without exact identifiers, they could be located anywhere globally where these frequencies are allocated. For precise locations, you would need to specify the country or region of interest. Generally, such information is available through local broadcasting authorities or the stations' official websites.",
+      "is_correct": false,
+      "hall_prob": 0.0200323635887234,
+      "hall_prob_initial": 0.0200323635887234,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Who was the first Briton to win the Nobel Prize for Medicine for his work on malaria?",
+      "generated": "Sir William Osler's contemporary in this context might be misleading as he was a physician but not awarded for malaria research specifically. The first Briton to win the Nobel Prize in Physiology or Medicine for work related to malaria was Ronald Ross in 1902. He was awarded it for his pioneering work on the causative parasite of malaria. However, if focusing strictly on direct malaria research recognition within the Nobel framework and considering historical accuracy, it's important to note that Ross's award was foundational, but earlier significant contributions were made by others like Alphonse Laveran who was awarded in 1907, though nationality note: Laveran was French. Ross stands out as a key figure for British recognition in this field.",
+      "is_correct": true,
+      "hall_prob": 0.7412726896913204,
+      "hall_prob_initial": 0.7412726896913204,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "What relation is Joey Richardson to Vanessa Redgrave?",
+      "generated": "Joey Richardson is Vanessa Redgrave's son.",
+      "is_correct": false,
+      "hall_prob": 0.9996178358267173,
+      "hall_prob_initial": 0.9996178358267173,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "For which 1960 film did Billy Wilder become the first person to win three Oscars for the same film?",
+      "generated": "\"Some Like It Hot\"",
+      "is_correct": false,
+      "hall_prob": 0.23067534694817315,
+      "hall_prob_initial": 0.23067534694817315,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Which motor company owns the truck maker, Scania?",
+      "generated": "Volkswagen owns Scania.",
+      "is_correct": false,
+      "hall_prob": 0.0396738759798545,
+      "hall_prob_initial": 0.0396738759798545,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "When Alexander the Great had an Empire to which Asian Country did it stretch?",
+      "generated": "Alexander the Great's empire stretched into **Persia** (modern-day Iran) and further eastward into parts of **India**.",
+      "is_correct": true,
+      "hall_prob": 9.755613472051117e-06,
+      "hall_prob_initial": 9.755613472051117e-06,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Which was the highest placed Lancashire side in the 2006/7 Vauxhall Conference?",
+      "generated": "Wigan Warriors finished as the highest placed Lancashire side in the 2006/07 Vauxhall Conference, though it's important to note that the Vauxhall Conference was part of the English rugby league system and Wigan Warriors are typically associated with the Lancashire region but compete in higher leagues like Super League. For precise local league standings within Lancashire during that specific season, more detailed local league records would be needed. If focusing strictly on local leagues within Lancashire, additional context on the specific league tier would clarify the answer.",
+      "is_correct": false,
+      "hall_prob": 0.9934907366198842,
+      "hall_prob_initial": 0.9934907366198842,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "What substance was believed by Alchemists to transmute other metals into gold?",
+      "generated": "Philosopher's Stone",
+      "is_correct": true,
+      "hall_prob": 0.15136926308130827,
+      "hall_prob_initial": 0.15136926308130827,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "A “slim jim” is a type of pick used to open what type of lock without a key?",
+      "generated": "A \"slim jim\" is used to open pin-tumbler style locks without a key, typically found on cars and some doors.",
+      "is_correct": false,
+      "hall_prob": 0.05168330607467997,
+      "hall_prob_initial": 0.05168330607467997,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Which group was founded by Steve Marriott, Ronny Lane, Kenney Jones and Jimmy Winston, Winston soon being replaced by Ian McLagan?",
+      "generated": "Small Faces",
+      "is_correct": true,
+      "hall_prob": 0.4075911018169436,
+      "hall_prob_initial": 0.4075911018169436,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Alan Greenspan is a former chairman of what organization?",
+      "generated": "Federal Reserve",
+      "is_correct": true,
+      "hall_prob": 0.0014363731847226724,
+      "hall_prob_initial": 0.0014363731847226724,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "\"Name the little girl, daughter of the late Christina, who has inherited the vast \"\"Onassis\"\" fortune?\"",
+      "generated": "Alexandra Onassis Georgieva",
+      "is_correct": false,
+      "hall_prob": 0.4871046787739619,
+      "hall_prob_initial": 0.4871046787739619,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Tuesday marks the birthday of lat night tv host David Letterman. What broadcast channel hosts his show?",
+      "generated": "CBS hosts David Letterman's show, though it's worth noting that his late-night talk show era primarily aired on NBC (specifically \"Late Night with David Letterman\") before transitioning to CBS (\"The Late Show with David Letterman\"). Currently, there isn't an active show hosted by David Letterman.",
+      "is_correct": true,
+      "hall_prob": 0.00038861095305320337,
+      "hall_prob_initial": 0.00038861095305320337,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "What colour is the cross on the Greek Flag?",
+      "generated": "Red",
+      "is_correct": false,
+      "hall_prob": 0.9883967070699039,
+      "hall_prob_initial": 0.9883967070699039,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "Who had an 80s No 1 hit with Hold On To The Nights?",
+      "generated": "Steve Perry with Journey had a No. 1 hit with \"Open Arms\" in the 80s, but specifically for \"Hold On To The Nights,\" it was performed by Journey as well, reaching No. 1 on the Billboard Hot 100 in 1986. However, it's important to note that while Journey is credited with this hit, Steve Perry was indeed a prominent vocalist for the band during that time. If focusing strictly on vocalists, Steve Perry is closely associated with this song's success. For clarity, Journey as the band had the hit.",
+      "is_correct": false,
+      "hall_prob": 0.8744360604723472,
+      "hall_prob_initial": 0.8744360604723472,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "In which year did it become compulsory to wear seat belts in front seats of cars in the UK?",
+      "generated": "1989",
+      "is_correct": false,
+      "hall_prob": 0.1894046702020229,
+      "hall_prob_initial": 0.1894046702020229,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Which 1989 music video of Madonna attracted criticism for showing images like her making love to Saint Martin de Porres, use of Catholic iconography including a scene where she develops stigmata as well as cross burning?",
+      "generated": "The 1989 music video in question is for Madonna's song \"Like a Prayer.\" It attracted significant criticism for its blend of religious imagery, including scenes involving Catholic iconography and controversial symbols like stigmata and cross burning, alongside themes of love and faith.",
+      "is_correct": true,
+      "hall_prob": 0.8686489733315781,
+      "hall_prob_initial": 0.8686489733315781,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "What was founded by Ferdinand II of Aragon and Isabella I of Castile to keep Catholic orthodoxy as the major religion of their kingdoms?",
+      "generated": "The Inquisition",
+      "is_correct": false,
+      "hall_prob": 0.008016632513089927,
+      "hall_prob_initial": 0.008016632513089927,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Saint Augustine, the oldest city in the USA, is in which state?",
+      "generated": "Florida",
+      "is_correct": true,
+      "hall_prob": 0.00032880654179201496,
+      "hall_prob_initial": 0.00032880654179201496,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Who is the current Australian prime minister ?",
+      "generated": "Anthony Albanese",
+      "is_correct": false,
+      "hall_prob": 0.00027478723261131766,
+      "hall_prob_initial": 0.00027478723261131766,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "In which North African country was Mohammed Al-Fayed, owner of Harrods department store in London, born?",
+      "generated": "Egypt",
+      "is_correct": true,
+      "hall_prob": 0.0005782671356754365,
+      "hall_prob_initial": 0.0005782671356754365,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Tommy Bolin, who died of a heroin overdose in 1976, was the lead guitarist with which group?",
+      "generated": "Tommy Bolin was the lead guitarist with the group Flo & Eddie. However, it's important to note that Flo & Eddie (originally known as Flo & Eddie with The Byrds) is not typically associated with Bolin's most prominent work. He was notably a member of the rock band Montrose. Given the context of his death in relation to the rock scene of the 1970s, Montrose is the more accurate group to associate him with.",
+      "is_correct": false,
+      "hall_prob": 0.0064524827301738474,
+      "hall_prob_initial": 0.0064524827301738474,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Which counter-intelligence agency had a name meaning ‘death to spies’ in English?",
+      "generated": "SMERSH (an acronym meaning \"Death to Spies\" in Russian)",
+      "is_correct": true,
+      "hall_prob": 0.9995680873955758,
+      "hall_prob_initial": 0.9995680873955758,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "What is the name of the Police Chief in 'The Simpsons'?",
+      "generated": "Waylon Smithers",
+      "is_correct": false,
+      "hall_prob": 0.9753339019730551,
+      "hall_prob_initial": 0.9753339019730551,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "Name the town in the vicinity of Versailles famous for its hard-paste porcelain.",
+      "generated": "Limoges",
+      "is_correct": false,
+      "hall_prob": 0.05503123754342554,
+      "hall_prob_initial": 0.05503123754342554,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Colin Firth starred in the film of the famous book, Girl with a Pearl.. (what?)?",
+      "generated": "Earrings",
+      "is_correct": true,
+      "hall_prob": 0.9400667895754686,
+      "hall_prob_initial": 0.9400667895754686,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "What is the distinguishing feature of an animal described as ‘palmiped’?",
+      "generated": "The distinguishing feature of an animal described as 'palmiped' is having webbed or partially webbed feet, particularly adapted for swimming.",
+      "is_correct": true,
+      "hall_prob": 0.8631693659678094,
+      "hall_prob_initial": 0.8631693659678094,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "Which city in Saxony was known as Karl-Marx-Stadt from 1953 until 1990?",
+      "generated": "Dresden",
+      "is_correct": false,
+      "hall_prob": 0.28119978507700083,
+      "hall_prob_initial": 0.28119978507700083,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "Name the Greek Mythological hero who killed the gorgon Medusa?",
+      "generated": "Perseus",
+      "is_correct": true,
+      "hall_prob": 3.287936751661391e-05,
+      "hall_prob_initial": 3.287936751661391e-05,
+      "intervened": false,
+      "n_retries": 0
+    },
+    {
+      "question": "\"On 2 November 2010, the oil painting \"\"Nude Sitting on a Divan\"\" sold for $68.9 million, a record for an artwork by which artist?\"",
+      "generated": "Vincent van Gogh",
+      "is_correct": false,
+      "hall_prob": 0.8118725480947873,
+      "hall_prob_initial": 0.8118725480947873,
+      "intervened": true,
+      "n_retries": 3
+    },
+    {
+      "question": "What acid is found in tea?",
+      "generated": "Tannic acid is a significant acid found in tea.",
+      "is_correct": true,
+      "hall_prob": 0.013874814130793056,
+      "hall_prob_initial": 0.013874814130793056,
+      "intervened": false,
+      "n_retries": 0
+    }
+  ]
+}

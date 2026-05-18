@@ -1,0 +1,272 @@
+models:
+  # ── 기존 모델 ─────────────────────────────────────────────────
+  exaone:
+    name: "EXAONE-3.5-7.8B"
+    path: "/data/AskFake/llm/EXAONE-3.5-7.8B"
+    trust_remote_code: true
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "exaone"
+    param_billions: 7.8
+    family: "exaone"
+
+  llama:
+    name: "Llama-3.1-8B-Instruct"
+    path: "meta-llama/Llama-3.1-8B-Instruct"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "llama3"
+    param_billions: 8.0
+    family: "llama"
+
+  mistral:
+    name: "Mistral-7B-Instruct-v0.3"
+    path: "mistralai/Mistral-7B-Instruct-v0.3"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "mistral"
+    param_billions: 7.0
+    family: "mistral"
+
+  # ── Qwen2.5 Scaling Family ────────────────────────────────────
+  qwen_0_5b:
+    name: "Qwen2.5-0.5B-Instruct"
+    path: "Qwen/Qwen2.5-0.5B-Instruct"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "qwen"
+    param_billions: 0.5
+    family: "qwen"
+
+  qwen_1_5b:
+    name: "Qwen2.5-1.5B-Instruct"
+    path: "Qwen/Qwen2.5-1.5B-Instruct"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "qwen"
+    param_billions: 1.5
+    family: "qwen"
+
+  qwen_3b:
+    name: "Qwen2.5-3B-Instruct"
+    path: "Qwen/Qwen2.5-3B-Instruct"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "qwen"
+    param_billions: 3.0
+    family: "qwen"
+
+  qwen_7b:
+    name: "Qwen2.5-7B-Instruct"
+    path: "Qwen/Qwen2.5-7B-Instruct"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "qwen"
+    param_billions: 7.0
+    family: "qwen"
+
+  qwen_14b:
+    name: "Qwen2.5-14B-Instruct"
+    path: "Qwen/Qwen2.5-14B-Instruct"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "qwen"
+    param_billions: 14.0
+    family: "qwen"
+
+  # ── Llama Scaling Family ──────────────────────────────────────
+  llama_1b:
+    name: "Llama-3.2-1B-Instruct"
+    path: "meta-llama/Llama-3.2-1B-Instruct"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "llama3"
+    param_billions: 1.0
+    family: "llama"
+
+  llama_3b:
+    name: "Llama-3.2-3B-Instruct"
+    path: "meta-llama/Llama-3.2-3B-Instruct"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "llama3"
+    param_billions: 3.0
+    family: "llama"
+
+  llama_8b:
+    name: "Llama-3.1-8B-Instruct"
+    path: "meta-llama/Llama-3.1-8B-Instruct"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "llama3"
+    param_billions: 8.0
+    family: "llama"
+
+  phi3_mini:
+    name: "Phi-3-mini-4k-instruct"
+    path: "microsoft/Phi-3-mini-4k-instruct"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "llama3"    # apply_chat_template (Phi-3 supports standard format)
+    param_billions: 3.8
+    family: "phi"
+
+  # ── Mistral versions & fine-tunes ────────────────────────────
+  nous_hermes_dpo:
+    name: "Nous-Hermes-2-Mistral-7B-DPO"
+    path: "NousResearch/Nous-Hermes-2-Mistral-7B-DPO"
+    tokenizer_path: "mistralai/Mistral-7B-v0.1"   # workaround: tiktoken SentencePiece parse error
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "chatml"    # NousHermes uses ChatML format
+    param_billions: 7.0
+    family: "mistral"          # Mistral-7B base + SFT (OpenHermes) + DPO
+
+  openchat_35:
+    name: "OpenChat-3.5"
+    path: "openchat/openchat_3.5"
+    tokenizer_path: "mistralai/Mistral-7B-v0.1"   # workaround: tiktoken SentencePiece parse error
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "openchat"  # GPT4 Correct User/Assistant format
+    param_billions: 7.0
+    family: "mistral"          # Mistral-7B base + C-RLFT
+
+  starling_7b:
+    name: "Starling-LM-7B-alpha"
+    path: "berkeley-nest/Starling-LM-7B-alpha"
+    tokenizer_path: "mistralai/Mistral-7B-v0.1"   # workaround: tiktoken SentencePiece parse error
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "openchat"  # Same OpenChat format, RLHF on top
+    param_billions: 7.0
+    family: "mistral"          # Mistral-7B base + C-RLFT + RLHF (Nectar reward model)
+
+  zephyr_7b:
+    name: "Zephyr-7B-beta"
+    path: "HuggingFaceH4/zephyr-7b-beta"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "llama3"    # apply_chat_template
+    param_billions: 7.0
+    family: "mistral"          # Mistral-7B base + SFT + DPO
+
+  openhermes:
+    name: "OpenHermes-2.5-Mistral-7B"
+    path: "teknium/OpenHermes-2.5-Mistral-7B"
+    tokenizer_path: "mistralai/Mistral-7B-v0.1"   # same vocab; workaround for tiktoken load error
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "chatml"    # OpenHermes uses ChatML; hardcoded since base tokenizer has no template
+    param_billions: 7.0
+    family: "mistral"          # Mistral-7B base + SFT (OpenHermes data)
+
+  mistral_base:
+    name: "Mistral-7B-v0.1"
+    path: "mistralai/Mistral-7B-v0.1"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "default"
+    param_billions: 7.0
+    family: "mistral"
+
+  mistral_v02:
+    name: "Mistral-7B-Instruct-v0.2"
+    path: "mistralai/Mistral-7B-Instruct-v0.2"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "mistral"
+    param_billions: 7.0
+    family: "mistral"
+
+  # ── SmolLM2 Scaling Family (HuggingFaceTB) ───────────────────
+  smollm2_360m:
+    name: "SmolLM2-360M-Instruct"
+    path: "HuggingFaceTB/SmolLM2-360M-Instruct"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "smollm"
+    param_billions: 0.36
+    family: "smollm"
+
+  smollm2_1_7b:
+    name: "SmolLM2-1.7B-Instruct"
+    path: "HuggingFaceTB/SmolLM2-1.7B-Instruct"
+    trust_remote_code: false
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "smollm"
+    param_billions: 1.7
+    family: "smollm"
+
+  # ── OPT Family (Meta) ─────────────────────────────────────────
+  opt_6_7b:
+    name: "OPT-6.7B"
+    path: "facebook/opt-6.7b"
+    trust_remote_code: false
+    dtype: "float16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "opt"
+    param_billions: 6.7
+    family: "opt"
+
+  # ── Falcon (TII) ──────────────────────────────────────────────
+  falcon_7b:
+    name: "Falcon-7B-Instruct"
+    path: "tiiuae/falcon-7b-instruct"
+    trust_remote_code: true
+    dtype: "bfloat16"
+    device_map: "auto"
+    max_new_tokens: 256
+    chat_template: "falcon"
+    param_billions: 7.0
+    family: "falcon"
+
+generation:
+  temperature: 1.0
+  top_p: 0.95
+  do_sample: true
+  num_beams: 1
+  return_dict_in_generate: true
+  output_scores: true

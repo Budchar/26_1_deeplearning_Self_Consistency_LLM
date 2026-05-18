@@ -1,0 +1,116 @@
+{
+  "experiment": "Exp06 Layer Probe — Mistral Architecture Family Comparison",
+  "description": "동일 아키텍처(Mistral-7B) 기반 8가지 fine-tuning 변형에 대한 레이어별 hallucination 인코딩 위치 비교",
+  "dataset": "TriviaQA",
+  "probe": "LogisticRegression (C=1.0, max_iter=1000)",
+  "metric": "AUROC",
+  "key_finding": "사실성 SFT 데이터(OpenHermes) + DPO 조합이 best layer를 L21 → L2로 이동시킴",
+  "models": [
+    {
+      "key": "mistral_base",
+      "label": "Mistral-7B-v0.1 (BASE)",
+      "training": "사전학습만",
+      "sft_data": null,
+      "dpo": false,
+      "best_layer": 29,
+      "n_layers": 33,
+      "depth_pct": 90.6,
+      "best_auroc": 0.789,
+      "l4_auroc": 0.422
+    },
+    {
+      "key": "mistral_v02",
+      "label": "Mistral-7B-Instruct-v0.2",
+      "training": "SFT",
+      "sft_data": "일반 instruction (Mistral 공식)",
+      "dpo": false,
+      "best_layer": 21,
+      "n_layers": 33,
+      "depth_pct": 65.6,
+      "best_auroc": 0.615,
+      "l4_auroc": 0.429
+    },
+    {
+      "key": "openhermes",
+      "label": "OpenHermes-2.5-Mistral-7B",
+      "training": "SFT",
+      "sft_data": "OpenHermes (GPT-4 사실 Q&A ~1M)",
+      "dpo": false,
+      "best_layer": 21,
+      "n_layers": 33,
+      "depth_pct": 65.6,
+      "best_auroc": 0.795,
+      "l4_auroc": 0.590
+    },
+    {
+      "key": "zephyr_7b",
+      "label": "Zephyr-7B-beta",
+      "training": "SFT + DPO",
+      "sft_data": "UltraChat (일반 대화)",
+      "dpo": true,
+      "best_layer": 15,
+      "n_layers": 33,
+      "depth_pct": 46.9,
+      "best_auroc": 0.559,
+      "l4_auroc": 0.497
+    },
+    {
+      "key": "openchat_35",
+      "label": "OpenChat-3.5",
+      "training": "C-RLFT",
+      "sft_data": "GPT-4 대화 (C-RLFT)",
+      "dpo": false,
+      "best_layer": 16,
+      "n_layers": 33,
+      "depth_pct": 50.0,
+      "best_auroc": 0.868,
+      "l4_auroc": 0.542
+    },
+    {
+      "key": "starling_7b",
+      "label": "Starling-LM-7B-alpha",
+      "training": "C-RLFT + RLHF",
+      "sft_data": "GPT-4 대화 + Nectar reward",
+      "dpo": false,
+      "best_layer": 32,
+      "n_layers": 33,
+      "depth_pct": 100.0,
+      "best_auroc": 0.664,
+      "l4_auroc": 0.496,
+      "note": "RLHF가 best layer를 마지막 레이어로 밀어냄 (반대 방향)"
+    },
+    {
+      "key": "nous_hermes_dpo",
+      "label": "NousHermes-2-Mistral-7B-DPO",
+      "training": "SFT + DPO",
+      "sft_data": "OpenHermes (GPT-4 사실 Q&A ~1M)",
+      "dpo": true,
+      "best_layer": 2,
+      "n_layers": 33,
+      "depth_pct": 6.3,
+      "best_auroc": 0.806,
+      "l4_auroc": 0.729,
+      "note": "결정적 증거: OpenHermes와 동일 SFT, DPO만 추가 → L21→L2"
+    },
+    {
+      "key": "mistral",
+      "label": "Mistral-7B-Instruct-v0.3 (ANOMALY)",
+      "training": "SFT + DPO (추정)",
+      "sft_data": "OpenHermes 계열 추정",
+      "dpo": true,
+      "best_layer": 4,
+      "n_layers": 33,
+      "depth_pct": 12.5,
+      "best_auroc": 0.808,
+      "l4_auroc": 0.808,
+      "note": "최초 발견된 이상치 — NousHermes가 동일 패턴으로 원인 확인"
+    }
+  ],
+  "causal_chain": {
+    "step1": {"hypothesis": "아키텍처?", "model": "mistral_base", "result": "L29 → 아님"},
+    "step2": {"hypothesis": "일반 SFT?", "model": "mistral_v02", "result": "L21 → 아님"},
+    "step3": {"hypothesis": "DPO만?", "model": "zephyr_7b", "result": "L15 → 아님 (일반 대화 데이터)"},
+    "step4": {"hypothesis": "사실성 SFT만?", "model": "openhermes", "result": "L21 → 아님"},
+    "step5": {"hypothesis": "사실성 SFT + DPO?", "model": "nous_hermes_dpo", "result": "L2 → 확인!"}
+  }
+}

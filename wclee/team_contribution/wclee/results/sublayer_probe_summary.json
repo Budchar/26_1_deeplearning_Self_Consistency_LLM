@@ -1,0 +1,102 @@
+{
+  "experiment": "Exp12 Sublayer Probe — MLP stream vs Attention stream",
+  "description": "각 transformer 레이어를 attn_stream(Attention 후)과 mlp_stream(MLP 후) 두 지점으로 분리하여 hallucination 인코딩 주체를 탐침",
+  "dataset": "TriviaQA",
+  "probe": "LogisticRegression (C=1.0, max_iter=1000)",
+  "metric": "AUROC",
+  "models": {
+    "mistral": {
+      "label": "Mistral-7B-Instruct-v0.3",
+      "n_layers": 32,
+      "exp06_best_layer": 4,
+      "exp06_best_auroc": 0.808,
+      "attn_stream_auroc_at_best": 0.776,
+      "mlp_stream_auroc_at_best": 0.808,
+      "gap_mlp_minus_attn": 0.032,
+      "driver": "MLP",
+      "encoding_type": "Type I (Early MLP)"
+    },
+    "nous_hermes_dpo": {
+      "label": "NousHermes-2-Mistral-7B-DPO",
+      "n_layers": 32,
+      "exp06_best_layer": 2,
+      "exp06_best_auroc": 0.806,
+      "attn_stream_auroc_at_best": 0.646,
+      "mlp_stream_auroc_at_best": 0.806,
+      "gap_mlp_minus_attn": 0.160,
+      "driver": "MLP",
+      "encoding_type": "Type I (Early MLP)"
+    },
+    "mistral_base": {
+      "label": "Mistral-7B-v0.1 (BASE)",
+      "n_layers": 32,
+      "exp06_best_layer": 29,
+      "exp06_best_auroc": 0.789,
+      "attn_stream_auroc_at_best": 0.741,
+      "mlp_stream_auroc_at_best": 0.762,
+      "gap_mlp_minus_attn": 0.021,
+      "driver": "Both",
+      "encoding_type": "Type II (Late)"
+    },
+    "openhermes": {
+      "label": "OpenHermes-2.5-Mistral-7B",
+      "n_layers": 32,
+      "exp06_best_layer": 21,
+      "exp06_best_auroc": 0.795,
+      "attn_stream_auroc_at_best": 0.758,
+      "mlp_stream_auroc_at_best": 0.783,
+      "gap_mlp_minus_attn": 0.025,
+      "driver": "Both",
+      "encoding_type": "Type II (Late)"
+    },
+    "exaone": {
+      "label": "EXAONE-3.5-7.8B",
+      "n_layers": 32,
+      "exp06_best_layer": 30,
+      "exp06_best_auroc": 0.838,
+      "attn_stream_auroc_at_best": 0.917,
+      "mlp_stream_auroc_at_best": 0.838,
+      "gap_mlp_minus_attn": -0.079,
+      "note": "L15 attn_stream AUROC=0.917이 exp06 full-layer L30 AUROC=0.838보다 높음",
+      "driver": "Attention",
+      "encoding_type": "Type II (Late Attention)"
+    },
+    "qwen_7b": {
+      "label": "Qwen2.5-7B-Instruct",
+      "n_layers": 28,
+      "exp06_best_layer": 22,
+      "exp06_best_auroc": 0.821,
+      "attn_stream_auroc_at_best": 0.798,
+      "mlp_stream_auroc_at_best": 0.812,
+      "gap_mlp_minus_attn": 0.014,
+      "driver": "Both",
+      "encoding_type": "Type II (Late)"
+    },
+    "phi3_mini": {
+      "label": "Phi-3-mini-4k-instruct",
+      "n_layers": 32,
+      "exp06_best_layer": 18,
+      "exp06_best_auroc": 0.774,
+      "attn_stream_auroc_at_best": 0.712,
+      "mlp_stream_auroc_at_best": 0.758,
+      "gap_mlp_minus_attn": 0.046,
+      "driver": "MLP",
+      "encoding_type": "Type II (Late MLP)"
+    }
+  },
+  "type_classification": {
+    "Type I (Early MLP)": {
+      "condition": "best_layer <= 5 AND MLP dominant (gap > 0.02)",
+      "models": ["mistral", "nous_hermes_dpo"],
+      "common_factor": "OpenHermes factual SFT data + DPO"
+    },
+    "Type II (Late)": {
+      "condition": "best_layer > 15",
+      "models": ["mistral_base", "openhermes", "exaone", "qwen_7b"],
+      "subtype_attn": {
+        "models": ["exaone"],
+        "note": "Attention stream dominates at peak layer"
+      }
+    }
+  }
+}

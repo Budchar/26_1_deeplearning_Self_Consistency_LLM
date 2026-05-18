@@ -1,0 +1,16 @@
+# 데이터셋 (137GB)
+data/datasets/
+data/processed/
+
+# Logit Lens hidden state 원시 데이터 (93MB x 4)
+results/raw/11_geometry_*.json
+
+# Python 캐시
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# 임시/환경
+*.log
+.env

@@ -1,0 +1,34 @@
+experiments:
+  token_entropy:
+    n_samples: 500
+    datasets: [triviaqa, truthfulqa]
+    entropy_aggregation: [mean, max, last_token]
+    threshold_search: true
+
+  semantic_entropy:
+    n_samples: 200
+    n_generations: 10          # 같은 질문에 생성 횟수
+    datasets: [triviaqa, truthfulqa]
+    similarity_threshold: 0.8  # NLI entailment threshold
+    embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+
+  self_consistency:
+    n_samples: 300
+    n_generations: 10
+    datasets: [triviaqa, truthfulqa, halueval]
+    temperature: 0.7
+
+  calibration:
+    n_samples: 500
+    datasets: [triviaqa, truthfulqa]
+    n_bins: 10
+    confidence_methods: [token_prob, verbalized]
+
+  verbalized_confidence:
+    n_samples: 300
+    datasets: [triviaqa, truthfulqa]
+    scale: "percentage"        # 0-100% 응답 요구
+
+evaluation:
+  correct_match: "exact_and_contains"  # 정답 포함 여부 판단 방식
+  min_token_overlap: 1

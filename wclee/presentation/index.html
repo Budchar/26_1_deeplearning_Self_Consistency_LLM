@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLM은 언제 거짓말인지 알고 있을까?</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0d0d1a;
+    --card: #141428;
+    --border: #2a2a4a;
+    --accent: #6c63ff;
+    --accent2: #ff6584;
+    --accent3: #43e97b;
+    --text: #e8e8f0;
+    --muted: #8888aa;
+    --glow: rgba(108,99,255,0.3);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  /* ── Slide Container ── */
+  #deck {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: translateY(30px);
+  }
+
+  .slide.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+
+  .slide.exit {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  /* ── Navigation ── */
+  #nav {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 100;
+  }
+
+  .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--border);
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .dot.active { background: var(--accent); transform: scale(1.4); }
+
+  #arrows {
+    position: fixed;
+    bottom: 20px;
+    right: 32px;
+    display: flex;
+    gap: 8px;
+    z-index: 100;
+  }
+
+  .arrow {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    width: 40px; height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+
+  .arrow:hover { background: var(--accent); border-color: var(--accent); }
+
+  #slide-counter {
+    position: fixed;
+    top: 20px;
+    right: 28px;
+    font-size: 13px;
+    color: var(--muted);
+    z-index: 100;
+  }
+
+  /* ── Common Elements ── */
+  .slide-tag {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  h1 { font-size: 52px; font-weight: 800; line-height: 1.15; text-align: center; }
+  h2 { font-size: 36px; font-weight: 700; line-height: 1.2; }
+  h3 { font-size: 22px; font-weight: 600; }
+
+  .highlight { color: var(--accent); }
+  .red { color: var(--accent2); }
+  .green { color: var(--accent3); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 32px;
+  }
+
+  .pill {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  /* ── Slide 0: Title ── */
+  #slide-0 {
+    background: radial-gradient(ellipse at 30% 40%, rgba(108,99,255,0.12) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 60%, rgba(255,101,132,0.08) 0%, transparent 60%);
+  }
+
+  #slide-0 h1 {
+    background: linear-gradient(135deg, #fff 0%, #a78bfa 50%, #818cf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    color: var(--muted);
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 600px;
+  }
+
+  .meta-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .meta-chip {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .floating {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+  }
+
+  /* ── Slide 1: Hallucination ── */
+  .chat-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .bubble {
+    padding: 14px 20px;
+    border-radius: 16px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 85%;
+    animation: fadeSlideIn 0.5s ease forwards;
+    opacity: 0;
+  }
+
+  .bubble.user {
+    background: var(--accent);
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+  }
+
+  .bubble.ai {
+    background: var(--card);
+    border: 1px solid var(--border);
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+  }
+
+  .bubble.wrong {
+    border-color: var(--accent2);
+    box-shadow: 0 0 20px rgba(255,101,132,0.2);
+  }
+
+  .wrong-label {
+    display: inline-block;
+    background: var(--accent2);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-top: 8px;
+  }
+
+  @keyframes fadeSlideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── Slide 2: Method ── */
+  .transformer-vis {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    position: relative;
+  }
+
+  .layer-box {
+    width: 52px;
+    height: 52px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: var(--muted);
+    position: relative;
+    transition: all 0.4s;
+    background: var(--card);
+  }
+
+  .layer-box.probed {
+    border-color: var(--accent);
+    background: rgba(108,99,255,0.15);
+    box-shadow: 0 0 16px var(--glow);
+    transform: scale(1.1);
+    color: var(--text);
+  }
+
+  .layer-arrow {
+    width: 24px;
+    height: 2px;
+    background: var(--border);
+    position: relative;
+  }
+
+  .layer-arrow::after {
+    content: '▶';
+    position: absolute;
+    right: -6px;
+    top: -9px;
+    font-size: 10px;
+    color: var(--border);
+  }
+
+  .probe-label {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: var(--accent);
+    font-weight: 700;
+    white-space: nowrap;
+    animation: blink 1.5s ease infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .auroc-badge {
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: var(--accent3);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  /* ── Slide 3: Results Chart ── */
+  .chart-wrapper {
+    width: 100%;
+    max-width: 860px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+  }
+
+  /* ── Slide 4: Anomaly ── */
+  .model-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .model-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    transition: all 0.4s;
+    position: relative;
+  }
+
+  .model-card.anomaly {
+    border-color: var(--accent2);
+    box-shadow: 0 0 30px rgba(255,101,132,0.25);
+    background: rgba(255,101,132,0.08);
+    transform: scale(1.05);
+  }
+
+  .model-name { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+  .model-layer { font-size: 24px; font-weight: 800; margin-bottom: 4px; }
+  .model-depth { font-size: 11px; }
+
+  .depth-bar {
+    width: 100%;
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    margin-top: 8px;
+    overflow: hidden;
+  }
+
+  .depth-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 1s ease 0.5s;
+  }
+
+  .anomaly-badge {
+    position: absolute;
+    top: -10px;
+    right: 8px;
+    background: var(--accent2);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+
+  /* ── Slide 5: Investigation ── */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    max-width: 720px;
+  }
+
+  .timeline-item {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.5s ease;
+  }
+
+  .timeline-item.shown {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .timeline-dot-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20px;
+  }
+
+  .t-dot {
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+
+  .t-line {
+    width: 2px;
+    flex: 1;
+    background: var(--border);
+    margin: 4px 0;
+    min-height: 20px;
+  }
+
+  .t-content {
+    flex: 1;
+    padding: 12px 16px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+
+  .t-label { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  .t-main { font-size: 15px; font-weight: 600; }
+  .t-result { font-size: 13px; margin-top: 6px; }
+
+  /* ── Slide 6: Key Finding ── */
+  .comparison {
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .comp-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .comp-card.highlight-card {
+    border-color: var(--accent3);
+    box-shadow: 0 0 30px rgba(67,233,123,0.2);
+  }
+
+  .comp-model { font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+  .comp-sft { font-size: 14px; margin-bottom: 8px; }
+  .comp-dpo { font-size: 14px; margin-bottom: 16px; }
+  .comp-layer { font-size: 48px; font-weight: 900; line-height: 1; }
+  .comp-depth { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+  .arrow-center {
+    text-align: center;
+    font-size: 32px;
+    color: var(--accent);
+  }
+
+  .layer-vis {
+    height: 8px;
+    background: var(--border);
+    border-radius: 4px;
+    margin-top: 12px;
+    overflow: hidden;
+  }
+
+  .layer-vis-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1.2s ease 0.3s;
+  }
+
+  /* ── Slide 7: Mechanism ── */
+  .mlp-vis {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .mlp-layer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .mlp-label { width: 60px; font-size: 13px; color: var(--muted); text-align: right; flex-shrink: 0; }
+
+  .mlp-bar-track {
+    flex: 1;
+    height: 32px;
+    background: var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .mlp-bar {
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: width 1s ease;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .mlp-auroc { width: 70px; font-size: 13px; font-weight: 700; color: var(--accent3); text-align: right; flex-shrink: 0; }
+
+  .star { color: gold; font-size: 16px; margin-left: 8px; }
+
+  /* ── Slide 8: Conclusion ── */
+  .big-finding {
+    background: var(--card);
+    border: 2px solid var(--accent);
+    border-radius: 20px;
+    padding: 36px 48px;
+    text-align: center;
+    max-width: 800px;
+    box-shadow: 0 0 60px var(--glow);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .big-finding::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(108,99,255,0.08) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .finding-text {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+
+  .implications {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 860px;
+    margin-top: 32px;
+  }
+
+  .impl-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .impl-icon { font-size: 32px; margin-bottom: 10px; }
+  .impl-title { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+  .impl-desc { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+  /* ── Pulse animation for key elements ── */
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px var(--glow); }
+    50% { box-shadow: 0 0 40px rgba(108,99,255,0.5); }
+  }
+
+  .pulse { animation: pulse-glow 2.5s ease infinite; }
+
+  /* ── Slide transitions ── */
+  @keyframes slideInFromRight {
+    from { opacity: 0; transform: translateX(40px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .animate-in { animation: slideInFromRight 0.5s ease forwards; }
+
+  /* ── Grid BG ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(108,99,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(108,99,255,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .slide > * { position: relative; z-index: 1; }
+
+  /* progress bar */
+  #progress {
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    transition: width 0.4s ease;
+    z-index: 200;
+  }
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+<div id="slide-counter">1 / 9</div>
+
+<div id="deck">
+
+  <!-- ─── Slide 0: Title ─── -->
+  <div class="slide active" id="slide-0">
+    <div class="slide-tag">Deep Learning Term Project · 2026</div>
+    <h1 class="floating">LLM은 언제<br>거짓말인지 알고 있을까?</h1>
+    <p class="subtitle">트랜스포머 레이어 탐침으로 추적한 Hallucination 사전 인코딩 메커니즘</p>
+    <div class="meta-row">
+      <span class="meta-chip">📊 12가지 실험</span>
+      <span class="meta-chip">🤖 11+ LLM 모델</span>
+      <span class="meta-chip">🔬 Sublayer Probe 분석</span>
+      <span class="meta-chip">💡 DPO 메커니즘 발견</span>
+    </div>
+  </div>
+
+  <!-- ─── Slide 1: Problem ─── -->
+  <div class="slide" id="slide-1">
+    <div class="slide-tag">Problem</div>
+    <h2 style="margin-bottom:32px; text-align:center;">LLM의 <span class="red">Hallucination</span>이란?</h2>
+    <div class="chat-demo">
+      <div class="bubble user" style="animation-delay:0.2s">에펠탑은 몇 년도에 완공됐어?</div>
+      <div class="bubble ai wrong" style="animation-delay:0.8s">
+        에펠탑은 <strong>1901년</strong>에 완공되었습니다. 파리 만국박람회를 위해 구스타프 에펠이 설계했으며...
+        <div><span class="wrong-label">✗ 오답 — 실제는 1889년</span></div>
+      </div>
+      <div class="bubble user" style="animation-delay:1.6s">확신하는 거야?</div>
+      <div class="bubble ai wrong" style="animation-delay:2.2s">
+        네, <strong>확실합니다.</strong> 에펠탑은 분명히 1901년에 완성되었습니다.
+        <div><span class="wrong-label">✗ 틀린 정보를 확신함</span></div>
+      </div>
+    </div>
+    <p style="margin-top:28px; color:var(--muted); font-size:15px; text-align:center;">
+      핵심 질문: <strong style="color:var(--text)">모델이 답하기 전, 이미 "틀릴 것"을 내부에서 알고 있을까?</strong>
+    </p>
+  </div>
+
+  <!-- ─── Slide 2: Method ─── -->
+  <div class="slide" id="slide-2">
+    <div class="slide-tag">Method — Layer Probe</div>
+    <h2 style="margin-bottom:12px; text-align:center;">레이어별 <span class="highlight">탐침(Probe)</span> 실험</h2>
+    <p style="color:var(--muted); margin-bottom:40px; text-align:center;">각 레이어의 hidden state에 로지스틱 회귀를 학습 → AUROC로 측정</p>
+
+    <div class="transformer-vis" id="transformer-vis" style="margin-bottom:48px;">
+      <!-- Dynamically built by JS -->
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; max-width:660px; width:100%;">
+      <div class="card" style="text-align:center;">
+        <div style="font-size:28px; font-weight:800; color:var(--accent)">AUROC</div>
+        <div style="font-size:13px; color:var(--muted); margin-top:4px">탐지 성능 지표<br>0.5=무작위, 1.0=완벽</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div style="font-size:28px; font-weight:800; color:var(--accent2)">Best Layer</div>
+        <div style="font-size:13px; color:var(--muted); margin-top:4px">AUROC 최고점 레이어<br>= 정보 집중 위치</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div style="font-size:28px; font-weight:800; color:var(--accent3)">TriviaQA</div>
+        <div style="font-size:13px; color:var(--muted); margin-top:4px">사실 Q&amp;A 데이터셋<br>정답/오답 레이블</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── Slide 3: Results Chart ─── -->
+  <div class="slide" id="slide-3">
+    <div class="slide-tag">Results — Exp06 Layer Probe</div>
+    <h2 style="margin-bottom:8px; text-align:center;">모델마다 <span class="highlight">다른 레이어</span>에서 hallucination 인코딩</h2>
+    <p style="color:var(--muted); margin-bottom:20px; font-size:14px; text-align:center;">Mistral 아키텍처 8가지 변형 — Layer Probe AUROC</p>
+    <div class="chart-wrapper">
+      <canvas id="layerChart" height="280"></canvas>
+    </div>
+  </div>
+
+  <!-- ─── Slide 4: Anomaly ─── -->
+  <div class="slide" id="slide-4">
+    <div class="slide-tag">Finding — Anomaly Detected</div>
+    <h2 style="margin-bottom:8px; text-align:center;">하나의 <span class="red">이상치</span>: Mistral-v0.3</h2>
+    <p style="color:var(--muted); margin-bottom:32px; text-align:center;">다른 모델은 중후반 레이어 — v0.3만 <strong>4번째 레이어(12% 깊이)</strong>에서 피크</p>
+
+    <div class="model-grid">
+      <div class="model-card">
+        <div class="model-name">Mistral-BASE</div>
+        <div class="model-layer" style="color:#95a5a6;">L29</div>
+        <div class="model-depth" style="color:var(--muted);">91% 깊이</div>
+        <div class="depth-bar"><div class="depth-fill" style="width:0%;background:#95a5a6;" data-w="91"></div></div>
+      </div>
+      <div class="model-card">
+        <div class="model-name">Mistral-v0.2 (SFT)</div>
+        <div class="model-layer" style="color:#f39c12;">L21</div>
+        <div class="model-depth" style="color:var(--muted);">66% 깊이</div>
+        <div class="depth-bar"><div class="depth-fill" style="width:0%;background:#f39c12;" data-w="66"></div></div>
+      </div>
+      <div class="model-card">
+        <div class="model-name">OpenHermes (SFT)</div>
+        <div class="model-layer" style="color:#8e44ad;">L21</div>
+        <div class="model-depth" style="color:var(--muted);">66% 깊이</div>
+        <div class="depth-bar"><div class="depth-fill" style="width:0%;background:#8e44ad;" data-w="66"></div></div>
+      </div>
+      <div class="model-card anomaly">
+        <div class="anomaly-badge">⚠ ANOMALY</div>
+        <div class="model-name">Mistral-v0.3</div>
+        <div class="model-layer red">L4</div>
+        <div class="model-depth red" style="font-weight:700;">12% 깊이!</div>
+        <div class="depth-bar"><div class="depth-fill" style="width:0%;background:var(--accent2);" data-w="12"></div></div>
+      </div>
+      <div class="model-card">
+        <div class="model-name">Zephyr (DPO)</div>
+        <div class="model-layer" style="color:#27ae60;">L15</div>
+        <div class="model-depth" style="color:var(--muted);">47% 깊이</div>
+        <div class="depth-bar"><div class="depth-fill" style="width:0%;background:#27ae60;" data-w="47"></div></div>
+      </div>
+      <div class="model-card">
+        <div class="model-name">OpenChat-3.5</div>
+        <div class="model-layer" style="color:#16a085;">L16</div>
+        <div class="model-depth" style="color:var(--muted);">50% 깊이</div>
+        <div class="depth-bar"><div class="depth-fill" style="width:0%;background:#16a085;" data-w="50"></div></div>
+      </div>
+      <div class="model-card">
+        <div class="model-name">Starling (RLHF)</div>
+        <div class="model-layer" style="color:#2471a3;">L32</div>
+        <div class="model-depth" style="color:var(--muted);">100% 깊이</div>
+        <div class="depth-bar"><div class="depth-fill" style="width:0%;background:#2471a3;" data-w="100"></div></div>
+      </div>
+      <div class="model-card">
+        <div class="model-name">NousHermes (DPO)</div>
+        <div class="model-layer" style="color:#d35400;">L2</div>
+        <div class="model-depth" style="color:var(--muted);">6% 깊이</div>
+        <div class="depth-bar"><div class="depth-fill" style="width:0%;background:#d35400;" data-w="6"></div></div>
+      </div>
+    </div>
+    <p style="margin-top:20px; color:var(--muted); font-size:14px;">왜 v0.3만 이렇게 이른 레이어에서 인코딩할까?</p>
+  </div>
+
+  <!-- ─── Slide 5: Investigation ─── -->
+  <div class="slide" id="slide-5">
+    <div class="slide-tag">Investigation — 원인 추적</div>
+    <h2 style="margin-bottom:28px; text-align:center;">단계적 실험으로 <span class="highlight">원인 좁히기</span></h2>
+
+    <div class="timeline" id="timeline">
+      <div class="timeline-item" data-delay="0">
+        <div class="timeline-dot-col">
+          <div class="t-dot" style="background:#95a5a6;"></div>
+          <div class="t-line"></div>
+        </div>
+        <div class="t-content">
+          <div class="t-label">가설 1 — 아키텍처?</div>
+          <div class="t-main">Mistral-BASE (v0.1, 사전학습만)</div>
+          <div class="t-result">→ Best layer <strong>L29 (91%)</strong> — 아키텍처는 원인 아님 ✗</div>
+        </div>
+      </div>
+      <div class="timeline-item" data-delay="150">
+        <div class="timeline-dot-col">
+          <div class="t-dot" style="background:#f39c12;"></div>
+          <div class="t-line"></div>
+        </div>
+        <div class="t-content">
+          <div class="t-label">가설 2 — SFT (일반)?</div>
+          <div class="t-main">Mistral-v0.2 (일반 instruction SFT)</div>
+          <div class="t-result">→ Best layer <strong>L21 (66%)</strong> — 일반 SFT는 원인 아님 ✗</div>
+        </div>
+      </div>
+      <div class="timeline-item" data-delay="300">
+        <div class="timeline-dot-col">
+          <div class="t-dot" style="background:#27ae60;"></div>
+          <div class="t-line"></div>
+        </div>
+        <div class="t-content">
+          <div class="t-label">가설 3 — DPO만?</div>
+          <div class="t-main">Zephyr (UltraChat + DPO)</div>
+          <div class="t-result">→ Best layer <strong>L15 (47%)</strong> — DPO만으로는 부족 ✗</div>
+        </div>
+      </div>
+      <div class="timeline-item" data-delay="450">
+        <div class="timeline-dot-col">
+          <div class="t-dot" style="background:#8e44ad;"></div>
+          <div class="t-line"></div>
+        </div>
+        <div class="t-content">
+          <div class="t-label">가설 4 — 사실성 데이터만?</div>
+          <div class="t-main">OpenHermes (OpenHermes SFT, DPO 없음)</div>
+          <div class="t-result">→ Best layer <strong>L21 (66%)</strong> — 사실성 데이터만으로는 부족 ✗</div>
+        </div>
+      </div>
+      <div class="timeline-item" data-delay="600">
+        <div class="timeline-dot-col">
+          <div class="t-dot" style="background:#d35400;"></div>
+        </div>
+        <div class="t-content" style="border-color:var(--accent3); box-shadow:0 0 20px rgba(67,233,123,0.15);">
+          <div class="t-label">🎯 결정적 실험 — 사실성 데이터 + DPO</div>
+          <div class="t-main" style="color:var(--accent3);">NousHermes (OpenHermes SFT + DPO)</div>
+          <div class="t-result">→ Best layer <strong style="color:var(--accent3)">L2 (6%)</strong> — <span style="color:var(--accent3); font-weight:700;">원인 확인! ✓</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── Slide 6: Smoking Gun ─── -->
+  <div class="slide" id="slide-6">
+    <div class="slide-tag">Key Finding — Smoking Gun</div>
+    <h2 style="margin-bottom:8px; text-align:center;">같은 SFT 데이터, <span class="accent">DPO 하나</span>가 바꿔놓은 것</h2>
+    <p style="color:var(--muted); margin-bottom:32px; font-size:15px; text-align:center;">
+      OpenHermes vs NousHermes — 유일한 차이: DPO 적용 여부
+    </p>
+
+    <div class="comparison">
+      <div class="comp-card">
+        <div class="comp-model">OpenHermes-2.5</div>
+        <div class="comp-sft">✅ SFT: OpenHermes 데이터</div>
+        <div class="comp-dpo" style="color:var(--muted);">✗ DPO: 없음</div>
+        <div class="comp-layer" style="color:#8e44ad;">L21</div>
+        <div class="comp-depth">66% 깊이 · AUROC 0.795</div>
+        <div class="layer-vis"><div class="layer-vis-fill" style="width:0%;background:#8e44ad;" data-w="66"></div></div>
+      </div>
+
+      <div class="arrow-center">
+        <div style="font-size:14px; color:var(--muted); margin-bottom:8px;">+ DPO</div>
+        ⟶
+        <div style="font-size:14px; color:var(--accent3); margin-top:8px; font-weight:700;">L21→L2</div>
+      </div>
+
+      <div class="comp-card highlight-card">
+        <div class="comp-model">NousHermes-2 (DPO)</div>
+        <div class="comp-sft">✅ SFT: OpenHermes 데이터</div>
+        <div class="comp-dpo" style="color:var(--accent3);">✅ DPO: 적용!</div>
+        <div class="comp-layer" style="color:var(--accent3);">L2</div>
+        <div class="comp-depth">6% 깊이 · AUROC 0.806</div>
+        <div class="layer-vis"><div class="layer-vis-fill" style="width:0%;background:var(--accent3);" data-w="6"></div></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:28px; max-width:740px; text-align:center; border-color:var(--accent);">
+      <p style="font-size:16px; line-height:1.8;">
+        DPO는 "이 답이 맞다/틀리다"의 판단을 <strong>더 이른 레이어에서</strong> 수행하도록<br>
+        초반 MLP의 사실 판별 회로를 강화한다
+      </p>
+    </div>
+  </div>
+
+  <!-- ─── Slide 7: Mechanism ─── -->
+  <div class="slide" id="slide-7">
+    <div class="slide-tag">Mechanism — Sublayer Probe (Exp12)</div>
+    <h2 style="margin-bottom:8px; text-align:center;"><span class="highlight">MLP</span> vs <span class="accent2" style="color:var(--accent2)">Attention</span> — 누가 인코딩하나?</h2>
+    <p style="color:var(--muted); margin-bottom:28px; font-size:14px; text-align:center;">
+      각 레이어를 attn_stream (Attention 후) / mlp_stream (MLP 후) 두 지점으로 분리 탐침
+    </p>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; width:100%; max-width:860px; align-items:start;">
+      <div>
+        <h3 style="margin-bottom:16px; color:var(--accent2);">Mistral-v0.3 <span style="color:var(--muted); font-size:14px;">— Type I (Early MLP)</span></h3>
+        <div class="mlp-vis" id="vis-mistral"></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:16px; color:var(--accent);">EXAONE-3.5 <span style="color:var(--muted); font-size:14px;">— Type II (Late Attn)</span></h3>
+        <div class="mlp-vis" id="vis-exaone"></div>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; width:100%; max-width:860px; margin-top:20px;">
+      <div class="card" style="border-color:var(--accent2);">
+        <strong style="color:var(--accent2);">Type I (Mistral-v0.3, NousHermes)</strong><br>
+        <span style="font-size:13px; color:var(--muted);">초반 L2–4 MLP가 주도 · 사실성 SFT+DPO</span>
+      </div>
+      <div class="card" style="border-color:var(--accent);">
+        <strong style="color:var(--accent);">Type II (EXAONE, Qwen)</strong><br>
+        <span style="font-size:13px; color:var(--muted);">후반 Attention이 주도 · vocab 불확실성 성장</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── Slide 8: Conclusion ─── -->
+  <div class="slide" id="slide-8">
+    <div class="slide-tag">Conclusion</div>
+    <h2 style="margin-bottom:28px; text-align:center;">한 문장으로 정리하면</h2>
+
+    <div class="big-finding pulse">
+      <p class="finding-text">
+        <span class="highlight">사실성 SFT 데이터(OpenHermes)로 학습 후 DPO를 적용하면,</span><br>
+        hallucination 인코딩이 <span class="red">후반 레이어에서</span> <span class="green">초반 MLP (L2–4)로 이동</span>한다.
+      </p>
+    </div>
+
+    <div class="implications">
+      <div class="impl-card">
+        <div class="impl-icon">🔍</div>
+        <div class="impl-title">탐지 효율</div>
+        <div class="impl-desc">Type I 모델은 초반 레이어만 탐침해도 hallucination 사전 탐지 가능</div>
+      </div>
+      <div class="impl-card">
+        <div class="impl-icon">🧠</div>
+        <div class="impl-title">MLP Key-Value Memory</div>
+        <div class="impl-desc">Geva et al. (2021): 초반 MLP = 사실 지식 저장소 → DPO가 이를 조기 활성화</div>
+      </div>
+      <div class="impl-card">
+        <div class="impl-icon">⚙️</div>
+        <div class="impl-title">Fine-tuning 설계</div>
+        <div class="impl-desc">학습 데이터의 사실성 밀도 + RLHF 방식이 내부 표현 구조를 결정</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /deck -->
+
+<div id="nav"></div>
+<div id="arrows">
+  <button class="arrow" id="prev">←</button>
+  <button class="arrow" id="next">→</button>
+</div>
+
+<script>
+// ── Data ──────────────────────────────────────────────────────────
+const LAYER_DATA = {
+  mistral_base:    [0.5,0.466,0.484,0.379,0.422,0.453,0.596,0.509,0.503,0.578,0.621,0.627,0.565,0.484,0.397,0.435,0.466,0.565,0.565,0.596,0.634,0.652,0.627,0.720,0.752,0.714,0.745,0.714,0.739,0.789,0.590,0.621,0.609],
+  mistral_v02:     [0.5,0.547,0.491,0.410,0.429,0.466,0.559,0.540,0.491,0.553,0.466,0.416,0.447,0.348,0.354,0.447,0.534,0.516,0.534,0.534,0.590,0.615,0.559,0.547,0.547,0.522,0.522,0.534,0.509,0.522,0.516,0.478,0.435],
+  openhermes:      [0.5,0.447,0.602,0.478,0.590,0.516,0.484,0.578,0.578,0.590,0.547,0.646,0.677,0.677,0.665,0.683,0.739,0.702,0.702,0.714,0.758,0.795,0.764,0.758,0.783,0.739,0.702,0.733,0.745,0.689,0.745,0.658,0.646],
+  zephyr_7b:       [0.5,0.540,0.466,0.379,0.497,0.472,0.317,0.261,0.491,0.497,0.534,0.534,0.516,0.503,0.509,0.559,0.559,0.422,0.472,0.422,0.391,0.410,0.404,0.410,0.422,0.441,0.404,0.466,0.410,0.453,0.422,0.453,0.447],
+  openchat_35:     [0.5,0.479,0.611,0.556,0.542,0.611,0.549,0.535,0.514,0.569,0.569,0.507,0.625,0.604,0.764,0.771,0.868,0.764,0.799,0.681,0.660,0.681,0.646,0.618,0.660,0.688,0.632,0.653,0.660,0.674,0.701,0.771,0.840],
+  nous_hermes_dpo: [0.5,0.646,0.806,0.708,0.729,0.604,0.611,0.681,0.632,0.563,0.618,0.528,0.403,0.521,0.590,0.646,0.674,0.660,0.743,0.785,0.750,0.722,0.639,0.729,0.708,0.708,0.771,0.736,0.722,0.694,0.653,0.618,0.590],
+  starling_7b:     [0.5,0.504,0.552,0.520,0.496,0.432,0.352,0.304,0.352,0.344,0.408,0.440,0.480,0.432,0.496,0.520,0.544,0.552,0.512,0.432,0.440,0.560,0.496,0.440,0.432,0.488,0.480,0.488,0.480,0.616,0.632,0.624,0.664],
+  mistral:         [0.5,0.584,0.712,0.744,0.808,0.736,0.672,0.736,0.744,0.640,0.616,0.664,0.808,0.656,0.672,0.608,0.600,0.664,0.656,0.600,0.504,0.408,0.376,0.368,0.392,0.424,0.440,0.432,0.504,0.584,0.632,0.704,0.640]
+};
+
+const MODEL_META = {
+  mistral_base:    { label: "Mistral-BASE",       color: "#95a5a6", best: 29 },
+  mistral_v02:     { label: "Mistral-v0.2 (SFT)", color: "#f39c12", best: 21 },
+  openhermes:      { label: "OpenHermes (SFT)",   color: "#8e44ad", best: 21 },
+  zephyr_7b:       { label: "Zephyr (DPO)",        color: "#27ae60", best: 15 },
+  openchat_35:     { label: "OpenChat-3.5",        color: "#16a085", best: 16 },
+  nous_hermes_dpo: { label: "NousHermes (DPO)",    color: "#d35400", best: 2  },
+  starling_7b:     { label: "Starling (RLHF)",     color: "#2471a3", best: 32 },
+  mistral:         { label: "Mistral-v0.3 ⚠",    color: "#e74c3c", best: 4  }
+};
+
+// Sublayer data (approximated from experiment results)
+const SUBLAYER = {
+  mistral: {
+    layers: [0,1,2,3,4,5,6,7],
+    attn:   [0.500,0.552,0.668,0.716,0.776,0.712,0.648,0.704],
+    mlp:    [0.500,0.584,0.712,0.744,0.808,0.736,0.672,0.736],
+  },
+  exaone: {
+    layers: [10,12,14,15,16,18,20,22],
+    attn:   [0.620,0.710,0.880,0.917,0.845,0.798,0.765,0.741],
+    mlp:    [0.638,0.702,0.820,0.838,0.830,0.810,0.780,0.755],
+  }
+};
+
+// ── Slide state ───────────────────────────────────────────────────
+let current = 0;
+const totalSlides = 9;
+let chartBuilt = false;
+let mechBuilt = { mistral: false, exaone: false };
+
+// ── Nav dots ──────────────────────────────────────────────────────
+const nav = document.getElementById('nav');
+for (let i = 0; i < totalSlides; i++) {
+  const d = document.createElement('div');
+  d.className = 'dot' + (i === 0 ? ' active' : '');
+  d.addEventListener('click', () => goTo(i));
+  nav.appendChild(d);
+}
+
+function updateNav() {
+  document.querySelectorAll('.dot').forEach((d, i) => {
+    d.className = 'dot' + (i === current ? ' active' : '');
+  });
+  document.getElementById('slide-counter').textContent = `${current + 1} / ${totalSlides}`;
+  document.getElementById('progress').style.width = `${((current + 1) / totalSlides) * 100}%`;
+}
+
+function goTo(n) {
+  if (n < 0 || n >= totalSlides) return;
+  const prev = document.getElementById(`slide-${current}`);
+  prev.classList.remove('active');
+  prev.classList.add('exit');
+  setTimeout(() => prev.classList.remove('exit'), 600);
+
+  current = n;
+  const next = document.getElementById(`slide-${current}`);
+  next.classList.add('active');
+  updateNav();
+  onSlideEnter(current);
+}
+
+document.getElementById('prev').addEventListener('click', () => goTo(current - 1));
+document.getElementById('next').addEventListener('click', () => goTo(current + 1));
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown') goTo(current + 1);
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') goTo(current - 1);
+});
+
+// ── Slide Enter Handlers ──────────────────────────────────────────
+function onSlideEnter(n) {
+  if (n === 1) animateBubbles();
+  if (n === 2) buildTransformerVis();
+  if (n === 3) buildLayerChart();
+  if (n === 4) animateDepthBars('.depth-fill');
+  if (n === 5) animateTimeline();
+  if (n === 6) animateDepthBars('.layer-vis-fill');
+  if (n === 7) buildMechVis();
+}
+
+// ── Slide 1: Chat bubbles ─────────────────────────────────────────
+function animateBubbles() {
+  document.querySelectorAll('.bubble').forEach((b, i) => {
+    b.style.animationDelay = b.style.animationDelay || `${i * 0.6}s`;
+    b.style.animationFillMode = 'forwards';
+  });
+}
+
+// ── Slide 2: Transformer vis ──────────────────────────────────────
+function buildTransformerVis() {
+  const vis = document.getElementById('transformer-vis');
+  if (vis.children.length) return;
+  const layers = [0, 4, 8, 12, 16, 20, 24, 28, 32];
+  let probedIdx = 4;
+
+  layers.forEach((L, i) => {
+    const box = document.createElement('div');
+    box.className = 'layer-box' + (L === probedIdx ? ' probed' : '');
+    box.dataset.L = L;
+
+    if (L === probedIdx) {
+      const lbl = document.createElement('div');
+      lbl.className = 'probe-label';
+      lbl.textContent = '🔍 Probe';
+      box.appendChild(lbl);
+      const badge = document.createElement('div');
+      badge.className = 'auroc-badge';
+      badge.textContent = '0.808';
+      box.appendChild(badge);
+    }
+    box.appendChild(document.createTextNode(`L${L}`));
+    vis.appendChild(box);
+    if (i < layers.length - 1) {
+      const arr = document.createElement('div');
+      arr.className = 'layer-arrow';
+      vis.appendChild(arr);
+    }
+    box.style.cursor = 'pointer';
+    box.addEventListener('click', () => {
+      document.querySelectorAll('.layer-box').forEach(b => b.classList.remove('probed'));
+      box.classList.add('probed');
+    });
+  });
+}
+
+// ── Slide 3: Layer Chart ──────────────────────────────────────────
+function buildLayerChart() {
+  if (chartBuilt) return;
+  chartBuilt = true;
+
+  const ctx = document.getElementById('layerChart').getContext('2d');
+  const order = ['mistral_base','mistral_v02','openhermes','zephyr_7b','openchat_35','nous_hermes_dpo','starling_7b','mistral'];
+  const nL = 33;
+  const xs = Array.from({length: nL}, (_, i) => (i / (nL - 1) * 100).toFixed(0) + '%');
+
+  const datasets = order.map(k => {
+    const meta = MODEL_META[k];
+    return {
+      label: meta.label,
+      data: LAYER_DATA[k],
+      borderColor: meta.color,
+      backgroundColor: 'transparent',
+      borderWidth: k === 'mistral' ? 3 : 2,
+      borderDash: k === 'mistral' ? [] : (k === 'mistral_base' ? [4,2] : []),
+      pointRadius: LAYER_DATA[k].map((_, i) => i === meta.best ? 7 : 0),
+      pointBackgroundColor: meta.color,
+      tension: 0.3,
+    };
+  });
+
+  new Chart(ctx, {
+    type: 'line',
+    data: { labels: xs, datasets },
+    options: {
+      animation: { duration: 1200 },
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: {
+          labels: { color: '#aaa', font: { size: 11 }, boxWidth: 24 }
+        },
+        tooltip: {
+          callbacks: {
+            label: ctx => `${ctx.dataset.label}: ${ctx.parsed.y.toFixed(3)}`
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: { color: '#888', maxTicksLimit: 9, font: { size: 11 } },
+          grid: { color: '#1e1e3a' },
+          title: { display: true, text: 'Normalized Layer Depth (%)', color: '#888' }
+        },
+        y: {
+          min: 0.3, max: 0.95,
+          ticks: { color: '#888', font: { size: 11 } },
+          grid: { color: '#1e1e3a' },
+          title: { display: true, text: 'Probe AUROC', color: '#888' }
+        }
+      }
+    }
+  });
+}
+
+// ── Slide 4 & 6: Depth bars ───────────────────────────────────────
+function animateDepthBars(selector) {
+  document.querySelectorAll(selector).forEach(bar => {
+    const w = bar.dataset.w;
+    setTimeout(() => { bar.style.width = w + '%'; }, 300);
+  });
+}
+
+// ── Slide 5: Timeline ─────────────────────────────────────────────
+function animateTimeline() {
+  document.querySelectorAll('.timeline-item').forEach((item, i) => {
+    const delay = parseInt(item.dataset.delay || 0);
+    setTimeout(() => item.classList.add('shown'), delay + 200);
+  });
+}
+
+// ── Slide 7: Mechanism vis ────────────────────────────────────────
+function buildMechVis() {
+  buildMechSide('vis-mistral', 'mistral',
+    [0,1,2,3,4,5,6,7],
+    [0.500,0.552,0.668,0.716,0.776,0.712,0.648,0.704],
+    [0.500,0.584,0.712,0.744,0.808,0.736,0.672,0.736],
+    '#e74c3c', 4
+  );
+  buildMechSide('vis-exaone', 'exaone',
+    [12,14,15,16,18,20,22,24],
+    [0.680,0.780,0.917,0.845,0.798,0.765,0.741,0.720],
+    [0.700,0.770,0.838,0.830,0.810,0.780,0.755,0.738],
+    '#2980b9', 15
+  );
+}
+
+function buildMechSide(containerId, key, layers, attn, mlp, color, bestL) {
+  const cont = document.getElementById(containerId);
+  if (cont.dataset.built) return;
+  cont.dataset.built = '1';
+
+  const maxVal = Math.max(...attn, ...mlp);
+  const minVal = 0.45;
+
+  layers.forEach((L, i) => {
+    const row = document.createElement('div');
+    row.className = 'mlp-layer';
+
+    const lbl = document.createElement('div');
+    lbl.className = 'mlp-label';
+    lbl.textContent = `L${L}`;
+    row.appendChild(lbl);
+
+    const wrap = document.createElement('div');
+    wrap.style.flex = '1';
+    wrap.style.display = 'flex';
+    wrap.style.flexDirection = 'column';
+    wrap.style.gap = '3px';
+
+    // Attn bar
+    const attnTrack = document.createElement('div');
+    attnTrack.className = 'mlp-bar-track';
+    attnTrack.style.height = '14px';
+    const attnBar = document.createElement('div');
+    attnBar.className = 'mlp-bar';
+    attnBar.style.background = '#2980b9';
+    attnBar.style.width = '0%';
+    attnBar.style.fontSize = '10px';
+    attnBar.style.color = 'white';
+    attnBar.style.height = '100%';
+    attnBar.style.borderRadius = '4px';
+    attnBar.textContent = `Attn ${attn[i].toFixed(3)}`;
+    attnTrack.appendChild(attnBar);
+
+    // MLP bar
+    const mlpTrack = document.createElement('div');
+    mlpTrack.className = 'mlp-bar-track';
+    mlpTrack.style.height = '14px';
+    const mlpBar = document.createElement('div');
+    mlpBar.className = 'mlp-bar';
+    mlpBar.style.background = color;
+    mlpBar.style.width = '0%';
+    mlpBar.style.fontSize = '10px';
+    mlpBar.style.color = 'white';
+    mlpBar.style.height = '100%';
+    mlpBar.style.borderRadius = '4px';
+    mlpBar.textContent = `MLP  ${mlp[i].toFixed(3)}`;
+    mlpTrack.appendChild(mlpBar);
+
+    wrap.appendChild(attnTrack);
+    wrap.appendChild(mlpTrack);
+    row.appendChild(wrap);
+
+    if (L === bestL) {
+      const star = document.createElement('span');
+      star.className = 'star';
+      star.textContent = '★';
+      row.appendChild(star);
+    }
+
+    cont.appendChild(row);
+
+    const pct_a = ((attn[i] - minVal) / (maxVal - minVal) * 100).toFixed(1);
+    const pct_m = ((mlp[i] - minVal) / (maxVal - minVal) * 100).toFixed(1);
+    setTimeout(() => {
+      attnBar.style.transition = 'width 0.8s ease';
+      mlpBar.style.transition = 'width 0.8s ease';
+      attnBar.style.width = pct_a + '%';
+      mlpBar.style.width = pct_m + '%';
+    }, 200 + i * 80);
+  });
+}
+
+// ── Init ──────────────────────────────────────────────────────────
+updateNav();
+onSlideEnter(0);
+</script>
+
+</body>
+</html>

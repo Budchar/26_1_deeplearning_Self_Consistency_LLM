@@ -1,0 +1,50 @@
+[
+  {
+    "model_key": "smollm2_360m",
+    "model_name": "SmolLM2-360M-Instruct",
+    "param_billions": 0.36,
+    "family": "smollm",
+    "n_samples": 200,
+    "accuracy": 0.32,
+    "auroc_entropy": 0.7057,
+    "auroc_se": 0.543,
+    "auroc_nc": 0.6653,
+    "entropy_gap": 0.3125,
+    "entropy_correct": 0.7425,
+    "entropy_wrong": 1.055,
+    "clusters_correct": 2.6719,
+    "clusters_wrong": 3.5074
+  },
+  {
+    "model_key": "smollm2_1_7b",
+    "model_name": "SmolLM2-1.7B-Instruct",
+    "param_billions": 1.7,
+    "family": "smollm",
+    "n_samples": 200,
+    "accuracy": 0.575,
+    "auroc_entropy": 0.7754,
+    "auroc_se": 0.6302,
+    "auroc_nc": 0.7343,
+    "entropy_gap": 0.3007,
+    "entropy_correct": 0.3874,
+    "entropy_wrong": 0.6882,
+    "clusters_correct": 1.9739,
+    "clusters_wrong": 3.2588
+  },
+  {
+    "model_key": "opt_6_7b",
+    "model_name": "OPT-6.7B",
+    "param_billions": 6.7,
+    "family": "opt",
+    "n_samples": 200,
+    "accuracy": 0.44,
+    "auroc_entropy": 0.5149,
+    "auroc_se": 0.4713,
+    "auroc_nc": 0.4882,
+    "entropy_gap": 0.0219,
+    "entropy_correct": 0.5484,
+    "entropy_wrong": 0.5703,
+    "clusters_correct": 4.9432,
+    "clusters_wrong": 4.9196
+  }
+]
