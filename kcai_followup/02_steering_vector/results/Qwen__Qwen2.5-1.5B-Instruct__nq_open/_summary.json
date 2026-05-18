@@ -1,0 +1,59 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "dataset": "nq_open",
+  "target_layer": 25,
+  "target_rel_depth": 0.8928571428571429,
+  "n_prompts": 100,
+  "alpha_results": {
+    "alpha_-2.00": {
+      "acc": 0.21,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.21,
+      "time_sec": 74.79223370552063
+    },
+    "alpha_-1.00": {
+      "acc": 0.2,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.2,
+      "time_sec": 61.1809515953064
+    },
+    "alpha_-0.50": {
+      "acc": 0.21,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.21,
+      "time_sec": 60.636621713638306
+    },
+    "alpha_+0.00": {
+      "acc": 0.19,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.19,
+      "time_sec": 63.37556505203247
+    },
+    "alpha_+0.50": {
+      "acc": 0.2,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.2,
+      "time_sec": 58.11682844161987
+    },
+    "alpha_+1.00": {
+      "acc": 0.17,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.17,
+      "time_sec": 63.13494086265564
+    },
+    "alpha_+2.00": {
+      "acc": 0.16,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.16,
+      "time_sec": 63.949952363967896
+    }
+  },
+  "compute_time_sec": 450.3336491584778
+}

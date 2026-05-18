@@ -1,0 +1,12 @@
+# 큰 raw 데이터 (재추출 가능)
+_data/
+**/cache_src/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db

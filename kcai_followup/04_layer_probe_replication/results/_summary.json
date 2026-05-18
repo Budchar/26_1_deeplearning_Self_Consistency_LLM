@@ -1,0 +1,123 @@
+{
+  "n_cells": 12,
+  "peak_stats": {
+    "n_cells": 12,
+    "peak_rel_depth_mean": 0.708664021164021,
+    "peak_rel_depth_median": 0.7008928571428572,
+    "peak_rel_depth_std": 0.15129447111281366,
+    "in_h3_band_rate": 0.6666666666666666,
+    "peak_auroc_mean": 0.7229764429748425,
+    "peak_auroc_min": 0.6484530374504462,
+    "peak_auroc_max": 0.7834428275076817
+  },
+  "phase1_comparison": [
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "dataset": "nq_open",
+      "ours_peak_auroc": 0.7259575418163035,
+      "ours_peak_rel_depth": 0.7857142857142857,
+      "phase1_best_logreg_halluc_auroc": 0.744516129032258,
+      "phase1_best_mlp_halluc_auroc": 0.7862365591397849,
+      "ours_minus_phase1_logreg": -0.018558587215954492
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "dataset": "squad",
+      "ours_peak_auroc": 0.6484530374504462,
+      "ours_peak_rel_depth": 0.7142857142857143,
+      "phase1_best_logreg_halluc_auroc": 0.6401578073089701,
+      "phase1_best_mlp_halluc_auroc": 0.6677740863787376,
+      "ours_minus_phase1_logreg": 0.008295230141476151
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "dataset": "triviaqa",
+      "ours_peak_auroc": 0.7634441837138467,
+      "ours_peak_rel_depth": 0.8214285714285714,
+      "phase1_best_logreg_halluc_auroc": 0.7986111111111112,
+      "phase1_best_mlp_halluc_auroc": 0.8150161030595814,
+      "ours_minus_phase1_logreg": -0.03516692739726446
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "dataset": "nq_open",
+      "ours_peak_auroc": 0.7521932904236496,
+      "ours_peak_rel_depth": 0.8333333333333334,
+      "phase1_best_logreg_halluc_auroc": 0.7044514106583073,
+      "phase1_best_mlp_halluc_auroc": 0.7218808777429468,
+      "ours_minus_phase1_logreg": 0.04774187976534228
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "dataset": "squad",
+      "ours_peak_auroc": 0.6649612652132815,
+      "ours_peak_rel_depth": 0.7777777777777778,
+      "phase1_best_logreg_halluc_auroc": 0.6953365995282164,
+      "phase1_best_mlp_halluc_auroc": 0.7488659045545273,
+      "ours_minus_phase1_logreg": -0.030375334314934888
+    },
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "dataset": "triviaqa",
+      "ours_peak_auroc": 0.7792922673656619,
+      "ours_peak_rel_depth": 1.0,
+      "phase1_best_logreg_halluc_auroc": 0.7819602272727274,
+      "phase1_best_mlp_halluc_auroc": 0.8048904220779222,
+      "ours_minus_phase1_logreg": -0.002667959907065476
+    },
+    {
+      "model": "meta-llama/Llama-3.2-1B-Instruct",
+      "dataset": "nq_open",
+      "ours_peak_auroc": 0.668780292143703,
+      "ours_peak_rel_depth": 0.6875,
+      "phase1_best_logreg_halluc_auroc": 0.7310759416022574,
+      "phase1_best_mlp_halluc_auroc": 0.7000368052999633,
+      "ours_minus_phase1_logreg": -0.06229564945855437
+    },
+    {
+      "model": "meta-llama/Llama-3.2-1B-Instruct",
+      "dataset": "squad",
+      "ours_peak_auroc": 0.6890000000000001,
+      "ours_peak_rel_depth": 0.375,
+      "phase1_best_logreg_halluc_auroc": 0.7239530132788559,
+      "phase1_best_mlp_halluc_auroc": 0.7405515832482125,
+      "ours_minus_phase1_logreg": -0.034953013278855805
+    },
+    {
+      "model": "meta-llama/Llama-3.2-1B-Instruct",
+      "dataset": "triviaqa",
+      "ours_peak_auroc": 0.7436188793492164,
+      "ours_peak_rel_depth": 0.6875,
+      "phase1_best_logreg_halluc_auroc": 0.7677620339664355,
+      "phase1_best_mlp_halluc_auroc": 0.7833383579539744,
+      "ours_minus_phase1_logreg": -0.024143154617219054
+    },
+    {
+      "model": "meta-llama/Llama-3.2-3B-Instruct",
+      "dataset": "nq_open",
+      "ours_peak_auroc": 0.6979908808202117,
+      "ours_peak_rel_depth": 0.5714285714285714,
+      "phase1_best_logreg_halluc_auroc": 0.7034291010194624,
+      "phase1_best_mlp_halluc_auroc": 0.714859437751004,
+      "ours_minus_phase1_logreg": -0.005438220199250776
+    },
+    {
+      "model": "meta-llama/Llama-3.2-3B-Instruct",
+      "dataset": "squad",
+      "ours_peak_auroc": 0.7585828498941092,
+      "ours_peak_rel_depth": 0.5714285714285714,
+      "phase1_best_logreg_halluc_auroc": 0.7668299764108147,
+      "phase1_best_mlp_halluc_auroc": 0.7581201233895843,
+      "ours_minus_phase1_logreg": -0.00824712651670556
+    },
+    {
+      "model": "meta-llama/Llama-3.2-3B-Instruct",
+      "dataset": "triviaqa",
+      "ours_peak_auroc": 0.7834428275076817,
+      "ours_peak_rel_depth": 0.6785714285714286,
+      "phase1_best_logreg_halluc_auroc": 0.8369516056083219,
+      "phase1_best_mlp_halluc_auroc": 0.842039800995025,
+      "ours_minus_phase1_logreg": -0.05350877810064025
+    }
+  ]
+}

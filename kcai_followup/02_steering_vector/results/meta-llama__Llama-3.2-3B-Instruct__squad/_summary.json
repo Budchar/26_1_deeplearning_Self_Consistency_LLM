@@ -1,0 +1,59 @@
+{
+  "model": "meta-llama/Llama-3.2-3B-Instruct",
+  "dataset": "squad",
+  "target_layer": 25,
+  "target_rel_depth": 0.8928571428571429,
+  "n_prompts": 100,
+  "alpha_results": {
+    "alpha_-2.00": {
+      "acc": 0.13,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.13,
+      "time_sec": 47.195069551467896
+    },
+    "alpha_-1.00": {
+      "acc": 0.16,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.16,
+      "time_sec": 44.33522915840149
+    },
+    "alpha_-0.50": {
+      "acc": 0.17,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.17,
+      "time_sec": 43.16733908653259
+    },
+    "alpha_+0.00": {
+      "acc": 0.16,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.16,
+      "time_sec": 45.66209936141968
+    },
+    "alpha_+0.50": {
+      "acc": 0.16,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.16,
+      "time_sec": 47.22352123260498
+    },
+    "alpha_+1.00": {
+      "acc": 0.16,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.16,
+      "time_sec": 49.26831078529358
+    },
+    "alpha_+2.00": {
+      "acc": 0.09,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.09,
+      "time_sec": 63.278995513916016
+    }
+  },
+  "compute_time_sec": 342.9622802734375
+}

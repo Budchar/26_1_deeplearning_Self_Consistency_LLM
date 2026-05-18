@@ -1,0 +1,41 @@
+{
+  "n_cells": 12,
+  "per_metric_peak_stats": {
+    "mutual_info_mean": {
+      "n": 12,
+      "mean": 0.6649305555555555,
+      "median": 0.7638888888888888,
+      "std": 0.2493068665260495,
+      "in_h3_band_rate": 0.3333333333333333
+    },
+    "fisher_ratio": {
+      "n": 12,
+      "mean": 0.652281746031746,
+      "median": 0.6696428571428572,
+      "std": 0.07343112971116267,
+      "in_h3_band_rate": 0.9166666666666666
+    },
+    "silhouette": {
+      "n": 12,
+      "mean": 0.8137400793650794,
+      "median": 0.8035714285714286,
+      "std": 0.11730014654649452,
+      "in_h3_band_rate": 0.5
+    },
+    "mean_class_distance": {
+      "n": 12,
+      "mean": 0.9841269841269842,
+      "median": 0.9861111111111112,
+      "std": 0.01611912381872214,
+      "in_h3_band_rate": 0.0
+    },
+    "residual_norm_mean": {
+      "n": 12,
+      "mean": 1.0,
+      "median": 1.0,
+      "std": 0.0,
+      "in_h3_band_rate": 0.0
+    }
+  },
+  "verdict": "SUPPORT (2/3 divergence metrics ≥50% in H3 band: mutual_info_mean=33%, fisher_ratio=92%, silhouette=50%) — 0.68 = real semantic boundary"
+}

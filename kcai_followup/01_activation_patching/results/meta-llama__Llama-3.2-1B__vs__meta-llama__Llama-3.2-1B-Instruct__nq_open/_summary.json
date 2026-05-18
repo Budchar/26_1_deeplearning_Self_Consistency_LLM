@@ -1,0 +1,63 @@
+{
+  "source": "meta-llama/Llama-3.2-1B",
+  "target": "meta-llama/Llama-3.2-1B-Instruct",
+  "dataset": "nq_open",
+  "n_prompts": 100,
+  "patch_layers": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "control_layers": [
+    0,
+    8,
+    14
+  ],
+  "baseline_acc": 0.26,
+  "patch_results": {
+    "L1": {
+      "acc": 0.24,
+      "delta": -0.020000000000000018,
+      "time_sec": 73.8942003250122
+    },
+    "L2": {
+      "acc": 0.2,
+      "delta": -0.06,
+      "time_sec": 69.6178047657013
+    },
+    "L3": {
+      "acc": 0.27,
+      "delta": 0.010000000000000009,
+      "time_sec": 59.44882392883301
+    },
+    "L4": {
+      "acc": 0.23,
+      "delta": -0.03,
+      "time_sec": 83.94809341430664
+    },
+    "L5": {
+      "acc": 0.19,
+      "delta": -0.07,
+      "time_sec": 75.67226338386536
+    }
+  },
+  "control_results": {
+    "L0": {
+      "acc": 0.24,
+      "delta": -0.020000000000000018,
+      "time_sec": 74.97539734840393
+    },
+    "L8": {
+      "acc": 0.19,
+      "delta": -0.07,
+      "time_sec": 59.30515718460083
+    },
+    "L14": {
+      "acc": 0.27,
+      "delta": 0.010000000000000009,
+      "time_sec": 68.45257568359375
+    }
+  }
+}

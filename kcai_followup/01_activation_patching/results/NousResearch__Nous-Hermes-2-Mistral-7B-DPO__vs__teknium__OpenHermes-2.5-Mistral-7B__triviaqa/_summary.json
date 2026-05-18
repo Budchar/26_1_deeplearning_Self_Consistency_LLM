@@ -1,0 +1,63 @@
+{
+  "source": "NousResearch/Nous-Hermes-2-Mistral-7B-DPO",
+  "target": "teknium/OpenHermes-2.5-Mistral-7B",
+  "dataset": "triviaqa",
+  "n_prompts": 100,
+  "patch_layers": [
+    2,
+    3,
+    4,
+    5,
+    21
+  ],
+  "control_layers": [
+    0,
+    10,
+    30
+  ],
+  "baseline_acc": 0.34,
+  "patch_results": {
+    "L2": {
+      "acc": 0.37,
+      "delta": 0.02999999999999997,
+      "time_sec": 38.01098680496216
+    },
+    "L3": {
+      "acc": 0.38,
+      "delta": 0.03999999999999998,
+      "time_sec": 37.76271033287048
+    },
+    "L4": {
+      "acc": 0.35,
+      "delta": 0.009999999999999953,
+      "time_sec": 36.28780817985535
+    },
+    "L5": {
+      "acc": 0.37,
+      "delta": 0.02999999999999997,
+      "time_sec": 35.88860845565796
+    },
+    "L21": {
+      "acc": 0.34,
+      "delta": 0.0,
+      "time_sec": 37.36101007461548
+    }
+  },
+  "control_results": {
+    "L0": {
+      "acc": 0.34,
+      "delta": 0.0,
+      "time_sec": 36.24589991569519
+    },
+    "L10": {
+      "acc": 0.36,
+      "delta": 0.019999999999999962,
+      "time_sec": 36.561970710754395
+    },
+    "L30": {
+      "acc": 0.38,
+      "delta": 0.03999999999999998,
+      "time_sec": 37.680405139923096
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "dataset": "triviaqa",
+  "target_layer": 32,
+  "target_rel_depth": 0.8888888888888888,
+  "n_prompts": 100,
+  "alpha_results": {
+    "alpha_-2.00": {
+      "acc": 0.51,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.51,
+      "time_sec": 59.32247042655945
+    },
+    "alpha_-1.00": {
+      "acc": 0.54,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.54,
+      "time_sec": 59.14598536491394
+    },
+    "alpha_-0.50": {
+      "acc": 0.53,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.53,
+      "time_sec": 56.21694207191467
+    },
+    "alpha_+0.00": {
+      "acc": 0.53,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.53,
+      "time_sec": 55.058741331100464
+    },
+    "alpha_+0.50": {
+      "acc": 0.55,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.55,
+      "time_sec": 55.01285099983215
+    },
+    "alpha_+1.00": {
+      "acc": 0.56,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.56,
+      "time_sec": 54.148553133010864
+    },
+    "alpha_+2.00": {
+      "acc": 0.54,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.54,
+      "time_sec": 57.777039766311646
+    }
+  },
+  "compute_time_sec": 407.4072320461273
+}

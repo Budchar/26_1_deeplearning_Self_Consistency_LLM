@@ -1,0 +1,20 @@
+{
+  "n_cells": 12,
+  "per_metric_peak_stats": {
+    "logit_entropy": {
+      "n": 12,
+      "mean": 0.9404761904761906,
+      "median": 1.0,
+      "std": 0.08501700510170059,
+      "in_h3_band_rate": 0.08333333333333333
+    },
+    "attn_entropy": {
+      "n": 12,
+      "mean": 0.7551146384479717,
+      "median": 0.788888888888889,
+      "std": 0.18523227334478978,
+      "in_h3_band_rate": 0.4166666666666667
+    }
+  },
+  "verdict": "WEAK (0/2: logit_entropy=8%, attn_entropy=42%)"
+}

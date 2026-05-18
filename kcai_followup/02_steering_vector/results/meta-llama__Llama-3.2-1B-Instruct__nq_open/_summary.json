@@ -1,0 +1,59 @@
+{
+  "model": "meta-llama/Llama-3.2-1B-Instruct",
+  "dataset": "nq_open",
+  "target_layer": 14,
+  "target_rel_depth": 0.875,
+  "n_prompts": 100,
+  "alpha_results": {
+    "alpha_-2.00": {
+      "acc": 0.25,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.25,
+      "time_sec": 44.16704773902893
+    },
+    "alpha_-1.00": {
+      "acc": 0.27,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.27,
+      "time_sec": 46.80906534194946
+    },
+    "alpha_-0.50": {
+      "acc": 0.27,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.27,
+      "time_sec": 44.69065570831299
+    },
+    "alpha_+0.00": {
+      "acc": 0.29,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.29,
+      "time_sec": 45.003722190856934
+    },
+    "alpha_+0.50": {
+      "acc": 0.3,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.3,
+      "time_sec": 40.98944568634033
+    },
+    "alpha_+1.00": {
+      "acc": 0.29,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.29,
+      "time_sec": 46.943618297576904
+    },
+    "alpha_+2.00": {
+      "acc": 0.28,
+      "n": 100,
+      "this_run_n": 100,
+      "this_run_acc": 0.28,
+      "time_sec": 49.21011781692505
+    }
+  },
+  "compute_time_sec": 321.18709659576416
+}
