@@ -1,0 +1,112 @@
+{
+  "contributor": "wclee",
+  "date": "2026-05-14",
+  "dataset": "TriviaQA",
+  "hypotheses": {
+    "H1": {
+      "title": "레이어 탐침으로 hallucination 사전 탐지 가능",
+      "statement": "트랜스포머 레이어의 hidden state에 학습된 linear probe가 생성 전 hallucination을 AUROC > 0.75로 탐지할 수 있다",
+      "verdict": "PASS",
+      "evidence": {
+        "mistral_v03": {"best_auroc": 0.808, "best_layer": 4},
+        "nous_hermes_dpo": {"best_auroc": 0.806, "best_layer": 2},
+        "openhermes": {"best_auroc": 0.795, "best_layer": 21},
+        "exaone": {"best_auroc": 0.838, "best_layer": 30},
+        "qwen_7b": {"best_auroc": 0.821, "best_layer": 22},
+        "openchat_35": {"best_auroc": 0.868, "best_layer": 16}
+      },
+      "note": "11개 모델 중 8개가 AUROC > 0.75. 팀 Phase1 SEPs 결과(평균 μ=0.767)와 일관됨"
+    },
+    "H2": {
+      "title": "Fine-tuning 방법이 hallucination 인코딩 레이어 위치를 결정",
+      "statement": "사실성 SFT 데이터(OpenHermes)와 DPO의 조합이 hallucination 인코딩을 초반 MLP 레이어(L ≤ 5)로 이동시킨다",
+      "verdict": "PASS",
+      "key_comparison": {
+        "openhermes": {
+          "sft": "OpenHermes", "dpo": false,
+          "best_layer": 21, "depth_pct": 65.6, "auroc": 0.795
+        },
+        "nous_hermes_dpo": {
+          "sft": "OpenHermes", "dpo": true,
+          "best_layer": 2, "depth_pct": 6.3, "auroc": 0.806,
+          "layer_shift": "L21 → L2 (−19 layers)"
+        }
+      },
+      "controls": {
+        "zephyr_일반대화_DPO": {"best_layer": 15, "note": "DPO 있어도 일반 대화 데이터면 초반 이동 없음"},
+        "mistral_base_아키텍처": {"best_layer": 29, "note": "아키텍처 자체는 원인 아님"}
+      },
+      "note": "동일 SFT 데이터에서 DPO 유무만으로 best layer가 L21→L2로 이동. 사실성 데이터 밀도가 필요조건"
+    },
+    "H3": {
+      "title": "초반 MLP vs 후반 Attention — 인코딩 주체가 다르다",
+      "statement": "Type I 모델(DPO+사실SFT)은 초반 MLP stream이 hallucination을 주도 인코딩하고, Type II 모델은 후반 Attention stream이 주도한다",
+      "verdict": "PASS",
+      "evidence": {
+        "Type_I_MLP_dominant": {
+          "mistral_v03": {
+            "best_layer": 4,
+            "mlp_auroc": 0.808, "attn_auroc": 0.776, "gap": 0.032
+          },
+          "nous_hermes_dpo": {
+            "best_layer": 2,
+            "mlp_auroc": 0.806, "attn_auroc": 0.646, "gap": 0.160
+          }
+        },
+        "Type_II_Attn_dominant": {
+          "exaone": {
+            "best_layer": 30,
+            "mlp_auroc": 0.838, "attn_auroc": 0.917, "gap": -0.079,
+            "note": "L15 attn_stream AUROC=0.917이 full-layer L30보다 높음"
+          }
+        }
+      },
+      "mechanism": "MLP Key-Value Memory (Geva et al. 2021): 초반 MLP가 사실 지식을 저장하는 key-value 구조로 작동. DPO가 이 회로를 조기 활성화"
+    },
+    "H4": {
+      "title": "Logit Lens로 vocab 불확실성 성장 패턴 구분",
+      "statement": "Type I/II 모델은 중간 레이어의 vocab entropy 성장 패턴이 다르다",
+      "verdict": "PASS",
+      "evidence": {
+        "Type_I_early_converge": {
+          "mistral_v03": {
+            "early_gap_avg": 0.0026,
+            "late_gap_avg": -0.2969,
+            "pattern": "L4 이후 entropy gap 역전 — wrong-correct 차가 후반에서 음수로 수렴"
+          }
+        },
+        "Type_II_continuous_growth": {
+          "mistral_base": {
+            "early_gap_avg": 0.0024,
+            "late_gap_avg": 0.2441,
+            "pattern": "후반까지 entropy gap 지속 증가"
+          },
+          "exaone": {
+            "early_gap_avg": -0.0495,
+            "late_gap_avg": 0.7810,
+            "pattern": "후반까지 entropy gap 지속 증가"
+          },
+          "qwen_7b": {
+            "early_gap_avg": -0.0004,
+            "late_gap_avg": 0.7707,
+            "pattern": "후반까지 entropy gap 지속 증가"
+          }
+        }
+      },
+      "finding": "Type I 모델(Mistral-v0.3)은 L4 이후 entropy gap이 역전하여 조기 수렴. Type II 모델(Mistral-BASE, EXAONE, Qwen-7B) 3개 모두 후반까지 entropy gap 지속 성장.",
+      "note": "Exp11 결과 4개 모델(Mistral-v0.3, Mistral-BASE, EXAONE, Qwen-7B) 전수 확인. late_gap_avg 기준 Type I/II 분류 100% 일치. PARTIAL PASS → PASS 업그레이드 (2026-05-14)"
+    }
+  },
+  "relation_to_team_findings": {
+    "SEPs_peak_depth": {
+      "team_finding": "팀 Phase1: hallucination 신호 peak 상대 깊이 0.68 ± 0.12",
+      "wclee_finding": "Type II 모델(OpenHermes L21/33=0.64, EXAONE L30/32=0.94) 평균 ≈ 0.72, Type I 모델(Mistral-v0.3 L4/33=0.12) 제외 시 팀 발견과 일관",
+      "insight": "팀의 0.68 ± 0.12는 Type II 모델 기반 추정. Type I 모델 포함 시 분포 이중봉"
+    },
+    "model_size_SEPs": {
+      "team_finding": "SEPs 효과가 소형 모델에서 더 큼 (Pearson r=−0.53)",
+      "wclee_finding": "7B 규모에서도 fine-tuning 방법에 따라 AUROC 0.559(Zephyr)~0.868(OpenChat) 큰 분산 존재",
+      "insight": "모델 크기보다 fine-tuning 방법이 탐지 용이성의 더 강한 예측 변수일 수 있음"
+    }
+  }
+}
